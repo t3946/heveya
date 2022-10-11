@@ -1,0 +1,110 @@
+.interests {
+  .grid {
+    display: grid;
+    grid-template-areas: "item-1 item-2 item-3"
+                       "item-1 item-4 item-5"
+                       "item-6 item-7 item-7";
+    grid-template-rows: repeat(3, 236px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: pxToRem(25);
+    font-weight: bold;
+    font-size: pxToRem(32);
+
+    .item {
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+
+      .title {
+        text-align: center;
+        max-width: pxToRem(410);
+      }
+
+      &_1 {
+        grid-area: item-1;
+        background-color: #7c7c7c;
+        color: #ffffff;
+        background-image: url("./assets/images/pages/home/interests/1.png");
+        background-position: center 80%;
+
+        .title {
+          position: relative;
+          top: -50px;
+        }
+
+        .subtitle {
+          font-size: pxToRem(22);
+          color: #d4d4d4;
+          font-weight: normal;
+        }
+      }
+
+      &_2 {
+        background-image: url("./assets/images/pages/home/interests/2.png");
+        grid-area: item-2;
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #434343;
+        background-position: center bottom;
+      }
+
+      &_3 {
+        background-image: url("./assets/images/pages/home/interests/3.png");
+        grid-area: item-3;
+        background-color: #d9f2ff;
+        color: #000000;
+        background-position: 30px bottom;
+      }
+
+      &_4 {
+        background-image: url("./assets/images/pages/home/interests/4.png");
+        grid-area: item-4;
+        background-color: #434343;
+        color: #ffffff;
+        background-position: center top;
+
+        .title {
+          position: relative;
+          top: 30px;
+          font-size: pxToRem(28);
+        }
+      }
+
+      &_5 {
+        background-image: url("./assets/images/pages/home/interests/5.png");
+        background-position: right bottom;
+        grid-area: item-5;
+        background-color: #90c2dd;
+        color: #000000;
+
+        .title {
+          max-width: 500px;
+        }
+      }
+
+      &_6 {
+        background-image: url("./assets/images/pages/home/interests/6.png");
+        grid-area: item-6;
+        background-color: #434343;
+        color: #ef7f1a;
+        font-size: pxToRem(28);
+        background-position: 50px top;
+
+        .title {
+          max-width: 200px;
+        }
+      }
+
+      &_7 {
+        background-image: url("./assets/images/pages/home/interests/7.png");
+        grid-area: item-7;
+        background-color: #ffffff;
+        border: 1px solid #434343;
+        font-size: pxToRem(28);
+        background-position: 120px center;
+      }
+    }
+  }
+}

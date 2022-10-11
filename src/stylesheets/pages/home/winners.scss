@@ -1,0 +1,39 @@
+@import "@styles/utils/utils";
+
+.winnersItem {
+  height: pxToRem(236);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 10px;
+  width: pxToRem(580);
+  font-weight: bold;
+  font-size: pxToRem(32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Text {
+    display: inline-block;
+    max-width: pxToRem(350);
+    text-align: center;
+  }
+
+  &_theme_1 {
+    background-color: #d9f2ff;
+    background-image: url("./assets/images/pages/home/winners/winner-1.png");
+    color: #000000;
+  }
+
+  &_theme_2 {
+    background-color: #7c7c7c;
+    background-image: url("./assets/images/pages/home/winners/winner-2.png");
+    color: #ffffff;
+  }
+
+  &_theme_3 {
+    background-color: #ef7f1a;
+    background-image: url("./assets/images/pages/home/winners/winner-3.png");
+    color: #ffffff;
+  }
+}
