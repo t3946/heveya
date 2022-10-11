@@ -1,6 +1,7 @@
 @import "./fonts/fonts";
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "pages/home/home";
+@import "@styles/utils/utils";
 
 .header1 {
   font-size: 36px;
@@ -13,4 +14,20 @@
 
 .container-lg {
   max-width: 1824px;
+}
+
+.button {
+  padding: 0 pxToRem(28);
+  color: #ef7f1a;
+  background: #ffe7d3;
+  font-size: pxToRem(16);
+  font-weight: bold;
+  height: pxToRem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

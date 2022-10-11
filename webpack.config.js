@@ -79,7 +79,10 @@ const config = {
 
   resolve: {
     extensions: ['.js', '.sass'],
-    modules: [path.join(__dirname, './src'), 'node_modules']
+    modules: [path.join(__dirname, './src'), 'node_modules'],
+    alias: {
+      "@styles": path.resolve(__dirname, 'src/stylesheets'),
+    },
   }
 }
 
