@@ -32,9 +32,15 @@ const config = {
         test: /\.hbs$/,
         use: [
           {
-            loader: "handlebars-loader"
+            loader: "handlebars-loader",
+            options: {
+              helperDirs: path.join(__dirname, 'handlebars/helpers'),
+              precompileOptions: {
+                knownHelpersOnly: false,
+              },
+            },
           }
-        ]
+        ],
       },
       {
         test: /\.scss$/,
@@ -68,7 +74,7 @@ const config = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
-    ]
+    ],
   },
 
   output: {

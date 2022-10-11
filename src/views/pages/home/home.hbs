@@ -104,4 +104,22 @@
     </div>
 </div>
 
+<div class="ratings">
+    <div class="container-lg">
+        <h2 class="header2 mb-4">Рейтинги</h2>
 
+        <div class="row">
+            {{setVarArray "lists"  '[{"theme": "blue", "header": "Рейтинг участников\nторгов"}, {"theme": "orange", "header": "Рейтинг организаторов\nторгов"}, {"theme": "gray", "header": "Рейтинг арбитражных\nуправляющих"}, {"theme": "green", "header": "Рейтинг электронных\nплощадок"}]'}}
+            {{#each lists}}
+                <div class="col-3">
+                    <div class="listHeader d-flex mb-3">
+                        <span class="iconWrapper iconWrapper_theme_{{this.theme}}">{{> ../../common/icons/rating/Rating class="icon"}}</span>
+                        <span class="ms-3 text">{{this.header}}</span>
+                    </div>
+
+                    {{> RatingList theme=this.theme}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

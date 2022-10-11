@@ -1,0 +1,89 @@
+.ratings {
+  background-color: #f5f5f5;
+  .listHeader {
+    font-size: pxToRem(24);
+    color: #161616;
+    font-weight: 600;
+    white-space: break-spaces;
+
+    .iconWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      width: pxToRem(45);
+      height: pxToRem(45);
+
+      &_theme_blue {
+        background-color: #e4f6ff;
+        color: #6fbfe9;
+      }
+
+      &_theme_orange {
+        background-color: #ffe9d6;
+        color: #ef7f1a;
+      }
+
+      &_theme_gray {
+        background-color: #e6e6e6;
+        color: #434343;
+      }
+
+      &_theme_green {
+        background-color: #e7f9f1;
+        color: #1cac4d;
+      }
+    }
+  }
+}
+
+.ratingList {
+  &_theme_blue {
+    .item:nth-child(even) {
+      background-color: #f9fdff;
+    }
+
+    .item:nth-child(odd) {
+      background-color: #e8f7ff;
+    }
+  }
+
+  &_theme_orange {
+    .item:nth-child(even) {
+      background-color: #FFFBF6;
+    }
+
+    .item:nth-child(odd) {
+      background-color: #FFE9D6;
+    }
+  }
+
+  &_theme_gray {
+    .item:nth-child(even) {
+      background-color: #FAFAFA;
+    }
+
+    .item:nth-child(odd) {
+      background-color: #E6E6E6;
+    }
+  }
+
+  &_theme_green {
+    .item:nth-child(even) {
+      background-color: #F8FFFC;
+    }
+
+    .item:nth-child(odd) {
+      background-color: #E7F9F1;
+    }
+  }
+
+  .item {
+    font-size: pxToRem(16);
+    padding: pxToRem(10) pxToRem(12);
+
+    .name {
+      padding: 0 pxToRem(20);
+    }
+  }
+}

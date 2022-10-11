@@ -4,6 +4,10 @@
 @import "@styles/utils/utils";
 @import "@styles/components/components";
 
+* {
+  color: #161616;
+}
+
 .header1 {
   font-size: 36px;
   font-family: "Open Sans", sans-serif;
@@ -11,6 +15,7 @@
 
 .header2 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .container-lg {
