@@ -1,0 +1,17 @@
+<div class="offers">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                <h1 class="header1 offersHeader">Гевея - информационная система имущественных торгов</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col d-flex justify-content-between">
+                {{#each offers}}
+                    {{> offer offer=this}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,15 +1,16 @@
 @import "./fonts/fonts";
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "pages/home/home";
 
-html {
+.header1 {
+  font-size: 36px;
+  font-family: "Open Sans", sans-serif;
 }
 
-p {
-  color: green;
-  font-family: "fregat", fantasy;
-  font-size: 2rem;
+.header2 {
+  font-size: 30px;
+}
 
-  &:before {
-    content: "p: ";
-  }
+.container-lg {
+  max-width: 1824px;
 }
