@@ -1,0 +1,50 @@
+.market {
+  color: #ffffff;
+  background-color: black;
+  background-image: url("@styles/assets/images/pages/home/market/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: pxToRem(36) 0 pxToRem(20);
+
+  .header {
+    margin: 0 0 pxToRem(32);
+  }
+
+  .stats {
+    .item {
+      .name {
+        font-size: pxToRem(24);
+      }
+
+      .value {
+        font-size: pxToRem(40);
+        font-weight: bold;
+      }
+
+      &:not(:last-child):after {
+        content: "";
+        border-right: 1px solid #ffffff;
+        height: pxToRem(54);
+        margin: 0 pxToRem(22);
+      }
+    }
+  }
+
+  .moreInfo {
+    font-weight: bold;
+    color: #ef7f1a;
+    line-height: pxToRem(54);
+    cursor: pointer;
+  }
+}
+
+.marketFooter {
+  height: pxToRem(54);
+  position: relative;
+
+  &__stats {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
