@@ -1,0 +1,15 @@
+@import "./fonts/fonts";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html {
+}
+
+p {
+  color: green;
+  font-family: "fregat", fantasy;
+  font-size: 2rem;
+
+  &:before {
+    content: "p: ";
+  }
+}
