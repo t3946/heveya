@@ -2,6 +2,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "pages/home/home";
 @import "@styles/utils/utils";
+@import "@styles/components/components";
 
 .header1 {
   font-size: 36px;
@@ -26,8 +27,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+
+  &_theme_blue {
+    color: #ffffff;
+    background: #8cceef;
+  }
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.rouble {
+  &:after {
+    content: " ₽";
+  }
+}
+
+.badge {
+  background-color: #ef7f1a;
+  color: #ffffff;
+  min-width: pxToRem(15);
+  height: pxToRem(15);
+  font-size: pxToRem(9);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }

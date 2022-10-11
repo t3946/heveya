@@ -17,6 +17,12 @@
 
 @font-face {
   font-family: "Open Sans";
+  src: url("./assets/fonts/open-sans/OpenSans-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open Sans";
   src: url("./assets/fonts/open-sans/OpenSans-Italic.ttf") format("ttf");
   font-style: italic;
 }
