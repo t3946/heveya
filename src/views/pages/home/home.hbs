@@ -241,7 +241,8 @@
             <span class="moreInfo">Подробнее</span>
 
             <div class="marketFooter__stats stats d-flex">
-                {{setVarArray "stats" '[{"name": "Всего торгов", "value": "3 000 000"}, {"name": "Состоялось", "value": "2 549 545"}, {"name": "На сумму", "value": "99 056 025 ₽"}]'}}
+                {{setVarArray "stats"
+                              '[{"name": "Всего торгов", "value": "3 000 000"}, {"name": "Состоялось", "value": "2 549 545"}, {"name": "На сумму", "value": "99 056 025 ₽"}]'}}
                 {{#each stats}}
                     <div class="item d-flex align-items-center">
                         <div class="d-flex flex-column">
@@ -255,3 +256,37 @@
 
     </div>
 </div>
+
+<div class="registries">
+    <div class="container-lg">
+        <h2 class="header2 mb-4">Реестры</h2>
+
+        <div class="grid">
+            <div class="item item-1">
+                <span class="text">Реестр участников торгов</span>
+            </div>
+
+            <div class="item item-2 blueAnglePanel">
+                <span class="text">Реестр должников</span>
+            </div>
+
+            <div class="item item-3 blueAnglePanel">
+                <span class="text">Реестр Арбитражных управляющих</span>
+            </div>
+
+            <div class="item item-4 blueAnglePanel">
+                <span class="text">Реестр Организаторов торгов</span>
+            </div>
+
+            <div class="item item-5 blueAnglePanel">
+                <span class="text">Реестр СРО</span>
+            </div>
+
+            <div class="item item-6">
+                <span class="text">Реестр электронных площадок</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,60 @@
+.registries {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  padding: pxToRem(95) 0;
+
+  .grid {
+    display: grid;
+    grid-template-areas: "item-1 item-1 item-2 item-3"
+                       "item-4 item-5 item-6 item-6";
+    grid-template-rows: repeat(2, 194px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: pxToRem(25);
+  }
+
+  .item {
+    border-radius: 10px;
+    font-size: pxToRem(28);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .text {
+      text-align: center;
+    }
+  }
+
+  .item-1, .item-6 {
+    color: #ffffff;
+  }
+
+  .item-1 {
+    grid-area: item-1;
+    background-color: #888888;
+    background-image: url("@styles/assets/images/pages/home/registries/1.jpg");
+  }
+
+  .item-2 {
+    grid-area: item-2;
+  }
+
+  .item-3 {
+    grid-area: item-3;
+  }
+
+  .item-4 {
+    grid-area: item-4;
+  }
+
+  .item-5 {
+    grid-area: item-5;
+  }
+
+  .item-6 {
+    grid-area: item-6;
+    background-color: #fc8619;
+    background-image: url("@styles/assets/images/pages/home/registries/6.jpg");
+  }
+}
