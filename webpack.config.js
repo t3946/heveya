@@ -14,7 +14,7 @@ const config = {
       directory: path.join(__dirname, 'public'),
     },
     historyApiFallback: {
-      index: path.join(__dirname, 'index.html')
+      index: 'index.html'
     },
     compress: true,
     port: 3000,
