@@ -1,0 +1,23 @@
+.breadcrumbs {
+  .item {
+    font-size: pxToRem(16);
+    font-weight: 600;
+
+    &:last-child {
+      color: #161616;
+    }
+
+    &:not(:last-child) {
+      .link {
+        text-decoration: none;
+        color: #9b9b9b;
+      }
+
+      &:after {
+        content: "/";
+        color: #9b9b9b;
+        margin: 0 pxToRem(20);
+      }
+    }
+  }
+}
