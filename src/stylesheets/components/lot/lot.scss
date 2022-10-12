@@ -86,4 +86,35 @@
       }
     }
   }
+
+  .lotImage {
+    &__label {
+      position: absolute;
+      left: 0;
+      top: pxToRem(18)
+    }
+
+    .label {
+      height: pxToRem(30);
+      color: #ffffff;
+      font-size: pxToRem(14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      padding: pxToRem(6) pxToRem(12);
+      background: #000000;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      font-weight: 600;
+
+      &_theme_auction {
+        background: #00d422;
+      }
+
+      &_theme_discount {
+        background: #f6002c;
+      }
+    }
+  }
 }

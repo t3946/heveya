@@ -2,6 +2,11 @@
 
 .searchResults {
   margin-bottom: 65px;
+
+  .lot:not(:last-child) {
+    margin: 0 0 pxToRem(25);
+  }
+
   @import "settings";
 
   @import "offers";

@@ -1,3 +1,35 @@
-.lotLine {
+@import "@styles/utils/utils";
 
+.lotLine {
+  padding: 0 36px 0 0;
+  overflow: hidden;
+
+  .footerInfo {
+
+    .name{
+      &:after {
+        content: ":";
+      }
+    }
+
+    .value {
+      font-weight: bold;
+    }
+  }
+
+  .button {
+    height: pxToRem(50) !important;
+  }
+
+  .lotImage {
+    padding: 0 pxToRem(38) 0 0;
+
+    .image {
+      width: 100%;
+    }
+  }
+
+  .iconsWrapper {
+    width: pxToRem(180);
+  }
 }
