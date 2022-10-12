@@ -1,6 +1,7 @@
 @import "@styles/utils/utils";
 
 .offerPage {
+  padding: 0 0 pxToRem(50);
   .crumbsWrapper {
     padding: pxToRem(25) 0;
   }
@@ -113,6 +114,31 @@
           }
         }
       }
+    }
+  }
+
+  .dividerDescription {
+    border-bottom: 1px solid #d4d4d4;
+    margin: pxToRem(28) 0;
+  }
+
+  .paragraph {
+    font-size: pxToRem(18);
+  }
+
+  .documents {
+    .icon {
+      color: #8cceef;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #434343;
+      font-weight: 600;
+    }
+
+    .itemRow:not(:last-child) {
+      margin-bottom: pxToRem(16);
     }
   }
 }
