@@ -1,7 +1,33 @@
 {{> ../../layout/Hat}}
 
-<div class="offer">
-    {{> ../../common/breadcrumbs/Breadcrumbs}}
+<div class="offerPage">
+    <div class="container-lg">
+        <div class="crumbsWrapper d-flex justify-content-between align-items-center">
+            {{> ../../common/breadcrumbs/Breadcrumbs}}
+
+            <div class="infoLinks">
+            <a href="#" class="item">
+                {{> ../../common/icons/analytics/Analytics class="icon"}}
+                <span class="ms-2 text">Анализировать лот</span>
+            </a>
+
+            <a href="#" class="item">
+                {{> ../../common/icons/link/Link class="icon"}}
+                <span class="ms-2 text">Ссылка ЕФРСБ</span>
+            </a>
+
+            <a href="#" class="item">
+                {{> ../../common/icons/headphones/headphones class="icon"}}
+                <span class="ms-2 text">Техническая поддержка</span>
+            </a>
+
+            <a href="#" class="item">
+                {{> ../../common/icons/exclamation-mark/ExclamationMark class="icon"}}
+                <span class="ms-2 text">Пожаловаться</span>
+            </a>
+        </div>
+        </div>
+    </div>
 </div>
 
 {{> ../../layout/Footer}}

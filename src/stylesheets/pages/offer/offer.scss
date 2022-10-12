@@ -1,0 +1,27 @@
+@import "@styles/utils/utils";
+
+.offerPage {
+  .crumbsWrapper {
+    padding: pxToRem(25) 0;
+  }
+
+  .infoLinks {
+    .item {
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin: 0 pxToRem(40) 0 0;
+      }
+
+      .icon {
+        color: #8cceef;
+      }
+
+      .text {
+        color: #9b9b9b;
+        font-size: pxToRem(16);
+        font-weight: bold;
+      }
+    }
+  }
+}
