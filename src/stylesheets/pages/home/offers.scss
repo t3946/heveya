@@ -46,9 +46,18 @@
 }
 
 .offerFooterIcon {
-  width: 24px;
   display: flex;
-  //background: url("./assets/images/icons/hammer.svg") no-repeat;
+
+  .iconWrapper {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #e4f6ff;
+
+    .icon {
+      color: #8cceef;
+    }
+  }
 }
 
 .show-all-offers {
