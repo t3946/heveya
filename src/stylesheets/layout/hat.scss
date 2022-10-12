@@ -116,25 +116,4 @@
       }
     }
   }
-
-  .slider {
-    overflow: hidden;
-    height: pxToRem(400);
-
-    .carousel-control-prev, .carousel-control-next {
-      opacity: 1;
-
-      > .sliderButton {
-        border-radius: 100px;
-        width: pxToRem(58);
-        height: pxToRem(58);
-        filter: drop-shadow(2px 4px 7px rgba(0, 0, 0, 0.08));
-        color: #000000;
-        background: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
 }

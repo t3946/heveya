@@ -1,6 +1,32 @@
 {{> ../../layout/Hat}}
 
 <div class="home">
+    <div class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/layout/hat/slider-dummy.jpg" class="d-block w-100" alt="image dummy">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/layout/hat/slider-dummy.jpg" class="d-block w-100" alt="image dummy">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/layout/hat/slider-dummy.jpg" class="d-block w-100" alt="image dummy">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="sliderButton">{{> ../../common/icons/arrow-left/ArrowLeft class="icon"}}</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="sliderButton">{{> ../../common/icons/arrow-right/ArrowRight class="icon"}}</span>
+            </button>
+        </div>
+    </div>
+
     <div class="offers">
         <div class="container-lg">
             <div class="row">
