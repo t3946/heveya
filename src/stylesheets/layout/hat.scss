@@ -118,7 +118,9 @@
   }
 
   .slider {
+    overflow: hidden;
     height: pxToRem(400);
+
     .carousel-control-prev, .carousel-control-next {
       opacity: 1;
 
