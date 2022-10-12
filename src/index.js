@@ -8,37 +8,37 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: 'Легковые автомобили',
       inKirov: '5000',
-      image: '/images/offers/1.png',
+      image: '/images/home/offers/1.png',
     },
     {
       title: 'Коммерческий транспорт',
       inKirov: '5000',
-      image: '/images/offers/2.png',
+      image: '/images/home/offers/2.png',
     },
     {
       title: 'Спецтехника',
       inKirov: '5000',
-      image: '/images/offers/3.png',
+      image: '/images/home/offers/3.png',
     },
     {
       title: 'Жилая недвижимость',
       inKirov: '5000',
-      image: '/images/offers/4.png',
+      image: '/images/home/offers/4.png',
     },
     {
       title: 'Коммерческая недвижимость',
       inKirov: '5000',
-      image: '/images/offers/5.png',
+      image: '/images/home/offers/5.png',
     },
     {
       title: 'Земельные участки',
       inKirov: '5000',
-      image: '/images/offers/6.png',
+      image: '/images/home/offers/6.png',
     },
     {
       title: 'Станки и оборудование',
       inKirov: '5000',
-      image: '/images/offers/7.png',
+      image: '/images/home/offers/7.png',
     },
   ]
 
