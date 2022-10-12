@@ -5,6 +5,12 @@
     padding: pxToRem(25) 0;
   }
 
+  .lotMainInfo {
+    padding: pxToRem(10) 0;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
   .infoLinks {
     .item {
       text-decoration: none;
@@ -21,6 +27,91 @@
         color: #9b9b9b;
         font-size: pxToRem(16);
         font-weight: bold;
+      }
+    }
+  }
+
+  .imageWrapper {
+    width: pxToRem(580);
+    height: pxToRem(580);
+  }
+
+  .requisites {
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    padding: pxToRem(12) pxToRem(110) pxToRem(12) pxToRem(12);
+  }
+
+  .companyName {
+    font-size: pxToRem(18);
+  }
+
+  .allLots {
+    text-decoration: none;
+
+    .icon {
+      color: #8cceef;
+      width: pxToRem(18);
+    }
+  }
+
+  .pricesWrapper {
+    flex-shrink: 0;
+    border-left: 1px solid #d4d4d4;
+    margin: 0 0 0 pxToRem(24);
+    padding: 0 0 0 pxToRem(24);
+    width: pxToRem(310);
+
+    .panel {
+      border-radius: 5px;
+      padding: pxToRem(12);
+
+      &_blue {
+        background-color: #e4f6ff;
+      }
+
+      &_grey {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+
+  .infoColumn {
+    padding: 0 0 pxToRem(16);
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .contacts {
+    .item {
+      padding: 0 0 pxToRem(30) 0;
+      border-bottom: 1px solid #d4d4d4;
+
+      &:not(:last-child) {
+        margin: 0 0 pxToRem(16);
+      }
+
+      .link{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        &_phone {
+          .icon {
+            color: #5fa85e;
+          }
+        }
+
+        &_email {
+          .icon {
+            color: #eac338;
+          }
+        }
+
+        &_request {
+          .icon {
+            color: #8cceef;
+          }
+        }
       }
     }
   }
