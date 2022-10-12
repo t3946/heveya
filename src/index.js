@@ -3,6 +3,7 @@ import 'javascripts/main';
 
 const home = require('./views/pages/home/home.hbs')
 const SearchResults = require('./views/pages/search-results/SearchResults.hbs')
+const SearchResultsLines = require('./views/pages/search-results-lines/SearchResultsLines.hbs')
 const offers = [
   {
     title: 'Легковые автомобили',
@@ -51,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case "/search-results":
       document.body.innerHTML = SearchResults()
+      break;
+
+    case "/search-results-lines":
+      document.body.innerHTML = SearchResultsLines()
       break;
 
     default:

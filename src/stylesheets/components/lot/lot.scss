@@ -1,0 +1,89 @@
+@import "lot-line";
+@import "lot-tile";
+
+.lot {
+  border-radius: 10px;
+
+  &_bordered {
+    border: 1px solid #d4d4d4;
+  }
+
+  .divider {
+    border-bottom: 1px solid #d5d5d5;
+  }
+
+  .deadline {
+    color: #f2994a;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .stats {
+    font-size: pxToRem(14);
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+
+      .name {
+        color: #9b9b9b;
+
+        &:after {
+          content: ":";
+        }
+      }
+
+      .value {
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .description {
+    font-size: pxToRem(16);
+    line-height: 1.1;
+  }
+
+  .number {
+    font-weight: bold;
+  }
+
+  .location {
+    color: #f2994a;
+    font-weight: bold;
+  }
+
+  .icons {
+    .icon {
+      color: #434343;
+
+      &_heart {
+        width: 24px;
+        height: 24px;
+      }
+
+      &_doubleHeart {
+        width: 24px;
+        height: 24px;
+      }
+
+      &_handshake {
+        width: 28px;
+        height: 18px;
+      }
+
+      &_community {
+        width: 19px;
+        height: 20px;
+      }
+    }
+
+    .iconContainer {
+      .badge {
+        top: pxToRem(-8);
+        right: pxToRem(-5);
+      }
+    }
+  }
+}
