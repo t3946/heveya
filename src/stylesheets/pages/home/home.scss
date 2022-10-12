@@ -1,8 +1,10 @@
-@import "offers";
-@import "winners";
-@import "interests";
-@import "top100";
-@import "ratings";
-@import "market";
-@import "registry";
-@import "articles";
+.home {
+  @import "offers";
+  @import "winners";
+  @import "interests";
+  @import "top100";
+  @import "ratings";
+  @import "market";
+  @import "registry";
+  @import "articles";
+}
