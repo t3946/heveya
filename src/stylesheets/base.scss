@@ -3,6 +3,7 @@
 @import "pages/home/home";
 @import "@styles/utils/utils";
 @import "@styles/components/components";
+@import "@styles/layout/layout";
 
 html {
   color: #161616;
@@ -63,11 +64,11 @@ html {
   border-radius: 10px;
 }
 
-.link-unstyled {
-  text-decoration: none;
-}
-
 .link {
   color: #ef7f1a;
   text-decoration: none;
+}
+
+.lightBlue {
+  color: #8cceef;
 }

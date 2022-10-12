@@ -1,0 +1,51 @@
+.footer {
+  color: #0f0f0f;
+  padding: pxToRem(52) 0 pxToRem(32);
+  border-top: 1px solid #d4d4d4;
+
+  .divider {
+    border-bottom: 1px solid #d5d5d5;
+    margin: pxToRem(46) 0 pxToRem(32);
+  }
+
+  .appLink {
+    &:not(:last-child){
+      margin: 0 0 pxToRem(10);
+    }
+  }
+
+  .navigationLink {
+    font-size: pxToRem(20);
+    font-weight: 600;
+
+    .link {
+      text-decoration: none;
+      color: #0f0f0f;
+    }
+
+    &:not(:last-child){
+      margin: 0 0 pxToRem(20);
+    }
+  }
+
+  .socialIcon {
+    width: pxToRem(42);
+    height: pxToRem(42);
+  }
+
+  .contactLink {
+    font-size: pxToRem(20);
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: 600;
+  }
+
+  .graphic {
+    position: absolute;
+    bottom: -18px;
+    display: block;
+    left: 0;
+    color: #434343;
+    font-size: pxToRem(13);
+  }
+}
