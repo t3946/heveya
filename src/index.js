@@ -4,6 +4,7 @@ import 'javascripts/main';
 const home = require('./views/pages/home/home.hbs')
 const SearchResults = require('./views/pages/search-results/SearchResults.hbs')
 const SearchResultsLines = require('./views/pages/search-results-lines/SearchResultsLines.hbs')
+const Offer = require('./views/pages/offer/Offer.hbs')
 const offers = [
   {
     title: 'Легковые автомобили',
@@ -56,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case "/search-results-lines":
       document.body.innerHTML = SearchResultsLines()
+      break;
+
+    case "/offer":
+      document.body.innerHTML = Offer()
       break;
 
     default:
