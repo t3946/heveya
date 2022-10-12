@@ -1,29 +1,61 @@
 {{> ../../layout/Hat}}
 
 <div class="searchResults">
-    <div class="container-lg">
-        <div class="row">
-            <div class="col d-flex">
-                <h1 class="header2">Результаты поиска</h1>
+    <div class="settings">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col d-flex">
+                    <h1 class="header2">Результаты поиска</h1>
 
-                <ul class="tags list-unstyled m-0">
-                    <li class="item">Регион: Москва</li>
-                    <li class="item">Направление: Банкротство</li>
-                    <li class="item">Категория: Жилая недвижимость</li>
-                    <li class="item">Форирование цены: Аукцион</li>
-                    <li class="item">Сортировать по: Популярности</li>
-                    <li class="item">Форирование цены: Аукцион</li>
-                    <li class="item">Сортировать по: Популярности</li>
-                </ul>
+                    <ul class="tags list-unstyled m-0">
+                        <li class="item">Регион: Москва</li>
+                        <li class="item">Направление: Банкротство</li>
+                        <li class="item">Категория: Жилая недвижимость</li>
+                        <li class="item">Форирование цены: Аукцион</li>
+                        <li class="item">Сортировать по: Популярности</li>
+                        <li class="item">Форирование цены: Аукцион</li>
+                        <li class="item">Сортировать по: Популярности</li>
+                    </ul>
 
-                <div class="view d-flex">
-                    <div class="mode mode_tiles mode_active">
-                        {{> ../../common/icons/tiles/Tiles class="icon"}}
+                    <div class="view d-flex">
+                        <div class="mode mode_tiles mode_active">
+                            {{> ../../common/icons/tiles/Tiles class="icon"}}
+                        </div>
+
+                        <div class="mode mode_lines">
+                            {{> ../../common/icons/lines/Lines class="icon"}}
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div class="mode mode_lines">
-                        {{> ../../common/icons/lines/Lines class="icon"}}
-                    </div>
+    <div class="offers">
+        <div class="container-lg">
+            <div class="col">
+                <div class="grid">
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                </div>
+
+                <div class="grid">
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                </div>
+
+                <div class="grid">
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
+                    {{> ../../common/lot/CardTile class="lot_bordered"}}
                 </div>
             </div>
         </div>
