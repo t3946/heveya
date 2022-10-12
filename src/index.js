@@ -1,5 +1,6 @@
 // import 'javascripts/main'
-import 'stylesheets/base.scss'
+import 'stylesheets/base.scss';
+import 'javascripts/main';
 
 const home = require('./views/pages/home/home.hbs')
 

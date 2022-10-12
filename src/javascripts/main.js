@@ -1,1 +1,1 @@
-console.log("foo");
+import "bootstrap/dist/js/bootstrap";

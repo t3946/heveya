@@ -1,0 +1,138 @@
+<div class="hat">
+    <div class="contacts">
+        <div class="container-lg">
+            <div class="d-flex justify-content-between">
+                <div class="menu d-flex align-items-center">
+                    <a class="item item_color_orange" href="#">
+                        <span class="d-flex">{{> ../common/icons/map-marker/MapMarker class="icon"}}</span>
+                        <span class="text">Киров</span>
+                    </a>
+
+                    <div class="divider"></div>
+
+                    <a class="item" href="#">
+                        <span class="d-flex">{{> ../common/icons/user/User class="icon"}}</span>
+                        <span class="text">Партнерам</span>
+                    </a>
+
+                    <div class="divider"></div>
+
+                    <a class="item item_color_orange" href="#">
+                        <span class="d-flex">{{> ../common/icons/phone/Phone class="icon"}}</span>
+                        <span class="text">Скачать приложение</span>
+                    </a>
+
+                    <div class="item item_menu">
+                        <span class="d-flex">{{> ../common/icons/menu/Menu class="icon"}}</span>
+                        <span class="text">Каталог</span>
+                    </div>
+                </div>
+
+                <div class="d-flex notifications align-items-center">
+                    {{> ../common/icons/email/Email class="icon"}}
+
+                    <div class="divider"></div>
+
+                    <span class="position-relative">
+                        {{> ../common/icons/heart/Heart class="icon"}}
+                        <span class="badge position-absolute">1</span>
+                    </span>
+
+                    <div class="divider"></div>
+
+                    <span class="position-relative">
+                        {{> ../common/icons/bell/Bell class="icon icon_bell"}}
+                        <span class="badge position-absolute">1</span>
+                    </span>
+
+                    <div class="divider"></div>
+
+                    {{> ../common/icons/logout/Logout class="icon"}}
+                    <span class="ms-2">Войти или зарегистрироваться</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="container-lg">
+            <div class="d-flex align-items-center justify-content-between">
+                {{> ../common/icons/logo/Logo class="icon"}}
+
+                <div class="input-group searchInput">
+                    <span class="input-group-text" id="basic-addon1">
+                        {{> ../common/icons/search/Search class="icon"}}
+                    </span>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Что вы ищете?"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        id="tags_input_test-selectized"
+                    />
+                </div>
+
+                <div class="selects d-flex">
+                    <div class="item">
+                        <span class="me-3">Регион</span>
+                        {{> ../common/icons/chevron-down/ChevronDown class="icon"}}
+                    </div>
+
+                    <div class="item">
+                        <span class="me-3">Категория</span>
+                        {{> ../common/icons/chevron-down/ChevronDown class="icon"}}
+                    </div>
+
+                    <div class="item">
+                        <span class="me-3">Формирование цены</span>
+                        {{> ../common/icons/chevron-down/ChevronDown class="icon"}}
+                    </div>
+
+                    <div class="item">
+                        <span class="me-3">Сортировать по</span>
+                        {{> ../common/icons/chevron-down/ChevronDown class="icon"}}
+                    </div>
+                </div>
+
+                <div class="searchButton d-flex align-items-center">
+                    {{> ../common/icons/adjust/Adjust class="icon"}}
+
+                    <div class="button button_theme_blue">Найти</div>
+
+                    <div class="button button_search d-flex">
+                        {{> ../common/icons/map-marker/MapMarker class="icon"}}
+                        <span class="ms-2">На карте</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/layout/hat/slider-dummy.jpg" class="d-block w-100" alt="image dummy">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/layout/hat/slider-dummy.jpg" class="d-block w-100" alt="image dummy">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/layout/hat/slider-dummy.jpg" class="d-block w-100" alt="image dummy">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="sliderButton">{{> ../common/icons/arrow-left/ArrowLeft class="icon"}}</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="sliderButton">{{> ../common/icons/arrow-right/ArrowRight class="icon"}}</span>
+            </button>
+        </div>
+    </div>
+</div>
