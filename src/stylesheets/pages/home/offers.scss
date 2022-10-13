@@ -1,5 +1,104 @@
 @import "@styles/utils/utils";
 
+.offers {
+  .grid {
+    display: grid;
+    grid-template-areas: "item-1 item-2 item-2 item-5 item-6 item-7 item-10"
+                         "item-1 item-3 item-4 item-5 item-8 item-9 item-10";
+    grid-template-rows: repeat(2, 130px);
+    grid-template-columns: repeat(7, 1fr);
+    gap: pxToRem(25);
+
+    .item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+
+      .location {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+      }
+
+      .title {
+        margin: 0 0 pxToRem(10) 0;
+      }
+
+      &1 {
+        grid-area: item-1;
+        justify-content: start;
+        padding-top: 50px;
+        .title {
+          margin: pxToRem(40) 0 pxToRem(10) 0;
+        }
+      }
+
+      &2 {
+        grid-area: item-2;
+        flex-direction: row;
+
+        > .icon {
+          margin: 0 pxToRem(45) 0 0;
+        }
+
+        .location {
+          justify-content: start;
+        }
+      }
+
+      &3 {
+        grid-area: item-3;
+      }
+
+      &4 {
+        grid-area: item-4;
+      }
+
+      &5 {
+        grid-area: item-5;
+        justify-content: start;
+        padding-top: 30px;
+        .title {
+          margin: pxToRem(24) 0 pxToRem(10) 0;
+        }
+      }
+
+      &6 {
+        grid-area: item-6;
+      }
+
+      &7 {
+        grid-area: item-7;
+      }
+
+      &8 {
+        grid-area: item-8;
+      }
+
+      &9 {
+        grid-area: item-9;
+      }
+
+      &10 {
+        grid-area: item-10;
+        justify-content: start;
+        padding-top: 30px;
+        .title {
+          margin: pxToRem(24) 0 pxToRem(10) 0;
+        }
+      }
+
+      .icon {
+        color: #8ccdee;
+      }
+    }
+  }
+}
+
 .offersHeader {
   margin: 0 0 40px;
   font-weight: bold;

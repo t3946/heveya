@@ -35,13 +35,84 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col d-flex justify-content-between">
-                    {{#each offers}}
-                        {{> offer offer=this}}
-                    {{/each}}
+            <div class="grid">
+                <div class="item blueAnglePanel item1">
+                    {{> ../../common/icons/auto/Auto class="icon" }}
+
+                    <div class="fs18px fw-bold">
+                        <div class="title">Легковые <br> автомобили</div>
+                        {{> offer/Location }}
+                    </div>
                 </div>
 
+                <div class="item blueAnglePanel item2">
+                    {{> ../../common/icons/truck/Truck class="icon" }}
+                    <div class="fs18px fw-bold">
+                        <div class="title">Коммерческий транспорт</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item3">
+                    <div class="fs18px fw-bold">
+                        <div class="title">Спецтехника</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item4">
+                    <div class="fs18px fw-bold">
+                        <div class="title">Станки и <br> оборудование</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item5">
+                    {{> ../../common/icons/home/Home class="icon" }}
+                    <div class="fs18px fw-bold">
+                        <div class="title">Жилая <br> недвижимость</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item6">
+                    <div class="fs18px fw-bold">
+                        <div class="title">Коммерческая <br> недвижимость</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item7">
+                    <div class="fs18px fw-bold">
+                        <div class="title">Имущественный <br> комплекс</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item8">
+                    <div class="fs18px fw-bold">
+                        <div class="title">Сельское <br> хозяйство</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item9">
+                    <div class="fs18px fw-bold">
+                        <div class="title">Материальные <br> ценности</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+
+                <div class="item blueAnglePanel item10">
+                    {{> ../../common/icons/scales/Scales class="icon" }}
+                    <div class="fs18px fw-bold">
+                        <div class="title">Права требования</div>
+                        {{> offer/Location }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="d-flex justify-content-center show-all-offers">
                     <span class="baseButton">Все предложения</span>
                 </div>
