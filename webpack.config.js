@@ -1,11 +1,10 @@
 const autoprefixer = require('autoprefixer')
-const path = require('path');
-const HandlebarsPlugin = require("handlebars-webpack-plugin");
+const path = require('path')
 
 const config = {
-  mode: "development",
+  mode: 'development',
+  devtool: 'source-map',
   entry: {
-    // app: ['./src/stylesheets/base.scss']
     app: ['./src/index.js']
   },
 
@@ -24,15 +23,21 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        enforce: 'pre',
+        use: ['babel-loader', 'source-map-loader'],
       },
       {
         test: /\.hbs$/,
         use: [
           {
-            loader: "handlebars-loader",
+            loader: 'handlebars-loader',
             options: {
               helperDirs: path.join(__dirname, 'handlebars/helpers'),
               precompileOptions: {
@@ -46,16 +51,16 @@ const config = {
         test: /\.scss$/,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
                 plugins: [
                   autoprefixer({
-                    Browserslist:['ie >= 8', 'last 4 version']
+                    Browserslist: ['ie >= 8', 'last 4 version']
                   })
                 ],
                 sourceMap: true
@@ -63,7 +68,7 @@ const config = {
             }
           },
           // Compiles Sass to CSS
-          "sass-loader",
+          'sass-loader',
         ],
       },
       {
@@ -84,10 +89,10 @@ const config = {
   },
 
   resolve: {
-    extensions: ['.js', '.sass'],
+    extensions: ['.tsx', '.js', '.ts', '.sass'],
     modules: [path.join(__dirname, './src'), 'node_modules'],
     alias: {
-      "@styles": path.resolve(__dirname, 'src/stylesheets'),
+      '@styles': path.resolve(__dirname, 'src/stylesheets'),
     },
   }
 }

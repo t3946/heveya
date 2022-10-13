@@ -84,11 +84,10 @@
 
   .contacts {
     .item {
-      padding: 0 0 pxToRem(30) 0;
-      border-bottom: 1px solid #d4d4d4;
-
       &:not(:last-child) {
         margin: 0 0 pxToRem(16);
+        padding: 0 0 pxToRem(30) 0;
+        border-bottom: 1px solid #d4d4d4;
       }
 
       .link{
@@ -112,6 +111,33 @@
           .icon {
             color: #8cceef;
           }
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-areas: "item-1 item-2"
+                       "item-3 item-4";
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr auto;
+        grid-gap: pxToRem(4) pxToRem(25);
+
+        .item1{
+          grid-area: item-1;
+        }
+
+        .item2{
+          grid-area: item-2;
+          display: flex;
+          justify-content: center;
+        }
+
+        .item3{
+          grid-area: item-3;
+        }
+
+        .item4{
+          grid-area: item-4;
         }
       }
     }
