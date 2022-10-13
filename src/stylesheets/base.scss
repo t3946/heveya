@@ -53,6 +53,16 @@ html {
       height: pxToRem(46);
       border: 2px solid currentColor;
     }
+
+    &_red {
+      color: #ffffff;
+      background: #f6002C;
+    }
+
+    &_green {
+      color: #ffffff;
+      background: #21Ac0a;
+    }
   }
 
   &_size_medium {
@@ -98,6 +108,10 @@ html {
 }
 .color_0f0f0f {
   color: #0F0F0F;
+}
+
+.color_f6002c {
+  color: #F6002C;
 }
 
 .baseLocation {

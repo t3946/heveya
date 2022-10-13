@@ -2,6 +2,7 @@
 
 .offerPage {
   padding: 0 0 pxToRem(50);
+
   .crumbsWrapper {
     padding: pxToRem(25) 0;
   }
@@ -62,6 +63,18 @@
     margin: 0 0 0 pxToRem(24);
     padding: 0 0 0 pxToRem(24);
     width: pxToRem(310);
+
+    .winner {
+      color: #8cceef;
+      text-decoration: none;
+    }
+    .community {
+      color: #434343;
+      .icon {
+        width: pxToRem(30);
+        height: pxToRem(30);
+      }
+    }
 
     .panel {
       border-radius: 5px;
