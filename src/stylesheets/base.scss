@@ -210,10 +210,17 @@ html {
       font-size: 18px;
       font-weight: 600;
       transform: translate(50%, 75%);
-      color: #434343;
     }
   }
-  .label {
+}
 
+.baseRadio {
+  display: flex;
+  align-items: center;
+  label {
+    padding: 0 0 0 10px;
+  }
+  input:checked + label {
+    color: #EF7F1A;
   }
 }
