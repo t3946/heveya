@@ -7,9 +7,52 @@
         <h1 class="header1">Рейтинг участников торгов</h1>
 
         <div class="ratingItems">
-            <div class="item d-flex align-items-center">
+            <div class="item d-flex">
+                <div class="segment">
+                    <div class="mb-2">
+                        <span class="color_8cceef fs18px fw-semibold">Константинов Константин Константинович</span><br>
+                        <span class="color_9b9b9b fs14px">(ИНН:000000000000)</span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs14px">Место в рейтинге:</span><span>1209</span></div>
+                        <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs14px">Брокер Heveya.ru:</span><span>Да</span></div>
+                    </div>
+                    <div>
+                        {{> ../../common/location/Location }}
+                    </div>
+                </div>
+
+                <div class="segment">
+                    <div class="color_9b9b9b mb-3 fw-semibold">
+                        Стаж
+                    </div>
+                    <div class="ws-nowrap">
+                        11 лет <br>
+                        2 месяца
+                    </div>
+                </div>
+
                 <div class="segment">
                     {{> ../../common/charts/Group values='[50, 50]' colors='["0x434343", "0xEF7F1A"]' name="Сфера интересов" label="50%" labelCaption="Категор" legendInRow=true }}
+                </div>
+
+                <div class="segment">
+                    <div class="color_9b9b9b mb-3 fw-semibold">
+                        Сумма
+                    </div>
+
+                    <div class="mb-2"><font color="red">CHART WILL HERE</font></div>
+
+                    <div class="ws-nowrap">
+                        <div class="d-flex align-items-center mb-2">
+                            {{> ../../common/icons/circle/Circle class="color_434343"}}
+                            <span class="color_161616 ms-2">Участвовал: <span class="fw-semibold">53 млн ₽</span></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            {{> ../../common/icons/circle/Circle class="color_8cceef"}}
+                            <span class="color_161616 ms-2">Победил: <span class="fw-semibold">12 млн ₽</span></span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="segment">
