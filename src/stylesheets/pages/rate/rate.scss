@@ -1,0 +1,39 @@
+.ratePage {
+  padding: 0 0 pxToRem(65);
+  .quizBlock {
+    .title {
+      margin: 0 0 pxToRem(32);
+    }
+
+    .baseHorizontalDivider {
+      margin: pxToRem(44) 0 pxToRem(24);
+    }
+  }
+
+  .switchElement {
+    margin: pxToRem(19) 0 pxToRem(32);
+  }
+
+  .radioElement {
+    margin: pxToRem(30) 0 0;
+  }
+
+  .quizHeader {
+    margin: 0 0 pxToRem(40);
+  }
+
+  .baseHorizontalDivider {
+    margin: pxToRem(20) 0;
+  }
+
+  .pieWithLogo {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

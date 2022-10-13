@@ -1,0 +1,8 @@
+<div class="switchGroup d-flex align-items-center {{class}}">
+    <span class="switchOffLabel">Нет</span>
+    <label class="switch mx-3">
+        <input type="checkbox" name="{{name}}" {{#if checked}}checked{{/if}}>
+        <span class="slider round"></span>
+    </label>
+    <span class="switchOnLabel{{#if checked}} switchOnLabel_active{{/if}}">Да</span>
+</div>

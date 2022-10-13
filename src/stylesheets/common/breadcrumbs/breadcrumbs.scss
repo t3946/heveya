@@ -1,4 +1,6 @@
+@import "@styles/utils/utils";
 .breadcrumbs {
+  height: pxToRem(82);
   .item {
     font-size: pxToRem(16);
     font-weight: 600;

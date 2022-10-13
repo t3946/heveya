@@ -1,0 +1,290 @@
+{{> ../../layout/Hat}}
+
+<div class="ratePage">
+    <div class="container-lg">
+        {{> ../../common/breadcrumbs/Breadcrumbs }}
+    </div>
+
+    <div class="container-lg">
+        <h1 class="mb-4">Оценка работы</h1>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <span class="color_9b9b9b fw-bold fs18px me-2">Электронная площадка:</span>
+                    <span class="color_0f0f0f fs18px fw-semibold">Центр реализации</span>
+                </div>
+
+                <div class="mb-3">
+            <span class="me-4">
+                <span class="color_9b9b9b fw-bold fs18px me-2">ИНН:</span>
+                <span class="color_0f0f0f fs18px">456151225467</span>
+            </span>
+
+                    <a href="#" class="me-4 text-decoration-none">
+                        {{> ../../common/icons/phone/Phone class="color_5fa85e"}}
+                        <span class="color_0f0f0f">7 (927) 4006456</span>
+                    </a>
+
+                    <a href="#" class="text-decoration-none">
+                        {{> ../../common/icons/email2/Email2 class="color_eac338"}}
+                        <span class="color_0f0f0f">ilnur_i82@mail.ru</span>
+                    </a>
+                </div>
+
+                <div>
+                    <span class="color_9b9b9b fw-bold fs18px me-2">Стаж:</span>
+                    <span class="color_0f0f0f fs18px">5 лет</span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="color_9b9b9b fw-bold mb-3">Рейтинг HEVEYA.RU:</div>
+                <div class="d-flex align-items-center">
+                    <div class="d-flex pieWithLogo">
+                        {{> ../../common/charts/Pie130 values='[34, 68]' colors='["0x8CCEEF", "0xD4D4D4"]'}}
+                        {{> ../../common/icons/logo-2/Logo2 class="icon"}}
+                    </div>
+
+                    <span class="header3 fw-semibold ms-4">19/76</span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="color_9b9b9b fw-bold mb-3">Оценка пользователей:</div>
+                {{> ../../common/charts/Pie130 values='[68, 34]' colors='["0x434343", "0xEF7F1A"]' label="68%"}}
+            </div>
+        </div>
+
+        <div class="baseHorizontalDivider"></div>
+
+
+
+        <div class="quizBlock">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="header3 quizHeader">Оценка Электронной площадки пользователями</h3>
+                </div>
+
+                <div class="col-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="fw-bold fs20px title">
+                        <span class="me-2">1.</span>
+                        <span class="ms-1">Удобство использования</span>
+                    </div>
+
+                    <div class="fs20px fw-semibold">Интерфейс площадки интуитивно понятен?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Вам понравился поиск лотов на площадке?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Техническая поддержка отвечает на звонки и запросы по емайл?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=true }}
+
+                    <div class="fs20px fw-semibold">Техническая поддержка оказывает содействие?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=true }}
+
+                    <div class="fs20px fw-semibold">Регистрация была простой для Вас?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Сколько дней заняла аккредитация на площадке?</div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_1_day" value="1_day"/>
+                        <label class="form-check-label" for="accreditation_1_day">
+                            1 день
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_2_day" value="2_day" checked/>
+                        <label class="form-check-label" for="accreditation_2_day">
+                            2 дня
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_3_day" value="3_day"/>
+                        <label class="form-check-label" for="accreditation_3_day">
+                            3 дня
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_4_day" value="4_day"/>
+                        <label class="form-check-label" for="accreditation_4_day">
+                            4 дня
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_5_day" value="5_day"/>
+                        <label class="form-check-label" for="accreditation_5_day">
+                            5 дней
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_5_10_day" value="5_10_day"/>
+                        <label class="form-check-label" for="accreditation_5_10_day">
+                            5-10 дней
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="accreditation" id="accreditation_more_10_day" value="more_10_day"/>
+                        <label class="form-check-label" for="accreditation_more_10_day">
+                            10 дней и более
+                        </label>
+                    </div>
+
+                    <div class="baseHorizontalDivider"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="grayPanel"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="fw-bold fs20px title">
+                        <span class="me-2">2.</span>
+                        <span class="ms-1">Дополнительные расходы</span>
+                    </div>
+
+                    <div class="fs20px fw-semibold">Регистрация была простой для Вас?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Площадка предлагает оплатить «Ускоренную аккредитацию»?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Площадка взимает комиссию с участника?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="baseHorizontalDivider"></div>
+                </div>
+
+                <div class="col-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="fw-bold fs20px title">
+                        <span class="me-2">3.</span>
+                        <span class="ms-1">Технические особенности</span>
+                    </div>
+
+                    <div class="fs20px fw-semibold">Вас устраивает быстродействие площадки?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Вы сталкивались с техническими сбоями?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Подать заявку было сложно?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="fs20px fw-semibold">Настройка рабочего места прошла легко?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="baseHorizontalDivider"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="fw-bold fs20px title">
+                        <span class="me-2">4.</span>
+                        <span class="ms-1">Возврат задатка</span>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_no_deposit" value="no_deposit"/>
+                        <label class="form-check-label" for="return_money_no_deposit">
+                            Не принимают задаток
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_1_day" value="1_day" checked/>
+                        <label class="form-check-label" for="return_money_1_day">
+                            На 1 день
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_2_day" value="2_day"/>
+                        <label class="form-check-label" for="return_money_2_day">
+                            На 2 день
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_3_day" value="3_day"/>
+                        <label class="form-check-label" for="return_money_3_day">
+                            На 3 день
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_4_day" value="4_day"/>
+                        <label class="form-check-label" for="return_money_4_day">
+                            На 4 день
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_5_day" value="5_day"/>
+                        <label class="form-check-label" for="return_money_5_day">
+                            На 5 день
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_more_5_day" value="more_5_day"/>
+                        <label class="form-check-label" for="return_money_more_5_day">
+                            Более 5 дней
+                        </label>
+                    </div>
+
+                    <div class="form-check radioElement">
+                        <input class="form-check-input" type="radio" name="return_money" id="return_money_no_returned" value="no_returned"/>
+                        <label class="form-check-label" for="return_money_no_returned">
+                            Не вернули
+                        </label>
+                    </div>
+
+                    <div class="baseHorizontalDivider"></div>
+                </div>
+
+                <div class="col-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="fw-bold fs20px title">
+                        <span class="me-2">5.</span>
+                        <span class="ms-1">Вы доверяете этой площадке?</span>
+                    </div>
+
+                    <div class="fs20px fw-semibold">Настройка рабочего места прошла легко?</div>
+                    {{> ../../common/forms/Switch class="switchElement" name="" checked=false }}
+
+                    <div class="baseHorizontalDivider"></div>
+
+                    <div class="d-flex">
+                        <div class="baseButton baseButton_theme_blue baseButton_size_medium">Добавить мнение</div>
+                    </div>
+                </div>
+
+                <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/Footer}}
