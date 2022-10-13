@@ -12,6 +12,7 @@ html {
 .header1 {
   font-size: 36px;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
 .header2 {
@@ -104,8 +105,16 @@ html {
   text-decoration: none;
 }
 
-.lightBlue {
+.color_8cceef {
   color: #8cceef;
+}
+
+.color_ef7f1a {
+  color: #ef7f1a;
+}
+
+.color_434343 {
+  color: #434343;
 }
 
 .color_9b9b9b {
@@ -170,6 +179,10 @@ html {
       height: 130px;
     }
   }
+}
+
+.fs14px {
+  font-size: pxToRem(18);
 }
 
 .fs18px {

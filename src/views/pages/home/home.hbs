@@ -209,19 +209,45 @@
             <h2 class="header2 mb-4">Рейтинги</h2>
 
             <div class="row">
-                {{setVarArray "lists"
-                              '[{"theme": "blue", "header": "Рейтинг участников\nторгов"}, {"theme": "orange", "header": "Рейтинг организаторов\nторгов"}, {"theme": "gray", "header": "Рейтинг арбитражных\nуправляющих"}, {"theme": "green", "header": "Рейтинг электронных\nплощадок"}]'}}
-                {{#each lists}}
-                    <div class="col-3">
-                        <div class="listHeader d-flex mb-3">
-                            <span
-                                class="iconWrapper iconWrapper_theme_{{this.theme}}">{{> ../../common/icons/rating/Rating class="icon"}}</span>
-                            <span class="ms-3 text">{{this.header}}</span>
-                        </div>
-
-                        {{> RatingList theme=this.theme}}
+                <div class="col-3">
+                    <div class="listHeader d-flex mb-3">
+                        <span
+                            class="iconWrapper iconWrapper_theme_blue">{{> ../../common/icons/rating/Rating class="icon"}}</span>
+                        <span class="ms-3 text">Рейтинг участников <br> торгов</span>
                     </div>
-                {{/each}}
+
+                    {{> RatingList theme="blue"}}
+                </div>
+
+                <div class="col-3">
+                    <div class="listHeader d-flex mb-3">
+                        <span
+                            class="iconWrapper iconWrapper_theme_orange">{{> ../../common/icons/rating/Rating class="icon"}}</span>
+                        <span class="ms-3 text">Рейтинг организаторов <br> торгов</span>
+                    </div>
+
+                    {{> RatingList theme="orange"}}
+                </div>
+
+                <div class="col-3">
+                    <div class="listHeader d-flex mb-3">
+                        <span
+                            class="iconWrapper iconWrapper_theme_gray">{{> ../../common/icons/rating/Rating class="icon"}}</span>
+                        <span class="ms-3 text">Рейтинг арбитражных <br> управляющих</span>
+                    </div>
+
+                    {{> RatingList theme="gray"}}
+                </div>
+
+                <div class="col-3">
+                    <div class="listHeader d-flex mb-3">
+                        <span
+                            class="iconWrapper iconWrapper_theme_green">{{> ../../common/icons/rating/Rating class="icon"}}</span>
+                        <span class="ms-3 text">Рейтинг электронных <br> площадок</span>
+                    </div>
+
+                    {{> RatingList theme="green"}}
+                </div>
             </div>
         </div>
     </div>
@@ -378,16 +404,24 @@
                 <span class="moreInfo">Подробнее</span>
 
                 <div class="marketFooter__stats stats d-flex">
-                    {{setVarArray "stats"
-                                  '[{"name": "Всего торгов", "value": "3 000 000"}, {"name": "Состоялось", "value": "2 549 545"}, {"name": "На сумму", "value": "99 056 025 ₽"}]'}}
-                    {{#each stats}}
-                        <div class="item d-flex align-items-center">
-                            <div class="d-flex flex-column">
-                                <span class="name">{{this.name}}</span>
-                                <span class="value">{{this.value}}</span>
-                            </div>
+                    <div class="item d-flex align-items-center">
+                        <div class="d-flex flex-column">
+                            <span class="name">Всего торгов</span>
+                            <span class="value">3 000 000</span>
                         </div>
-                    {{/each}}
+                    </div>
+                    <div class="item d-flex align-items-center">
+                        <div class="d-flex flex-column">
+                            <span class="name">Состоялось</span>
+                            <span class="value">2 549 545</span>
+                        </div>
+                    </div>
+                    <div class="item d-flex align-items-center">
+                        <div class="d-flex flex-column">
+                            <span class="name">На сумму</span>
+                            <span class="value rouble">99 056 025</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -430,82 +464,33 @@
         <div class="container-lg">
             <h2 class="header2">Статьи</h2>
 
-            {{setVarArray "arr" '[1, 2]' }}
-            {{#each arr}}
-                <div class="row">
-                    <div class="itemColumn col-4">
-                        <div class="item">
-                            <div class="hat mb-1">Правила работы</div>
-
-                            <div class="text">
-                                HEVEYA.RU - информационный сервис для покупателей. На одной витрине собрана информация о
-                                всех
-                                видах имущественных торгов и реализации непрофильных активов банков, лизинговых
-                                компаний.
-                                Все
-                                объявления
-                                представлены в удобном и привычном виде. Расширенный поиск позволяет находить
-                                предложения с
-                                макси
-                            </div>
-
-                            <div class="d-flex justify-content-between mt-1">
-                        <span class="icons">
-                            {{> ../../common/icons/vk-circle/VKCircle}}
-                            {{> ../../common/icons/telegram-circle/TelegramCircle}}
-                        </span>
-                                <a href="#" class="readMore baseLink">Перейти</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="itemColumn col-4">
-                        <div class="item">
-                            <div class="hat mb-1">Правила работы</div>
-                            <div class="text">HEVEYA.RU - информационный сервис для покупателей. На одной витрине
-                                собрана
-                                информация о всех
-                                видах
-                                имущественных торгов и реализации непрофильных активов банков, лизинговых компаний. Все
-                                объявления
-                                представлены в удобном и привычном виде. Расширенный поиск позволяет находить
-                                предложения с
-                                макси
-                            </div>
-                            <div class="d-flex justify-content-between mt-1 align-items-center">
-                        <span class="icons">
-                            {{> ../../common/icons/vk-circle/VKCircle}}
-                            {{> ../../common/icons/telegram-circle/TelegramCircle}}
-                        </span>
-                                <a href="#" class="readMore baseLink">Перейти</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="itemColumn col-4">
-                        <div class="item">
-                            <div class="hat mb-1">Правила работы</div>
-                            <div class="text">HEVEYA.RU - информационный сервис для покупателей. На одной витрине
-                                собрана
-                                информация о всех
-                                видах
-                                имущественных торгов и реализации непрофильных активов банков, лизинговых компаний. Все
-                                объявления
-                                представлены в удобном и привычном виде. Расширенный поиск позволяет находить
-                                предложения с
-                                макси
-                            </div>
-                            <div class="d-flex justify-content-between mt-1">
-                        <span class="icons">
-                            {{> ../../common/icons/vk-circle/VKCircle}}
-                            {{> ../../common/icons/telegram-circle/TelegramCircle}}
-                        </span>
-                                <a href="#" class="readMore baseLink">Перейти</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="itemColumn col-4">
+                    {{> Article }}
                 </div>
-            {{/each}}
+
+                <div class="itemColumn col-4">
+                    {{> Article }}
+                </div>
+
+                <div class="itemColumn col-4">
+                    {{> Article }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="itemColumn col-4">
+                    {{> Article }}
+                </div>
+
+                <div class="itemColumn col-4">
+                    {{> Article }}
+                </div>
+
+                <div class="itemColumn col-4">
+                    {{> Article }}
+                </div>
+            </div>
 
             <div class="d-flex justify-content-center readAll">
                 <div class="baseButton">Все статьи</div>

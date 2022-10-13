@@ -1,0 +1,21 @@
+@import "@styles/utils/utils";
+
+.pieChartGroup {
+  .legend{
+    .item {
+      &:not(:last-child) {
+        margin-bottom: pxToRem(16);
+      }
+    }
+
+    &_type_row {
+      align-items: center;
+
+      .item {
+        &:not(:last-child) {
+          margin-bottom: pxToRem(8);
+        }
+      }
+    }
+  }
+}

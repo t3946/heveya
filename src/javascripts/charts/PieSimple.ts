@@ -19,6 +19,7 @@ function createChart(element: HTMLElement) {
   const fontSize = parseFloat(element.dataset.fontSize) || 1;
   const values = JSON.parse(element.dataset.values);
   const categories = JSON.parse(element.dataset.categories);
+  const labelColor = element.dataset.innerLabelColor ? color(parseInt(element.dataset.innerLabelColor)) : color(0x000000);
   const defaultColors = [
     color(0x8CCEEF),
     color(0x434343),
@@ -68,7 +69,7 @@ function createChart(element: HTMLElement) {
         y: p50,
         centerX: p50,
         centerY: innerLabelCenterY,
-        fill: color(0x000000),
+        fill: labelColor,
         fontSize: 12 * fontSize,
         fontWeight: "bold",
       }));
@@ -91,7 +92,7 @@ function createChart(element: HTMLElement) {
         y: p50,
         centerX: p50,
         centerY: p50,
-        fill: color(0x000000),
+        fill: labelColor,
         fontSize: 15 * fontSize,
         fontWeight: "bold",
       }));

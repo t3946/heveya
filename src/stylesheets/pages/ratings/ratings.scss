@@ -1,0 +1,19 @@
+@import "@styles/utils/utils";
+
+.ratingsPage {
+  .ratingItems {
+    > .item {
+      padding: pxToRem(25);
+      border: 1px solid #d4d4d4;
+      border-radius: 10px;
+
+      .segment {
+        &:not(:first-child) {
+          border-left: 1px solid #d4d4d4;
+          padding: 0 0 0 pxToRem(30);
+          margin: 0 0 0 pxToRem(30);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{{> ../../layout/Hat}}
+
+<div class="ratingsPage">
+    <div class="container-lg">
+        {{> ../../common/breadcrumbs/Breadcrumbs }}
+
+        <h1 class="header1">Рейтинг участников торгов</h1>
+
+        <div class="ratingItems">
+            <div class="item d-flex align-items-center">
+                <div class="segment">
+                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x434343", "0xEF7F1A"]' name="Сфера интересов" label="50%" labelCaption="Категор" legendInRow=true }}
+                </div>
+
+                <div class="segment">
+                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x434343", "0xEF7F1A"]' name="Участие" label="50%" labelCaption="Побед" }}
+                </div>
+
+                <div class="segment">
+                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x8CCEEF", "0xEF7F1A"]' name="Аукционы" label="+50%" labelColor="0x2FAD03" labelCaption="Повышен" }}
+                </div>
+
+                <div class="segment">
+                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x8CCEEF", "0xEF7F1A"]' name="Публичные предложения" label="-50%" labelColor="0xFB0E0E" labelCaption="Понижен" }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/Footer}}

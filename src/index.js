@@ -6,6 +6,7 @@ const SearchResults = require('./views/pages/search-results/SearchResults.hbs')
 const SearchResultsLines = require('./views/pages/search-results-lines/SearchResultsLines.hbs')
 const Offer = require('./views/pages/offer/Offer.hbs')
 const Rate = require('./views/pages/rate/Rate.hbs')
+const Ratings = require('./views/pages/ratings/Ratings.hbs')
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -29,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case "/rate":
       document.body.innerHTML = Rate()
+      break;
+
+    case "/ratings":
+      document.body.innerHTML = Ratings()
       break;
 
     default:
