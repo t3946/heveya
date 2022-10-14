@@ -1,47 +1,49 @@
 <div class="pieChartGroup">
     <div class="fw-semibold color_9b9b9b mb-3">{{name}}</div>
 
-    <div class="d-flex legend{{#if legendInRow}} legend_type_row{{/if}}">
+    <div class="d-flex legend {{#if legendInRow}}legend_type_row{{/if}} d-flex {{#if withLegend}}justify-content-between{{else}}justify-content-center{{/if}}">
         {{> ../../common/charts/pie/Pie110 values=values colors=colors label=label labelColor=labelColor labelCaption=labelCaption}}
 
-        {{#if legendInRow}}
-            <div class="ms-4 ws-nowrap">
-                <div class="d-flex item">
-                    <div>{{> ../../common/icons/circle/Circle class="color_ef7f1a"}}</div>
+        {{#if withLegend}}
+            {{#if legendInRow}}
+                <div class="ms-4 ws-nowrap">
+                    <div class="d-flex item">
+                        <div>{{> ../../common/icons/circle/Circle class="color_ef7f1a"}}</div>
 
-                    <div class="ms-2">
-                        <div>Участий 117</div>
+                        <div class="ms-2">
+                            <div>Участий 117</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex item">
+                        <div>{{> ../../common/icons/circle/Circle class="color_434343"}}</div>
+
+                        <div class="ms-2">
+                            <div>Побед 72</div>
+                        </div>
                     </div>
                 </div>
+            {{else}}
+                <div class="ms-4">
+                    <div class="d-flex item">
+                        <div>{{> ../../common/icons/circle/Circle class="color_ef7f1a"}}</div>
 
-                <div class="d-flex item">
-                    <div>{{> ../../common/icons/circle/Circle class="color_434343"}}</div>
+                        <div class="ms-2">
+                            <div>Участий:</div>
+                            <div class="fw-semibold">117</div>
+                        </div>
+                    </div>
 
-                    <div class="ms-2">
-                        <div>Побед 72</div>
+                    <div class="d-flex item">
+                        <div>{{> ../../common/icons/circle/Circle class="color_434343"}}</div>
+
+                        <div class="ms-2">
+                            <div>Побед:</div>
+                            <div class="fw-semibold">72</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {{else}}
-            <div class="ms-4">
-                <div class="d-flex item">
-                    <div>{{> ../../common/icons/circle/Circle class="color_ef7f1a"}}</div>
-
-                    <div class="ms-2">
-                        <div>Участий:</div>
-                        <div class="fw-semibold">117</div>
-                    </div>
-                </div>
-
-                <div class="d-flex item">
-                    <div>{{> ../../common/icons/circle/Circle class="color_434343"}}</div>
-
-                    <div class="ms-2">
-                        <div>Побед:</div>
-                        <div class="fw-semibold">72</div>
-                    </div>
-                </div>
-            </div>
+            {{/if}}
         {{/if}}
     </div>
 </div>

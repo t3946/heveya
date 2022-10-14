@@ -13,16 +13,31 @@
       padding: pxToRem(25);
       border: 1px solid #d4d4d4;
       border-radius: 10px;
+      height: 210px;
 
       &:not(:first-child) {
         margin: pxToRem(20) 0 0;
       }
 
       .segment {
-        &:not(:first-child) {
-          border-left: 1px solid #d4d4d4;
-          padding: 0 0 0 pxToRem(30);
-          margin: 0 0 0 pxToRem(30);
+        flex-grow: 0;
+        &1 {
+          width: 300px;
+        }
+        &2 {
+          width: 70px;
+        }
+        &3 {
+          width: 240px;
+        }
+        &4 {
+          width: 160px;
+        }
+        &5, &6 {
+          width: 215px;
+        }
+        &7 {
+          width: 210px;
         }
       }
     }
