@@ -1,12 +1,9 @@
-import CreatePieChart from "./charts/PieSimple";
+import initCharts from "./charts/Charts";
 import initMap from "./map/Map";
 import $ from "jquery";
 
 $(() => {
-  $(".pieChart").each((i, e) => {
-    CreatePieChart(e);
-  });
-
+  initCharts();
   initMap();
 });
 

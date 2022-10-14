@@ -45,4 +45,34 @@
     border: 1px solid #d4d4d4;
     margin: pxToRem(20) 0 0;
   }
+
+  .graphics {
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    padding: pxToRem(38) pxToRem(34) pxToRem(43);
+    margin: pxToRem(20) 0 0 0;
+  }
+
+  .courtCases {
+    .header {
+      margin: pxToRem(40) 0 pxToRem(20);
+    }
+
+    .item {
+      border: 1px solid #d4d4d4;
+      border-radius: 10px;
+      padding: pxToRem(40) pxToRem(32) pxToRem(26);
+
+      &:not(:last-child) {
+        margin: 0 0 pxToRem(20);
+      }
+
+      .sum {
+        .value {
+          font-size: pxToRem(24);
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
