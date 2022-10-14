@@ -38,12 +38,6 @@ const config = {
         use: [
           {
             loader: 'handlebars-loader',
-            options: {
-              helperDirs: path.join(__dirname, 'handlebars/helpers'),
-              precompileOptions: {
-                knownHelpersOnly: false,
-              },
-            },
           }
         ],
       },
