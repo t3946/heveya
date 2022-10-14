@@ -4,7 +4,8 @@
   "description": "Example repo showing a webpack CSS build",
   "main": "src/index.js",
   "scripts": {
-    "dev": "npx webpack serve",
+    "build": "npx webpack --config webpack.prod.config.js",
+    "dev": "npx webpack serve --config webpack.dev.config.js",
     "lint": "standard",
     "test": "standard && webpack --bail"
   },
