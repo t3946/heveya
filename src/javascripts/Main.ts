@@ -1,10 +1,13 @@
 import CreatePieChart from "./charts/PieSimple";
+import initMap from "./map/Map";
 import $ from "jquery";
 
 $(() => {
   $(".pieChart").each((i, e) => {
     CreatePieChart(e);
   });
+
+  initMap();
 });
 
 $(document).on("change", ".switchGroup input[type=checkbox]", (e) => {

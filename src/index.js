@@ -1,43 +1,47 @@
-import 'stylesheets/base.scss';
-import 'javascripts/Main';
-
-const home = require('./views/pages/home/home.hbs')
-const SearchResults = require('./views/pages/search-results/SearchResults.hbs')
-const SearchResultsLines = require('./views/pages/search-results-lines/SearchResultsLines.hbs')
-const Offer = require('./views/pages/offer/Offer.hbs')
-const Rate = require('./views/pages/rate/Rate.hbs')
-const Ratings = require('./views/pages/ratings/Ratings.hbs')
+import 'stylesheets/base.scss'
+import 'javascripts/Main'
+import home from './views/pages/home/home.hbs'
+import SearchResults from './views/pages/search-results/SearchResults.hbs'
+import SearchResultsLines from './views/pages/search-results-lines/SearchResultsLines.hbs'
+import Offer from './views/pages/offer/Offer.hbs'
+import Rate from './views/pages/rate/Rate.hbs'
+import Ratings from './views/pages/ratings/Ratings.hbs'
+import Map from './views/pages/map/Map.hbs'
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
-    case "/":
-      break;
-    case "/home":
+    case '/':
+      break
+    case '/home':
       document.body.innerHTML = home()
-      break;
+      break
 
-    case "/search-results":
+    case '/search-results':
       document.body.innerHTML = SearchResults()
-      break;
+      break
 
-    case "/search-results-lines":
+    case '/search-results-lines':
       document.body.innerHTML = SearchResultsLines()
-      break;
+      break
 
-    case "/offer":
+    case '/offer':
       document.body.innerHTML = Offer()
-      break;
+      break
 
-    case "/rate":
+    case '/rate':
       document.body.innerHTML = Rate()
-      break;
+      break
 
-    case "/ratings":
+    case '/ratings':
       document.body.innerHTML = Ratings()
-      break;
+      break
+
+    case '/map':
+      document.body.innerHTML = Map()
+      break
 
     default:
-      document.location.pathname = "/";
-      break;
+      document.location.pathname = '/'
+      break
   }
 })
