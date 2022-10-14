@@ -38,4 +38,11 @@
       }
     }
   }
+
+  .contacts {
+    border-radius: 10px;
+    padding: pxToRem(26) pxToRem(32) pxToRem(30);
+    border: 1px solid #d4d4d4;
+    margin: pxToRem(20) 0 0;
+  }
 }
