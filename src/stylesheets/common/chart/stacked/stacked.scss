@@ -1,0 +1,17 @@
+@import "@styles/utils/utils";
+
+.stackedChart {
+  .line {
+    border-radius: 3px;
+    height: pxToRem(20);
+    background-color: #d9d9d9;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .legend {
+    .item:not(:last-child) {
+      margin: 0 0 pxToRem(4);
+    }
+  }
+}

@@ -1,0 +1,135 @@
+<div class="item">
+    <div class="d-flex justify-content-between align-items-stretch">
+        <div class="d-flex profile">
+            <img src="/images/pages/select-broker/avatar.jpg" alt="avatar" />
+
+            <div class="d-flex flex-column justify-content-between ms-3">
+                <div>
+                    <span class="color_8cceef fs18px fw-semibold">Константинов Константин Константинович</span><br>
+                    <span class="color_9b9b9b fs14px">(ИНН:000000000000)</span>
+                </div>
+                <div class="mb-1">
+                    <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs14px">Место в рейтинге:</span><span>1209</span></div>
+                    <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs14px">Брокер Heveya.ru:</span><span>Да</span></div>
+                </div>
+                <div>
+                    {{> ../../common/location/Location }}
+                </div>
+            </div>
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div>
+            <div class="color_9b9b9b mb-3 fw-semibold">
+                Стаж
+            </div>
+            <div class="ws-nowrap">
+                11 лет <br>
+                2 месяца
+            </div>
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div>
+            <div class="color_9b9b9b mb-3 fw-semibold">
+                Сумма
+            </div>
+
+            {{> ../../common/charts/stacked/Stacked }}
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div class="segment segment5">
+            {{> ../../common/charts/Group values='[50, 50]' colors='["0x434343", "0xEF7F1A"]' name="Участие" label="50%" labelCaption="Побед" withLegend=true }}
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div class="segment segment6">
+            {{> ../../common/charts/Group values='[50, 50]' colors='["0x8CCEEF", "0xEF7F1A"]' name="Аукционы" label="+50%" labelColor="0x2FAD03" labelCaption="Повышен" withLegend=true }}
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div class="segment segment7">
+            {{> ../../common/charts/Group values='[50, 50]' colors='["0x8CCEEF", "0xEF7F1A"]' name="Публичные предложения" label="-50%" labelColor="0xFB0E0E" labelCaption="Понижен" withLegend=true }}
+        </div>
+    </div>
+
+    <div class="baseHorizontalDivider my-3"></div>
+
+    <div class="d-flex justify-content-between align-items-stretch">
+        <div class="gridTable gridTable_columns_3 priceTable fw-semibold color_161616">
+            <div class="fs18px">Стоимость услуг:</div>
+            <div class="color_9b9b9b text-center">Подача заявки</div>
+            <div class="color_9b9b9b text-center">Вознаграждение за победу</div>
+
+            <div>Банкротство</div>
+            <div class="text-center">5 000 ₽</div>
+            <div class="text-center">7%</div>
+
+            <div class="ws-nowrap">Арестованное имущество</div>
+            <div class="text-center">12 000 ₽</div>
+            <div class="text-center">20 000 ₽</div>
+
+            <div class="ws-nowrap">Муниципальные торги</div>
+            <div class="text-center">15 000 ₽</div>
+            <div class="text-center">10%</div>
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div class="servicesTable">
+            <div class="color_9b9b9b mb-3 ws-nowrap fw-semibold">Дополнительные услуги:</div>
+
+            <div class="gridTable gridTable_columns_2">
+                <div>Осмотр имущества</div>
+                <div class="fw-semibold">500 ₽</div>
+
+                <div>Подача заявки в указанное время</div>
+                <div class="fw-semibold rouble">2 000</div>
+
+                <div>Снятие ограничений</div>
+                <div class="fw-semibold rouble">7 000</div>
+
+                <div>Удалённое подключение в ходе торгов</div>
+                <div class="fw-semibold rouble">1 300</div>
+            </div>
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div>
+            <div class="color_9b9b9b mb-3 ws-nowrap fw-semibold">Сроки:</div>
+
+            <div class="gridTable gridTable_columns_2">
+                <div>Готов приступить</div>
+                <div class="fw-semibold">1 час</div>
+
+                <div>Принимает заявки</div>
+                <div class="fw-semibold">с 7.00 до 19.00</div>
+
+                <div>Выходной</div>
+                <div class="fw-semibold">без выходных</div>
+            </div>
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div>
+            {{> ../../common/charts/Group values='[68, 32]' colors='["0xEF7F1A", "0x434343"]' name="Оценка пользователей" label="68%" }}
+        </div>
+
+        <div class="baseVerticalDivider"></div>
+
+        <div class="ordersCompleted">
+            <div class="color_9b9b9b mb-3 ws-nowrap fw-semibold text-center">Выполнил заказов:</div>
+            <div class="number text-center fw-semibold">5</div>
+            <div class="baseHorizontalDivider"></div>
+            <div class="baseButton baseButton_theme_blue baseButton_size_medium">Выбрать</div>
+        </div>
+    </div>
+</div>
