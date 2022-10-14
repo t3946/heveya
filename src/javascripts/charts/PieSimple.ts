@@ -60,6 +60,7 @@ function createChart(element: HTMLElement) {
 
   series.slices.template.setAll({
     tooltipText: "",
+    forceInactive: true,
   });
 
   if (innerLabel) {
