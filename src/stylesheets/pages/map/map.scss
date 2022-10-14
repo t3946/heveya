@@ -2,16 +2,29 @@
 
 .mapPage {
   .objects {
+    height: 600px;
+    overflow-y: scroll;
     .item {
       border-radius: 5px;
       border: 1px solid #d4d4d4;
       height: pxToRem(160);
+
+      &:not(:last-child) {
+        margin: 0 0 pxToRem(12);
+      }
 
       .image {
         width: pxToRem(130);
         height: 100%;
         overflow: hidden;
         flex-shrink: 0;
+        position: relative;
+
+        .imageLabel {
+          position: absolute;
+          top: pxToRem(16);
+          left: 0;
+        }
 
         img {
           height: 100%;
