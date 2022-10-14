@@ -3,6 +3,12 @@
 import $ from "jquery";
 
 function initMap() {
+  const rootElementId = "ymapRoot";
+
+  if (!document.getElementById("ymapRoot")) {
+    return;
+  }
+
   var json_main = {
     "type": "FeatureCollection",
     "features": getMain()
@@ -333,7 +339,7 @@ function initMap() {
     let zhilNedv;
     let komerchNedv;
 
-    myMap = new ymaps.Map('map', {
+    myMap = new ymaps.Map(rootElementId, {
       center: [55.76, 37.64],
       zoom: 12,
       controls: ['zoomControl']
@@ -622,7 +628,7 @@ function initMap() {
   }
 
   function init1(coor, zoom_) {
-    myMap = new ymaps.Map('map', {
+    myMap = new ymaps.Map(rootElementId, {
       center: coor,
       zoom: zoom_,
       controls: ['zoomControl']
@@ -878,7 +884,7 @@ function initMap() {
   }
 
   function init2(coor, zoom_) {
-    myMap = new ymaps.Map('map', {
+    myMap = new ymaps.Map(rootElementId, {
       center: coor,
       zoom: zoom_,
       controls: ['zoomControl']
@@ -1132,7 +1138,7 @@ function initMap() {
   }
 
   function init3(coor, zoom_) {
-    myMap = new ymaps.Map('map', {
+    myMap = new ymaps.Map(rootElementId, {
       center: coor,
       zoom: zoom_,
       controls: ['zoomControl']
@@ -1385,7 +1391,7 @@ function initMap() {
   }
 
   function init4(coor, zoom_) {
-    myMap = new ymaps.Map('map', {
+    myMap = new ymaps.Map(rootElementId, {
       center: coor,
       zoom: zoom_,
       controls: ['zoomControl']
