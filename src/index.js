@@ -8,11 +8,13 @@ import Rate from './views/pages/rate/Rate.hbs'
 import Ratings from './views/pages/ratings/Ratings.hbs'
 import Map from './views/pages/map/Map.hbs'
 import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
+import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
     case '/':
       break
+
     case '/home':
       document.body.innerHTML = home()
       break
@@ -43,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/select-broker':
       document.body.innerHTML = SelectBroker()
+      break
+
+    case '/analyze-company':
+      document.body.innerHTML = AnalyzeCompany()
       break
 
     default:
