@@ -6,67 +6,25 @@
 
         <h1 class="header1">Рейтинг участников торгов</h1>
 
-        <div class="ratingItems">
-            <div class="item d-flex">
-                <div class="segment">
-                    <div class="mb-2">
-                        <span class="color_8cceef fs18px fw-semibold">Константинов Константин Константинович</span><br>
-                        <span class="color_9b9b9b fs14px">(ИНН:000000000000)</span>
-                    </div>
-                    <div class="mb-3">
-                        <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs14px">Место в рейтинге:</span><span>1209</span></div>
-                        <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs14px">Брокер Heveya.ru:</span><span>Да</span></div>
-                    </div>
-                    <div>
-                        {{> ../../common/location/Location }}
-                    </div>
-                </div>
-
-                <div class="segment">
-                    <div class="color_9b9b9b mb-3 fw-semibold">
-                        Стаж
-                    </div>
-                    <div class="ws-nowrap">
-                        11 лет <br>
-                        2 месяца
-                    </div>
-                </div>
-
-                <div class="segment">
-                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x434343", "0xEF7F1A"]' name="Сфера интересов" label="50%" labelCaption="Категор" legendInRow=true }}
-                </div>
-
-                <div class="segment">
-                    <div class="color_9b9b9b mb-3 fw-semibold">
-                        Сумма
-                    </div>
-
-                    <div class="mb-2"><font color="red">CHART WILL HERE</font></div>
-
-                    <div class="ws-nowrap">
-                        <div class="d-flex align-items-center mb-2">
-                            {{> ../../common/icons/circle/Circle class="color_434343"}}
-                            <span class="color_161616 ms-2">Участвовал: <span class="fw-semibold">53 млн ₽</span></span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            {{> ../../common/icons/circle/Circle class="color_8cceef"}}
-                            <span class="color_161616 ms-2">Победил: <span class="fw-semibold">12 млн ₽</span></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="segment">
-                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x434343", "0xEF7F1A"]' name="Участие" label="50%" labelCaption="Побед" }}
-                </div>
-
-                <div class="segment">
-                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x8CCEEF", "0xEF7F1A"]' name="Аукционы" label="+50%" labelColor="0x2FAD03" labelCaption="Повышен" }}
-                </div>
-
-                <div class="segment">
-                    {{> ../../common/charts/Group values='[50, 50]' colors='["0x8CCEEF", "0xEF7F1A"]' name="Публичные предложения" label="-50%" labelColor="0xFB0E0E" labelCaption="Понижен" }}
-                </div>
+        <div class="row">
+            <div class="col-7">
+                <form action="/" method="GET" class="form d-flex align-items-center">
+                    {{> ../../common/search-input/SearchInput}}
+                    <div class="baseButton baseButton_theme_blue baseButton_size_medium px-5 ms-3">Найти</div>
+                </form>
             </div>
+        </div>
+
+        <div class="ratingItems">
+            {{> Item }}
+            {{> Item }}
+            {{> Item }}
+            {{> Item }}
+            {{> Item }}
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            {{> ../../common/pagination/Pagination }}
         </div>
     </div>
 </div>

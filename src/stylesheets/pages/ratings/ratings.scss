@@ -1,11 +1,22 @@
 @import "@styles/utils/utils";
 
 .ratingsPage {
+  .form {
+    margin: 0 0 pxToRem(20);
+    .searchInput {
+      max-width: 525px;
+    }
+  }
+
   .ratingItems {
     > .item {
       padding: pxToRem(25);
       border: 1px solid #d4d4d4;
       border-radius: 10px;
+
+      &:not(:first-child) {
+        margin: pxToRem(20) 0 0;
+      }
 
       .segment {
         &:not(:first-child) {

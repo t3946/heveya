@@ -1,0 +1,22 @@
+.searchInput {
+  height: pxToRem(48);
+
+  .input-group-text {
+    background: #ffffff;
+    border-right: none;
+    border-color: #9A9A9A;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .form-control {
+    border-left: none;
+    font-size: 14px;
+    color: #434343;
+    border-color: #9A9A9A;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
