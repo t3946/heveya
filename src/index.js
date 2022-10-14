@@ -7,6 +7,7 @@ import Offer from './views/pages/offer/Offer.hbs'
 import Rate from './views/pages/rate/Rate.hbs'
 import Ratings from './views/pages/ratings/Ratings.hbs'
 import Map from './views/pages/map/Map.hbs'
+import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -38,6 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/map':
       document.body.innerHTML = Map()
+      break
+
+    case '/select-broker':
+      document.body.innerHTML = SelectBroker()
       break
 
     default:
