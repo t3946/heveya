@@ -1,0 +1,26 @@
+@import "@styles/utils/utils";
+
+.mapPage {
+  .objects {
+    .item {
+      border-radius: 5px;
+      border: 1px solid #d4d4d4;
+      height: pxToRem(160);
+
+      .image {
+        width: pxToRem(130);
+        height: 100%;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .info {
+        padding: pxToRem(8) pxToRem(16) pxToRem(16);
+      }
+    }
+  }
+}

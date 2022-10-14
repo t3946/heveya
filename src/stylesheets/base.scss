@@ -184,16 +184,12 @@ html {
   }
 }
 
-.fs14px {
-  font-size: pxToRem(14);
-}
+$sizes: 12, 13, 14, 18, 20;
 
-.fs18px {
-  font-size: pxToRem(18);
-}
-
-.fs20px {
-  font-size: pxToRem(18);
+@each $size in $sizes {
+  .fs#{$size}px {
+    font-size: pxToRem($size);
+  }
 }
 
 .grayPanel {
@@ -238,5 +234,19 @@ html {
   }
   input:checked + label {
     color: #EF7F1A;
+  }
+}
+
+.textEllipsis {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+  &_rows {
+    &_4 {
+      line-clamp: 4;
+      -webkit-line-clamp: 4;
+    }
   }
 }

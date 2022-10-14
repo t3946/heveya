@@ -1,13 +1,26 @@
 {{> ../../layout/Hat}}
 
-<div class="mapPage">
-    <div id="map" style="width: 800px; height: 500px"></div>
-    <div id="main" class="d-none"></div>
-    <div id="car" class="d-none"></div>
-    <div id="oborud" class="d-none"></div>
-    <div id="dvizh" class="d-none"></div>
-    <div id="komerch" class="d-none"></div>
-    <div id="visible" class="d-none"></div>
+<div class="mapPage overflow-hidden">
+    <div class="container-lg">
+        <div class="d-flex">
+            <div class="col-4 pt-3 pe-3">
+                <div id="main" class="d-none"></div>
+                <div id="car" class="d-none"></div>
+                <div id="oborud" class="d-none"></div>
+                <div id="dvizh" class="d-none"></div>
+                <div id="komerch" class="d-none"></div>
+                <div id="visible" class="d-none"></div>
+
+                <div class="objects">
+                    {{> ObjectItem}}
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div id="map" style="width: auto; height: 800px"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {{> ../../layout/Footer}}
