@@ -1,0 +1,21 @@
+.arbitrator {
+  &__block {
+    margin: 0 0 pxToRem(20);
+  }
+
+  &__mapHeader1 {
+    margin: 0 0 pxToRem(46);
+  }
+
+  &__map1 {
+    margin: 0 0 pxToRem(60);
+  }
+
+  &__mapHeader2 {
+    margin: 0 pxToRem(46);
+  }
+
+  &__map2 {
+    margin: 0 0 pxToRem(35);
+  }
+}

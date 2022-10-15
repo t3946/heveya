@@ -10,6 +10,11 @@ import initBidding from  "./auction/Bidding";
 import initWins from  "./auction/Wins";
 import initAveragePrice from  "./auction/AveragePrice";
 import initAverageDerivativePrice from  "./auction/AverageDerivativePrice";
+import initDebtorsPrice from "./arbitrator/Debtors";
+import initAuctionBlockChart1 from "./arbitrator/AuctionBlockChart1";
+import initAuctionBlockChart2 from "./arbitrator/AuctionBlockChart2";
+import initAuctionBlockChart3 from "./arbitrator/AuctionBlockChart3";
+import initAuctionBlockChart4 from "./arbitrator/AuctionBlockChart4";
 
 import $ from "jquery";
 
@@ -60,6 +65,26 @@ function init() {
 
   $(".averageDerivativePriceChart").each((i, e) => {
     initAverageDerivativePrice(e);
+  });
+
+  $(".debtorsChart").each((i, e) => {
+    initDebtorsPrice(e);
+  });
+
+  $(".auctionBlockChart1").each((i, e) => {
+    initAuctionBlockChart1(e);
+  });
+
+  $(".auctionBlockChart2").each((i, e) => {
+    initAuctionBlockChart2(e);
+  });
+
+  $(".auctionBlockChart3").each((i, e) => {
+    initAuctionBlockChart3(e);
+  });
+
+  $(".auctionBlockChart4").each((i, e) => {
+    initAuctionBlockChart4(e);
   });
 }
 

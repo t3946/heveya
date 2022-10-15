@@ -10,6 +10,7 @@ import Map from './views/pages/map/Map.hbs'
 import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
 import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
 import Member from "./views/pages/member/Member.hbs";
+import Arbitrator from "./views/pages/arbitrator/Arbitrator.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -54,6 +55,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/member':
       document.body.innerHTML = Member()
+      break
+
+    case '/arbitrator':
+      document.body.innerHTML = Arbitrator()
       break
 
     default:
