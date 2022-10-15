@@ -1,7 +1,11 @@
 @import "@styles/utils/utils";
 
 .memberPage {
-  .memberPage__block {
+  &__block {
+    margin: 0 0 pxToRem(20);
+  }
+
+  &__lotItem:not(:last-child) {
     margin: 0 0 pxToRem(20);
   }
 
