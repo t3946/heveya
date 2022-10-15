@@ -1,0 +1,20 @@
+.ratingPanel {
+  .ratingHeader {
+    margin: 0 0 pxToRem(20);
+    color: #0F0F0F;
+  }
+
+  .statProgress:not(:last-child) {
+    margin: 0 0 pxToRem(41);
+  }
+
+  .groupRatingProgress {
+    .progressComment {
+      font-size: pxToRem(16);
+      position: absolute;
+      right: 0;
+      top: 20px;
+      color: #434343;
+    }
+  }
+}

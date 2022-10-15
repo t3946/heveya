@@ -1,4 +1,4 @@
-.arbitrator {
+.arbitratorPage {
   &__block {
     margin: 0 0 pxToRem(20);
   }
@@ -17,5 +17,21 @@
 
   &__map2 {
     margin: 0 0 pxToRem(35);
+  }
+
+  &__ratePanelsDivider {
+    margin: pxToRem(12) 0;
+  }
+
+  &__addOpinionButton {
+    margin: pxToRem(32) 0 0;
+  }
+
+  &__lotsList {
+    margin: pxToRem(64) 0 pxToRem(32);
+  }
+
+  &__lotItem:not(:last-child) {
+    margin: 0 0 pxToRem(20);
   }
 }

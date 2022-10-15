@@ -1,6 +1,4 @@
 .ratePage {
-  padding: 0 0 pxToRem(65);
-
   .quizBlock {
     .title {
       margin: 0 0 pxToRem(32);
@@ -35,30 +33,6 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-    }
-  }
-
-  .statHeader {
-    margin: 0 0 pxToRem(20);
-    color: #0F0F0F;
-  }
-
-  .statProgress:not(:last-child) {
-    margin: 0 0 pxToRem(46);
-  }
-
-  .groupProgress {
-    .progressComment {
-      font-size: pxToRem(16);
-      position: absolute;
-      right: 0;
-      top: 20px;
-      color: #434343;
-    }
-
-
-    .statProgress:not(:last-child) {
-      margin: 0 0 pxToRem(41);
     }
   }
 }
