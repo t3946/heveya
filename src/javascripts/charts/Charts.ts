@@ -6,6 +6,11 @@ import initControlProfit from "./control/Profit";
 import initPieChart from "./pie/PieSimple";
 import initInterestsIncreaseChart from "./pie/interests/Increase";
 import initInterestsDecreaseChart from "./pie/interests/Decrease";
+import initBidding from  "./auction/Bidding";
+import initWins from  "./auction/Wins";
+import initAveragePrice from  "./auction/AveragePrice";
+import initAverageDerivativePrice from  "./auction/AverageDerivativePrice";
+
 import $ from "jquery";
 
 function init() {
@@ -39,6 +44,22 @@ function init() {
 
   $(".interestDecreaseChart").each((i, e) => {
     initInterestsDecreaseChart(e);
+  });
+
+  $(".biddingChart").each((i, e) => {
+    initBidding(e);
+  });
+
+  $(".winsChart").each((i, e) => {
+    initWins(e);
+  });
+
+  $(".averagePriceChart").each((i, e) => {
+    initAveragePrice(e);
+  });
+
+  $(".averageDerivativePriceChart").each((i, e) => {
+    initAverageDerivativePrice(e);
   });
 }
 
