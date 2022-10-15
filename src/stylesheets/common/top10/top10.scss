@@ -1,0 +1,28 @@
+@import "@styles/utils/utils";
+
+.top10 {
+  .table {
+    thead {
+      vertical-align: top;
+
+      tr {
+        height: pxToRem(50);
+      }
+    }
+
+    tbody {
+      vertical-align: middle;
+    }
+
+    tr {
+      height: pxToRem(55);
+    }
+
+    th, td {
+
+      border-bottom: 1px solid #d4d4d4;
+      font-weight: 600;
+      font-size: pxToRem(18);
+    }
+  }
+}
