@@ -100,6 +100,54 @@
                 </div>
             </div>
         </div>
+
+        <h3 class="header2 memberPage__block">Анализ юридического лица ООО «Ювс»</h3>
+
+        <div class="analyzeCompany memberPage__block">
+            <div class="stats d-flex justify-content-between memberPage__block">
+                {{> ../analyze-company/stats/Basic }}
+                {{> ../analyze-company/stats/Bad }}
+                {{> ../analyze-company/stats/Bad }}
+                {{> ../analyze-company/stats/Bad }}
+                {{> ../analyze-company/stats/Good }}
+                {{> ../analyze-company/stats/Good }}
+            </div>
+
+            <div class="memberPage__block">
+                {{> ../analyze-company/contacts/Contacts }}
+            </div>
+
+            <div class="memberPage__block">
+                {{> ../analyze-company/charts/Charts }}
+            </div>
+
+            <div class="courtCases memberPage__block">
+                <h2 class="header2 header text-center">Судебные дела</h2>
+
+                {{> ../analyze-company/CourtCaseItem}}
+                {{> ../analyze-company/CourtCaseItem}}
+                {{> ../analyze-company/CourtCaseItem}}
+                {{> ../analyze-company/CourtCaseItem}}
+            </div>
+
+            <div class="courtCases memberPage__block">
+                <h2 class="header2 header text-center">Исполнительные производства</h2>
+
+                {{> ../analyze-company/CourtCaseItem}}
+            </div>
+
+            <div class="lotsList memberPage__block">
+                <h2 class="header2 header text-center">Список лотов</h2>
+
+                <div>
+                    {{> ../../common/forms/SearchForm}}
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            {{> ../../common/pagination/Pagination }}
+        </div>
     </div>
 </div>
 

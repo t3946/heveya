@@ -8,7 +8,11 @@
     }
   }
 
-  .stats {
+  &__block {
+    margin: pxToRem(20) 0 0 0;
+  }
+
+  > .stats {
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 1fr;
@@ -43,14 +47,6 @@
     border-radius: 10px;
     padding: pxToRem(26) pxToRem(32) pxToRem(30);
     border: 1px solid #d4d4d4;
-    margin: pxToRem(20) 0 0;
-  }
-
-  .graphics {
-    border-radius: 10px;
-    border: 1px solid #d4d4d4;
-    padding: pxToRem(38) pxToRem(34) pxToRem(43);
-    margin: pxToRem(20) 0 0 0;
   }
 
   .courtCases {

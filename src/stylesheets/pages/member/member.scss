@@ -43,4 +43,13 @@
   .tableHeader {
     margin: 0 0 pxToRem(46);
   }
+
+  .lotsList {
+    .header {
+      margin: pxToRem(40) 0 pxToRem(32);
+    }
+    .searchForm {
+      margin: 0 0 pxToRem(25);
+    }
+  }
 }
