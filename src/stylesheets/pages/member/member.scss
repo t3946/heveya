@@ -1,16 +1,12 @@
 @import "@styles/utils/utils";
 
 .memberPage {
-  .header1 {
+  .memberPage__block {
     margin: 0 0 pxToRem(20);
   }
 
   .participantStats {
     height: 210px;
-
-    &:not(:first-child) {
-      margin: 0 0 pxToRem(20);
-    }
 
     .segment {
       flex-grow: 0;
@@ -40,14 +36,11 @@
     }
   }
 
-  .sumStats {
-    margin:0 0 pxToRem(20);
-  }
-
   .charts {
     padding-bottom: pxToRem(60);
-    .header {
-      margin: 0 0 pxToRem(20);
-    }
+  }
+
+  .tableHeader {
+    margin: 0 0 pxToRem(46);
   }
 }

@@ -1,0 +1,23 @@
+.nameValuePair {
+  display: flex;
+  align-items: center;
+  font-size: pxToRem(16);
+  font-weight: 600;
+
+  .name {
+    color: #9b9b9b;
+    margin: 0 pxToRem(8) 0 0;
+  }
+
+  .value {
+    color: #161616;
+  }
+
+  &_stretch {
+    justify-content: space-between;
+
+    .name {
+      margin: 0;
+    }
+  }
+}

@@ -4,41 +4,48 @@
     <div class="container-lg">
         {{> ../../common/breadcrumbs/Breadcrumbs}}
 
-        <h1 class="header1">Участник торгов Константинов Константин Константинович</h1>
+        <h1 class="header1 memberPage__block">Участник торгов Константинов Константин Константинович</h1>
 
-        <div class="participantStats containerFrame">
+        <div class="participantStats containerFrame memberPage__block">
             {{> ParticipantStats }}
         </div>
 
-        <div class="fw-semibold d-flex align-items-center justify-content-between containerFrame sumStats">
-            <div>
-                <span class="color_9b9b9b me-2">Максимальная сумма сделки:</span>
-                <span>5 000 ₽</span>
+        <div
+            class="d-flex align-items-center justify-content-between containerFrame memberPage__block">
+            <div class="nameValuePair">
+                <span class="name">Максимальная сумма сделки:</span>
+                <span class="value">5 000 ₽</span>
             </div>
 
-            <div>
-                <span class="color_9b9b9b me-2">Количество площадок:</span>
-                <span>22</span>
+            <div class="nameValuePair">
+                <span class="name">Количество площадок:</span>
+                <span class="value">22</span>
             </div>
 
-            <div>
-                <span class="color_9b9b9b me-2">Средняя сумма договора:</span>
-                <span>6 000 ₽</span>
+            <div class="nameValuePair">
+                <span class="name">Средняя сумма договора:</span>
+                <span class="value">6 000 ₽</span>
             </div>
         </div>
 
-        <div class="charts containerFrame">
+        <div class="charts containerFrame memberPage__block">
             <h2 class="header header2 text-center">Аукцион</h2>
         </div>
 
-        <div class="charts containerFrame">
+        <div class="charts containerFrame memberPage__block">
             <h2 class="header header2 text-center">Публичное предложение</h2>
         </div>
 
-        <div class="charts containerFrame">
-            <h2 class="header header2 text-center">География должников</h2>
+        <div class="containerFrame memberPage__block">
+            <h2 class="tableHeader header2 text-center">Карта участий</h2>
 
             {{> ../../common/top10/Top10}}
+        </div>
+
+        <div class="charts containerFrame memberPage__block">
+            <h2 class="header header2 text-center">Сфера интересов</h2>
+
+
         </div>
     </div>
 </div>
