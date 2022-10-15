@@ -3,7 +3,9 @@ import initEmployeesNumber from "./columns/EmployeesNumber";
 import initControlRevenue from "./control/Revenue";
 import initControlTaxes from "./control/Taxes";
 import initControlProfit from "./control/Profit";
-import CreatePieChart from "./pie/PieSimple";
+import initPieChart from "./pie/PieSimple";
+import initInterestsIncreaseChart from "./pie/interests/Increase";
+import initInterestsDecreaseChart from "./pie/interests/Decrease";
 import $ from "jquery";
 
 function init() {
@@ -28,7 +30,15 @@ function init() {
   });
 
   $(".pieChart").each((i, e) => {
-    CreatePieChart(e);
+    initPieChart(e);
+  });
+
+  $(".interestIncreaseChart").each((i, e) => {
+    initInterestsIncreaseChart(e);
+  });
+
+  $(".interestDecreaseChart").each((i, e) => {
+    initInterestsDecreaseChart(e);
   });
 }
 

@@ -1,4 +1,3 @@
-import "bootstrap/dist/js/bootstrap";
 import {Root, percent, Label, p50, color, addLicense} from '@amcharts/amcharts5';
 import {PieChart, PieSeries} from "@amcharts/amcharts5/percent";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
@@ -46,6 +45,8 @@ function createChart(element: HTMLElement) {
     innerRadius: percent(innerRadius),
   }));
 
+  //PercentSeries
+  //https://www.amcharts.com/docs/v5/reference/percentseries/#slices_property
   const series = chart.series.push(PieSeries.new(root, {
     valueField: "value",
     categoryField: "category",
@@ -54,10 +55,9 @@ function createChart(element: HTMLElement) {
   series.get("colors").set("colors", colors || defaultColors);
 
   series.data.setAll(data);
-
   series.slices.template.setAll({
-    tooltipText: "",
-    forceInactive: true,
+    tooltipText: "qwe",
+    interactive: false,
   });
 
   if (innerLabel) {

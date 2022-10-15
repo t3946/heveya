@@ -45,20 +45,26 @@
         <div class="charts containerFrame memberPage__block">
             <h2 class="header header2 text-center">Сфера интересов</h2>
 
-            <div class="row">
-                <div class="col-3"></div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <h3 class="header3 text-center">Аукцион</h3>
+                    <div class="interestIncreaseChart" style="width: 400px; height: 300px"></div>
+                </div>
 
-                <div class="col-9">
+                <div class="flex-grow-1">
                     {{> ../../common/tables/interests-sphere/Increase}}
                 </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-3"></div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <h3 class="header3 text-center">Публичное предложение</h3>
+                    <div class="interestDecreaseChart" style="width: 400px; height: 300px"></div>
+                </div>
 
-                <div class="col-9">
-                    {{> ../../common/tables/interests-sphere/Derease}}
+                <div class="flex-grow-1">
+                    {{> ../../common/tables/interests-sphere/Decrease}}
                 </div>
             </div>
         </div>
