@@ -104,7 +104,7 @@
         <h3 class="header2 memberPage__block">Анализ юридического лица ООО «Ювс»</h3>
 
         <div class="analyzeCompany memberPage__block">
-            <div class="stats d-flex justify-content-between memberPage__block">
+            <div class="analyzeCompanyStats d-flex justify-content-between memberPage__block">
                 {{> ../analyze-company/stats/Basic }}
                 {{> ../analyze-company/stats/Bad }}
                 {{> ../analyze-company/stats/Bad }}
@@ -141,6 +141,12 @@
 
                 <div>
                     {{> ../../common/forms/SearchForm}}
+                </div>
+
+                {{> ../../common/lot-card/line/Completed }}
+                <hr>
+                <div>
+                    <img src="/images/dummy.jpg" alt="">
                 </div>
             </div>
         </div>
