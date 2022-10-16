@@ -104,16 +104,11 @@
         <h3 class="header2 page__block">Анализ юридического лица ООО «Ювс»</h3>
 
         <div class="analyzeCompany page__block">
-            <div class="analyzeCompanyStats d-flex justify-content-between page__block">
-                {{> ../analyze-company/stats/Basic }}
-                {{> ../analyze-company/stats/Bad }}
-                {{> ../analyze-company/stats/Bad }}
-                {{> ../analyze-company/stats/Bad }}
-                {{> ../analyze-company/stats/Good }}
-                {{> ../analyze-company/stats/Good }}
+            <div class="page__block">
+                {{> ../analyze-company/stats/Stats }}
             </div>
 
-            <div class="page__block">
+            <div class="page__block containerFrame">
                 {{> ../analyze-company/contacts/Contacts }}
             </div>
 
@@ -121,52 +116,17 @@
                 {{> ../analyze-company/charts/Charts }}
             </div>
 
-            <div class="courtCases page__block">
-                <h2 class="header2 header text-center">Судебные дела</h2>
-
-                {{> ../analyze-company/CourtCaseItem}}
-                {{> ../analyze-company/CourtCaseItem}}
-                {{> ../analyze-company/CourtCaseItem}}
-                {{> ../analyze-company/CourtCaseItem}}
+            <div class="page__block">
+                {{> ../analyze-company/court-cases/CourtCases}}
             </div>
 
-            <div class="courtCases page__block">
-                <h2 class="header2 header text-center">Исполнительные производства</h2>
-
-                {{> ../analyze-company/CourtCaseItem}}
+            <div class="page__block">
+                {{> ../analyze-company/court-cases/CourtExecutions}}
             </div>
 
-            <div class="lotsList page__block">
-                <h2 class="header2 header text-center">Список лотов</h2>
-
-                <div>
-                    {{> ../../common/forms/SearchForm}}
-                </div>
-
-                <div class="memberPage__lotItem">
-                    {{> ../../common/lot-card/line/Completed }}
-                </div>
-
-                <div class="memberPage__lotItem">
-                    {{> ../../common/lot-card/line/Completed }}
-                </div>
-
-                <div class="memberPage__lotItem">
-                    {{> ../../common/lot-card/line/Completed }}
-                </div>
-
-                <div class="memberPage__lotItem">
-                    {{> ../../common/lot-card/line/Completed }}
-                </div>
-
-                <div class="memberPage__lotItem">
-                    {{> ../../common/lot-card/line/Completed }}
-                </div>
+            <div class="page__block">
+                {{> ../../common/lots-list/LotsList}}
             </div>
-        </div>
-
-        <div class="d-flex justify-content-center mt-4">
-            {{> ../../common/pagination/Pagination }}
         </div>
     </div>
 </div>

@@ -1,70 +1,12 @@
 @import "@styles/utils/utils";
+@import "court-cases";
+@import "company-stats";
 
 .analyzeCompany {
   .status {
     .icon {
       width: pxToRem(40);
       height: pxToRem(40);
-    }
-  }
-
-  .contacts {
-    border-radius: 10px;
-    padding: pxToRem(26) pxToRem(32) pxToRem(30);
-    border: 1px solid #d4d4d4;
-  }
-
-  .courtCases {
-    .header {
-      margin: pxToRem(40) 0 pxToRem(20);
-    }
-
-    .item {
-      border: 1px solid #d4d4d4;
-      border-radius: 10px;
-      padding: pxToRem(40) pxToRem(32) pxToRem(26);
-
-      &:not(:last-child) {
-        margin: 0 0 pxToRem(20);
-      }
-
-      .sum {
-        .value {
-          font-size: pxToRem(24);
-          font-weight: 600;
-        }
-      }
-    }
-  }
-}
-
-.analyzeCompanyStats {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: pxToRem(25);
-
-  .item {
-    padding: pxToRem(28);
-    border-radius: 10px;
-    border: 1px solid #d4d4d4;
-    height: pxToRem(194);
-    width: 100%;
-
-    .sum1 {
-      .number {
-        font-size: pxToRem(24);
-      }
-
-      .caption {
-        margin: 0 0 0 pxToRem(12);
-      }
-    }
-
-    .sum2 {
-      .caption {
-        margin: 0 0 0 pxToRem(12);
-      }
     }
   }
 }

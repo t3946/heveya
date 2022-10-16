@@ -1,0 +1,8 @@
+.lotsList {
+  &__header {
+    margin: pxToRem(40) 0 pxToRem(32);
+  }
+  &__searchForm {
+    margin: 0 0 pxToRem(25);
+  }
+}

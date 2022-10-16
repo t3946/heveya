@@ -225,7 +225,7 @@ html {
 }
 
 .page {
-  &__block {
-    margin: pxToRem(20) 0 0 0;
+  &__block:not(:last-child) {
+    margin: 0 0 pxToRem(20);
   }
 }

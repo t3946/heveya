@@ -1,10 +1,128 @@
 {{> ../../layout/Hat}}
 
-<div class="memberPage page overflow-hidden">
+<div class="page">
     <div class="container-lg">
         {{> ../../common/breadcrumbs/Breadcrumbs}}
 
-        <h1 class="header1">Организатор торгов: ООО Ромашка</h1>
+        <h1 class="header1 page__block">Организатор торгов: ООО Ромашка</h1>
+
+        <div class="containerFrame page__block">
+            {{> ../../common/personal-data-panel/bidding-initiator/BiddingInitiator }}
+        </div>
+
+        <div class="containerFrame d-flex justify-content-between page__block">
+            <div class="nameValuePair">
+                <div class="name">Средняя сумма договора:</div>
+                <div class="value">6 000 ₽</div>
+            </div>
+
+            <div class="nameValuePair">
+                <div class="name">Максимальная сумма сделки:</div>
+                <div class="value">50 000 000 000 ₽</div>
+            </div>
+
+            <div class="nameValuePair">
+                <div class="name">Количество площадок:</div>
+                <div class="value">22</div>
+            </div>
+        </div>
+
+        <div class="containerFrame page__block">
+            <div class="row">
+                <div class="col-6">
+                    <div class="debtorsChart" style="width: 800px;height: 370px"></div>
+                </div>
+                <div class="col-6">
+                    <div class="averagePriceChart" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerFrame page__block">
+            <h2 class="header2 mb-4 text-center">Аукцион</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="auctionBlockChart1" style="width: 800px;height: 370px"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="auctionBlockChart2" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="auctionBlockChart3" style="width: 800px;height: 370px"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="auctionBlockChart4" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerFrame page__block">
+            <h2 class="header2 mb-4 text-center">Публичное предложение</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="auctionBlockChart1" style="width: 800px;height: 370px"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="auctionBlockChart2" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="auctionBlockChart3" style="width: 800px;height: 370px"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="auctionBlockChart4" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerFrame page__block">
+            <h2 class="header2 mb-4 text-center arbitratorPage__mapHeader1">География должников</h2>
+
+            <div class="arbitratorPage__map1">{{> ../../common/top10/Top10}}</div>
+
+            <h2 class="header2 mb-4 text-center arbitratorPage__mapHeader2">География участников торгов</h2>
+
+            <div class="arbitratorPage__map2">{{> ../../common/top10/Top10}}</div>
+        </div>
+
+        <div class="containerFrame page__block">
+            {{> ../../common/violations/Violations}}
+        </div>
+
+        {{> ../../common/user-rate/UserRate}}
+
+        <h2 class="header2 page__block mt-5">Анализ юридического лица ООО «Ювс»</h2>
+
+        <div class="page__block">
+            {{> ../analyze-company/stats/Stats }}
+        </div>
+
+        <div class="page__block containerFrame">
+            {{> ../analyze-company/contacts/Contacts }}
+        </div>
+
+        <div class="page__block">
+            {{> ../analyze-company/court-cases/CourtCases}}
+        </div>
+
+        <div class="page__block">
+            {{> ../analyze-company/court-cases/CourtExecutions}}
+        </div>
+
+        <div class="page__block">
+            {{> ../../common/lots-list/LotsList}}
+        </div>
     </div>
 </div>
 

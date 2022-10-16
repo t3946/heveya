@@ -1,0 +1,30 @@
+.companyStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: pxToRem(25);
+
+  .item {
+    padding: pxToRem(28);
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    height: pxToRem(194);
+    width: 100%;
+
+    .sum1 {
+      .number {
+        font-size: pxToRem(24);
+      }
+
+      .caption {
+        margin: 0 0 0 pxToRem(12);
+      }
+    }
+
+    .sum2 {
+      .caption {
+        margin: 0 0 0 pxToRem(12);
+      }
+    }
+  }
+}

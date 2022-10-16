@@ -22,12 +22,4 @@
   &__addOpinionButton {
     margin: pxToRem(32) 0 0;
   }
-
-  &__lotsList {
-    margin: pxToRem(64) 0 pxToRem(32);
-  }
-
-  &__lotItem:not(:last-child) {
-    margin: 0 0 pxToRem(20);
-  }
 }

@@ -9,36 +9,24 @@
             {{> status/Good }}
         </h1>
 
-        <div class="analyzeCompanyStats d-flex justify-content-between page__block">
-            {{> stats/Basic }}
-            {{> stats/Bad }}
-            {{> stats/Bad }}
-            {{> stats/Bad }}
-            {{> stats/Good }}
-            {{> stats/Good }}
+        <div class="page__block">
+            {{> ../analyze-company/stats/Stats }}
         </div>
 
-        <div class="page__block">
-            {{> contacts/Contacts }}
+        <div class="page__block containerFrame">
+            {{> ../analyze-company/contacts/Contacts }}
         </div>
 
         <div class="page__block">
             {{> charts/Charts }}
         </div>
 
-        <div class="courtCases">
-            <h2 class="header2 header text-center">Судебные дела</h2>
-
-            {{> CourtCaseItem}}
-            {{> CourtCaseItem}}
-            {{> CourtCaseItem}}
-            {{> CourtCaseItem}}
+        <div class="page__block">
+            {{> ../analyze-company/court-cases/CourtCases}}
         </div>
 
-        <div class="courtCases">
-            <h2 class="header2 header text-center">Исполнительные производства</h2>
-
-            {{> CourtCaseItem}}
+        <div class="page__block">
+            {{> ../analyze-company/court-cases/CourtExecutions}}
         </div>
     </div>
 </div>
