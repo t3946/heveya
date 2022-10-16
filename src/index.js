@@ -12,6 +12,7 @@ import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
 import Member from "./views/pages/member/Member.hbs";
 import Arbitrator from "./views/pages/arbitrator/Arbitrator.hbs";
 import BiddingInitiator from "./views/pages/bidding-initiator/BiddingInitiator.hbs";
+import DebtorCompany from "./views/pages/debtor-company/DebtorCompany.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -64,6 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/bidding-initiator':
       document.body.innerHTML = BiddingInitiator()
+      break
+
+    case '/debtor-company':
+      document.body.innerHTML = DebtorCompany()
       break
 
     default:
