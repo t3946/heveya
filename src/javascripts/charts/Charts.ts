@@ -6,15 +6,21 @@ import initControlProfit from "./control/Profit";
 import initPieChart from "./pie/PieSimple";
 import initInterestsIncreaseChart from "./pie/interests/Increase";
 import initInterestsDecreaseChart from "./pie/interests/Decrease";
-import initBidding from  "./auction/Bidding";
-import initWins from  "./auction/Wins";
-import initAveragePrice from  "./auction/AveragePrice";
-import initAverageDerivativePrice from  "./auction/AverageDerivativePrice";
+import initBidding from "./auction/Bidding";
+import initWins from "./auction/Wins";
+import initAveragePrice from "./auction/AveragePrice";
+import initAverageDerivativePrice from "./auction/AverageDerivativePrice";
 import initDebtorsPrice from "./arbitrator/Debtors";
 import initAuctionBlockChart1 from "./arbitrator/AuctionBlockChart1";
 import initAuctionBlockChart2 from "./arbitrator/AuctionBlockChart2";
 import initAuctionBlockChart3 from "./arbitrator/AuctionBlockChart3";
 import initAuctionBlockChart4 from "./arbitrator/AuctionBlockChart4";
+import initPieUserRate from "./pie/personal-data-panel/UserRate";
+import initPieCharUp from "./pie/personal-data-panel/Up";
+import initPieCharDown from "./pie/personal-data-panel/Down";
+import initPieEffectivity from "./pie/personal-data-panel/Effectivity";
+import initPieWins from "./pie/personal-data-panel/Wins";
+import initPieCategories from "./pie/personal-data-panel/Categories";
 
 import $ from "jquery";
 
@@ -85,6 +91,30 @@ function init() {
 
   $(".auctionBlockChart4").each((i, e) => {
     initAuctionBlockChart4(e);
+  });
+
+  $(".pieUserRate").each((i, e) => {
+    initPieUserRate(e);
+  });
+
+  $(".pieCharUp").each((i, e) => {
+    initPieCharUp(e);
+  });
+
+  $(".pieCharDown").each((i, e) => {
+    initPieCharDown(e);
+  });
+
+  $(".pieCharEffectivity").each((i, e) => {
+    initPieEffectivity(e);
+  });
+
+  $(".pieCharWins").each((i, e) => {
+    initPieWins(e);
+  });
+
+  $(".pieCharCategories").each((i, e) => {
+    initPieCategories(e);
   });
 }
 

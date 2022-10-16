@@ -69,7 +69,7 @@ function createChart(element: HTMLElement) {
         centerY: innerLabelCenterY,
         fill: labelColor,
         fontSize: 12 * fontSize,
-        fontWeight: "bold",
+        fontWeight: "600",
       }));
 
       label.set("text", innerLabel);
@@ -92,7 +92,7 @@ function createChart(element: HTMLElement) {
         centerY: p50,
         fill: labelColor,
         fontSize: 15 * fontSize,
-        fontWeight: "bold",
+        fontWeight: "600",
       }));
 
       label.set("text", innerLabel);
