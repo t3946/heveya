@@ -223,3 +223,9 @@ html {
   border-radius: 10px;
   padding: pxToRem(25);
 }
+
+.page {
+  &__block {
+    margin: pxToRem(20) 0 0 0;
+  }
+}
