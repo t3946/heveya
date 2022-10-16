@@ -22,6 +22,9 @@ import initPieCharDown from "./pie/personal-data-panel/Down";
 import initPieEffectivity from "./pie/personal-data-panel/Effectivity";
 import initPieWins from "./pie/personal-data-panel/Wins";
 import initPieCategories from "./pie/personal-data-panel/Categories";
+import initAverageDebtorsSum from "./etp/AverageDebtorsSum";
+import initBidsInitiator from "./etp/BidsInitiator";
+import initBidsMember from "./etp/BidsMember";
 
 import $ from "jquery";
 
@@ -120,6 +123,18 @@ function init() {
 
   $(".pieCharCategories").each((i, e) => {
     initPieCategories(e);
+  });
+
+  $(".etpChartAverageDebtorsSum").each((i, e) => {
+    initAverageDebtorsSum(e);
+  });
+
+  $(".etpChartBidsInitiator").each((i, e) => {
+    initBidsInitiator(e);
+  });
+
+  $(".etpChartBidsMember").each((i, e) => {
+    initBidsMember(e);
   });
 }
 

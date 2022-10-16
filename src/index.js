@@ -15,6 +15,7 @@ import BiddingInitiator from "./views/pages/bidding-initiator/BiddingInitiator.h
 import DebtorCompany from "./views/pages/debtor-company/DebtorCompany.hbs";
 import DebtorPerson from "./views/pages/debtor-person/DebtorPerson.hbs";
 import Sro from "./views/pages/sro/Sro.hbs";
+import Etp from "./views/pages/etp/Etp.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -79,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/sro':
       document.body.innerHTML = Sro()
+      break
+
+    case '/etp':
+      document.body.innerHTML = Etp()
       break
 
     default:

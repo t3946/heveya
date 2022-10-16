@@ -1,0 +1,15 @@
+<div class="stackedChart">
+    <div class="line mb-2">
+        <div class="part" style="width: 35%; background-color: #8cceef"></div>
+        <div class="part" style="width: 15%; background-color: #ef7f1a"></div>
+        <div class="part" style="width: 50%; background-color: #434343"></div>
+    </div>
+
+    <div class="legend">
+        <div class="d-flex flex-column">
+            {{> ../common/ChartLegendColumn icon="color_434343" name="Банкротство" }}
+            {{> ../common/ChartLegendColumn icon="color_ef7f1a" name="Арест"}}
+            {{> ../common/ChartLegendColumn icon="color_8cceef" name="Муниципальные торги"}}
+        </div>
+    </div>
+</div>
