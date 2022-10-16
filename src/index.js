@@ -17,6 +17,7 @@ import DebtorPerson from "./views/pages/debtor-person/DebtorPerson.hbs";
 import Sro from "./views/pages/sro/Sro.hbs";
 import Etp from "./views/pages/etp/Etp.hbs";
 import RegistryDebtors from "./views/pages/registry-debtors/RegistryDebtors.hbs";
+import RegistryArbitrators from "./views/pages/registry-arbitrators/RegistryArbitrators.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -89,6 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/registry-debtors':
       document.body.innerHTML = RegistryDebtors()
+      break
+
+    case '/registry-arbitrators':
+      document.body.innerHTML = RegistryArbitrators()
       break
 
     default:
