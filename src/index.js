@@ -20,7 +20,7 @@ import RegistryDebtors from "./views/pages/registry-debtors/RegistryDebtors.hbs"
 import RegistryArbitrators from "./views/pages/registry-arbitrators/RegistryArbitrators.hbs";
 import RegistryInitiators from "./views/pages/registry-initiators/RegistryInitiators.hbs";
 import RegistrySro from "./views/pages/registry-sro/RegistrySro.hbs";
-import RegistryWebResources from "./views/pages/registry-web-resources/RegistryWebResources.hbs";
+import RegistryMembers from "./views/pages/registry-members/RegistryMembers.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -109,6 +109,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/registry-web-resources':
       document.body.innerHTML = RegistryWebResources()
+      break
+
+    case '/registry-members':
+      document.body.innerHTML = RegistryMembers()
       break
 
     default:
