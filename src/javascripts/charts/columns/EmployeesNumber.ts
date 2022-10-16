@@ -51,7 +51,7 @@ function init(elem) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{valueY} человек",
+    tooltipText: "{valueY} {name}",
     width: percent(5),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,

@@ -91,7 +91,7 @@ function init(elem) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{valueY} участий",
+    tooltipText: "{valueY} {name}",
     width: percent(36),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,
@@ -111,7 +111,7 @@ function init(elem) {
   }));
 
   series2.columns.template.setAll({
-    tooltipText: "{valueY} побед",
+    tooltipText: "{valueY} {name}",
     width: percent(36),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,

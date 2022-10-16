@@ -75,7 +75,7 @@ function init(elem) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{valueY} Объявлено лотов (шт)",
+    tooltipText: "{valueY} {name}",
     width: percent(18),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,

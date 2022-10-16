@@ -81,7 +81,7 @@ function init(elem) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{valueY} Объявлено лотов (шт)",
+    tooltipText: "{valueY} {name}",
     width: percent(54),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,
@@ -102,7 +102,7 @@ function init(elem) {
   }));
 
   series2.columns.template.setAll({
-    tooltipText: "{valueY} Завершено лотов (шт)",
+    tooltipText: "{valueY} {name}",
     width: percent(54),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,
@@ -123,7 +123,7 @@ function init(elem) {
   }));
 
   series3.columns.template.setAll({
-    tooltipText: "{valueY} Не состоялось",
+    tooltipText: "{valueY} {name}",
     width: percent(54),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,
