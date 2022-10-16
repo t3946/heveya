@@ -18,6 +18,7 @@ import Sro from "./views/pages/sro/Sro.hbs";
 import Etp from "./views/pages/etp/Etp.hbs";
 import RegistryDebtors from "./views/pages/registry-debtors/RegistryDebtors.hbs";
 import RegistryArbitrators from "./views/pages/registry-arbitrators/RegistryArbitrators.hbs";
+import RegistryInitiators from "./views/pages/registry-initiators/RegistryInitiators.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -94,6 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/registry-arbitrators':
       document.body.innerHTML = RegistryArbitrators()
+      break
+
+    case '/registry-initiators':
+      document.body.innerHTML = RegistryInitiators()
       break
 
     default:

@@ -2,6 +2,7 @@
 @import "arbitrator";
 @import "sro";
 @import "debtor";
+@import "bidding-initiator-registry";
 
 .namePanel {
   width: pxToRem(260);
