@@ -11,6 +11,7 @@ import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
 import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
 import Member from "./views/pages/member/Member.hbs";
 import Arbitrator from "./views/pages/arbitrator/Arbitrator.hbs";
+import BiddingInitiator from "./views/pages/bidding-initiator/BiddingInitiator.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -59,6 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/arbitrator':
       document.body.innerHTML = Arbitrator()
+      break
+
+    case '/bidding-initiator':
+      document.body.innerHTML = BiddingInitiator()
       break
 
     default:
