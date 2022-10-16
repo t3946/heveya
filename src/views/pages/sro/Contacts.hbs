@@ -1,0 +1,68 @@
+<div>
+    <div class="row">
+        <div class="col-4">
+            <div class="nameValuePair align-items-start">
+                <div class="name">Организация:</div>
+                <div class="value">
+                    ОСамолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <span class="me-1 fw-semibold color_9b9b9b">Президент:</span>
+                <span class="ms-2">Косынкин Александр Александрович</span>
+            </div>
+
+            <div class="d-flex my-2">
+                {{> ../../common/link-phone/LinkPhone class="me-4"}}
+                {{> ../../common/link-email/LinkEmail}}
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="d-flex align-items-center">
+                <span class="me-1 fw-semibold color_9b9b9b">ИНН:</span>
+                <span class="ms-2">1659120485</span>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <span class="me-1 fw-semibold color_9b9b9b">КПП:</span>
+                <span class="ms-2">165901001</span>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <span class="me-1 fw-semibold color_9b9b9b">ОГРН:</span>
+                <span class="ms-2">1121690037040</span>
+            </div>
+        </div>
+
+        <div class="{{#if biddings}}col-3{{else}}col-6{{/if}}">
+            <div class="d-flex">
+                <div class="me-1 fw-semibold color_9b9b9b me-1">Адрес:</div>
+                <div class="ms-2">
+                    <div>420110, республика Татарстан, г. Казань,</div>
+                    <div>ул. Братьев касимовых, д.38</div>
+                </div>
+            </div>
+        </div>
+
+        {{#if biddings}}
+            <div class="col-3">
+                <div class="nameValuePair">
+                    <div class="name">Объявлено торгов:</div>
+                    <div class="value fs20px">123 (12 млн ₽)</div>
+                </div>
+
+                <div class="nameValuePair">
+                    <div class="name">Объявлено торгов:</div>
+                    <div class="value fs20px">97 (14 млн ₽)</div>
+                </div>
+
+                <div class="nameValuePair">
+                    <div class="name">Активные торги:</div>
+                    <div class="value fs20px color_8cceef">3 (12 млн ₽)</div>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>

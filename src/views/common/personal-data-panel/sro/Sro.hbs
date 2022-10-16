@@ -1,0 +1,52 @@
+<div class="personalDataPanelSro">
+    {{> NamePanel}}
+
+    <div>
+        <div class="nameValuePair">
+            <div class="name">Регистрационный номер:</div>
+            <div class="value fw-normal">2034</div>
+        </div>
+
+        <div class="nameValuePair">
+            <div class="name">Дата регистрации:</div>
+            <div class="value fw-normal">02.07.2013</div>
+        </div>
+    </div>
+
+    <div class="nameValuePair align-items-start">
+        <div class="name">СРО:</div>
+
+        {{#if inSRO}}
+            <div class="value color_8cceef">Союз арбитражных управляющих "Созидание"</div>
+        {{else}}
+            <div class="value color_fc2c2c">Не состоит в СРО</div>
+        {{/if}}
+    </div>
+
+    <div>
+        <div class="nameValuePair">
+            <div class="name">Количество нарушений:</div>
+            <div class="value fs20px">7</div>
+        </div>
+
+        <div class="nameValuePair">
+            <div class="name">Объявлено торгов:</div>
+            <div class="value fs20px">123 (25 млн ₽)</div>
+        </div>
+
+        <div class="nameValuePair">
+            <div class="name">Завершено торгов:</div>
+            <div class="value fs20px">97 (14 млн ₽)</div>
+        </div>
+
+        <div class="nameValuePair">
+            <div class="name">Активные торги:</div>
+            <div class="value color_8cceef fs20px">3 (12 млн ₽)</div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="pieSroRate" style="width: 50px; height: 50px"></div>
+        <a href="#" class="text-decoration-none fw-bold color_9b9b9b">Оценить</a>
+    </div>
+</div>

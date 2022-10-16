@@ -1,0 +1,94 @@
+{{> ../../layout/Hat}}
+
+<div class="selectBrokerPage">
+    <div class="container-lg">
+        {{> ../../common/breadcrumbs/Breadcrumbs}}
+
+        <h1 class="header1 d-flex align-items-end page__block">
+            <div>
+                СРО Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет
+                Самолет Самолет Самолет Самолет
+            </div>
+
+            {{> ../analyze-company/status/Good }}
+        </h1>
+
+        <div class="page__block containerFrame">
+            {{> Contacts}}
+        </div>
+
+        <div class="page__block containerFrame">
+            {{> ../analyze-company/charts/Charts}}
+        </div>
+
+        <div class="page__block">
+            <h2 class="header2 text-center mb-4">География арбитражных управляющих / организаторов торгов</h2>
+            {{> ../../common/top10/Top10}}
+        </div>
+
+        <div class="page__block mt-5">
+            <h2 class="header2 page__block text-center">Сведения о проведенных проверках</h2>
+        </div>
+
+        <div class="page__block containerFrame">
+            {{> CheckItem }}
+        </div>
+
+        <div class="page__block containerFrame">
+            {{> CheckItem }}
+        </div>
+
+        <div class="page__block containerFrame">
+            {{> CheckItem }}
+        </div>
+
+        <div class="page__block containerFrame">
+            {{> CheckItem }}
+        </div>
+
+        <div class="page__block">
+            {{> ../analyze-company/court-cases/CourtCases}}
+        </div>
+
+        <div class="page__block">
+            {{> ../analyze-company/court-cases/CourtExecutions}}
+        </div>
+        <div class="page__block">
+            <h2 class="header2 text-center">Управляющие</h2>
+
+            <div class="page__block">
+                {{> ../../common/forms/SearchForm}}
+            </div>
+
+            <div class="containerFrame page__block">
+                {{> ../../common/personal-data-panel/sro/Sro inSRO=true}}
+            </div>
+
+            <div class="containerFrame page__block">
+                {{> ../../common/personal-data-panel/sro/Sro}}
+            </div>
+
+            <div class="containerFrame page__block">
+                {{> ../../common/personal-data-panel/sro/Sro inSRO=true}}
+            </div>
+
+            <div class="containerFrame page__block">
+                {{> ../../common/personal-data-panel/sro/Sro inSRO=true}}
+            </div>
+
+            <div class="containerFrame page__block">
+                {{> ../../common/personal-data-panel/sro/Sro inSRO=true}}
+            </div>
+
+            <div class="containerFrame page__block">
+                {{> ../../common/personal-data-panel/sro/Sro inSRO=true}}
+            </div>
+
+            <div class="d-flex justify-content-center">
+                {{> ../../common/pagination/Pagination}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/Footer}}

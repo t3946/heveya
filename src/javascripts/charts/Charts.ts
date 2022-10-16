@@ -16,6 +16,7 @@ import initAuctionBlockChart2 from "./arbitrator/AuctionBlockChart2";
 import initAuctionBlockChart3 from "./arbitrator/AuctionBlockChart3";
 import initAuctionBlockChart4 from "./arbitrator/AuctionBlockChart4";
 import initPieUserRate from "./pie/personal-data-panel/UserRate";
+import initPieSroRate from "./pie/personal-data-panel/SroRate";
 import initPieCharUp from "./pie/personal-data-panel/Up";
 import initPieCharDown from "./pie/personal-data-panel/Down";
 import initPieEffectivity from "./pie/personal-data-panel/Effectivity";
@@ -95,6 +96,10 @@ function init() {
 
   $(".pieUserRate").each((i, e) => {
     initPieUserRate(e);
+  });
+
+  $(".pieSroRate").each((i, e) => {
+    initPieSroRate(e);
   });
 
   $(".pieCharUp").each((i, e) => {
