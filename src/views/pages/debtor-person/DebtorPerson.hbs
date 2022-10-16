@@ -1,0 +1,81 @@
+{{> ../../layout/Hat}}
+
+<div class="page">
+    <div class="container-lg">
+        {{> ../../common/breadcrumbs/Breadcrumbs}}
+
+        <div class="page__block">
+            <h1 class="header1 d-flex justify-content-between">
+                Должник Сидоров Иван Иванович
+            </h1>
+
+            <div class="fw-bold fs20px">Дело о банкротстве А24-435/16 от 23.12.2016 г.</div>
+        </div>
+
+        <div class="containerFrame page__block">
+            <div class="row">
+                <div class="col-4">
+                    <div class="nameValuePair">
+                        <div class="name">ФИО:</div>
+                        <div class="value">Сидоров Иван Иванович</div>
+                    </div>
+
+                    <div class="nameValuePair">
+                        <div class="name">Финансовый управляющий:</div>
+                        <div class="value">Косынкин Александр Александрович</div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="d-flex align-items-center">
+                        <span class="me-1 fw-semibold color_9b9b9b">ИНН:</span>
+                        <span class="ms-2">1659120485</span>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <span class="me-1 fw-semibold color_9b9b9b">КПП:</span>
+                        <span class="ms-2">165901001</span>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <span class="me-1 fw-semibold color_9b9b9b">ОГРН:</span>
+                        <span class="ms-2">1121690037040</span>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="d-flex">
+                        <div class="me-1 fw-semibold color_9b9b9b me-1">Адрес:</div>
+                        <div class="ms-2">
+                            <div>420110, республика Татарстан, г. Казань,</div>
+                            <div>ул. Братьев касимовых, д.38</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="nameValuePair">
+                        <div class="name">Объявлено торгов:</div>
+                        <div class="value fs20px">123 (12 млн ₽)</div>
+                    </div>
+
+                    <div class="nameValuePair">
+                        <div class="name">Объявлено торгов:</div>
+                        <div class="value fs20px">97 (14 млн ₽)</div>
+                    </div>
+
+                    <div class="nameValuePair">
+                        <div class="name">Активные торги:</div>
+                        <div class="value fs20px color_8cceef">3 (12 млн ₽)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page__block">
+            {{> ../../common/lots-list/LotsList}}
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/Footer}}
