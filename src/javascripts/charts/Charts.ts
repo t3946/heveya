@@ -25,7 +25,10 @@ import initPieCategories from "./pie/personal-data-panel/Categories";
 import initAverageDebtorsSum from "./etp/AverageDebtorsSum";
 import initBidsInitiator from "./etp/BidsInitiator";
 import initBidsMember from "./etp/BidsMember";
-import initBiddingNumbers from "./pie/BiddingNumbers";
+import initBiddingNumbers from "./bidding-numbers/BiddingNumbers";
+import initAverageSum from "./bidding-numbers/AverageSum";
+import initBiddingNumbersChart3 from "./bidding-numbers/Chart3";
+import initBiddingNumbersChart4 from "./bidding-numbers/Chart4";
 
 import $ from "jquery";
 
@@ -140,6 +143,18 @@ function init() {
 
   $(".pieChartBiddingNumbers").each((i, e) => {
     initBiddingNumbers(e);
+  });
+
+  $(".averageOfferSumChart").each((i, e) => {
+    initAverageSum(e);
+  });
+
+  $(".biddingNumbersChart3").each((i, e) => {
+    initBiddingNumbersChart3(e);
+  });
+
+  $(".biddingNumbersChart4").each((i, e) => {
+    initBiddingNumbersChart4(e);
   });
 }
 

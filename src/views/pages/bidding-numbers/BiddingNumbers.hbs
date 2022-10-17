@@ -6,7 +6,103 @@
 
         <h1 class="header1 page__block">Имущественные торги в цифрах</h1>
 
-        <div class="pieChartBiddingNumbers" style="width: 450px; height: 350px;"></div>
+        <div class="containerFrame page__block">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="header3 text-center">Количество лотов 2022 г.</h3>
+
+                    {{> PieChart}}
+                </div>
+
+                <div class="col-6">
+                    <h3 class="header3 text-center">Сумма ₽ 2022 г.</h3>
+
+                    {{> PieChart}}
+                </div>
+            </div>
+        </div>
+
+        <div class="containerFrame align-items-stretch page__block d-flex justify-content-between my-5">
+            <div class="d-flex">
+                <div>Транспорт и техника</div>
+                <div class="ms-2 fw-bold">17%</div>
+            </div>
+
+            <div class="baseVerticalDivider"></div>
+
+            <div class="d-flex">
+                <div>Жилая недвижимость</div>
+                <div class="ms-2 fw-bold">13%</div>
+            </div>
+
+            <div class="baseVerticalDivider"></div>
+
+            <div class="d-flex">
+                <div>Коммерческая недвижимость</div>
+                <div class="ms-2 fw-bold">11%</div>
+            </div>
+
+            <div class="baseVerticalDivider"></div>
+
+            <div class="d-flex">
+                <div>Оборудование</div>
+                <div class="ms-2 fw-bold">8%</div>
+            </div>
+
+            <div class="baseVerticalDivider"></div>
+
+            <div class="d-flex">
+                <div>Права требования</div>
+                <div class="ms-2 fw-bold">16%</div>
+            </div>
+
+            <div class="baseVerticalDivider"></div>
+
+            <div class="d-flex">
+                <div>Прочее</div>
+                <div class="ms-2 fw-bold">12%</div>
+            </div>
+        </div>
+
+        <div class="containerFrame page__block">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="header3 text-center">Количество участников торгов 2022 г.</h3>
+
+                    {{> PieChart}}
+                </div>
+
+                <div class="col-6">
+                    <h3 class="header3 text-center">Средняя сумма сделки ₽ 2022 г.</h3>
+
+                    {{> PieChart}}
+                </div>
+            </div>
+        </div>
+
+        <h2 class="header2 text-center mt-5">Реализация имущества должников (127-ФЗ «О несостоятельностибанкротства»)</h2>
+
+        <div class="containerFrame">
+            <div class="row">
+                <div class="col-6">
+                    <div class="debtorsChart" style="width: 800px;height: 370px"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="averageOfferSumChart" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="biddingNumbersChart3" style="width: 800px;height: 370px"></div>
+                </div>
+
+                <div class="col-6">
+                    <div class="biddingNumbersChart4" style="width: 800px;height: 370px"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -61,12 +61,12 @@ function createChart(element: HTMLElement) {
   });
 
   series.get("colors").set("colors", [
-    color(0x7CD1FB),
-    color(0x1A2FEF),
-    color(0xEF1AC0),
-    color(0xEF1A27),
-    color(0xEBEF1A),
-    color(0x27BD0F),
+    color(0x7cd1fb),
+    color(0x1a2fef),
+    color(0xef1ac0),
+    color(0xef1a27),
+    color(0xebef1a),
+    color(0x27bd0f),
     color(0x434343),
   ]);
 
