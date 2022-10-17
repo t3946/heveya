@@ -1,1 +1,2 @@
 import "./InputCheckbox";
+import "./UiSlider";

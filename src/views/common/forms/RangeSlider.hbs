@@ -1,0 +1,36 @@
+<div class="rangeSlider" data-min="{{min}}" data-max="{{max}}">
+
+    <div class="row rangeSlider__displayRow">
+        <div class="col-6">
+            <input class="start baseInputText" type="hidden" value="{{start}}">
+
+            <div class="display display_start">
+                <div class="label">Цена начальная, от:</div>
+
+                <div class="displayValueGroup">
+                    <span class="value"></span>
+                    {{displayPostfix}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <input class="end baseInputText" type="hidden" value="{{end}}">
+
+            <div class="display display_end">
+                <div class="label">Цена начальная, до:</div>
+
+                <div class="displayValueGroup">
+                    <span class="value"></span>
+                    {{displayPostfix}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="slider"></div>
+        </div>
+    </div>
+</div>

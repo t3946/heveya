@@ -18,4 +18,12 @@
         <span class="me-2"></span>
         {{> ../../common/forms/InputCheckbox id="check3" label="Three" checked=false}}
     </div>
+
+    <div class="page__block">
+        {{> ../../common/forms/RangeSlider displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 }}
+    </div>
+
+    <div class="page__block">
+        {{> ../../common/forms/RangeSlider displayPostfix="%" start=20 end=80 min=0 max=100 }}
+    </div>
 </div>
