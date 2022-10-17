@@ -37,7 +37,9 @@
                 <div class="color_9b9b9b fw-bold mb-3">Рейтинг HEVEYA.RU:</div>
                 <div class="d-flex align-items-center">
                     <div class="d-flex pieWithLogo">
-                        {{> ../../common/charts/pie/Pie130 values='[34, 68]' colors='["0x8CCEEF", "0xD4D4D4"]'}}
+                        <div class="d-flex">
+                            <div class="pieSiteRate" style="width: 130px; height: 130px;"></div>
+                        </div>
                         {{> ../../common/icons/logo-2/Logo2 class="icon"}}
                     </div>
 
@@ -46,8 +48,13 @@
             </div>
 
             <div class="col-3">
-                <div class="color_9b9b9b fw-bold mb-3">Оценка пользователей:</div>
-                {{> ../../common/charts/pie/Pie130 values='[68, 34]' colors='["0x434343", "0xEF7F1A"]' label="68%"}}
+                <div>
+                    <div class="color_9b9b9b mb-3 fw-semibold">Оценка пользователей</div>
+
+                    <div class="d-flex">
+                        <div class="pieUserRate" data-size="large" style="width: 130px; height: 130px;"></div>
+                    </div>
+                </div>
             </div>
         </div>
 

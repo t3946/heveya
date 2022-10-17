@@ -1,0 +1,10 @@
+.personalDataPanelBroker {
+  .servicesTable {
+    width: pxToRem(380);
+  }
+
+  .priceTable {
+    grid-gap: pxToRem(16) pxToRem(20);
+    width: pxToRem(480);
+  }
+}

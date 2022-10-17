@@ -7,14 +7,13 @@ addLicense("AM5C1231231321");
 
 function createChart(element: HTMLElement) {
   const root = Root.new(element);
-  const labelColor = element.dataset.innerLabelColor ? color(parseInt(element.dataset.innerLabelColor)) : color(0x000000);
   const data = [
     {
-      value: 62,
+      value: 19,
       category: "",
     },
     {
-      value: 38,
+      value: 57,
       category: "",
     }
   ];
@@ -36,7 +35,7 @@ function createChart(element: HTMLElement) {
 
   series.get("colors").set("colors", [
     color(0x8CCEEF),
-    color(0x434343),
+    color(0xD4D4D4),
   ]);
 
   series.slices.template.setAll({
@@ -45,17 +44,6 @@ function createChart(element: HTMLElement) {
     stroke: color(0xffffff),
     strokeWidth: 2
   });
-
-  root.tooltipContainer.children.push(Label.new(root, {
-    x: p50,
-    y: p50,
-    centerX: p50,
-    centerY: p50,
-    fill: labelColor,
-    fontSize: element.dataset.size === "large" ? 24 : 20,
-    fontWeight: "600",
-    text:"62%"
-  }));
 
   series.data.setAll(data);
 

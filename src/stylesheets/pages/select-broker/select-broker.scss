@@ -5,15 +5,6 @@
     width: pxToRem(430);
   }
 
-  .priceTable {
-    grid-gap: pxToRem(16) pxToRem(20);
-    width: pxToRem(480);
-  }
-
-  .servicesTable {
-    width: pxToRem(380);
-  }
-
   .ordersCompleted {
     width: pxToRem(220);
 
@@ -23,19 +14,6 @@
 
     .baseHorizontalDivider {
       margin: pxToRem(20) 0;
-    }
-  }
-
-  .brokers {
-    > .item{
-      border-radius: 10px;
-      border: 1px solid #d4d4d4;
-      overflow: hidden;
-      padding: pxToRem(34) pxToRem(20) pxToRem(20);
-
-      &:not(:last-child) {
-        margin: 0 0 pxToRem(30);
-      }
     }
   }
 }

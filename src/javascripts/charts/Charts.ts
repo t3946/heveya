@@ -30,6 +30,7 @@ import initBiddingNumbers from "./bidding-numbers/BiddingNumbers";
 import initAverageSum from "./bidding-numbers/AverageSum";
 import initBiddingNumbersChart3 from "./bidding-numbers/Chart3";
 import initBiddingNumbersChart4 from "./bidding-numbers/Chart4";
+import initSiteRate from "./pie/SiteRate";
 
 import $ from "jquery";
 
@@ -160,6 +161,10 @@ function init() {
 
   $(".pieChartParticipation").each((i, e) => {
     initChartParticipation(e);
+  });
+
+  $(".pieSiteRate").each((i, e) => {
+    initSiteRate(e);
   });
 }
 

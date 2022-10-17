@@ -17,6 +17,7 @@
   "homepage": "https://github.com/bensmithett/webpack-css-example",
   "dependencies": {
     "@amcharts/amcharts5": "^5.2.29",
+    "@selectize/selectize": "^0.14.0",
     "autoprefixer": "^10.4.12",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.5",
