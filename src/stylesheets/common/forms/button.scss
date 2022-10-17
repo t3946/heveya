@@ -12,6 +12,11 @@
   border-radius: 5px;
   border: none;
 
+  .icon {
+    width: pxToRem(20);
+    margin: 0 pxToRem(8) 0 0;
+  }
+
   &_theme {
     &_blue {
       color: #ffffff;
@@ -21,7 +26,13 @@
     &_gray {
       color: #9b9b9b;
       background: #ffffff;
-      border: 2px solid currentColor;
+      border: 2px solid #9b9b9b;
+    }
+
+    &_darkGray {
+      color: #434343;
+      background: #ffffff;
+      border: 1px solid #9b9b9b;
     }
 
     &_red {
