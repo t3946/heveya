@@ -1,5 +1,6 @@
 .searchInput {
-  height: pxToRem(48);
+  height: pxToRem(50);
+  max-width: pxToRem(525);
 
   .input-group-text {
     background: #ffffff;
