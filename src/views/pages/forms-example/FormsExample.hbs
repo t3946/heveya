@@ -20,10 +20,14 @@
     </div>
 
     <div class="page__block">
-        {{> ../../common/forms/RangeSlider displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 }}
+        {{> ../../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}
     </div>
 
     <div class="page__block">
-        {{> ../../common/forms/RangeSlider displayPostfix="%" start=20 end=80 min=0 max=100 }}
+        {{> ../../common/forms/RangeSliderTwoValue displayPostfix="%" start=20 end=80 min=0 max=100 labelStart="Текущая скидка:" labelEnd="Возможная скидка:" }}
+    </div>
+
+    <div class="page__block">
+        {{> ../../common/forms/RangeSliderOneValue displayPostfix="%" start=50 min=0 max=100 labelStart="Текущая скидка:" labelEnd="Возможная скидка:" }}
     </div>
 </div>

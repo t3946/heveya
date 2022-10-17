@@ -19,56 +19,64 @@ $(() => {
     const $displayStartValue = $displayStart.find(".value");
     const $displayEndValue = $displayEnd.find(".value");
     const start = parseFloat($startInput.val().toString());
-    const end = parseFloat($endInput.val().toString());
+    const end = $endInput.length ? parseFloat($endInput.val().toString()) : null;
 
-    const format = (start, end) => {
-      return [parseInt(start), parseInt(end)];
+    const format = (value) => {
+      return parseInt(value);
     }
 
-    const formatDisplay = (...values): string[] => {
-      const result: string[] = [];
+    const formatDisplay = (value): string => {
+      let result = null;
 
-      for (let i in values) {
-        if (values[i] < 1000 * 1000) {
-          result.push(values[i].toLocaleString());
-        } else if (values[i] >= 1000 * 1000 && values[i] < 1000 * 1000 * 1000) {
-          const value = Math.floor(values[i] / 1000 / 1000);
-
-          result.push(value.toLocaleString() + " млн");
-        } else if (values[i] >= 1000 * 1000 * 1000) {
-          const value = Math.floor(values[i] / 1000 / 1000 / 1000);
-
-          result.push(value.toLocaleString() + " млр");
-        }
+      if (value < 1000 * 1000) {
+        result = value.toLocaleString();
+      } else if (value >= 1000 * 1000 && value < 1000 * 1000 * 1000) {
+        result = Math.floor(value / 1000 / 1000).toLocaleString() + " млн";
+      } else if (value >= 1000 * 1000 * 1000) {
+        result = Math.floor(value / 1000 / 1000 / 1000).toLocaleString() + " млр";
       }
 
       return result;
     }
 
-    const updateFieldsValues = (start, end) => {
-      [start, end] = format(start, end);
-
+    const updateFieldsValues = (start, end = null) => {
+      start = format(start);
       $startInput.val(start);
-      $endInput.val(end);
 
-      const [displayStar, displayEnd] = formatDisplay(start, end);
+      const displayStar = formatDisplay(start);
+
       $displayStartValue.text(displayStar);
-      $displayEndValue.text(displayEnd);
+
+      if (typeof end !== null) {
+        end = format(end);
+        $endInput.val(end);
+
+        const displayEnd = formatDisplay(end);
+
+        $displayEndValue.text(displayEnd);
+      }
     }
 
     $elem.on("change", "input", () => {
       const rawStart = $startInput.val().toString();
-      const rawEnd = $endInput.val().toString();
-      let [start, end] = format(rawStart, rawEnd);
 
-      slider.set([start, end]);
+      if ($endInput.length) {
+        const rawEnd = $endInput.val().toString();
+        let [start, end] = [format(rawStart), format(rawEnd)];
 
-      // @ts-ignore
-      updateFieldsValues(...slider.get());
+        slider.set([start, end]);
+
+        // @ts-ignore
+        updateFieldsValues(...slider.get());
+      } else {
+        let start = format(rawStart);
+        slider.set(start);
+        updateFieldsValues(slider.get());
+      }
     });
 
     const slider = noUiSlider.create(sliderElement, {
-      start: [start, end],
+      start: $endInput.length ? [start, end] : start,
       connect: true,
       range: {
         min, max
