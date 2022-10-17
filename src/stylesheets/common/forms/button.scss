@@ -1,0 +1,45 @@
+.baseButton {
+  white-space: nowrap;
+  padding: 0 pxToRem(28);
+  color: #ef7f1a;
+  background: #ffe7d3;
+  font-size: pxToRem(16);
+  font-weight: bold;
+  height: pxToRem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+
+  &_theme {
+    &_blue {
+      color: #ffffff;
+      background: #8cceef;
+    }
+
+    &_gray {
+      color: #9b9b9b;
+      background: #ffffff;
+      border: 2px solid currentColor;
+    }
+
+    &_red {
+      color: #ffffff;
+      background: #f6002C;
+    }
+
+    &_green {
+      color: #ffffff;
+      background: #21Ac0a;
+    }
+  }
+
+  &_size_medium {
+    height: pxToRem(50);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,14 @@
+@import "@styles/utils/utils";
+
+.baseInputText {
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
+  box-shadow: none !important;
+  outline: none !important;
+  height: 50px;
+  padding: 0 pxToRem(16);
+
+  &:focus {
+    border-color: #8cceef;
+  }
+}

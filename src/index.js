@@ -24,6 +24,7 @@ import RegistryMembers from "./views/pages/registry-members/RegistryMembers.hbs"
 import BiddingNumbers from "./views/pages/bidding-numbers/BiddingNumbers.hbs";
 import Competitors from "./views/pages/competitors/Competitors.hbs";
 import CompetitorsCheck from "./views/pages/competitors-check/CompetitorsCheck.hbs";
+import FormsExample from "./views/pages/forms-example/FormsExample.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -128,6 +129,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/competitors-check':
       document.body.innerHTML = CompetitorsCheck()
+      break
+
+    case '/forms-example':
+      document.body.innerHTML = FormsExample()
       break
 
     default:

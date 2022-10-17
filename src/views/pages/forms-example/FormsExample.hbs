@@ -1,0 +1,21 @@
+<div class="container-lg p-5 page">
+    <div class="page__block">
+        {{> ../../common/forms/InputText placeholder="First name"}}
+    </div>
+
+    <div class="page__block">
+        <div class="d-flex">
+            <button class="baseButton baseButton_theme_gray baseButton_size_medium">button</button>
+            <span class="me-2"></span>
+            <button class="baseButton baseButton_theme_blue baseButton_size_medium">button</button>
+        </div>
+    </div>
+
+    <div class="page__block d-flex">
+        {{> ../../common/forms/InputCheckbox id="check1" label="One" checked=true}}
+        <span class="me-2"></span>
+        {{> ../../common/forms/InputCheckbox id="check2" label="Two"}}
+        <span class="me-2"></span>
+        {{> ../../common/forms/InputCheckbox id="check3" label="Three" checked=false}}
+    </div>
+</div>
