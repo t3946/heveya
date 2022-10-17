@@ -1,0 +1,49 @@
+<div class="page__block">
+    <h2 class="header2 bigHeader">{{header}}</h2>
+</div>
+
+<div class="containerFrame page__block">
+    <div class="row">
+        <div class="col-6">
+            <div class="biddingNumbersChart3" style="width: 800px;height: 370px"></div>
+        </div>
+
+        <div class="col-6">
+            <div class="biddingNumbersChart4" style="width: 800px;height: 370px"></div>
+        </div>
+    </div>
+</div>
+
+<div class="page__block mt-5">
+    {{> ../../common/tables/regions-summary/RegionsSummary header="Сводка по регионам" }}
+</div>
+
+<div class="page__block">
+    <h2 class="header2 mb-4 biddingResultsHeader">Результаты торгов</h2>
+
+    <div class="mb-3">
+        {{ FormChartSettings }}
+    </div>
+
+    <div class="containerFrame">
+        <div class="row">
+            <div class="col-6">
+                <div class="auctionBlockChart1" style="width: 800px;height: 370px"></div>
+            </div>
+
+            <div class="col-6">
+                <div class="auctionBlockChart2" style="width: 800px;height: 370px"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="auctionBlockChart3" style="width: 800px;height: 370px"></div>
+            </div>
+
+            <div class="col-6">
+                <div class="auctionBlockChart4" style="width: 800px;height: 370px"></div>
+            </div>
+        </div>
+    </div>
+</div>
