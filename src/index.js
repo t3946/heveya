@@ -21,6 +21,7 @@ import RegistryArbitrators from "./views/pages/registry-arbitrators/RegistryArbi
 import RegistryInitiators from "./views/pages/registry-initiators/RegistryInitiators.hbs";
 import RegistrySro from "./views/pages/registry-sro/RegistrySro.hbs";
 import RegistryMembers from "./views/pages/registry-members/RegistryMembers.hbs";
+import BiddingNumbers from "./views/pages/bidding-numbers/BiddingNumbers.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -113,6 +114,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/registry-members':
       document.body.innerHTML = RegistryMembers()
+      break
+
+    case '/bidding-numbers':
+      document.body.innerHTML = BiddingNumbers()
       break
 
     default:

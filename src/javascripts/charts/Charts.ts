@@ -25,6 +25,7 @@ import initPieCategories from "./pie/personal-data-panel/Categories";
 import initAverageDebtorsSum from "./etp/AverageDebtorsSum";
 import initBidsInitiator from "./etp/BidsInitiator";
 import initBidsMember from "./etp/BidsMember";
+import initBiddingNumbers from "./pie/BiddingNumbers";
 
 import $ from "jquery";
 
@@ -135,6 +136,10 @@ function init() {
 
   $(".etpChartBidsMember").each((i, e) => {
     initBidsMember(e);
+  });
+
+  $(".pieChartBiddingNumbers").each((i, e) => {
+    initBiddingNumbers(e);
   });
 }
 
