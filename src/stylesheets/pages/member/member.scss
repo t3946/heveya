@@ -5,37 +5,6 @@
     margin: 0 0 pxToRem(20);
   }
 
-  .participantStats {
-    height: 210px;
-
-    .segment {
-      flex-grow: 0;
-      &1 {
-        width: 300px;
-      }
-      &2 {
-        width: 70px;
-      }
-      &3 {
-        width: 240px;
-      }
-      &4 {
-        width: 160px;
-
-        .stackedChart {
-          max-width: pxToRem(135);
-          white-space: nowrap;
-        }
-      }
-      &5, &6 {
-        width: 215px;
-      }
-      &7 {
-        width: 210px;
-      }
-    }
-  }
-
   .charts {
     padding-bottom: pxToRem(60);
   }

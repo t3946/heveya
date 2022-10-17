@@ -17,8 +17,9 @@ import initAuctionBlockChart3 from "./arbitrator/AuctionBlockChart3";
 import initAuctionBlockChart4 from "./arbitrator/AuctionBlockChart4";
 import initPieUserRate from "./pie/personal-data-panel/UserRate";
 import initPieSroRate from "./pie/personal-data-panel/SroRate";
-import initPieCharUp from "./pie/personal-data-panel/Up";
-import initPieCharDown from "./pie/personal-data-panel/Down";
+import initPieChartUp from "./pie/personal-data-panel/Up";
+import initPieChartDown from "./pie/personal-data-panel/Down";
+import initChartParticipation from "./pie/personal-data-panel/Participation";
 import initPieEffectivity from "./pie/personal-data-panel/Effectivity";
 import initPieWins from "./pie/personal-data-panel/Wins";
 import initPieCategories from "./pie/personal-data-panel/Categories";
@@ -109,12 +110,12 @@ function init() {
     initPieSroRate(e);
   });
 
-  $(".pieCharUp").each((i, e) => {
-    initPieCharUp(e);
+  $(".pieChartUp").each((i, e) => {
+    initPieChartUp(e);
   });
 
-  $(".pieCharDown").each((i, e) => {
-    initPieCharDown(e);
+  $(".pieChartDown").each((i, e) => {
+    initPieChartDown(e);
   });
 
   $(".pieCharEffectivity").each((i, e) => {
@@ -155,6 +156,10 @@ function init() {
 
   $(".biddingNumbersChart4").each((i, e) => {
     initBiddingNumbersChart4(e);
+  });
+
+  $(".pieChartParticipation").each((i, e) => {
+    initChartParticipation(e);
   });
 }
 
