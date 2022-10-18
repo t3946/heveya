@@ -1,0 +1,19 @@
+@import "@styles/utils/utils";
+
+.inputFilter {
+  position: relative;
+
+  .icon {
+    color: #9b9b9b;
+    width: pxToRem(16);
+    height: pxToRem(10);
+    position: absolute;
+    top: pxToRem(25);
+    left: 16px;
+    transform: translateY(-50%);
+    z-index: 11;
+  }
+  .selectize-input {
+    padding-left: pxToRem(44);
+  }
+}
