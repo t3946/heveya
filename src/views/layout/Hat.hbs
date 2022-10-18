@@ -129,14 +129,20 @@
             <div class="mb-3">
                 {{> ../common/forms/Select default="Сортировать по"}}
             </div>
+            <div class="mb-3">
+                {{> ../common/forms/InputDateInterval placeholder1="Дата публикации, от" placeholder2="Дата публикации, до" }}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/InputDateInterval placeholder1="Дата окончания, от" placeholder2="Дата окончания, до" }}
+            </div>
         </div>
 
         <div class="col-6">
-            <div class="mb-3">
+            <div class="mb-5">
                 {{> ../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}
             </div>
 
-            <div class="mb-3">
+            <div class="mb-5">
                 {{> ../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена текущая, от:" labelEnd="Цена текущая, до:" }}
             </div>
 
