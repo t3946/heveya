@@ -1,7 +1,13 @@
+@import "@styles/utils/utils";
+
 .searchForm {
   margin: 0 0 pxToRem(20);
 
   .inputSearch {
     max-width: 525px;
+  }
+
+  .filterContainer {
+    width: pxToRem(255);
   }
 }

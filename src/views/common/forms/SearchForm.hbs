@@ -1,4 +1,7 @@
 <form action="/" method="GET" class="searchForm form d-flex align-items-center">
     {{> ../ui/InputSearch placeholder="Поиск"}}
+
     <div class="baseButton baseButton_theme_blue baseButton_size_medium px-5 ms-3">Найти</div>
+
+    <div class="ms-3 filterContainer">{{> ../ui/InputFilter placeholder="Сортировать по"}}</div>
 </form>
