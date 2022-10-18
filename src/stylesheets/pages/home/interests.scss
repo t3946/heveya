@@ -1,4 +1,12 @@
+@import "@styles/utils/utils";
+
 .interests {
+  padding: 0 0 pxToRem(60);
+
+  &__header {
+    margin: pxToRem(60) 0 0;
+  }
+
   .grid {
     display: grid;
     grid-template-areas: "item-1 item-2 item-3"
