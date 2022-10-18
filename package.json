@@ -27,6 +27,7 @@
     "handlebars-loader": "^1.7.2",
     "handlebars-webpack-plugin": "^2.2.1",
     "jquery": "^3.6.1",
+    "js-datepicker": "^5.18.0",
     "node-sass": "^7.0.3",
     "nouislider": "^15.6.1",
     "postcss-loader": "^7.0.1",

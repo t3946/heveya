@@ -1,4 +1,4 @@
-<div class="container-lg p-5 page">
+<div class="container-lg p-5 page" style="padding-bottom: 300px !important;">
     <div class="page__block">
         {{> ../../common/forms/InputText placeholder="First name"}}
     </div>
@@ -53,5 +53,13 @@
 
     <div class="page__block">
         {{> ../../common/forms/Select default="Категория" }}
+    </div>
+
+    <div class="page__block">
+        {{> ../../common/forms/InputDate placeholder="Выбрать дату" }}
+    </div>
+
+    <div class="page__block">
+        {{> ../../common/forms/InputDateInterval placeholder1="Дата публикации, от" placeholder2="Дата публикации, до" }}
     </div>
 </div>
