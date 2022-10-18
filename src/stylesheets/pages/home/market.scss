@@ -41,6 +41,7 @@
 .marketFooter {
   height: pxToRem(54);
   position: relative;
+  margin: pxToRem(50) 0 0;
 
   &__stats {
     position: absolute;

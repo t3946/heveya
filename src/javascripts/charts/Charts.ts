@@ -30,6 +30,9 @@ import initAverageSum from "./bidding-numbers/AverageSum";
 import initBiddingNumbersChart3 from "./bidding-numbers/Chart3";
 import initBiddingNumbersChart4 from "./bidding-numbers/Chart4";
 import initSiteRate from "./pie/SiteRate";
+import initHomeBiddingNumbers1 from "./bidding-numbers/HomeBiddingNumbers1";
+import initHomeBiddingNumbers2 from "./bidding-numbers/HomeBiddingNumbers2";
+import initHomeBiddingNumbers3 from "./bidding-numbers/HomeBiddingNumbers3";
 
 import $ from "jquery";
 
@@ -160,6 +163,18 @@ function init() {
 
   $(".pieSiteRate").each((i, e) => {
     initSiteRate(e);
+  });
+
+  $(".homeBiddingNumbers1").each((i, e) => {
+    initHomeBiddingNumbers1(e);
+  });
+
+  $(".homeBiddingNumbers2").each((i, e) => {
+    initHomeBiddingNumbers2(e);
+  });
+
+  $(".homeBiddingNumbers3").each((i, e) => {
+    initHomeBiddingNumbers3(e);
   });
 }
 
