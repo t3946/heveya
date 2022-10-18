@@ -1,25 +1,13 @@
-<div>
+<div class="violations">
     <h2 class="header2 mb-4 text-center">Нарушения</h2>
 
-    <div class="d-flex justify-content-between">
-        <div class="nameValuePair">
-            <div class="name">Должник:</div>
-            <div class="value">ООО Ромашка</div>
-        </div>
-
-        <div class="nameValuePair">
-            <div class="name">Дата:</div>
-            <div class="value">17.05.22</div>
-        </div>
-
-        <div class="nameValuePair">
-            <div class="name">№ дела:</div>
-            <div class="value">А27-365</div>
-        </div>
-
-        <div class="nameValuePair">
-            <div class="name">Решение:</div>
-            <div class="value">Штраф</div>
-        </div>
+    <div class="grid">
+        {{> Item debtor="ООО Ромашка" date="17.05.22" number="А27-365" decision="Штраф" }}
+        {{> Item debtor="ООО Lorem ipsum dolor." date="17.05.22" number="А27-365" decision="Lorem ipsum." }}
+        {{> Item debtor="ООО Lorem ipsum dolor sit amet." date="17.05.22" number="А27-365" decision="Lorem ipsum dolor." }}
+        {{> Item debtor="ООО Lorem ipsum dolor sit amet." date="17.05.22" number="А27-365" decision="Lorem" }}
+        {{> Item debtor="ООО Lorem ipsum dolor sit amet." date="17.05.22" number="А27-365" decision="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, impedit?" }}
+        {{> Item debtor="ООО Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet." date="17.05.22" number="А27-365" decision="Lorem" }}
+        {{> Item debtor="ООО Lorem ipsum dolor sit amet." date="17.05.22" number="А27-365" decision="Lorem ipsum dolor." }}
     </div>
 </div>
