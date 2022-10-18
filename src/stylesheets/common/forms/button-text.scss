@@ -1,0 +1,21 @@
+@import "@styles/utils/utils";
+
+.buttonText {
+  color: #8cceef;
+  font-weight: 600;
+  font-size: pxToRem(20);
+  cursor: pointer;
+
+  &:hover {
+    color: #6fbfe9;
+  }
+
+  &:active {
+    color: #8cceef;
+  }
+
+  &_disable {
+    color: #d4d4d4;
+    cursor: default;
+  }
+}

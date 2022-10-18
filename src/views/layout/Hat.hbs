@@ -48,9 +48,9 @@
                     <div class="divider"></div>
 
                     <span class="ms-2 d-flex align-items-center">
-                        <a href="#" class="text-decoration-none color_0f0f0f d-flex align-items-center">
+                        <span href="#" class="text-decoration-none color_0f0f0f d-flex align-items-center openLoginModal c-pointer">
                             {{> ../common/icons/logout/Logout class="icon me-1"}} Войти
-                        </a>
+                        </span>
                         <span class="color_9b9b9b mx-2">или</span>
                         <a href="#" class="text-decoration-none color_0f0f0f">зарегистрироваться</a>
                     </span>
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="searchButton d-flex align-items-center">
-                    {{> ../common/icons/adjust/Adjust class="icon"}}
+                    <div>{{> ../common/icons/adjust/Adjust class="icon"}}</div>
 
                     <div class="button baseButton baseButton_theme_blue">Найти</div>
 
@@ -227,3 +227,5 @@
         </div>
     </div>
 </div>
+
+{{> modals/Login }}

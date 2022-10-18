@@ -4,6 +4,7 @@ import initMap from "./map/Map";
 import $ from "jquery";
 import "./ui/UI";
 import "./hat";
+import "./layout/Layout"
 
 $(() => {
   initCharts();

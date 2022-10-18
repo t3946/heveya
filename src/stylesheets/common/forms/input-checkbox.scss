@@ -33,4 +33,34 @@
     padding: 0 0 0 pxToRem(12);
     color: #9b9b9b;
   }
+
+  &_size {
+    &_small {
+      .checkContainer {
+        width: pxToRem(20);
+        height: pxToRem(20);
+      }
+
+      .label {
+        font-size: pxToRem(14);
+      }
+
+      .icon {
+        width: pxToRem(14);
+      }
+    }
+  }
+
+  &_theme {
+    &_disabled {
+      .checkContainer {
+        border: none;
+        background-color: #d4d4d4;
+      }
+
+      .label {
+        color: #9b9b9b;
+      }
+    }
+  }
 }

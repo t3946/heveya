@@ -1,0 +1,49 @@
+@import "@styles/utils/utils";
+
+.modalLogin {
+  .closeButton {
+    position: absolute;
+    top: -16px;
+    right: -60px;
+    padding: pxToRem(18);
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .modal-body {
+    padding-top: pxToRem(28);
+    padding-bottom: pxToRem(64);
+  }
+
+  .wrapper {
+    max-width: pxToRem(380);
+    margin: 0 auto;
+  }
+
+  .modal-dialog {
+    max-width: pxToRem(560);
+  }
+
+  &__input {
+    margin: 0 0 pxToRem(12);
+  }
+
+  &__caption {
+    margin: 0 0 pxToRem(12);
+  }
+
+  .orBlock {
+    display: grid;
+    grid-template-columns: 1fr pxToRem(32) 1fr;
+    grid-gap: pxToRem(20);
+    align-items: center;
+    margin: pxToRem(16) 0;
+  }
+
+  .gosUslugi1 {
+    color: #135EAA;
+  }
+
+  .gosUslugi2 {
+    color: #E73551;
+  }
+}

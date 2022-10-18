@@ -1,0 +1,16 @@
+@import "login";
+
+.modal {
+  .modal-content {
+    border-radius: 5px;
+    border: none;
+  }
+
+  .modal-header {
+    border-radius: 0;
+  }
+
+  .modal-footer {
+    border-radius: 0;
+  }
+}

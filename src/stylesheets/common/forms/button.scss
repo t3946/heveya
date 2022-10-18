@@ -11,6 +11,8 @@
   justify-content: center;
   border-radius: 5px;
   border: none;
+  width: 100%;
+  text-decoration: none;
 
   .icon {
     width: pxToRem(20);
@@ -18,21 +20,77 @@
   }
 
   &_theme {
+    &_orange {
+      border-radius: 10px;
+
+      &:hover {
+        background: #ef7f1a;
+        color: #FFE7D3;
+      }
+
+      &:active {
+        background: #ffe7d3;
+        color: #ef7f1a;
+      }
+
+      &_disabled {
+        background: #f3f3f3;
+        color: #d4d4d4;
+        cursor: default;
+      }
+    }
+
     &_blue {
       color: #ffffff;
       background: #8cceef;
+
+      &:hover {
+        color: #ffffff;
+        background: #6fbfe9;
+      }
+
+      &:active {
+        background: #8cceef;
+      }
+
+      &_disabled {
+        background: #f3f3f3;
+        color: #d4d4d4;
+        cursor: default;
+      }
     }
 
     &_gray {
       color: #9b9b9b;
       background: #ffffff;
       border: 2px solid #9b9b9b;
+
+      &:hover {
+        color: #9b9b9b;
+      }
     }
 
     &_darkGray {
       color: #434343;
       background: #ffffff;
       border: 1px solid #9b9b9b;
+
+      &:hover {
+        color: #434343;
+        background: #d4d4d4;
+        border-color: #d4d4d4;
+      }
+
+      &:active {
+        background: #ffffff;
+        border-color: #9b9b9b;
+      }
+
+      &_disabled {
+        border-color: #d4d4d4;
+        color: #d4d4d4;
+        cursor: default;
+      }
     }
 
     &_red {
@@ -52,5 +110,9 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: default;
   }
 }

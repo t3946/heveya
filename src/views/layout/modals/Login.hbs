@@ -1,0 +1,54 @@
+<div class="modal modalLogin" tabindex="-1" id="modalLogin">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <span class="closeButton">
+                {{> ../../common/icons/times/Times class="icon"}}
+            </span>
+            <div class="modal-body">
+                <form class="wrapper">
+                    <h2 class="mb-3">Войти</h2>
+
+                    <p class="fs20px modalLogin__caption">Вход по логину и паролю</p>
+
+                    <div class="modalLogin__input">
+                        {{> ../../common/ui/InputText placeholder="E-mail" }}
+                    </div>
+
+                    <div class="modalLogin__input">
+                        {{> ../../common/ui/InputPassword placeholder="Пароль" }}
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        {{> ../../common/ui/InputCheckbox id="rememberMe" label="Запомнить меня" }}
+                        <a href="#" class="baseLink">Забыл пароль</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="baseButton baseButton_theme_blue">
+                                Войти
+                            </button>
+                        </div>
+
+                        <div class="col-6">
+                            <a class="baseButton baseButton_theme_darkGray">
+                                Регистрация
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="orBlock">
+                        <div class="baseHorizontalDivider"></div>
+                        <span class="fw-semibold color_9b9b9b">или</span>
+                        <div class="baseHorizontalDivider"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-3"><span class="buttonText">Вход по электронной подписи</span></div>
+                        <div><span class="buttonText">Вход через ЕСИА <span class="gosUslugi1">Гос</span><span class="gosUslugi2">услуги</span></span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
