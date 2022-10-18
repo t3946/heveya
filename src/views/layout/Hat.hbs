@@ -64,7 +64,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <a href="/">{{> ../common/icons/logo/Logo class="icon"}}</a>
 
-                {{> ../common/forms/InputSearch placeholder="Что вы ищете?" }}
+                {{> ../common/ui/InputSearch placeholder="Что вы ищете?" }}
 
                 <div class="selects d-flex">
                     <div class="item">
@@ -109,77 +109,77 @@
     <div class="row mb-4">
         <div class="col-6">
             <div class="mb-3">
-                {{> ../common/forms/Select default="Категория"}}
+                {{> ../common/ui/Select default="Категория"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/Select default="Регион"}}
+                {{> ../common/ui/Select default="Регион"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/Select default="Направление"}}
+                {{> ../common/ui/Select default="Направление"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/Select default="Формирование цены"}}
+                {{> ../common/ui/Select default="Формирование цены"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/Select default="Электронная площадка"}}
+                {{> ../common/ui/Select default="Электронная площадка"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/InputText placeholder="ИНН Должника / Продавца"}}
+                {{> ../common/ui/InputText placeholder="ИНН Должника / Продавца"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/Select default="Сортировать по"}}
+                {{> ../common/ui/Select default="Сортировать по"}}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/InputDateInterval placeholder1="Дата публикации, от" placeholder2="Дата публикации, до" }}
+                {{> ../common/ui/InputDateInterval placeholder1="Дата публикации, от" placeholder2="Дата публикации, до" }}
             </div>
             <div class="mb-3">
-                {{> ../common/forms/InputDateInterval placeholder1="Дата окончания, от" placeholder2="Дата окончания, до" }}
+                {{> ../common/ui/InputDateInterval placeholder1="Дата окончания, от" placeholder2="Дата окончания, до" }}
             </div>
         </div>
 
         <div class="col-6">
             <div class="mb-5">
-                {{> ../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}
+                {{> ../common/ui/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}
             </div>
 
             <div class="mb-5">
-                {{> ../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена текущая, от:" labelEnd="Цена текущая, до:" }}
+                {{> ../common/ui/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена текущая, от:" labelEnd="Цена текущая, до:" }}
             </div>
 
             <div class="row mb-5">
                 <div class="col-6">
-                    {{> ../common/forms/RangeSliderOneValue displayPostfix="%" start=49 min=0 max=100 labelStart="Текущая скидка:" }}
+                    {{> ../common/ui/RangeSliderOneValue displayPostfix="%" start=49 min=0 max=100 labelStart="Текущая скидка:" }}
                 </div>
 
                 <div class="col-6">
-                    {{> ../common/forms/RangeSliderOneValue displayPostfix="%" start=49 min=0 max=100 labelStart="Возможная скидка:" }}
+                    {{> ../common/ui/RangeSliderOneValue displayPostfix="%" start=49 min=0 max=100 labelStart="Возможная скидка:" }}
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-6">
-                    {{> ../common/forms/InputCheckbox id="check1" label="Активные"}}
+                    {{> ../common/ui/InputCheckbox id="check1" label="Активные"}}
                 </div>
                 <div class="col-6">
-                    {{> ../common/forms/InputCheckbox id="check4" label="Есть фотографии лотов в объявлении"}}
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    {{> ../common/forms/InputCheckbox id="check2" label="Завершенные" checked=true}}
-                </div>
-                <div class="col-6">
-                    {{> ../common/forms/InputCheckbox id="check5" label="Есть отчёт независимого оценщика" checked=true}}
+                    {{> ../common/ui/InputCheckbox id="check4" label="Есть фотографии лотов в объявлении"}}
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-6">
-                    {{> ../common/forms/InputCheckbox id="check3" label="Анонс продажи"}}
+                    {{> ../common/ui/InputCheckbox id="check2" label="Завершенные" checked=true}}
                 </div>
                 <div class="col-6">
-                    {{> ../common/forms/InputCheckbox id="check6" label="Скрывать ранее просмотренные объявления"}}
+                    {{> ../common/ui/InputCheckbox id="check5" label="Есть отчёт независимого оценщика" checked=true}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    {{> ../common/ui/InputCheckbox id="check3" label="Анонс продажи"}}
+                </div>
+                <div class="col-6">
+                    {{> ../common/ui/InputCheckbox id="check6" label="Скрывать ранее просмотренные объявления"}}
                 </div>
             </div>
         </div>
