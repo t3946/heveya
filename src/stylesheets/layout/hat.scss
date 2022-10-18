@@ -97,3 +97,32 @@
     }
   }
 }
+
+$hatHeight: 133px;
+
+.searchMenuBackground {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 100;
+  inset: pxToRem($hatHeight) 0 0 0;
+  height: 4000px;
+
+  &_active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.hatSearchForm {
+  display: none;
+  position: absolute;
+  top: pxToRem($hatHeight + 16px);
+  width: 1200px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 101;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: pxToRem(20);
+}

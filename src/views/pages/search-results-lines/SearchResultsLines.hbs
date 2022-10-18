@@ -17,15 +17,7 @@
                         <li class="item">Сортировать по: Популярности</li>
                     </ul>
 
-                    <div class="view d-flex">
-                        <div class="mode mode_tiles">
-                            {{> ../../common/icons/tiles/Tiles class="icon"}}
-                        </div>
-
-                        <div class="mode mode_lines mode_active">
-                            {{> ../../common/icons/lines/Lines class="icon"}}
-                        </div>
-                    </div>
+                    {{> ../../common/catalog-toggle-view/CatalogToggleView lines=true}}
                 </div>
             </div>
         </div>

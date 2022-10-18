@@ -102,3 +102,122 @@
         </div>
     </div>
 </div>
+
+<div class="searchMenuBackground"></div>
+
+<div class="hatSearchForm">
+    <div class="row mb-4">
+        <div class="col-6">
+            <div class="mb-3">
+                {{> ../common/forms/Select default="Категория"}}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/Select default="Регион"}}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/Select default="Направление"}}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/Select default="Формирование цены"}}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/Select default="Электронная площадка"}}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/InputText placeholder="ИНН Должника / Продавца"}}
+            </div>
+            <div class="mb-3">
+                {{> ../common/forms/Select default="Сортировать по"}}
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="mb-3">
+                {{> ../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}
+            </div>
+
+            <div class="mb-3">
+                {{> ../common/forms/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена текущая, от:" labelEnd="Цена текущая, до:" }}
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-6">
+                    {{> ../common/forms/RangeSliderOneValue displayPostfix="%" start=49 min=0 max=100 labelStart="Текущая скидка:" }}
+                </div>
+
+                <div class="col-6">
+                    {{> ../common/forms/RangeSliderOneValue displayPostfix="%" start=49 min=0 max=100 labelStart="Возможная скидка:" }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    {{> ../common/forms/InputCheckbox id="check1" label="Активные"}}
+                </div>
+                <div class="col-6">
+                    {{> ../common/forms/InputCheckbox id="check4" label="Есть фотографии лотов в объявлении"}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    {{> ../common/forms/InputCheckbox id="check2" label="Завершенные" checked=true}}
+                </div>
+                <div class="col-6">
+                    {{> ../common/forms/InputCheckbox id="check5" label="Есть отчёт независимого оценщика" checked=true}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    {{> ../common/forms/InputCheckbox id="check3" label="Анонс продажи"}}
+                </div>
+                <div class="col-6">
+                    {{> ../common/forms/InputCheckbox id="check6" label="Скрывать ранее просмотренные объявления"}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-end">
+                {{> ../common/catalog-toggle-view/CatalogToggleView tiles=true}}
+
+                <span class="me-2"></span>
+
+                <button class="baseButton baseButton_theme_darkGray baseButton_size_medium">
+                    {{> ../common/icons/excel/Excel class="icon" }}
+                    <span>Выгрузить результаты</span>
+                </button>
+
+                <span class="me-2"></span>
+
+                <button class="baseButton baseButton_theme_darkGray baseButton_size_medium">
+                    {{> ../common/icons/trash/Trash class="icon" }}
+                    <span>Очистить</span>
+                </button>
+
+                <span class="me-2"></span>
+
+                <button class="baseButton baseButton_theme_darkGray baseButton_size_medium">
+                    {{> ../common/icons/download/Download class="icon" }}
+                    <span>Сохранить</span>
+                </button>
+
+                <span class="me-2"></span>
+
+                <button class="baseButton baseButton_size_medium baseButton_theme_blue">
+                    <span>Найти</span>
+                </button>
+
+                <span class="me-2"></span>
+
+                <button class="baseButton baseButton_size_medium">
+                    {{> ../common/icons/map-marker/MapMarker class="icon" }}
+                    <span>На карте</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

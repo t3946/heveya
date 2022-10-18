@@ -3,6 +3,7 @@ import initCharts from "./charts/Charts";
 import initMap from "./map/Map";
 import $ from "jquery";
 import "./forms/Forms";
+import "./hat";
 
 $(() => {
   initCharts();

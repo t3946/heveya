@@ -19,33 +19,4 @@
       }
     }
   }
-
-  .view {
-    .mode {
-      color: #d4d4d4;
-      border: 1px solid transparent;
-      border-radius: 5px;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-
-      &_tiles .icon {
-        width: pxToRem(20);
-        height: pxToRem(20);
-      }
-
-      &_lines .icon {
-        width: pxToRem(24);
-        height: pxToRem(20);
-      }
-
-      &_active {
-        color: #6fbfe9;
-        border-color: #6fbfe9;
-      }
-    }
-  }
 }
