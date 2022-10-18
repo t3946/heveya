@@ -1,5 +1,6 @@
 const autoprefixer = require('autoprefixer')
 const path = require('path')
+const webpack = require('webpack')
 
 const config = {
   mode: 'development',
@@ -88,7 +89,11 @@ const config = {
     alias: {
       '@styles': path.resolve(__dirname, 'src/stylesheets'),
     },
-  }
+  },
+
+  plugins: [
+    new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' })
+  ],
 }
 
 module.exports = config
