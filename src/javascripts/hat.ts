@@ -3,7 +3,7 @@ import $ from "jquery";
 $(() => {
   // search menu
   const $bgSearchMenu = $(".searchMenuBackground");
-  const $searchForm = $(".hatSearchForm");
+  const $searchMenu = $(".searchMenu");
   const $hat = $(".hat");
   const $body = $(document.body);
 
@@ -13,13 +13,13 @@ $(() => {
       return;
     }
 
-    $searchForm.show();
+    $searchMenu.show();
     $bgSearchMenu.addClass("searchMenuBackground_active");
     $body.css("overflow", "hidden");
   }
 
   function hide() {
-    $searchForm.hide();
+    $searchMenu.hide();
     $bgSearchMenu.removeClass("searchMenuBackground_active");
     $body.css("overflow", "");
   }
@@ -31,6 +31,8 @@ $(() => {
 
   $bgSearchMenu.on("click", hide);
   $hat.on("click", hide);
+
+  show();
 
   //mobile sidebar menu
   const $bgMobileMenu = $(".sidebarMenuBackground");

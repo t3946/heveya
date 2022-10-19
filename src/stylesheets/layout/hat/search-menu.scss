@@ -1,0 +1,46 @@
+.searchMenu {
+  display: none;
+  position: absolute;
+  top: pxToRem(100);
+  padding: pxToRem(16);
+  width: 100%;
+  z-index: 101;
+
+  @include breakpoint(md) {
+    top: pxToRem(131);
+  }
+
+  @include breakpoint(lg) {
+    top: pxToRem(134);
+  }
+
+  .hatSearchForm {
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: pxToRem(20);
+  }
+}
+
+.searchMenuBackground {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0);
+  inset: pxToRem(100) 0 0 0;
+  height: 4000px;
+
+  @include breakpoint(md) {
+    inset: pxToRem(131) 0 0 0;
+  }
+
+  @include breakpoint(lg) {
+    inset: pxToRem(134) 0 0 0;
+  }
+
+  &_active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
