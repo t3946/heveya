@@ -20,6 +20,11 @@
     height: pxToRem(60);
     background-color: #ffffff;
     border: none;
+    display: grid;
+    padding: 0;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: pxToRem(16);
+    align-items: center;
   }
 
   .openMenuButton {
@@ -30,6 +35,23 @@
       color: #161616;
       width: pxToRem(20);
       height: pxToRem(20);
+    }
+  }
+
+  .searchInputContainer {
+    position: relative;
+
+    .searchInput {
+      height: pxToRem(35);
+      border: 1px solid #d4d4d4;
+      padding-right: 32px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
     }
   }
 }
