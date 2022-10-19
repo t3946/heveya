@@ -2,7 +2,7 @@ $sizes: 12, 13, 14, 16, 18, 20;
 
 @each $size in $sizes {
   .fs-#{$size}px {
-    font-size: pxToRem($size);
+    font-size: pxToRem($size) !important;
   }
 }
 
@@ -10,7 +10,7 @@ $sizes: 12, 13, 14, 16, 18, 20;
   @each $size in $sizes {
     @media (min-width: map-get($breakpoints, $bp)) {
       .fs-#{$bp}-#{$size}px {
-        font-size: pxToRem($size);
+        font-size: pxToRem($size) !important;
       }
     }
   }

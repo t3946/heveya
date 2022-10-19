@@ -1,5 +1,7 @@
-
-
 .inputGroup {
-  margin: 0 0 pxToRem(16);
+  margin: 0 0 pxToRem(12);
+
+  @include breakpoint(md) {
+    margin: 0 0 pxToRem(16);
+  }
 }

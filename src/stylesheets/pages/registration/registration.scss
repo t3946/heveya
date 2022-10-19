@@ -1,5 +1,3 @@
-
-
 .registrationPage {
   &__header {
     margin: pxToRem(28) 0;
@@ -11,6 +9,10 @@
   }
 
   .backToStatusSelect {
-    margin: 0 0 pxToRem(28);
+    margin: pxToRem(12) 0 pxToRem(20);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(28);
+    }
   }
 }

@@ -1,4 +1,14 @@
 .hat {
+  margin: 0 0 pxToRem(24);
+
+  @include breakpoint(md) {
+    margin: 0 0 pxToRem(32);
+  }
+
+  @include breakpoint(lg) {
+    margin: 0 0 pxToRem(28);
+  }
+
   .contacts {
     height: pxToRem(51);
     background-color: #f3f3f3;
