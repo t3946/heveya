@@ -1,86 +1,115 @@
 import $ from "jquery";
 
-function searchMenu() {
-  const $bgSearchMenu = $(".searchMenuBackground");
-  const $searchMenu = $(".searchMenu");
-  const $hat = $(".hat");
-  const $body = $(document.body);
+const searchMenu = {
+  $bgSearchMenu: null,
+  $searchMenu: null,
+  $hat: null,
+  $body: null,
 
-  function show() {
-    if ($bgSearchMenu.hasClass("searchMenuBackground_active")) {
-      hide();
+  show() {
+    if (searchMenu.$bgSearchMenu.hasClass("searchMenuBackground_active")) {
+      searchMenu.hide();
       return;
     }
 
-    $searchMenu.show();
-    $bgSearchMenu.addClass("searchMenuBackground_active");
-    $body.css("overflow", "hidden");
-  }
+    searchMenu.$searchMenu.show();
+    searchMenu.$bgSearchMenu.addClass("searchMenuBackground_active");
+    searchMenu.$body.css("overflow", "hidden");
+  },
 
-  function hide() {
-    $searchMenu.hide();
-    $bgSearchMenu.removeClass("searchMenuBackground_active");
-    $body.css("overflow", "");
-  }
+  hide() {
+    searchMenu.$searchMenu.hide();
+    searchMenu.$bgSearchMenu.removeClass("searchMenuBackground_active");
+    searchMenu.$body.css("overflow", "");
+  },
 
-  $(".searchButton").on("click", (e) => {
-    e.stopPropagation();
-    show();
-  });
+  init() {
+    searchMenu.$bgSearchMenu = $(".searchMenuBackground");
+    searchMenu.$searchMenu = $(".searchMenu");
+    searchMenu.$hat = $(".hat");
+    searchMenu.$body = $(document.body);
 
-  $bgSearchMenu.on("click", hide);
-  $hat.on("click", hide);
+    $(".searchButton").on("click", (e) => {
+      e.stopPropagation();
+      searchMenu.show();
+      mobileSidebarMenu.hide();
+    });
 
-  function resizeMenu() {
-    let hatHeight = 100;
+    searchMenu.$bgSearchMenu.on("click", () => {
+      searchMenu.hide();
+      mobileSidebarMenu.hide();
+    });
 
-    if (window.innerWidth >= 768) {
-      hatHeight = 131;
+    searchMenu.$hat.on("click", () => {
+      searchMenu.hide();
+      mobileSidebarMenu.hide();
+    });
+
+    function resizeMenu() {
+      let hatHeight = 100;
+
+      if (window.innerWidth >= 768) {
+        hatHeight = 131;
+      }
+
+      if (window.innerWidth >= 992) {
+        hatHeight = 134;
+      }
+
+      const height = window.innerHeight - hatHeight;
+
+      searchMenu.$searchMenu.css("height", `${height}px`);
     }
 
-    if (window.innerWidth >= 992) {
-      hatHeight = 134;
-    }
+    $(window).on("resize", resizeMenu);
 
-    const height = window.innerHeight - hatHeight;
-
-    $searchMenu.css("height", `${height}px`);
+    resizeMenu();
   }
-
-  $(window).on("resize", resizeMenu);
-
-  resizeMenu();
 }
 
-function mobileSidebarMenu() {const $body = $(document.body);
-  //mobile sidebar menu
-  const $bgMobileMenu = $(".sidebarMenuBackground");
-  const $sidebarMenu = $(".sidebarMenu");
-  const $closeMenuButton = $sidebarMenu.find(".closeButton");
+const mobileSidebarMenu = {
+  $body: null,
+  $bgMobileMenu: null,
+  $sidebarMenu: null,
 
-  function showMobileMenu() {
-    $bgMobileMenu.addClass("sidebarMenuBackground_active");
+  show() {
+    mobileSidebarMenu.$bgMobileMenu.addClass("sidebarMenuBackground_active");
     $("body").css({overflow: "hidden"});
-    $sidebarMenu.show();
+    mobileSidebarMenu.$sidebarMenu.show();
+  },
+
+  hide() {
+    mobileSidebarMenu.$bgMobileMenu.removeClass("sidebarMenuBackground_active");
+    mobileSidebarMenu.$body.css("overflow", "");
+    mobileSidebarMenu.$sidebarMenu.hide();
+  },
+
+  init() {
+    mobileSidebarMenu.$body = $(document.body);
+    mobileSidebarMenu.$bgMobileMenu = $(".sidebarMenuBackground");
+    mobileSidebarMenu.$sidebarMenu = $(".sidebarMenu");
+
+    $(".openMenuButton").on("click", (e) => {
+      e.stopPropagation();
+      mobileSidebarMenu.show();
+      searchMenu.hide();
+    });
+
+    mobileSidebarMenu.$bgMobileMenu.on("click", () => {
+      mobileSidebarMenu.hide();
+      searchMenu.hide();
+    });
+
+    const $closeMenuButton = mobileSidebarMenu.$sidebarMenu.find(".closeButton");
+
+    $closeMenuButton.on("click", () => {
+      mobileSidebarMenu.hide();
+      searchMenu.hide();
+    });
   }
-
-  function hideMobileMenu() {
-    $bgMobileMenu.removeClass("sidebarMenuBackground_active");
-    $body.css("overflow", "");
-    $sidebarMenu.hide();
-  }
-
-  $(".openMenuButton").on("click", (e) => {
-    e.stopPropagation();
-    showMobileMenu();
-  });
-
-  $bgMobileMenu.on("click", hideMobileMenu);
-  $closeMenuButton.on("click", hideMobileMenu);
-  $sidebarMenu
 }
 
 $(() => {
-  searchMenu();
-  mobileSidebarMenu();
+  searchMenu.init();
+  mobileSidebarMenu.init();
 });
