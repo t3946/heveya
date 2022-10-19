@@ -1,4 +1,4 @@
-$sizes: 12, 13, 14, 18, 20;
+$sizes: 12, 13, 14, 16, 18, 20;
 
 @each $size in $sizes {
   .fs#{$size}px {

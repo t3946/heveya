@@ -24,6 +24,7 @@ import RegistryMembers from "./views/pages/registry-members/RegistryMembers.hbs"
 import BiddingNumbers from "./views/pages/bidding-numbers/BiddingNumbers.hbs";
 import Competitors from "./views/pages/competitors/Competitors.hbs";
 import CompetitorsCheck from "./views/pages/competitors-check/CompetitorsCheck.hbs";
+import Registration from "./views/pages/registration/Registration.hbs";
 import FormsExample from "./views/pages/forms-example/FormsExample.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -129,6 +130,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/competitors-check':
       document.body.innerHTML = CompetitorsCheck()
+      break
+
+    case '/registration':
+      document.body.innerHTML = Registration()
       break
 
     case '/forms-example':

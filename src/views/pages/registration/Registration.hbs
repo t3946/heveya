@@ -1,0 +1,178 @@
+{{> ../../layout/Hat}}
+
+<div class="page registrationPage">
+    <div class="container-lg">
+        <div class="content">
+            <h2 class="header2 text-center registrationPage__header">Регистрация</h2>
+
+            <div class="registrationForm">
+                <div class="stage1">
+                    <div class="mb-2">
+                        <label for="selectRole">Ваша роль</label>
+
+                        <select class="baseSelect" id="selectRole" name="role">
+                            <option value="">Выбрать</option>
+                            <option value="buyer">Покупаю имущество для себя</option>
+                            <option value="broker">Покупаю имущество для других (аукционный брокер)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="selectStatus">Ваш статус</label>
+
+                        <select class="baseSelect" id="selectStatus" name="type">
+                            <option value="">Выбрать</option>
+                            <option value="personal">Физическое лицо</option>
+                            <option value="individual_entrepreneur">Индивидуальный предприниматель</option>
+                            <option value="company">Юридическое лицо</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button type="button"
+                                class="baseButton baseButton_theme_blue baseButton_size_medium mb-4 w-auto nextStage">
+                            Продолжить
+                        </button>
+                    </div>
+
+                    <p class="mb-3">
+                        Регистрация для Арбитражных управляющих, Организаторов торгов не требуется. В разделе «Войти»
+                        используйте
+                        вход по электронной подписи.
+                    </p>
+
+                    <p>
+                        Регистрация представителей Кредитных организаций, Лизинговых компаний, Организаторов
+                        коммерческих торгов
+                        производится службой технической поддержки по письменной заявке:
+                        <a class="buttonText text-decoration-none fs16px"
+                           href="mailto:info@heveya.ru">info@heveya.ru</a>
+                    </p>
+                </div>
+
+                <div class="stage2_personal">
+                    <form class="formRegistrationPersonal needs-validation" action="" novalidate>
+                        <div>
+                            <span class="fs18px">Вы регистрируетесь как:</span>
+                            <span class="fs20px fw-semibold">Покупатель (Физическое лицо)</span>
+                        </div>
+
+                        <div class="buttonText fs16px d-flex align-items-center backToStatusSelect">
+                            {{> ../../common/icons/chevron-left/ChevronLeft class="icon"}}
+                            <span class="ms-2 " href="#">Вернуться к выбору статуса</span>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="fullName1">ФИО</label>
+                            {{> ../../common/ui/InputText id="fullName1" name="fio" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="email1">E-mail</label>
+                            {{> ../../common/ui/InputText id="email1" name="email" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="phone1">Контактный телефон</label>
+                            {{> ../../common/ui/InputPhone id="phone1" name="phone" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="password1">Пароль</label>
+                            {{> ../../common/ui/InputPassword id="password1" name="password" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="passwordAgain1">Повторите пароль</label>
+                            {{> ../../common/ui/InputPassword id="passwordAgain1" name="passwordAgain" required=true}}
+                            <div class="invalid-feedback invalidPasswordAgain">
+                                Должно совпадать с полем пароль
+                            </div>
+                        </div>
+
+                        <p class="mb-3 fs14px color_9b9b9b">
+                            Нажимая кнопку «Зарегистрироваться», я даю согласие на обработку <a
+                            class="baseLink text-decoration-none" href="#">персональных
+                            данных</a> и соглашаюсь c <a class="baseLink text-decoration-none" href="#">политикой
+                            конфиденциальности</a>
+                        </p>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="baseButton baseButton_size_medium baseButton_theme_blue w-auto">
+                                Зарегистрироваться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="stage2_company">
+                    <form class="formRegistrationPersonal needs-validation" action="" novalidate>
+                        <div>
+                            <span class="fs18px">Вы регистрируетесь как:</span>
+                            <span class="fs20px fw-semibold">Покупатель (Юридическое лицо)</span>
+                        </div>
+
+                        <div class="buttonText fs16px d-flex align-items-center backToStatusSelect">
+                            {{> ../../common/icons/chevron-left/ChevronLeft class="icon"}}
+                            <span class="ms-2 " href="#">Вернуться к выбору статуса</span>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="companyName">Ваша организация</label>
+                            {{> ../../common/ui/InputText id="companyName" name="company" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="itn">ИНН организации</label>
+                            {{> ../../common/ui/InputText id="itn" name="inn_ur" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="email2">E-mail</label>
+                            {{> ../../common/ui/InputText id="email2" name="inn_ur" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="phone2">Контактный телефон</label>
+                            {{> ../../common/ui/InputPhone id="phone2" name="phone" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="contactPerson">Контактное лицо</label>
+                            {{> ../../common/ui/InputText id="contactPerson" name="contactPerson" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="password2">Пароль</label>
+                            {{> ../../common/ui/InputPassword id="password2" name="password" required=true}}
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="passwordAgain2">Повторите пароль</label>
+                            {{> ../../common/ui/InputPassword id="passwordAgain2" name="passwordAgain" required=true}}
+                            <div class="invalid-feedback invalidPasswordAgain">
+                                Должно совпадать с полем пароль
+                            </div>
+                        </div>
+
+                        <p class="mb-3 fs14px color_9b9b9b">
+                            Нажимая кнопку «Зарегистрироваться», я даю согласие на обработку <a
+                            class="baseLink text-decoration-none" href="#">персональных
+                            данных</a> и соглашаюсь c <a class="baseLink text-decoration-none" href="#">политикой
+                            конфиденциальности</a>
+                        </p>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="baseButton baseButton_size_medium baseButton_theme_blue w-auto">
+                                Зарегистрироваться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/Footer}}

@@ -1,0 +1,16 @@
+@import "@styles/utils/utils";
+
+.registrationPage {
+  &__header {
+    margin: pxToRem(28) 0;
+  }
+
+  .content {
+    max-width: pxToRem(600);
+    margin: 0 auto;
+  }
+
+  .backToStatusSelect {
+    margin: 0 0 pxToRem(28);
+  }
+}

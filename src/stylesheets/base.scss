@@ -194,6 +194,7 @@ html {
 .baseLink, a.baseLink {
   $color: #8cceef;
   color: $color;
+  cursor: pointer;
 
   &:hover {
     color: $color;
