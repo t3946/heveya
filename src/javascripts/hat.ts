@@ -29,10 +29,6 @@ $(() => {
     show();
   });
 
-  // $searchForm.on("click", (e) => {
-  //   e.stopPropagation();
-  // })
-
   $bgSearchMenu.on("click", hide);
   $hat.on("click", hide);
 
@@ -60,6 +56,4 @@ $(() => {
 
   $bgMobileMenu.on("click", hideMobileMenu);
   $closeMenuButton.on("click", hideMobileMenu);
-
-  // showMobileMenu();
 });
