@@ -9,6 +9,14 @@
   z-index: 101;
   padding: pxToRem(20) 0 ;
 
+  @include breakpoint(sm) {
+    width: pxToRem(300);
+  }
+
+  @include breakpoint(md) {
+    width: pxToRem(700);
+  }
+
   .item {
     display: flex;
     align-items: center;

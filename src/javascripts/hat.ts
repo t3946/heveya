@@ -77,6 +77,7 @@ function mobileSidebarMenu() {const $body = $(document.body);
 
   $bgMobileMenu.on("click", hideMobileMenu);
   $closeMenuButton.on("click", hideMobileMenu);
+  $sidebarMenu
 }
 
 $(() => {

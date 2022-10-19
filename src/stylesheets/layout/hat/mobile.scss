@@ -25,5 +25,11 @@
   .openMenuButton {
     height: pxToRem(60);
     cursor: pointer;
+
+    .icon {
+      color: #161616;
+      width: pxToRem(20);
+      height: pxToRem(20);
+    }
   }
 }
