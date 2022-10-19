@@ -19,8 +19,12 @@ html {
 }
 
 .header2 {
-  font-size: 30px;
   font-weight: bold;
+  font-size: pxToRem(18);
+
+  @include breakpoint(md) {
+    font-size: pxToRem(30);
+  }
 }
 
 .header3 {

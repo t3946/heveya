@@ -1,7 +1,17 @@
 $sizes: 12, 13, 14, 16, 18, 20;
 
 @each $size in $sizes {
-  .fs#{$size}px {
+  .fs-#{$size}px {
     font-size: pxToRem($size);
+  }
+}
+
+@each $bp in ('sm', 'md', 'lg', 'xl', 'xxl') {
+  @each $size in $sizes {
+    @media (min-width: map-get($breakpoints, $bp)) {
+      .fs-#{$bp}-#{$size}px {
+        font-size: pxToRem($size);
+      }
+    }
   }
 }
