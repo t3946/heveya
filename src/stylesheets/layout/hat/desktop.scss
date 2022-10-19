@@ -1,0 +1,10 @@
+.hatDesktop {
+  .navigation {
+    .grid {
+      display: grid;
+      grid-template-columns: pxToRem(210) pxToRem(480) repeat(2, auto) repeat(2, 145px);
+      grid-column-gap: pxToRem(20);
+      align-items: center;
+    }
+  }
+}
