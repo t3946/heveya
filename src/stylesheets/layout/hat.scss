@@ -1,14 +1,4 @@
 .hat {
-  margin: 0 0 pxToRem(24);
-
-  @include breakpoint(md) {
-    margin: 0 0 pxToRem(32);
-  }
-
-  @include breakpoint(lg) {
-    margin: 0 0 pxToRem(28);
-  }
-
   .contacts {
     height: pxToRem(51);
     background-color: #f3f3f3;
@@ -104,6 +94,35 @@
       .icon {
         color: #9b9b9b;
       }
+    }
+  }
+
+  &_mobile {
+    .contacts {
+      height: pxToRem(40);
+      .link {
+        text-decoration: none;
+        color: #434343;
+
+        &:hover {
+          color: #434343;
+        }
+
+        .icon {
+          width: pxToRem(20);
+        }
+      }
+    }
+
+    .navigation {
+      height: pxToRem(60);
+      background-color: #ffffff;
+      border: none;
+      padding: 0 pxToRem(16) 0 0
+    }
+
+    .openMenuButton {
+      height: pxToRem(60);
     }
   }
 }

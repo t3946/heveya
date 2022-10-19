@@ -1,4 +1,4 @@
-<div class="hat">
+<div class="hat d-none d-lg-block">
     <div class="contacts">
         <div class="container-lg">
             <div class="d-flex justify-content-between">
@@ -48,7 +48,8 @@
                     <div class="divider"></div>
 
                     <span class="ms-2 d-flex align-items-center">
-                        <span href="#" class="text-decoration-none color_0f0f0f d-flex align-items-center openLoginModal c-pointer">
+                        <span href="#"
+                              class="text-decoration-none color_0f0f0f d-flex align-items-center openLoginModal c-pointer">
                             {{> ../common/icons/logout/Logout class="icon me-1"}} Войти
                         </span>
                         <span class="color_9b9b9b mx-2">или</span>
@@ -100,6 +101,41 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="hat hat_mobile d-md-none">
+    <div class="contacts d-flex align-items-center justify-content-between px-3">
+        {{> ../common/location/Location}}
+
+        <div class="notifications d-flex">
+            <a href="#" class="link">
+                {{> ../common/icons/email/Email class="icon"}}
+            </a>
+
+            <a href="#" class="link ms-3">
+                <span class="position-relative">{{> ../common/icons/heart/Heart class="icon"}}<span
+                    class="badge position-absolute">1</span></span>
+            </a>
+
+            <a href="#" class="link ms-3">
+                <span class="position-relative">{{> ../common/icons/bell/Bell class="icon icon_bell"}}<span
+                    class="badge position-absolute">1</span></span>
+            </a>
+
+            <a href="#" class="link ms-3">
+                {{> ../common/icons/logout/Logout class="icon"}}
+            </a>
+        </div>
+    </div>
+
+    <div class="navigation d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="px-3 openMenuButton d-flex align-items-center">{{> ../common/icons/menu2/Menu2 class="color_161616"}}</div>
+            <div class="ms-3">{{> ../common/icons/logo/Logo }}</div>
+        </div>
+
+        {{> ../common/icons/search/Search class="color_161616"}}
     </div>
 </div>
 
