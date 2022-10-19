@@ -1,7 +1,7 @@
 <div class="searchMenu">
     <div class="hatSearchForm">
         <div class="row mb-4">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div class="mb-3">
                     {{> ../common/ui/Select default="Категория"}}
                 </div>
@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div class="mb-5">
                     {{> ../common/ui/RangeSliderTwoValue displayPostfix=" ₽" start=200000 end=300000 min=100000 max=1000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}
                 </div>
@@ -81,39 +81,31 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="d-flex justify-content-end">
-                    {{> ../common/catalog-toggle-view/CatalogToggleView tiles=true}}
+                <div class="buttonsGrid">
+                    <div class="gridArea1 d-none d-lg-flex justify-content-end">
+                        {{> ../common/catalog-toggle-view/CatalogToggleView tiles=true}}
+                    </div>
 
-                    <span class="me-2"></span>
-
-                    <button class="baseButton baseButton_theme_darkGray baseButton_size_medium">
+                    <button class="gridArea2 baseButton baseButton_theme_darkGray baseButton_size_medium">
                         {{> ../common/icons/excel/Excel class="icon" }}
                         <span>Выгрузить результаты</span>
                     </button>
 
-                    <span class="me-2"></span>
-
-                    <button class="baseButton baseButton_theme_darkGray baseButton_size_medium">
+                    <button class="gridArea3 baseButton baseButton_theme_darkGray baseButton_size_medium">
                         {{> ../common/icons/trash/Trash class="icon" }}
                         <span>Очистить</span>
                     </button>
 
-                    <span class="me-2"></span>
-
-                    <button class="baseButton baseButton_theme_darkGray baseButton_size_medium">
+                    <button class="gridArea4 baseButton baseButton_theme_darkGray baseButton_size_medium">
                         {{> ../common/icons/download/Download class="icon" }}
                         <span>Сохранить</span>
                     </button>
 
-                    <span class="me-2"></span>
-
-                    <button class="baseButton baseButton_size_medium baseButton_theme_blue">
+                    <button class="gridArea5 baseButton baseButton_size_medium baseButton_theme_blue">
                         <span>Найти</span>
                     </button>
 
-                    <span class="me-2"></span>
-
-                    <button class="baseButton baseButton_size_medium">
+                    <button class="gridArea6 baseButton baseButton_size_medium">
                         {{> ../common/icons/map-marker/MapMarker class="icon" }}
                         <span>На карте</span>
                     </button>

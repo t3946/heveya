@@ -5,6 +5,7 @@
   padding: pxToRem(16);
   width: 100%;
   z-index: 101;
+  overflow: hidden;
 
   @include breakpoint(md) {
     top: pxToRem(131);
@@ -20,6 +21,25 @@
     border-radius: 5px;
     background-color: #ffffff;
     padding: pxToRem(20);
+    max-height: 100%;
+    overflow: scroll;
+
+    .buttonsGrid {
+      display: grid;
+      grid-gap: pxToRem(15);
+      grid-template-areas: "area2 area2"
+                           "area3 area4"
+                           "area5 area5"
+                           "area6 area6";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+
+      @include breakpoint(lg) {
+        grid-template-areas: "area1 area2 area3 area4 area5 area6";
+        grid-template-columns: 1fr repeat(5, auto);
+        grid-template-rows: 1fr;
+      }
+    }
   }
 }
 

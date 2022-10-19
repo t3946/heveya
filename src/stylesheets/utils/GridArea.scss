@@ -1,0 +1,5 @@
+@for $i from 1 through 20 {
+  .gridArea#{$i} {
+    grid-area: area#{$i};
+  }
+}

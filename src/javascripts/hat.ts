@@ -1,7 +1,6 @@
 import $ from "jquery";
 
-$(() => {
-  // search menu
+function searchMenu() {
   const $bgSearchMenu = $(".searchMenuBackground");
   const $searchMenu = $(".searchMenu");
   const $hat = $(".hat");
@@ -32,8 +31,28 @@ $(() => {
   $bgSearchMenu.on("click", hide);
   $hat.on("click", hide);
 
-  show();
+  function resizeMenu() {
+    let hatHeight = 100;
 
+    if (window.innerWidth >= 768) {
+      hatHeight = 131;
+    }
+
+    if (window.innerWidth >= 992) {
+      hatHeight = 134;
+    }
+
+    const height = window.innerHeight - hatHeight;
+
+    $searchMenu.css("height", `${height}px`);
+  }
+
+  $(window).on("resize", resizeMenu);
+
+  resizeMenu();
+}
+
+function mobileSidebarMenu() {const $body = $(document.body);
   //mobile sidebar menu
   const $bgMobileMenu = $(".sidebarMenuBackground");
   const $sidebarMenu = $(".sidebarMenu");
@@ -58,4 +77,9 @@ $(() => {
 
   $bgMobileMenu.on("click", hideMobileMenu);
   $closeMenuButton.on("click", hideMobileMenu);
+}
+
+$(() => {
+  searchMenu();
+  mobileSidebarMenu();
 });
