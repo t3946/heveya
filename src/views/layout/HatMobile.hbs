@@ -1,0 +1,36 @@
+<div class="hat hatMobile d-md-none">
+    <div class="contacts d-flex align-items-center justify-content-between px-3">
+        {{> ../common/location/Location}}
+
+        <div class="notifications d-flex">
+            <a href="#" class="link">
+                {{> ../common/icons/email/Email class="icon"}}
+            </a>
+
+            <a href="#" class="link ms-3">
+                <span class="position-relative">{{> ../common/icons/heart/Heart class="icon"}}<span
+                    class="badge position-absolute">1</span></span>
+            </a>
+
+            <a href="#" class="link ms-3">
+                <span class="position-relative">{{> ../common/icons/bell/Bell class="icon icon_bell"}}<span
+                    class="badge position-absolute">1</span></span>
+            </a>
+
+            <a href="#" class="link ms-3">
+                {{> ../common/icons/logout/Logout class="icon"}}
+            </a>
+        </div>
+    </div>
+
+    <div class="navigation d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="px-3 openMenuButton d-flex align-items-center">{{> ../common/icons/menu2/Menu2 class="color_161616"}}</div>
+            <div class="ms-3">{{> ../common/icons/logo/Logo }}</div>
+        </div>
+
+        <div class="searchButton d-flex align-items-center p-3">
+            {{> ../common/icons/search/Search class="color_161616"}}
+        </div>
+    </div>
+</div>

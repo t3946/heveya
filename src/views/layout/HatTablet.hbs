@@ -1,0 +1,74 @@
+<div class="hat hatTablet d-none d-md-block d-lg-none">
+    <div class="contacts">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="menu d-flex align-items-center">
+                    <a class="item item_color_orange" href="#">
+                        <span class="d-flex">{{> ../common/icons/map-marker/MapMarker class="icon"}}</span>
+                        <span class="text">Киров</span>
+                    </a>
+
+                    <div class="item item_menu">
+                        <span class="d-flex">{{> ../common/icons/menu/Menu class="icon"}}</span>
+                        <span class="text">Каталог</span>
+                    </div>
+                </div>
+
+                <div class="d-flex notifications align-items-center">
+                    <div class="divider"></div>
+
+                    {{> ../common/icons/email/Email class="icon"}}
+
+                    <div class="divider"></div>
+
+                    <span class="position-relative">
+                        {{> ../common/icons/heart/Heart class="icon"}}
+                        <span class="badge position-absolute">1</span>
+                    </span>
+
+                    <div class="divider"></div>
+
+                    <span class="position-relative">
+                        {{> ../common/icons/bell/Bell class="icon icon_bell"}}
+                        <span class="badge position-absolute">1</span>
+                    </span>
+
+                    <div class="divider"></div>
+
+                    <span class="d-flex align-items-center">
+                        <span href="#"
+                              class="text-decoration-none color_0f0f0f d-flex align-items-center openLoginModal c-pointer">
+                            {{> ../common/icons/logout/Logout class="icon"}}
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="container">
+            <div class="grid">
+                <div class="openMenuButton">{{> ../common/icons/menu2/Menu2 class="icon" }}</div>
+
+                <a href="/">{{> ../common/icons/logo/Logo class="icon"}}</a>
+
+                <div class="inputSearchWrapper flex-grow-1">
+                    {{> ../common/ui/InputSearch placeholder="Что вы ищете?" }}
+                </div>
+
+                <div class="searchButton">{{> ../common/icons/adjust/Adjust class="icon"}}</div>
+
+                <div>
+                    <div class="baseButton baseButton_theme_blue baseButton_size_medium">Найти</div>
+                </div>
+
+                <div>
+                    <div class="baseButton baseButton_size_medium baseButton_theme_orange p-0">
+                        {{> ../common/icons/map-marker/MapMarker class="icon m-0"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

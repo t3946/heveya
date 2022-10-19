@@ -1,0 +1,29 @@
+.hatMobile {
+  .contacts {
+    height: pxToRem(40);
+
+    .link {
+      text-decoration: none;
+      color: #434343;
+
+      &:hover {
+        color: #434343;
+      }
+
+      .icon {
+        width: pxToRem(20);
+      }
+    }
+  }
+
+  .navigation {
+    height: pxToRem(60);
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .openMenuButton {
+    height: pxToRem(60);
+    cursor: pointer;
+  }
+}

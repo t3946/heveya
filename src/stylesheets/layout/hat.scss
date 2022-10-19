@@ -66,10 +66,6 @@
     background-color: #f5f5f5;
     border-bottom: 1px solid #d4d4d4;
 
-    .inputSearch {
-      width: pxToRem(480);
-    }
-
     .searchButton {
       .button {
         height: pxToRem(50);
@@ -94,37 +90,6 @@
       .icon {
         color: #9b9b9b;
       }
-    }
-  }
-
-  &_mobile {
-    .contacts {
-      height: pxToRem(40);
-
-      .link {
-        text-decoration: none;
-        color: #434343;
-
-        &:hover {
-          color: #434343;
-        }
-
-        .icon {
-          width: pxToRem(20);
-        }
-      }
-    }
-
-    .navigation {
-      height: pxToRem(60);
-      background-color: #ffffff;
-      border: none;
-      padding: 0 pxToRem(16) 0 0
-    }
-
-    .openMenuButton {
-      height: pxToRem(60);
-      cursor: pointer;
     }
   }
 }
@@ -211,5 +176,9 @@ $hatHeight: 133px;
       width: pxToRem(26);
       height: pxToRem(26);
     }
+  }
+
+  @include breakpoint(md) {
+    width: pxToRem(700);
   }
 }

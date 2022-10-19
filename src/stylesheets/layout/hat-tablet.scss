@@ -1,0 +1,26 @@
+.hatTablet {
+  .navigation {
+    background: #ffffff;
+    border: none;
+    padding: 0;
+    height: pxToRem(80);
+
+    .openMenuButton {
+      height: pxToRem(80);
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: pxToRem(32);
+        height: pxToRem(32);
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-column-gap: pxToRem(12);
+      grid-template-columns: repeat(5, auto) 50px;
+      align-items: center;
+    }
+  }
+}

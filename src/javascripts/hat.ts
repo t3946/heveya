@@ -61,5 +61,5 @@ $(() => {
   $bgMobileMenu.on("click", hideMobileMenu);
   $closeMenuButton.on("click", hideMobileMenu);
 
-  showMobileMenu();
+  // showMobileMenu();
 });
