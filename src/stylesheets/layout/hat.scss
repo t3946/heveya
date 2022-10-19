@@ -100,6 +100,7 @@
   &_mobile {
     .contacts {
       height: pxToRem(40);
+
       .link {
         text-decoration: none;
         color: #434343;
@@ -123,18 +124,33 @@
 
     .openMenuButton {
       height: pxToRem(60);
+      cursor: pointer;
     }
   }
 }
 
 $hatHeight: 133px;
 
-.searchMenuBackground {
+.background {
   display: none;
-  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   z-index: 100;
+}
+
+.searchMenuBackground {
+  background-color: rgba(0, 0, 0, 0);
   inset: pxToRem($hatHeight) 0 0 0;
+  height: 4000px;
+
+  &_active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.sidebarMenuBackground {
+  background-color: rgba(0, 0, 0, 0);
+  inset: 0 0 0 0;
   height: 4000px;
 
   &_active {
@@ -154,4 +170,46 @@ $hatHeight: 133px;
   border-radius: 5px;
   background-color: #ffffff;
   padding: pxToRem(20);
+}
+
+.sidebarMenu {
+  background-color: #ffffff;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: pxToRem(280);
+  height: 100%;
+  z-index: 101;
+  padding: pxToRem(20) 0 ;
+
+  .item {
+    display: flex;
+    align-items: center;
+    color: #EF7F1A;
+    padding: pxToRem(8) pxToRem(20);
+
+    .icon {
+      display: block;
+      width: pxToRem(20);
+      margin: 0 pxToRem(8) 0 0;
+    }
+  }
+
+  .dividerContainer {
+    padding: pxToRem(10) pxToRem(20);
+  }
+
+  .closeButton {
+    color: #ffffff;
+    position: absolute;
+    top: pxToRem(0);
+    right: pxToRem(-55);
+    padding: pxToRem(14);
+
+    .icon {
+      width: pxToRem(26);
+      height: pxToRem(26);
+    }
+  }
 }
