@@ -1,5 +1,13 @@
 .winners {
-  padding: pxToRem(60) 0 0;
+  padding: pxToRem(24) 0 0;
+
+  @include breakpoint(md) {
+    padding: pxToRem(32) 0 0;
+  }
+
+  @include breakpoint(lg) {
+    padding: pxToRem(60) 0 0;
+  }
 
   .grid {
     display: grid;
