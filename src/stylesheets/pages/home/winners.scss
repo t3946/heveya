@@ -1,18 +1,38 @@
 .winners {
   padding: pxToRem(60) 0 0;
 
+  .grid {
+    display: grid;
+    grid-template-areas: "area1 area1" "area2 area3";
+    grid-gap: pxToRem(16);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: pxToRem(140) pxToRem(75);
+
+    @include breakpoint(md) {
+      grid-gap: pxToRem(28);
+      grid-template-rows: pxToRem(258) pxToRem(180);
+    }
+
+    @include breakpoint(lg) {
+      grid-template-areas: "area1 area2 area3";
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: pxToRem(240);
+      grid-gap: pxToRem(25);
+    }
+  }
+
   .winnersItem {
-    height: pxToRem(236);
+    height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     border-radius: 10px;
-    width: pxToRem(580);
     font-weight: bold;
     font-size: pxToRem(32);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: pxToRem(8);
 
     &Text {
       display: inline-block;
@@ -24,18 +44,42 @@
       background-color: #d9f2ff;
       background-image: url("./assets/images/pages/home/winners/winner-1.png");
       color: #000000;
+      font-size: pxToRem(18);
+      background-size: 100%;
+
+      @include breakpoint(md) {
+        font-size: pxToRem(32);
+      }
     }
 
     &_theme_2 {
       background-color: #7c7c7c;
-      background-image: url("./assets/images/pages/home/winners/winner-2.png");
       color: #ffffff;
+      font-size: pxToRem(14);
+
+      @include breakpoint(md) {
+        background-image: url("./assets/images/pages/home/winners/winner-2.png");
+        font-size: pxToRem(28);
+      }
+
+      @include breakpoint(lg) {
+        font-size: pxToRem(32);
+      }
     }
 
     &_theme_3 {
       background-color: #ef7f1a;
-      background-image: url("./assets/images/pages/home/winners/winner-3.png");
       color: #ffffff;
+      font-size: pxToRem(14);
+
+      @include breakpoint(md) {
+        background-image: url("./assets/images/pages/home/winners/winner-3.png");
+        font-size: pxToRem(28);
+      }
+
+      @include breakpoint(lg) {
+        font-size: pxToRem(32);
+      }
     }
   }
 }
