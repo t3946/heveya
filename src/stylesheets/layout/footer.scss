@@ -1,8 +1,11 @@
 .footer {
   color: #0f0f0f;
   padding: pxToRem(52) 0 pxToRem(32);
-  border-top: 1px solid #d4d4d4;
   margin: pxToRem(65) 0 0 0;
+
+  @include breakpoint(lg) {
+    border-top: 1px solid #d4d4d4;
+  }
 
   .divider {
     border-bottom: 1px solid #d5d5d5;
@@ -10,7 +13,7 @@
   }
 
   .appLink {
-    &:not(:last-child){
+    &:not(:last-child) {
       margin: 0 0 pxToRem(10);
     }
   }
@@ -18,14 +21,21 @@
   .navigationLink {
     font-size: pxToRem(20);
     font-weight: 600;
+    text-align: center;
+    margin: 0 0 pxToRem(20);
+
+    @include breakpoint(md) {
+      text-align: left;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 0 0 pxToRem(20);
+      }
+    }
 
     .link {
       text-decoration: none;
       color: #0f0f0f;
-    }
-
-    &:not(:last-child){
-      margin: 0 0 pxToRem(20);
     }
   }
 
@@ -39,17 +49,69 @@
     text-decoration: none;
     color: #0f0f0f;
     font-weight: 600;
+
     .icon {
       color: #8cceef;
+    }
+
+    .link {
+      color: #0F0F0F;
+      text-decoration: none;
     }
   }
 
   .graphic {
-    position: absolute;
-    bottom: -18px;
-    display: block;
-    left: 0;
     color: #434343;
     font-size: pxToRem(13);
+  }
+
+  .contactsMobile {
+    &__icon {
+      margin: 0 pxToRem(20) 0 0;
+    }
+
+    &__phoneLink {
+      margin: 0 0 pxToRem(24);
+    }
+
+    &__emailLink {
+      margin: 0 0 pxToRem(42);
+    }
+
+    .phoneIcon {
+      width: pxToRem(22);
+      height: pxToRem(22);
+    }
+
+    .socialsWrapper {
+      width: pxToRem(210);
+    }
+  }
+
+  .contactsTablet {
+    &__socials {
+      margin: pxToRem(54) 0 0;
+    }
+
+    &__icon {
+      margin: 0 pxToRem(12) 0 0;
+    }
+
+    &__graphic {
+      position: absolute;
+      bottom: -16px;
+      display: block;
+      left: 0;
+    }
+
+    .socialsWrapper {
+      width: pxToRem(180);
+    }
+  }
+
+  .contactsDesktop {
+    .socialsWrapper {
+      width: pxToRem(160);
+    }
   }
 }
