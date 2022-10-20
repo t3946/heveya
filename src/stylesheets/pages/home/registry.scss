@@ -1,15 +1,27 @@
-.registries {
+.registriesDesktop {
   background-color: #f5f5f5;
   font-weight: 600;
   padding: pxToRem(95) 0;
+  display: none;
+
+  @include breakpoint(md) {
+    display: block;
+  }
 
   .grid {
     display: grid;
-    grid-template-areas: "item-1 item-1 item-2 item-3"
+    grid-template-areas: "item-1 item-1" "item-2 item-3" "item-4 item-5" "item-6 item-6";
+    grid-template-rows: repeat(4, pxToRem(194));
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: pxToRem(28);
+
+    @include breakpoint(lg) {
+      grid-template-areas: "item-1 item-1 item-2 item-3"
                        "item-4 item-5 item-6 item-6";
-    grid-template-rows: repeat(2, 194px);
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: pxToRem(25);
+      grid-template-rows: repeat(2, 194px);
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: pxToRem(24);
+    }
   }
 
   .item {
@@ -56,5 +68,22 @@
     grid-area: item-6;
     background-color: #fc8619;
     background-image: url("@styles/assets/images/pages/home/registries/6.jpg");
+  }
+}
+
+.registriesMobile {
+  display: block;
+  margin: pxToRem(40) 0 0;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+
+  &__header{
+    margin: 0 0 pxToRem(20);
+  }
+
+  &__link:not(:last-child){
+    margin: 0 0 pxToRem(20);
   }
 }
