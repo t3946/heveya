@@ -6,8 +6,50 @@
   background-position: center center;
   padding: pxToRem(36) 0 pxToRem(20);
 
-  .header {
-    margin: 0 0 pxToRem(32);
+  &__moreInfo {
+    margin: pxToRem(24) 0 0;
+
+    @include breakpoint(md) {
+      margin: pxToRem(43) 0 0;
+    }
+
+    @include breakpoint(xxxl) {
+      margin: 0;
+    }
+  }
+
+  &__header {
+    margin: 0 0 pxToRem(16);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(20);
+    }
+
+    @include breakpoint(lg) {
+      margin: 0 0 pxToRem(32);
+    }
+  }
+
+  .chartsDesktop {
+    display: none;
+
+    @include breakpoint(xxxl) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: pxToRem(250);
+    }
+  }
+
+  .chartsTable {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+    }
+
+    @include breakpoint(xxxl) {
+      display: none;
+    }
   }
 
   .stats {
@@ -31,17 +73,59 @@
   }
 
   .moreInfo {
-    font-weight: bold;
-    color: #ef7f1a;
-    line-height: pxToRem(54);
-    cursor: pointer;
+    text-align: center;
+
+    .link {
+      color: #ef7f1a;
+      font-weight: bold;
+      line-height: pxToRem(54);
+      text-decoration: none;
+    }
   }
 }
 
 .marketFooter {
-  height: pxToRem(54);
   position: relative;
   margin: pxToRem(50) 0 0;
+
+  &_mobile {
+    .item {
+      border-left: 1px solid #ffffff;
+      padding: 0 0 0 pxToRem(24);
+
+      .name {
+        font-size: pxToRem(16);
+      }
+
+      .value {
+        font-size: pxToRem(30);
+      }
+    }
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &_tablet {
+    display: none;
+
+    @include breakpoint(md) {
+      display: flex;
+    }
+
+    @include breakpoint(xxxl) {
+      display: none;
+    }
+  }
+
+  &_desktop {
+    display: none;
+    height: pxToRem(54);
+
+    @include breakpoint(xxxl) {
+      display: flex;
+    }
+  }
 
   &__stats {
     position: absolute;

@@ -66,6 +66,10 @@
       grid-template-columns: repeat(4, pxToRem(430));
     }
   }
+
+  @include breakpoint(xxxl) {
+    overflow-x: hidden;
+  }
 }
 
 .ratingList {

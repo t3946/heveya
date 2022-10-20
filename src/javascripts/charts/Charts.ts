@@ -31,6 +31,7 @@ import initBiddingNumbersChart3 from "./bidding-numbers/Chart3";
 import initBiddingNumbersChart4 from "./bidding-numbers/Chart4";
 import initSiteRate from "./pie/SiteRate";
 import initHomeBiddingNumbers1 from "./bidding-numbers/HomeBiddingNumbers1";
+import initHomeBiddingNumbers1Mobile from "./bidding-numbers/HomeBiddingNumbers1Mobile";
 import initHomeBiddingNumbers2 from "./bidding-numbers/HomeBiddingNumbers2";
 import initHomeBiddingNumbers3 from "./bidding-numbers/HomeBiddingNumbers3";
 
@@ -167,6 +168,10 @@ function init() {
 
   $(".homeBiddingNumbers1").each((i, e) => {
     initHomeBiddingNumbers1(e);
+  });
+
+  $(".homeBiddingNumbers1Mobile").each((i, e) => {
+    initHomeBiddingNumbers1Mobile(e);
   });
 
   $(".homeBiddingNumbers2").each((i, e) => {
