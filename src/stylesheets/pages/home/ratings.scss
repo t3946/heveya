@@ -1,12 +1,28 @@
 .ratings {
   background-color: #f5f5f5;
   padding: 0 0 pxToRem(95);
+  overflow-x: scroll;
+
+  .listContainer {
+    background: #ffffff;
+    border-radius: pxToRem(10);
+
+    @include breakpoint(md) {
+      padding: pxToRem(40) pxToRem(28) pxToRem(28);
+    }
+  }
 
   .listHeader {
-    font-size: pxToRem(24);
     color: #161616;
     font-weight: 600;
     white-space: break-spaces;
+    font-size: pxToRem(16);
+    padding: pxToRem(24) pxToRem(20) pxToRem(14);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(24);
+      padding: 0;
+    }
 
     .iconWrapper {
       display: flex;
@@ -35,6 +51,19 @@
         background-color: #e7f9f1;
         color: #1cac4d;
       }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: pxToRem(12);
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, pxToRem(320));
+    grid-template-areas: "area1 area2 area3 area4";
+
+    @include breakpoint(md) {
+      grid-gap: pxToRem(25);
+      grid-template-columns: repeat(4, pxToRem(430));
     }
   }
 }
@@ -81,8 +110,12 @@
   }
 
   .item {
-    font-size: pxToRem(16);
+    font-size: pxToRem(13);
     padding: pxToRem(10) pxToRem(12);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(16);
+    }
 
     .name {
       padding: 0 pxToRem(20);

@@ -239,10 +239,10 @@
 
             <div class="grid">
                 <div class="item item_1">
-                <span class="title d-flex flex-column align-items-center">
-                    <span>Можно успеть!</span>
-                    <span class="subtitle">До завершения торгов 2 дня</span>
-                </span>
+                    <span class="title d-flex flex-column align-items-center">
+                        <span>Можно успеть!</span>
+                        <span class="subtitle">До завершения торгов 2 дня</span>
+                    </span>
                 </div>
 
                 <div class="item item_2">
@@ -274,7 +274,7 @@
 
     <div class="top100">
         <div class="container-lg">
-            <h2 class="header2">Выбор пользователей: ТОП 100 лотов</h2>
+            <h2 class="top100__header header2">Выбор пользователей: ТОП 100 лотов</h2>
 
             <div class="row">
                 <div class="col-12">
@@ -303,9 +303,9 @@
         <div class="container-lg">
             <h2 class="header2 mb-4">Рейтинги</h2>
 
-            <div class="row">
-                <div class="col-3">
-                    <div class="listHeader d-flex mb-3">
+            <div class="grid">
+                <div class="gridArea1 listContainer">
+                    <div class="listHeader d-flex mb-md-3">
                         <span
                             class="iconWrapper iconWrapper_theme_blue">{{> ../../common/icons/rating/Rating class="icon"}}</span>
                         <span class="ms-3 text">Рейтинг участников <br> торгов</span>
@@ -314,8 +314,8 @@
                     {{> RatingList theme="blue"}}
                 </div>
 
-                <div class="col-3">
-                    <div class="listHeader d-flex mb-3">
+                <div class="gridArea2 listContainer">
+                    <div class="listHeader d-flex mb-md-3">
                         <span
                             class="iconWrapper iconWrapper_theme_orange">{{> ../../common/icons/rating/Rating class="icon"}}</span>
                         <span class="ms-3 text">Рейтинг организаторов <br> торгов</span>
@@ -324,8 +324,8 @@
                     {{> RatingList theme="orange"}}
                 </div>
 
-                <div class="col-3">
-                    <div class="listHeader d-flex mb-3">
+                <div class="gridArea3 listContainer">
+                    <div class="listHeader d-flex mb-md-3">
                         <span
                             class="iconWrapper iconWrapper_theme_gray">{{> ../../common/icons/rating/Rating class="icon"}}</span>
                         <span class="ms-3 text">Рейтинг арбитражных <br> управляющих</span>
@@ -334,8 +334,8 @@
                     {{> RatingList theme="gray"}}
                 </div>
 
-                <div class="col-3">
-                    <div class="listHeader d-flex mb-3">
+                <div class="gridArea4 listContainer">
+                    <div class="listHeader d-flex mb-md-3">
                         <span
                             class="iconWrapper iconWrapper_theme_green">{{> ../../common/icons/rating/Rating class="icon"}}</span>
                         <span class="ms-3 text">Рейтинг электронных <br> площадок</span>

@@ -2,19 +2,38 @@
   padding: 0 0 pxToRem(60);
 
   &__header {
-    margin: pxToRem(60) 0 0;
+    margin: pxToRem(32) 0 0;
+
+    @include breakpoint(lg) {
+      margin: pxToRem(60) 0 0;
+    }
   }
 
   .grid {
     display: grid;
-    grid-template-areas: "item-1 item-2 item-3"
-                       "item-1 item-4 item-5"
-                       "item-6 item-7 item-7";
-    grid-template-rows: repeat(3, 236px);
-    grid-template-columns: repeat(3, 1fr);
-    gap: pxToRem(25);
+    grid-gap: pxToRem(16);
+    grid-template-areas: "item-1 item-1"
+                         "item-2 item-4"
+                         "item-3 item-5"
+                         "item-6 item-6"
+                         "item-7 item-7";
+    grid-template-rows: pxToRem(225) repeat(2, pxToRem(75))  repeat(2, pxToRem(130));
+    grid-template-columns: repeat(2, 1fr);
     font-weight: bold;
     font-size: pxToRem(32);
+
+    @include breakpoint(md) {
+      grid-template-rows: pxToRem(410) repeat(2, pxToRem(180))  repeat(2, pxToRem(260));
+    }
+
+    @include breakpoint(lg) {
+      grid-template-areas: "item-1 item-2 item-3"
+                       "item-1 item-4 item-5"
+                       "item-6 item-7 item-7";
+      grid-template-rows: repeat(3, 236px);
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: pxToRem(25);
+    }
 
     .item {
       border-radius: 10px;
@@ -26,6 +45,15 @@
       .title {
         text-align: center;
         max-width: pxToRem(410);
+        font-size: pxToRem(14);
+
+        @include breakpoint(md) {
+          font-size: pxToRem(28);
+        }
+
+        @include breakpoint(lg) {
+          font-size: pxToRem(32);
+        }
       }
 
       &_1 {
@@ -34,56 +62,91 @@
         color: #ffffff;
         background-image: url("./assets/images/pages/home/interests/1.png");
         background-position: center 80%;
+        background-size: pxToRem(110);
+
+        @include breakpoint(md) {
+          background-size: pxToRem(200);
+          background-position: center 100%;
+        }
+
+        @include breakpoint(lg) {
+          background-position: center 80%;
+        }
 
         .title {
           position: relative;
           top: -50px;
+          font-size: pxToRem(18);
+
+          @include breakpoint(md) {
+            font-size: pxToRem(32);
+          }
         }
 
         .subtitle {
-          font-size: pxToRem(22);
+          font-size: pxToRem(16);
           color: #d4d4d4;
           font-weight: normal;
+
+          @include breakpoint(md) {
+            font-size: pxToRem(22);
+          }
         }
       }
 
       &_2 {
-        background-image: url("./assets/images/pages/home/interests/2.png");
         grid-area: item-2;
         background-color: #ffffff;
         color: #000000;
         border: 1px solid #434343;
         background-position: center bottom;
+
+        @include breakpoint(lg) {
+          background-image: url("./assets/images/pages/home/interests/2.png");
+        }
       }
 
       &_3 {
-        background-image: url("./assets/images/pages/home/interests/3.png");
         grid-area: item-3;
         background-color: #d9f2ff;
         color: #000000;
         background-position: 30px bottom;
+
+        @include breakpoint(lg) {
+          background-image: url("./assets/images/pages/home/interests/3.png");
+        }
       }
 
       &_4 {
-        background-image: url("./assets/images/pages/home/interests/4.png");
         grid-area: item-4;
         background-color: #434343;
         color: #ffffff;
         background-position: center top;
 
+        @include breakpoint(lg) {
+          background-image: url("./assets/images/pages/home/interests/4.png");
+        }
+
         .title {
           position: relative;
-          top: 30px;
-          font-size: pxToRem(28);
+          font-size: pxToRem(14);
+
+          @include breakpoint(md) {
+            font-size: pxToRem(28);
+            top: 30px;
+          }
         }
       }
 
       &_5 {
-        background-image: url("./assets/images/pages/home/interests/5.png");
         background-position: right bottom;
         grid-area: item-5;
         background-color: #90c2dd;
         color: #000000;
+
+        @include breakpoint(lg) {
+          background-image: url("./assets/images/pages/home/interests/5.png");
+        }
 
         .title {
           max-width: 500px;
@@ -96,10 +159,22 @@
         background-color: #434343;
         color: #ef7f1a;
         font-size: pxToRem(28);
-        background-position: 50px top;
+        background-position: 10px top;
 
         .title {
           max-width: 200px;
+        }
+
+        background-size: pxToRem(100);
+
+        @include breakpoint(md) {
+          background-size: pxToRem(240);
+          background-position: 30px top;
+        }
+
+        @include breakpoint(lg) {
+          background-position: 50px top;
+          background-size: pxToRem(185);
         }
       }
 
@@ -109,7 +184,18 @@
         background-color: #ffffff;
         border: 1px solid #434343;
         font-size: pxToRem(28);
-        background-position: 120px center;
+        background-position: 16px center;
+        background-size: pxToRem(85);
+
+        @include breakpoint(md) {
+          background-size: pxToRem(190);
+          background-position: 30px center;
+        }
+
+        @include breakpoint(lg) {
+          background-position: 120px center;
+          background-size: pxToRem(250);
+        }
       }
     }
   }
