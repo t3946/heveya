@@ -1,6 +1,9 @@
-{{> HatMobile endpoint=endpoint }}
-{{> HatTablet }}
-{{> HatDesktop }}
+<div class="hat {{#if withBorder}}hat_withBorder{{/if}}">
+    {{> HatMobile endpoint=endpoint }}
+    {{> HatTablet }}
+    {{> HatDesktop }}
+</div>
+
 {{> SearchMenu }}
 {{> SidebarMenu }}
 {{> modals/Login }}

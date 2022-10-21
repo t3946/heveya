@@ -1,4 +1,8 @@
 .hat {
+  &_withBorder {
+    border-bottom: 1px solid #d4d4d4;
+  }
+
   .contacts {
     height: pxToRem(51);
     background-color: #f3f3f3;
@@ -63,7 +67,6 @@
   .navigation {
     padding: pxToRem(16) 0;
     background-color: #ffffff;
-    border-bottom: 1px solid #d4d4d4;
 
     .searchButton {
       .button {
