@@ -4,13 +4,19 @@
     grid-gap: pxToRem(16);
     grid-template-columns: repeat(1, 1fr);
 
-    @include breakpoint(md) {
-      margin: 0 0 pxToRem(25);
-      grid-template-columns: repeat(2, 1fr);
+    &_tiles {
+      @include breakpoint(md) {
+        margin: 0 0 pxToRem(25);
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint(lg) {
+        grid-template-columns: repeat(5, 1fr);
+      }
     }
 
-    @include breakpoint(lg) {
-      grid-template-columns: repeat(5, 1fr);
+    &_lines {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
