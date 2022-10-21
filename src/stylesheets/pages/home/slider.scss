@@ -1,19 +1,42 @@
 .slider {
   overflow: hidden;
+  height: pxToRem(128);
+
+  @include breakpoint(md) {
+    height: pxToRem(200);
+  }
+
+  @include breakpoint(lg) {
+    height: pxToRem(400);
+  }
 
   .carousel-control-prev, .carousel-control-next {
     opacity: 1;
 
     > .sliderButton {
       border-radius: 100px;
-      width: pxToRem(58);
-      height: pxToRem(58);
+      width: pxToRem(32);
+      height: pxToRem(32);
       filter: drop-shadow(2px 4px 7px rgba(0, 0, 0, 0.08));
       color: #000000;
       background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      .icon {
+        width: 60%;
+      }
+
+      @include breakpoint(md) {
+        width: pxToRem(44);
+        height: pxToRem(44);
+      }
+
+      @include breakpoint(lg) {
+        width: pxToRem(58);
+        height: pxToRem(58);
+      }
     }
   }
 }
