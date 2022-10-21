@@ -1,6 +1,7 @@
 @import "@styles/utils/utils";
 @import "./fonts/fonts";
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap/dist/css/bootstrap.css";
+@import "bootstrap/dist/css/bootstrap-grid.css";
 @import "pages/pages";
 @import "@styles/common/common";
 @import "@styles/layout/layout";
@@ -42,10 +43,6 @@ html {
 .header3 {
   font-size: 24px;
   font-weight: 600;
-}
-
-.container-lg {
-  max-width: 1824px;
 }
 
 .rouble {
