@@ -28,7 +28,7 @@
     grid-template-rows: repeat(10, 1fr);
     grid-gap: pxToRem(16);
 
-    @include breakpoint(lg) {
+    @include breakpoint(md) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
       grid-gap: pxToRem(25);
