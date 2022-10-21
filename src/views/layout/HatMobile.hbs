@@ -23,19 +23,25 @@
         </div>
     </div>
 
-    <div class="navigation">
-        <div class="d-flex align-items-center">
-            <div class="ms-3">{{> ../common/icons/logo/Logo }}</div>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="navigation">
+                    <div class="d-flex">
+                        {{> ../common/icons/logo/Logo class="logo" }}
+                    </div>
 
-        <div class="searchInputContainer">
-            <input type="text" class="baseInputText searchInput" name="search" />
+                    <div class="searchInputContainer">
+                        <input type="text" class="baseInputText searchInput" name="search"/>
 
-            {{> ../common/icons/search/Search class="icon"}}
-        </div>
+                        {{> ../common/icons/search/Search class="icon"}}
+                    </div>
 
-        <div class="searchButton d-flex align-items-center p-3">
-            {{> ../common/icons/adjust/Adjust class="icon"}}
+                    <div class="searchButton d-flex align-items-center">
+                        {{> ../common/icons/adjust/Adjust class="icon"}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

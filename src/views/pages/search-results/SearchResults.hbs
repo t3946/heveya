@@ -7,7 +7,7 @@
                 <div class="col d-flex">
                     <h1 class="header2">Результаты поиска</h1>
 
-                    <ul class="tags list-unstyled m-0">
+                    <ul class="tags list-unstyled m-0 d-none d-lg-block">
                         <li class="item">Регион: Москва</li>
                         <li class="item">Направление: Банкротство</li>
                         <li class="item">Категория: Жилая недвижимость</li>
@@ -17,7 +17,7 @@
                         <li class="item">Сортировать по: Популярности</li>
                     </ul>
 
-                    {{> ../../common/catalog-toggle-view/CatalogToggleView tiles=true}}
+                    <div class="d-none d-lg-block">{{> ../../common/catalog-toggle-view/CatalogToggleView tiles=true}}</div>
                 </div>
             </div>
         </div>

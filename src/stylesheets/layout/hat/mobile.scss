@@ -23,8 +23,12 @@
     display: grid;
     padding: 0;
     grid-template-columns: auto 1fr auto;
-    grid-column-gap: pxToRem(16);
+    grid-column-gap: pxToRem(12);
     align-items: center;
+
+    .logo {
+      width: pxToRem(120);
+    }
   }
 
   .openMenuButton {
