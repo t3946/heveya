@@ -3,11 +3,11 @@
 <div class="searchResults">
     <div class="settings">
         <div class="container-lg">
-            <div class="row">
+            <div class="row d-none d-lg-block">
                 <div class="col d-flex">
                     <h1 class="header2">Результаты поиска</h1>
 
-                    <ul class="tags list-unstyled m-0 d-none d-lg-block">
+                    <ul class="tags list-unstyled m-0">
                         <li class="item">Регион: Москва</li>
                         <li class="item">Направление: Банкротство</li>
                         <li class="item">Категория: Жилая недвижимость</li>
@@ -17,9 +17,11 @@
                         <li class="item">Сортировать по: Популярности</li>
                     </ul>
 
-                    <div class="d-none d-lg-block">{{> ../../common/catalog-toggle-view/CatalogToggleView tiles=true}}</div>
+                    <div>{{> ../../common/catalog-toggle-view/CatalogToggleView tiles=true}}</div>
                 </div>
             </div>
+
+            <h1 class="header2 d-lg-none">Результаты поиска</h1>
         </div>
     </div>
 
@@ -27,27 +29,21 @@
         <div class="container-lg">
             <div class="col">
                 <div class="grid">
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                </div>
-
-                <div class="grid">
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                </div>
-
-                <div class="grid">
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
-                    {{> ../../common/lot-card/tile/Openned class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
+                    {{> ../../common/lot-card/tile/Open class="lot_bordered"}}
                 </div>
             </div>
         </div>

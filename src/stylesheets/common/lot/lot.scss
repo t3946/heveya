@@ -79,6 +79,8 @@
   }
 
   .lotImage {
+    overflow: hidden;
+
     &__label {
       position: absolute;
       left: 0;

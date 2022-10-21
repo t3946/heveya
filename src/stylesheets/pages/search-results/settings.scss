@@ -3,7 +3,13 @@
 
   .header2 {
     white-space: nowrap;
-    margin: 0 pxToRem(25) 0 0;
+    text-align: center;
+    margin: 0 0 pxToRem(24) 0;
+
+    @include breakpoint(lg) {
+      margin: 0 pxToRem(25) 0 0;
+      text-align: left;
+    }
   }
 
   .tags {
