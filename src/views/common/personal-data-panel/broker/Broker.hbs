@@ -1,18 +1,20 @@
 <div class="personalDataPanelBroker">
-    <div class="d-flex justify-content-between align-items-stretch">
-        <div class="d-flex profile namePanel">
-            <div>
-                <img src="/images/pages/select-broker/avatar.jpg" alt="avatar" />
+    <div class="d-flex flex-column flex-xxl-row justify-content-xxl-between">
+        <div class="d-flex profile namePanel flex-column flex-xxl-row">
+            <div class="d-flex justify-content-center justify-content-xxl-start mb-3 mb-xxl-0">
+                <div><img src="/images/pages/select-broker/avatar.jpg" alt="avatar" width="151" height="165"/></div>
             </div>
 
-            <div class="d-flex flex-column justify-content-between ms-3">
+            <div class="d-flex flex-column justify-content-between ms-xxl-3">
                 <div>
                     <span class="color_8cceef fs-18px fw-semibold">Константинов Константин Константинович</span><br>
                     <span class="color_9b9b9b fs-14px">(ИНН:000000000000)</span>
                 </div>
                 <div class="mb-1">
-                    <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs-14px">Место в рейтинге:</span><span>1209</span></div>
-                    <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs-14px">Брокер Heveya.ru:</span><span>Да</span></div>
+                    <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs-14px">Место в рейтинге:</span><span>1209</span>
+                    </div>
+                    <div class="d-flex fw-semibold justify-content-between align-items-center"><span class="fs-14px">Брокер Heveya.ru:</span><span>Да</span>
+                    </div>
                 </div>
                 <div>
                     {{> ../../location/Location }}
@@ -20,11 +22,13 @@
             </div>
         </div>
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         {{> ../common/Experience }}
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         <div>
             <div class="color_9b9b9b mb-2 mb-lg-3 fw-semibold">
@@ -34,87 +38,94 @@
             {{> ../../charts/stacked/Stacked }}
         </div>
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         {{> ../common/ChartParticipation}}
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         {{> ../common/ChartAuction}}
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         {{> ../common/ChartPublicOffers}}
     </div>
 
     <div class="baseHorizontalDivider my-3"></div>
 
-    <div class="d-flex justify-content-between align-items-stretch">
+    <div class="d-flex flex-column flex-xxl-row justify-content-between">
         <div class="gridTable gridTable_columns_3 priceTable fw-semibold color_161616">
-            <div class="fs-18px">Стоимость услуг:</div>
+            <div class="fs-16px fs-md-18px">Стоимость услуг:</div>
             <div class="color_9b9b9b text-center">Подача заявки</div>
             <div class="color_9b9b9b text-center">Вознаграждение за победу</div>
 
             <div>Банкротство</div>
-            <div class="text-center">5 000 ₽</div>
+            <div class="text-center rouble">5 000</div>
             <div class="text-center">7%</div>
 
             <div class="ws-nowrap">Арестованное имущество</div>
-            <div class="text-center">12 000 ₽</div>
-            <div class="text-center">20 000 ₽</div>
+            <div class="text-center rouble">12 000</div>
+            <div class="text-center rouble">20 000</div>
 
             <div class="ws-nowrap">Муниципальные торги</div>
-            <div class="text-center">15 000 ₽</div>
+            <div class="text-center rouble">15 000</div>
             <div class="text-center">10%</div>
         </div>
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         <div class="servicesTable">
             <div class="color_9b9b9b mb-3 ws-nowrap fw-semibold">Дополнительные услуги:</div>
 
             <div class="gridTable gridTable_columns_2">
                 <div>Осмотр имущества</div>
-                <div class="fw-semibold">500 ₽</div>
+                <div class="fw-semibold rouble text-end text-xxl-start">500</div>
 
                 <div>Подача заявки в указанное время</div>
-                <div class="fw-semibold rouble">2 000</div>
+                <div class="fw-semibold rouble text-end text-xxl-start">2 000</div>
 
                 <div>Снятие ограничений</div>
-                <div class="fw-semibold rouble">7 000</div>
+                <div class="fw-semibold rouble text-end text-xxl-start">7 000</div>
 
                 <div>Удалённое подключение в ходе торгов</div>
-                <div class="fw-semibold rouble">1 300</div>
+                <div class="fw-semibold rouble text-end text-xxl-start">1 300</div>
             </div>
         </div>
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         <div>
             <div class="color_9b9b9b mb-3 ws-nowrap fw-semibold">Сроки:</div>
 
-            <div class="gridTable gridTable_columns_2">
+            <div class="gridTable gridTable_columns_2 fs-12px fs-lg-16px">
                 <div>Готов приступить</div>
-                <div class="fw-semibold">1 час</div>
+                <div class="fw-semibold text-end text-xxl-start">1 час</div>
 
                 <div>Принимает заявки</div>
-                <div class="fw-semibold">с 7.00 до 19.00</div>
+                <div class="fw-semibold text-end text-xxl-start">с 7.00 до 19.00</div>
 
                 <div>Выходной</div>
-                <div class="fw-semibold">без выходных</div>
+                <div class="fw-semibold text-end text-xxl-start">без выходных</div>
             </div>
         </div>
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         {{> ../common/ChartUserRate}}
 
-        <div class="baseVerticalDivider"></div>
+        <div class="baseVerticalDivider d-none d-xxl-block"></div>
+        <div class="baseHorizontalDivider d-xxl-none my-3"></div>
 
         <div class="ordersCompleted">
             <div class="color_9b9b9b mb-3 ws-nowrap fw-semibold text-center">Выполнил заказов:</div>
             <div class="number text-center fw-semibold">5</div>
-            <div class="baseHorizontalDivider"></div>
+            <div class="baseHorizontalDivider d-none d-xxl-block"></div>
             <div class="baseButton baseButton_theme_blue baseButton_size_medium">Выбрать</div>
         </div>
     </div>

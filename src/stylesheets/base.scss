@@ -17,9 +17,11 @@ html {
   font-size: pxToRem(18);
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  margin: pxToRem(20) 0 pxToRem(12);
 
   @include breakpoint(md) {
     font-size: pxToRem(30);
+    margin: pxToRem(20) 0 pxToRem(16);
   }
 
   @include breakpoint(lg) {
@@ -46,6 +48,8 @@ html {
 }
 
 .rouble {
+  white-space: nowrap;
+
   &:after {
     content: " ₽";
   }
@@ -157,9 +161,11 @@ html {
 .baseRadio {
   display: flex;
   align-items: center;
+
   label {
     padding: 0 0 0 10px;
   }
+
   input:checked + label {
     color: #EF7F1A;
   }
@@ -182,7 +188,11 @@ html {
 .gridTable {
   display: grid;
   grid-template-rows: repeat(auto-fill, 1fr);
-  grid-gap: pxToRem(8) pxToRem(20);
+  grid-gap: pxToRem(4) pxToRem(10);
+
+  @include breakpoint(md) {
+    grid-gap: pxToRem(8) pxToRem(20);
+  }
 
   &_columns {
     &_2 {

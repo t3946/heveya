@@ -1,12 +1,14 @@
-
-
 .selectBrokerPage {
   .profile {
-    width: pxToRem(430);
+    @include breakpoint(xxl) {
+      width: pxToRem(430);
+    }
   }
 
   .ordersCompleted {
-    width: pxToRem(220);
+    @include breakpoint(xxl) {
+      width: pxToRem(220);
+    }
 
     .number {
       font-size: pxToRem(32);
@@ -14,6 +16,28 @@
 
     .baseHorizontalDivider {
       margin: pxToRem(20) 0;
+    }
+  }
+
+  .brokerContainer {
+    padding: pxToRem(20) pxToRem(16);
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(25);
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: pxToRem(20);
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(xxl) {
+      grid-template-columns: 1fr;
     }
   }
 }

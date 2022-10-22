@@ -1,10 +1,26 @@
 .personalDataPanelBroker {
   .servicesTable {
-    width: pxToRem(380);
+    font-size: pxToRem(12);
+
+    @include breakpoint(lg) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xxl) {
+      width: pxToRem(380);
+    }
   }
 
   .priceTable {
+    font-size: pxToRem(12);
     grid-gap: pxToRem(16) pxToRem(20);
-    width: pxToRem(480);
+
+    @include breakpoint(lg) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xxl) {
+      width: pxToRem(480);
+    }
   }
 }
