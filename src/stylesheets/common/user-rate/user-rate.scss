@@ -1,0 +1,13 @@
+.userRate {
+  .grayPanel {
+    margin: 0 0 pxToRem(20);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(28);
+    }
+
+    @include breakpoint(xxl) {
+      margin: 0;
+    }
+  }
+}
