@@ -1,0 +1,38 @@
+.pricesColumn {
+  .winner {
+    color: #8cceef;
+    text-decoration: none;
+  }
+  .community {
+    color: #434343;
+    .icon {
+      width: pxToRem(30);
+      height: pxToRem(30);
+    }
+  }
+
+  .panel {
+    border-radius: 5px;
+    padding: pxToRem(12);
+
+    &_blue {
+      background-color: #e4f6ff;
+    }
+
+    &_grey {
+      background-color: #f5f5f5;
+    }
+  }
+
+  &__icons {
+    margin: pxToRem(16) 0 0;
+
+    @include breakpoint(md) {
+      margin: pxToRem(32) 0 0;
+    }
+
+    @include breakpoint(lg) {
+      margin: pxToRem(16) 0 0;
+    }
+  }
+}

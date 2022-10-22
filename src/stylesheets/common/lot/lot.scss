@@ -45,39 +45,6 @@
     line-height: 1.1;
   }
 
-  .icons {
-    .icon {
-      color: #434343;
-
-      &_heart {
-        width: 24px;
-        height: 24px;
-      }
-
-      &_doubleHeart {
-        width: 24px;
-        height: 24px;
-      }
-
-      &_handshake {
-        width: 28px;
-        height: 18px;
-      }
-
-      &_community {
-        width: 19px;
-        height: 20px;
-      }
-    }
-
-    .iconContainer {
-      .badge {
-        top: pxToRem(-8);
-        right: pxToRem(-5);
-      }
-    }
-  }
-
   .lotImage {
     overflow: hidden;
 
@@ -108,6 +75,39 @@
       &_theme_discount {
         background: #f6002c;
       }
+    }
+  }
+}
+
+.lotIcons {
+  .icon {
+    color: #434343;
+
+    &_heart {
+      width: 24px;
+      height: 24px;
+    }
+
+    &_doubleHeart {
+      width: 24px;
+      height: 24px;
+    }
+
+    &_handshake {
+      width: 28px;
+      height: 18px;
+    }
+
+    &_community {
+      width: 19px;
+      height: 20px;
+    }
+  }
+
+  .iconContainer {
+    .badge {
+      top: pxToRem(-8);
+      right: pxToRem(-5);
     }
   }
 }

@@ -5,139 +5,28 @@
         <div class="crumbsWrapper d-none d-md-flex justify-content-xxl-between align-items-center">
             {{> ../../common/breadcrumbs/Breadcrumbs}}
 
-            <div class="infoLinks d-none d-xxl-block">
-                <a href="#" class="item">
-                    {{> ../../common/icons/analytics/Analytics class="icon"}}
-                    <span class="ms-2 text">Анализировать лот</span>
-                </a>
-
-                <a href="#" class="item">
-                    {{> ../../common/icons/link/Link class="icon"}}
-                    <span class="ms-2 text">Ссылка ЕФРСБ</span>
-                </a>
-
-                <a href="#" class="item">
-                    {{> ../../common/icons/headphones/headphones class="icon"}}
-                    <span class="ms-2 text">Техническая поддержка</span>
-                </a>
-
-                <a href="#" class="item">
-                    {{> ../../common/icons/exclamation-mark/ExclamationMark class="icon"}}
-                    <span class="ms-2 text">Пожаловаться</span>
-                </a>
+            <div class="d-none d-xxl-block">
+                {{> SupportBlock}}
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="d-flex">
-            <div class="imageWrapper">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/offer/dummy.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/offer/dummy.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/offer/dummy.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/offer/dummy.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="flex-grow-1 ms-4 infoColumn">
-                <div class="lotMainInfo d-flex justify-content-between">
-                    <span class="number fw-bold">Лот: 18-24-5186972</span>
-                    <span>Имущество должников (банкротство)</span>
-                    <span>Опубликовано: 21.03.2022</span>
-                    <span>Завершение до: 25.12.2023</span>
-                    <span class="baseLocation">{{> ../../common/icons/map-marker/MapMarker class="icon"}}Московская обл.</span>
-                </div>
-
-                <div class="d-flex mt-3">
-                    <div>
-                        <div class="requisites mb-3">
-                            <div class="mb-2">
-                                <span class="color_9b9b9b fw-bold">Должник:</span><br>
-                                <span class="color_0f0f0f fw-bold companyName">ООО «Ромашка»</span>
-                            </div>
-
-                            <div class="mb-2 d-flex">
-                                <span class="me-3">
-                                    <span class="color_9b9b9b fw-bold me-2">ИНН:</span>
-                                    <span class="color_0f0f0f">456151225467</span>
-                                </span>
-
-                                <span>
-                                    <span class="color_9b9b9b fw-bold me-2">Дело о банкротстве:</span>
-                                    <span class="color_0f0f0f">А42-8731/2021</span>
-                                </span>
-                            </div>
-
-                            <div class="d-flex">
-                                <div class="me-4">
-                                    <span class="color_9b9b9b fw-bold me-2">Адрес:</span>
-                                    <span class="color_0f0f0f">Мурманская область, 172390, Тверская область, г. Ржев, ул. Ленина, д. 18, кв. 13</span>
-                                </div>
-
-                                <div>
-                                    <a href="#" class="allLots color_9b9b9b fw-bold ws-nowrap">
-                                        {{> ../../common/icons/documents/Documents class="icon"}}
-                                        <span class="ms-2">Все лоты должника</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contacts">
-                            {{> contacts/Item }}
-                            {{> contacts/Item }}
-                            {{> contacts/Item }}
-                        </div>
-                    </div>
-
-                    <div class="pricesWrapper d-flex flex-column">
-                        {{> PricesColumn }}
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{> bid-info/BidInfo}}
     </div>
 
     <div class="container">
-        <h3 class="header3 mb-3">Описание</h3>
-
-        <p class="paragraph">Транспортное средство НИССАН TERRANO, VIN Z8NHSNDJA51188917 Год производства - 2014
-            Категория ТС - B
-            Расположение руля - левый руль Тип двигателя - Бензиновый Мощность двигателя - 135 л. с. Объем двигателя -
-            1998 куб. см</p>
+        <div class="d-none d-lg-block">
+            {{> Description }}
+        </div>
 
         <div class="dividerDescription"></div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
-                <h3 class="header3 mb-3">Порядок осмотра</h3>
+            <div class="col-12 col-lg-6">
+                <h3 class="header3 mb-4">Порядок осмотра</h3>
 
-                <p class="paragraph">Ознакомиться с информацией о предмете торгов и порядке их проведения, можно на
+                <p class="paragraph fs-14px fs-md-18px">Ознакомиться с информацией о предмете торгов и порядке их проведения, можно на
                     сайте
                     https://www.fabrikant.ru/ и в МТУ Росимущества в Мурманской области и Республике Карелия по адресу:
                     г.
@@ -148,10 +37,10 @@
                     нахождения.судебный пристав-исполнитель Михайлова Раиса Геннадьевна (тел.:+7(8142)730464)</p>
             </div>
 
-            <div class="col-12 col-md-6">
-                <h3 class="header3 mb-3">Порядок внесения задатка</h3>
+            <div class="col-12 col-lg-6 orderPayment">
+                <h3 class="header3 mb-4">Порядок внесения задатка</h3>
 
-                <p class="paragraph">Задаток для участия в торгах перечисляется на специальный счет для задатков по
+                <p class="paragraph mb-1 fs-14px fs-md-18px">Задаток для участия в торгах перечисляется на специальный счет для задатков по
                     следующим реквизитам:
                     получатель ООО «ОША», ИНН/КПП 5507044011/550501001, счет №40702810202790001756 в Ф-Л СИБИРСКИЙ ПАО
                     БАНК «ФК ОТКРЫТИЕ», к/с 30101810250040000867, БИК 045004867. Размер задатка 10 % от начальной цены
@@ -159,6 +48,7 @@
                     приёма заявок, указанного в сообщении о проведении торгов. Суммы внесенных заявителями задатков
                     возвращаются всем заявителям, за исключением победителя торгов, в течение пяти рабочих дней со дня
                     подписания протокола о результатах проведения торгов</p>
+                <a class="moreInfo baseLink fs-14px fs-md-16px d-lg-none text-decoration-none">Подробнее</a>
             </div>
         </div>
 
@@ -167,64 +57,39 @@
         <div>
             <h3 class="header3 mb-3">Документы</h3>
             <div class="documents">
-                <div class="row itemRow">
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Отчет об определении рыночной стоимости</div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Инвентаризационная опись</div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row itemRow">
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Отчет об определении рыночной стоимости</div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Инвентаризационная опись</div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row itemRow">
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Инвентаризационная опись</div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Отчет об определении рыночной стоимости</div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row itemRow">
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Инвентаризационная опись</div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-flex align-items-center link">
-                            {{> ../../common/icons/document/Document class="icon"}}
-                            <div class="ms-3">Отчет об определении рыночной стоимости</div>
-                        </a>
-                    </div>
+                <div class="grid">
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
                 </div>
             </div>
         </div>

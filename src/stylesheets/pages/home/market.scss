@@ -13,7 +13,7 @@
       margin: pxToRem(43) 0 0;
     }
 
-    @include breakpoint(xxxl) {
+    @include breakpoint(xxl) {
       margin: 0;
     }
   }
@@ -33,7 +33,7 @@
   .chartsDesktop {
     display: none;
 
-    @include breakpoint(xxxl) {
+    @include breakpoint(xxl) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: pxToRem(250);
@@ -47,7 +47,7 @@
       display: block;
     }
 
-    @include breakpoint(xxxl) {
+    @include breakpoint(xxl) {
       display: none;
     }
   }
@@ -113,7 +113,7 @@
       display: flex;
     }
 
-    @include breakpoint(xxxl) {
+    @include breakpoint(xxl) {
       display: none;
     }
   }
@@ -122,7 +122,7 @@
     display: none;
     height: pxToRem(54);
 
-    @include breakpoint(xxxl) {
+    @include breakpoint(xxl) {
       display: flex;
     }
   }

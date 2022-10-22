@@ -1,0 +1,43 @@
+.bidInfoMobile {
+  &__description {
+    margin: pxToRem(20);
+  }
+
+  &__debtor {
+    margin: pxToRem(20) 0 0;
+
+    @include breakpoint(md) {
+      margin: pxToRem(32) 0 0;
+    }
+  }
+
+  &__supportBlock {
+    margin: pxToRem(20) 0 0;
+  }
+
+  .grid {
+    font-size: pxToRem(12);
+    display: grid;
+    grid-template-areas: "area1 area2" "area3 area3" "area4 area5";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: pxToRem(8);
+
+    .gridArea2 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .gridArea5 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @include breakpoint(md) {
+      font-size: pxToRem(16);
+      grid-template-areas: "area1 area3 area2" "area4 area5";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
