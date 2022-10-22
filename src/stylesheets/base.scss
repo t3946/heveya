@@ -227,20 +227,6 @@ html {
   }
 }
 
-.containerFrame {
-  border: 1px solid #d4d4d4;
-  border-radius: 10px;
-  padding: pxToRem(10);
-
-  @include breakpoint(md) {
-    padding: pxToRem(16);
-  }
-
-  @include breakpoint(lg) {
-    padding: pxToRem(25);
-  }
-}
-
 .page {
   &__block:not(:last-child) {
     margin: 0 0 pxToRem(20);
@@ -250,9 +236,28 @@ html {
 .violations {
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 16px 40px;
+    grid-gap: pxToRem(12);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: pxToRem(20);
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+
+    @include breakpoint(xxl) {
+      padding: 0;
+      border-radius: 0;
+      border: none;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 pxToRem(20);
+
+      @include breakpoint(xxl) {
+        margin: 0 0 pxToRem(40);
+      }
+    }
   }
 }
 

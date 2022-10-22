@@ -1,0 +1,31 @@
+.containerFrame {
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  padding: pxToRem(10);
+
+  @include breakpoint(md) {
+    padding: pxToRem(16);
+  }
+
+  @include breakpoint(lg) {
+    padding: pxToRem(25);
+  }
+}
+
+@each $bp in ('sm', 'md', 'lg', 'xl', 'xxl') {
+  .containerFrame-#{$bp} {
+    @media (min-width: map-get($breakpoints, $bp)) {
+      border: 1px solid #d4d4d4;
+      border-radius: 10px;
+      padding: pxToRem(10);
+
+      @include breakpoint(md) {
+        padding: pxToRem(16);
+      }
+
+      @include breakpoint(lg) {
+        padding: pxToRem(25);
+      }
+    }
+  }
+}
