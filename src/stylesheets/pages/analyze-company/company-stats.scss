@@ -11,26 +11,31 @@
 
   @include breakpoint(xxl) {
     grid-template-columns: repeat(6, 1fr);
-
+    grid-template-rows: 1fr;
   }
 
   .item {
-    padding: pxToRem(28);
     border-radius: 10px;
     border: 1px solid #d4d4d4;
     width: 100%;
+    padding: pxToRem(16);
 
     @include breakpoint(md) {
-      height: pxToRem(159);
+      height: pxToRem(140);
     }
 
     @include breakpoint(lg) {
+      padding: pxToRem(28);
       height: pxToRem(194);
     }
 
     .sum1 {
       .number {
-        font-size: pxToRem(24);
+        font-size: pxToRem(22);
+
+        @include breakpoint(lg) {
+          font-size: pxToRem(24);
+        }
       }
 
       .caption {
@@ -39,6 +44,14 @@
     }
 
     .sum2 {
+      .number {
+        font-size: pxToRem(18);
+
+        @include breakpoint(lg) {
+          font-size: pxToRem(20);
+        }
+      }
+
       .caption {
         margin: 0 0 0 pxToRem(12);
       }

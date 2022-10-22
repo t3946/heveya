@@ -1,48 +1,48 @@
 <div>
     <div class="row">
-        <div class="col-4">
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">Организация:</span>
-                <span class="ms-2">ООО «ЮВС-ВОЛГА»</span>
+        <div class="col-12 col-xxl-4">
+            <div class="nameValuePair fs-14px fs-md-16px mb-2">
+                <div class="name">Организация:</div>
+                <div class="value fw-normal">ООО «ЮВС-ВОЛГА»</div>
             </div>
 
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">Директор:</span>
-                <span class="ms-2">Косынкин Александр Александрович</span>
+            <div class="nameValuePair align-items-start fs-14px fs-md-16px mb-2">
+                <div class="name">Директор:</div>
+                <div class="value fw-normal">Косынкин Александр Александрович</div>
             </div>
 
-            <div class="d-flex my-2">
-                {{> ../../../common/link-phone/LinkPhone class="me-4"}}
+            <div class="d-md-flex my-2 fs-14px fs-md-16px mb-2">
+                {{> ../../../common/link-phone/LinkPhone class="me-4 mb-2 mb-md-0"}}
                 {{> ../../../common/link-email/LinkEmail}}
             </div>
 
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">Основной вид деятельности:</span>
-                <span class="ms-2">Торговля оптовая напитками (46.34)</span>
+            <div class="nameValuePair d-block d-md-flex fs-14px fs-md-16px mb-2">
+                <div class="name">Основной вид деятельности:</div>
+                <div class="value fw-normal">Торговля оптовая напитками (46.34)</div>
             </div>
         </div>
 
-        <div class="col-2">
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">ИНН:</span>
-                <span class="ms-2">1659120485</span>
+        <div class="col-12 col-xxl-2">
+            <div class="nameValuePair align-items-start fs-14px fs-md-16px mb-2">
+                <div class="name">ИНН:</div>
+                <div class="value fw-normal">1659120485</div>
             </div>
 
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">КПП:</span>
-                <span class="ms-2">165901001</span>
+            <div class="nameValuePair align-items-start fs-14px fs-md-16px mb-2">
+                <div class="name">КПП:</div>
+                <div class="value fw-normal">165901001</div>
             </div>
 
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">ОГРН:</span>
-                <span class="ms-2">1121690037040</span>
+            <div class="nameValuePair align-items-start fs-14px fs-md-16px mb-2">
+                <div class="name">ОГРН:</div>
+                <div class="value fw-normal">1121690037040</div>
             </div>
         </div>
 
-        <div class="{{#if biddings}}col-3{{else}}col-6{{/if}}">
-            <div class="d-flex">
-                <div class="me-1 fw-semibold color_9b9b9b me-1">Адрес:</div>
-                <div class="ms-2">
+        <div class="col-12 {{#if biddings}}col-xxl-3{{else}}col-xxl-6{{/if}}">
+            <div class="nameValuePair fs-14px fs-md-16px align-items-start">
+                <div class="name">Адрес:</div>
+                <div class="value fw-normal">
                     <div>420110, республика Татарстан, г. Казань,</div>
                     <div>ул. Братьев касимовых, д.38</div>
                 </div>
@@ -50,7 +50,7 @@
         </div>
 
         {{#if biddings}}
-            <div class="col-3">
+            <div class="col-12 col-xxl-3">
                 <div class="nameValuePair">
                     <div class="name">Объявлено торгов:</div>
                     <div class="value fs-20px">123 (12 млн ₽)</div>

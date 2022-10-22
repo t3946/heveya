@@ -12,13 +12,18 @@
             </div>
         </h1>
 
+        <div class="page__block containerFrame d-xxl-none">
+            {{> ../analyze-company/contacts/Contacts }}
+        </div>
+
         <div class="page__block">
             {{> ../analyze-company/stats/Stats }}
         </div>
 
-        <div class="page__block containerFrame">
+        <div class="page__block containerFrame d-none d-xxl-block">
             {{> ../analyze-company/contacts/Contacts }}
         </div>
+
 
         <div class="page__block">
             {{> charts/Charts }}
