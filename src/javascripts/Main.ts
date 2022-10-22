@@ -6,6 +6,7 @@ import "./ui/UI";
 import "./hat";
 import "./layout/Layout";
 import "./forms/Forms";
+import "./interactive-image/InteractiveImage";
 
 $(() => {
   initCharts();

@@ -1,0 +1,46 @@
+.lotTileCompleted {
+  .hat {
+    padding: pxToRem(16) pxToRem(12) pxToRem(12);
+  }
+
+  .imageContainer {
+    height: pxToRem(240);
+    position: relative;
+
+    .imageWrapper {
+      inset: 0 0 0 0;
+      overflow: hidden;
+      visibility: hidden;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .image {
+      position: relative;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .pagination {
+      display: grid;
+      grid-template-columns: 1fr repeat(4, pxToRem(45)) 1fr;
+      position: absolute;
+      inset: 0 0 0 0;
+      z-index: 2;
+
+      .item {
+        padding: 8px 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &:before {
+          content: "";
+          display: block;
+          height: pxToRem(4);
+          background-color: #f3f3f3;
+        }
+      }
+    }
+  }
+}

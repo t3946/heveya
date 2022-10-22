@@ -24,7 +24,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
@@ -84,7 +84,7 @@ const config = {
   },
 
   resolve: {
-    extensions: ['.tsx', '.js', '.ts', '.sass'],
+    extensions: ['.js', '.ts', '.sass'],
     modules: [path.join(__dirname, './src'), 'node_modules'],
     alias: {
       '@styles': path.resolve(__dirname, 'src/stylesheets'),
