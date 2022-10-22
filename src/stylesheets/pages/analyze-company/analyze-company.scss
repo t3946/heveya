@@ -23,13 +23,9 @@
 }
 
 .employeesNumber, .averageSalary {
-  height: pxToRem(66);
-
-  @include breakpoint(md) {
-    height: pxToRem(127);
-  }
+  height: pxToRem(150);
 
   @include breakpoint(xxl) {
-    height: pxToRem(181);
+    height: pxToRem(180);
   }
 }

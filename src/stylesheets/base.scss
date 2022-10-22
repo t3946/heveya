@@ -230,7 +230,15 @@ html {
 .containerFrame {
   border: 1px solid #d4d4d4;
   border-radius: 10px;
-  padding: pxToRem(25);
+  padding: pxToRem(10);
+
+  @include breakpoint(md) {
+    padding: pxToRem(16);
+  }
+
+  @include breakpoint(lg) {
+    padding: pxToRem(25);
+  }
 }
 
 .page {
