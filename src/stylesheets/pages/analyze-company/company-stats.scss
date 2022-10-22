@@ -1,15 +1,32 @@
 .companyStats {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: pxToRem(25);
+  grid-template-columns: 1fr;
+  grid-gap: pxToRem(20);
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: pxToRem(25);
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: repeat(6, 1fr);
+
+  }
 
   .item {
     padding: pxToRem(28);
     border-radius: 10px;
     border: 1px solid #d4d4d4;
-    height: pxToRem(194);
     width: 100%;
+
+    @include breakpoint(md) {
+      height: pxToRem(159);
+    }
+
+    @include breakpoint(lg) {
+      height: pxToRem(194);
+    }
 
     .sum1 {
       .number {
