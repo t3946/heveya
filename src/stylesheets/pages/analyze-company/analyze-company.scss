@@ -1,4 +1,3 @@
-
 @import "court-cases";
 @import "company-stats";
 
@@ -8,5 +7,29 @@
       width: pxToRem(40);
       height: pxToRem(40);
     }
+  }
+}
+
+.chartRevenue, .chartProfit, .chartTaxes {
+  height: pxToRem(200);
+
+  @include breakpoint(md) {
+    height: pxToRem(300);
+  }
+
+  @include breakpoint(xxl) {
+    height: pxToRem(370);
+  }
+}
+
+.employeesNumber, .averageSalary {
+  height: pxToRem(66);
+
+  @include breakpoint(md) {
+    height: pxToRem(127);
+  }
+
+  @include breakpoint(xxl) {
+    height: pxToRem(181);
   }
 }
