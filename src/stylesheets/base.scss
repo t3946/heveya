@@ -295,3 +295,16 @@ html {
     height: pxToRem(180);
   }
 }
+
+.auctionBlockChart1 {
+  height: pxToRem(300);
+  @include breakpoint(md) {
+
+  }
+}
+.auctionBlockChart2 {
+  height: pxToRem(300);
+  @include breakpoint(md) {
+
+  }
+}
