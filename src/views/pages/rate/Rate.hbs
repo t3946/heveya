@@ -9,36 +9,42 @@
         <h1 class="mb-4">Оценка работы</h1>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div class="mb-3">
-                    <span class="color_9b9b9b fw-bold fs-18px me-2">Электронная площадка:</span>
-                    <span class="color_0f0f0f fs-18px fw-semibold">Центр реализации</span>
+                    <span class="color_9b9b9b fw-bold fs-14px fs-md-18px me-2">Электронная площадка:</span>
+                    <span class="color_0f0f0f fs-16px fs-mb-18px fw-semibold">Центр реализации</span>
                 </div>
 
-                <div class="mb-3">
-                    <div class="d-flex">
-                        <span class="me-4">
-                            <span class="color_9b9b9b fw-bold fs-18px me-2">ИНН:</span>
+                <div class="mb-2 mb-md-0 mb-lg-3 mb-xll-0">
+                    <div class="d-flex flex-column flex-md-row flex-lg-column flex-xxl-row">
+                        <span class="mb-2 mb-md-3 mb-md-0 mb-lg-3 mb-xxl-0 me-md-3 me-lg-4 fs-md-18px fs-14px">
+                            <span class="color_9b9b9b fw-bold me-2">ИНН:</span>
                             <span class="color_0f0f0f fs-18px">456151225467</span>
                         </span>
 
-                        {{> ../../common/link-phone/LinkPhone class="me-4"}}
-                        {{> ../../common/link-email/LinkEmail}}
+                        <div class="mb-2 mb-md-3 mb-md-0 me-md-3 me-lg-4 mb-lg-3 mb-xxl-0">{{> ../../common/link-phone/LinkPhone }}</div>
+                        <div>{{> ../../common/link-email/LinkEmail}}</div>
                     </div>
                 </div>
 
-                <div>
-                    <span class="color_9b9b9b fw-bold fs-18px me-2">Стаж:</span>
+                <div class="mb-2 mb-md-3 fs-md-18px fs-14px">
+                    <span class="color_9b9b9b fw-bold me-2">Регион:</span>
+                    <span class="color_0f0f0f fs-18px">Московская обл.</span>
+                </div>
+
+                <div class="mb-3 mb-md-4 mb-lg-0 fs-md-18px fs-14px">
+                    <span class="color_9b9b9b fw-bold me-2">Стаж:</span>
                     <span class="color_0f0f0f fs-18px">5 лет</span>
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-6 col-lg-3">
                 <div class="color_9b9b9b fw-bold mb-3">Рейтинг HEVEYA.RU:</div>
                 <div class="d-flex align-items-center">
                     <div class="d-flex pieWithLogo">
                         <div class="d-flex">
-                            <div class="pieSiteRate" style="width: 130px; height: 130px;"></div>
+                            <div class="pieSiteRate d-md-none" style="width: 100px; height: 100px;"></div>
+                            <div class="pieSiteRate d-none d-md-block" style="width: 130px; height: 130px;"></div>
                         </div>
                         {{> ../../common/icons/logo-2/Logo2 class="icon"}}
                     </div>
@@ -47,12 +53,13 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-6 col-lg-3">
                 <div>
                     <div class="color_9b9b9b mb-3 fw-semibold">Оценка пользователей</div>
 
                     <div class="d-flex">
-                        <div class="pieUserRate" data-size="large" style="width: 130px; height: 130px;"></div>
+                        <div class="pieUserRate d-md-none" data-size="large" style="width: 100px; height: 100px;"></div>
+                        <div class="pieUserRate d-none d-md-block" data-size="large" style="width: 130px; height: 130px;"></div>
                     </div>
                 </div>
             </div>
@@ -63,15 +70,13 @@
 
         <div class="quizBlock">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <h3 class="header3 quizHeader">Оценка Электронной площадки пользователями</h3>
                 </div>
-
-                <div class="col-6"></div>
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="fw-bold fs-20px title">
                         <span class="me-2">1.</span>
                         <span class="ms-1">Удобство использования</span>
@@ -151,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="grayPanel ratingPanel">
                         <div class="fs-20px fw-semibold ratingHeader">Удобный интерфейс</div>
                         <div class="progress baseProgress statProgress">
@@ -233,17 +238,17 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="fw-bold fs-20px title">
                         <span class="me-2">2.</span>
                         <span class="ms-1">Дополнительные расходы</span>
@@ -259,7 +264,7 @@
                     {{> ../../common/ui/Switch class="switchElement" name="" checked=false }}
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="grayPanel ratingPanel">
                         <div class="fs-20px fw-semibold ratingHeader">Необходимость оплачивать OID</div>
                         <div class="progress baseProgress statProgress">
@@ -283,17 +288,17 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="fw-bold fs-20px title">
                         <span class="me-2">3.</span>
                         <span class="ms-1">Технические особенности</span>
@@ -312,7 +317,7 @@
                     {{> ../../common/ui/Switch class="switchElement" name="" checked=false }}
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="grayPanel ratingPanel">
                         <div class="fs-20px fw-semibold ratingHeader">Быстродействие площадки</div>
                         <div class="progress baseProgress statProgress">
@@ -342,17 +347,17 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="fw-bold fs-20px title">
                         <span class="me-2">4.</span>
                         <span class="ms-1">Возврат задатка</span>
@@ -423,7 +428,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="grayPanel ratingPanel">
                         <div class="fs-20px fw-semibold ratingHeader">Сроки возврата задатка:</div>
 
@@ -481,17 +486,17 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="baseHorizontalDivider"></div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="fw-bold fs-20px title">
                         <span class="me-2">5.</span>
                         <span class="ms-1">Вы доверяете этой площадке?</span>
@@ -500,14 +505,10 @@
                     <div class="fs-20px fw-semibold">Настройка рабочего места прошла легко?</div>
                     {{> ../../common/ui/Switch class="switchElement" name="" checked=false }}
 
-                    <div class="baseHorizontalDivider"></div>
-
-                    <div class="d-flex mt-4">
-                        <div class="baseButton baseButton_theme_blue baseButton_size_medium">Добавить мнение</div>
-                    </div>
+                    <div class="baseHorizontalDivider d-none d-lg-block mb-0"></div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="grayPanel ratingPanel">
                         <div class="fs-20px fw-semibold ratingHeader">Доверие к площадке</div>
                         <div class="progress baseProgress statProgress">
@@ -517,8 +518,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex mt-4 justify-content-center justify-content-lg-start">
+                        <div class="baseButton baseButton_theme_blue baseButton_size_medium w-md-auto">Добавить мнение</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-{{> ../../layout/footer/Footer}}
+{{> ../../layout/footer/Footer withBorder=true}}

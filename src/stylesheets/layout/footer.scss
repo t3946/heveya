@@ -3,6 +3,10 @@
   padding: pxToRem(52) 0 pxToRem(32);
   margin: pxToRem(65) 0 0 0;
 
+  &_withBorder {
+    border-top: 1px solid #d4d4d4;
+  }
+
   @include breakpoint(lg) {
     border-top: 1px solid #d4d4d4;
   }

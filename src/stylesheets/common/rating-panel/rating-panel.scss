@@ -1,7 +1,13 @@
 .ratingPanel {
   .ratingHeader {
-    margin: 0 0 pxToRem(20);
+    margin: 0 0 pxToRem(8);
     color: #0F0F0F;
+    font-size: pxToRem(16);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(20);
+      margin: 0 0 pxToRem(20);
+    }
   }
 
   .statProgress:not(:last-child) {
