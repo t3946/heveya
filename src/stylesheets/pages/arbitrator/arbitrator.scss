@@ -22,4 +22,12 @@
   &__addOpinionButton {
     margin: pxToRem(32) 0 0;
   }
+
+  .personalDataPanelWrapper {
+    max-width: pxToRem(370);
+
+    @include breakpoint(xxl) {
+      max-width: initial;
+    }
+  }
 }

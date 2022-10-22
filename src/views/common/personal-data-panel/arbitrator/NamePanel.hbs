@@ -1,17 +1,17 @@
 <div class="d-flex flex-column justify-content-between namePanel">
     <div>
-        <span class="color_8cceef fs-18px fw-semibold">Константинов Константин Константинович</span><br>
+        <span class="color_8cceef fs-16px fs-xxl-18px fw-semibold">Константинов Константин Константинович</span><br>
         <span class="color_9b9b9b fs-14px">(ИНН:000000000000)</span>
     </div>
 
-    <div class="nameValuePair nameValuePair_stretch fs-14px">
+    <div class="nameValuePair nameValuePair_stretch fs-14px my-2 my-xxl-1">
         <div class="name color_161616 fs-14px">Место в рейтинге:</div>
         <div class="value">45/87</div>
     </div>
 
-    <div>
+    <div class="d-none d-xxl-block">
         {{> ../../../common/link-phone/LinkPhone }}
         {{> ../../../common/link-email/LinkEmail }}
-        {{> ../../../common/location/Location }}
     </div>
+    {{> ../../../common/location/Location }}
 </div>
