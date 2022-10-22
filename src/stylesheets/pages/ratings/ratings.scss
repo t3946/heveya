@@ -1,6 +1,11 @@
-
-
 .ratingsPage {
+  &__header {
+    margin: pxToRem(20) 0 pxToRem(37);
+
+    @include breakpoint(md) {
+      margin: pxToRem(20) 0 pxToRem(16);
+    }
+  }
   .ratingItems {
     > .item {
       padding: pxToRem(25);
@@ -38,6 +43,25 @@
           width: 210px;
         }
       }
+    }
+  }
+
+  .ratingsList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: pxToRem(24);
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: pxToRem(28);
+    }
+    @include breakpoint(xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint(xxl) {
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(20);
     }
   }
 }

@@ -1,4 +1,3 @@
-
 @import "sro";
 @import "sro-registry";
 @import "debtor";
@@ -7,5 +6,7 @@
 @import "broker";
 
 .namePanel {
-  width: pxToRem(260);
+  @include breakpoint(xxl) {
+    width: pxToRem(260);
+  }
 }

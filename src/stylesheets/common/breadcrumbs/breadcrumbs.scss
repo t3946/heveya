@@ -1,6 +1,15 @@
 
 .breadcrumbs {
   height: pxToRem(82);
+  border-bottom: 1px solid #d4d4d4;
+  white-space: nowrap;
+  overflow-x: scroll;
+
+  @include breakpoint(md) {
+    border-bottom: none;
+    overflow-x: visible;
+  }
+
   .item {
     font-size: pxToRem(16);
     font-weight: 600;

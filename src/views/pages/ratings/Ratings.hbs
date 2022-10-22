@@ -1,10 +1,10 @@
-{{> ../../layout/Hat}}
+{{> ../../layout/Hat endpoint=true withBorder=true}}
 
 <div class="ratingsPage">
     <div class="container">
         {{> ../../common/breadcrumbs/Breadcrumbs }}
 
-        <h1 class="header1">Рейтинг участников торгов</h1>
+        <h1 class="header1 ratingsPage__header">Рейтинг участников торгов</h1>
 
         <div class="row">
             <div class="col-12">
@@ -12,21 +12,32 @@
             </div>
         </div>
 
-        <div class="containerFrame page__block">
-            {{> ../../common/personal-data-panel/member/Member }}
+        <div class="ratingsList">
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/member/Member }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/member/Member }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/member/Member }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/member/Member }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/member/Member }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/member/Member }}
+            </div>
         </div>
 
-        <div class="containerFrame page__block">
-            {{> ../../common/personal-data-panel/member/Member }}
-        </div>
-
-        <div class="containerFrame page__block">
-            {{> ../../common/personal-data-panel/member/Member }}
-        </div>
-
-        <div class="containerFrame page__block">
-            {{> ../../common/personal-data-panel/member/Member }}
-        </div>
 
         <div class="d-flex justify-content-center mt-4">
             {{> ../../common/pagination/Pagination }}
