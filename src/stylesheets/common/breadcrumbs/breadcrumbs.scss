@@ -1,13 +1,17 @@
 
 .breadcrumbs {
-  height: pxToRem(82);
+  height: pxToRem(65);
   border-bottom: 1px solid #d4d4d4;
   white-space: nowrap;
   overflow-x: scroll;
 
   @include breakpoint(md) {
-    border-bottom: none;
     overflow-x: visible;
+  }
+
+  @include breakpoint(xxl) {
+    border-bottom: none;
+    height: pxToRem(82);
   }
 
   .item {

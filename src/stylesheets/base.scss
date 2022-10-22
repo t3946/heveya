@@ -29,6 +29,28 @@ html {
   }
 }
 
+.headerWithStatus {
+  display: flex;
+  flex-direction: column;
+
+  &__status {
+    margin: pxToRem(20) 0 0;
+
+    @include breakpoint(md) {
+      margin: pxToRem(24) 0 0;
+    }
+
+    @include breakpoint(xxl) {
+      margin: 0;
+    }
+  }
+
+  @include breakpoint(xxl) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .header2 {
   font-weight: bold;
   font-size: pxToRem(16);
