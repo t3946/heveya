@@ -275,3 +275,23 @@ html {
 .c-pointer {
   cursor: pointer;
 }
+
+.chartContainer {
+  height: pxToRem(200);
+
+  @include breakpoint(md) {
+    height: pxToRem(300);
+  }
+
+  @include breakpoint(xxl) {
+    height: pxToRem(370);
+  }
+}
+
+.chartContainer_halfHeight {
+  height: pxToRem(150);
+
+  @include breakpoint(xxl) {
+    height: pxToRem(180);
+  }
+}
