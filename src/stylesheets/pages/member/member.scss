@@ -1,10 +1,4 @@
-
-
 .memberPage {
-  &__lotItem:not(:last-child) {
-    margin: 0 0 pxToRem(20);
-  }
-
   .charts {
     padding-bottom: pxToRem(60);
   }
@@ -12,5 +6,4 @@
   .tableHeader {
     margin: 0 0 pxToRem(46);
   }
-
 }

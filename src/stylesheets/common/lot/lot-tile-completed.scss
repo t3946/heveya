@@ -3,4 +3,15 @@
     padding: pxToRem(16) pxToRem(12) pxToRem(12);
   }
 
+  .body{
+    padding: pxToRem(16) pxToRem(12) pxToRem(12);
+  }
+
+  &__divider {
+    margin: pxToRem(8) 0;
+  }
+
+  &__contactsLink{
+    margin: pxToRem(8) 0;
+  }
 }

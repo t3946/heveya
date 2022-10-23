@@ -61,7 +61,12 @@ const searchMenu = {
       searchMenu.$searchMenu.css("height", `${height}px`);
     }
 
-    $(window).on("resize", resizeMenu);
+    let throttleTimeout = null;
+
+    $(window).on("resize", () => {
+      clearTimeout(throttleTimeout);
+      throttleTimeout = setTimeout(resizeMenu, 100);
+    });
 
     resizeMenu();
   }

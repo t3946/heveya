@@ -2,6 +2,13 @@
   height: pxToRem(240);
   position: relative;
 
+  &__label {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: pxToRem(20);
+  }
+
   .imageWrapper {
     inset: 0 0 0 0;
     overflow: hidden;
