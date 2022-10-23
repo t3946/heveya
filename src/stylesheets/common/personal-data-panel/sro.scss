@@ -1,5 +1,16 @@
 .personalDataPanelSro {
   display: grid;
-  grid-template-columns: 400px 330px 400px 400px 100px;
-  justify-content: space-between;
+  grid-template-columns: 1fr;
+  grid-template-areas: "area1" "area2" "area3" "area4" "area5";
+
+  @include breakpoint(md) {
+    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area5";
+    grid-template-columns: 2fr;
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: 400px 330px 400px 400px 100px;
+    grid-template-areas: "area1 area2 area3 area4 area5";
+    justify-content: space-between;
+  }
 }
