@@ -27,6 +27,12 @@ html {
   @include breakpoint(lg) {
     font-size: pxToRem(36);
   }
+
+  &_small {
+    @include breakpoint(lg) {
+      font-size: pxToRem(30);
+    }
+  }
 }
 
 .headerWithStatus {

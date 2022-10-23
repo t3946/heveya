@@ -1,8 +1,12 @@
 .nameValuePair {
   display: flex;
   align-items: center;
-  font-size: pxToRem(16);
+  font-size: pxToRem(14);
   font-weight: 600;
+
+  @include breakpoint(md) {
+    font-size: pxToRem(16);
+  }
 
   .name {
     color: #9b9b9b;
@@ -11,6 +15,14 @@
 
   .value {
     color: #161616;
+
+    &_strong {
+      font-size: pxToRem(16);
+
+      @include breakpoint(md) {
+        font-size: pxToRem(20);
+      }
+    }
   }
 
   &_stretch {
