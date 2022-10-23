@@ -1,4 +1,4 @@
-{{> ../../layout/Hat}}
+{{> ../../layout/Hat endpoint=true withBorder=true}}
 
 <div class="page">
     <div class="container">
@@ -7,12 +7,7 @@
         <h1 class="header1">Проверка конкурента на торгах</h1>
 
         <div class="mb-3">
-            <form action="">
-                <div class="d-flex">
-                    {{> ../../common/ui/InputSearch placeholder="Введите ИНН, наименование или ФИО участника"}}
-                    <div class="baseButton baseButton_theme_blue baseButton_size_medium ms-3">Найти</div>
-                </div>
-            </form>
+            {{> FormFindMember }}
         </div>
 
         <div class="page__block containerFrame">
@@ -65,4 +60,4 @@
     </div>
 </div>
 
-{{> ../../layout/footer/Footer}}
+{{> ../../layout/footer/Footer withBorder=true}}
