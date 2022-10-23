@@ -71,8 +71,12 @@ html {
 }
 
 .header3 {
-  font-size: 24px;
+  font-size: pxToRem(16);
   font-weight: 600;
+
+  @include breakpoint(md) {
+    font-size: pxToRem(24);
+  }
 }
 
 .rouble {
@@ -295,6 +299,12 @@ html {
 .chartContainer {
   height: pxToRem(200);
 
+  &_mh {
+    &_300 {
+      height: pxToRem(300);
+    }
+  }
+
   @include breakpoint(md) {
     height: pxToRem(300);
   }
@@ -302,15 +312,20 @@ html {
   @include breakpoint(xxl) {
     height: pxToRem(370);
   }
-}
 
-.chartContainer_halfHeight {
-  height: pxToRem(150);
+  &_halfHeight {
+    height: pxToRem(150);
 
-  @include breakpoint(xxl) {
-    height: pxToRem(180);
+    @include breakpoint(md) {
+      height: pxToRem(150);
+    }
+
+    @include breakpoint(xxl) {
+      height: pxToRem(180);
+    }
   }
 }
+
 
 .auctionBlockChart1 {
   height: pxToRem(300);

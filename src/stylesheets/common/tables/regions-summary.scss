@@ -1,5 +1,3 @@
-
-
 .regionsSummary {
   .header {
     font-size: pxToRem(26);
@@ -9,6 +7,9 @@
   }
 
   .table {
+    white-space: nowrap;
+    font-size: pxToRem(12);
+
     tr {
       > *:nth-child(1) {
         width: pxToRem(350);
@@ -45,8 +46,19 @@
     }
 
     td {
-
       border-bottom: 1px solid #d4d4d4;
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(18);
+    }
+  }
+
+  .regionsSummaryTableWrapper {
+    overflow-x: scroll;
+
+    @include breakpoint(xxl) {
+      overflow-x: visible;
     }
   }
 }

@@ -1,0 +1,13 @@
+.pieChartBiddingNumbers {
+  width: 100%;
+  height: pxToRem(200);
+
+  @include breakpoint(md) {
+    height: pxToRem(275);
+  }
+
+  @include breakpoint(xxl) {
+    height: pxToRem(350);
+    width: pxToRem(450);
+  }
+}
