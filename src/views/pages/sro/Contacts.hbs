@@ -1,45 +1,53 @@
 <div>
     <div class="row">
-        <div class="col-4">
-            <div class="nameValuePair align-items-start">
-                <div class="name">Организация:</div>
-                <div class="value">
+        <div class="col-12 col-xxl-5">
+            <div class="nameValuePair align-items-start fs-14px fs-md-16px mb-2 mb-xxl-4">
+                <div class="name fs-16px">Организация:</div>
+                <div class="value fw-normal">
                     ОСамолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет Самолет
                 </div>
             </div>
 
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">Президент:</span>
-                <span class="ms-2">Косынкин Александр Александрович</span>
+            <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0">
+                <div class="name fs-16px">Президент:</div>
+                <div class="value fw-normal">
+                    Косынкин Александр Александрович
+                </div>
             </div>
 
-            <div class="d-flex my-2">
-                {{> ../../common/link-phone/LinkPhone class="me-4"}}
-                {{> ../../common/link-email/LinkEmail}}
-            </div>
-        </div>
-
-        <div class="col-2">
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">ИНН:</span>
-                <span class="ms-2">1659120485</span>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">КПП:</span>
-                <span class="ms-2">165901001</span>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <span class="me-1 fw-semibold color_9b9b9b">ОГРН:</span>
-                <span class="ms-2">1121690037040</span>
+            <div class="d-md-flex my-md-2 fs-14px">
+                <div class="my-2 my-md-0 me-md-4">{{> ../../common/link-phone/LinkPhone}}</div>
+                <div class="my-2 my-md-0">{{> ../../common/link-email/LinkEmail}}</div>
             </div>
         </div>
 
-        <div class="{{#if biddings}}col-3{{else}}col-6{{/if}}">
-            <div class="d-flex">
-                <div class="me-1 fw-semibold color_9b9b9b me-1">Адрес:</div>
-                <div class="ms-2">
+        <div class="col-12 {{#if biddings}}col-xxl-1{{else}}col-xxl-3{{/if}}">
+            <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0">
+                <div class="name fs-16px">ИНН:</div>
+                <div class="value fw-normal">
+                    1659120485
+                </div>
+            </div>
+
+            <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0">
+                <div class="name fs-16px">КПП:</div>
+                <div class="value fw-normal">
+                    1659120485
+                </div>
+            </div>
+
+            <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0">
+                <div class="name fs-16px">ОГРН:</div>
+                <div class="value fw-normal">
+                    1121690037040
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 {{#if biddings}}col-xxl-3{{else}}col-xxl-4{{/if}}">
+            <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0 align-items-start">
+                <div class="name fs-16px">Адрес:</div>
+                <div class="value fw-normal">
                     <div>420110, республика Татарстан, г. Казань,</div>
                     <div>ул. Братьев касимовых, д.38</div>
                 </div>
@@ -47,19 +55,19 @@
         </div>
 
         {{#if biddings}}
-            <div class="col-3">
-                <div class="nameValuePair">
-                    <div class="name">Объявлено торгов:</div>
+            <div class="col-12 col-xxl-3">
+                <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0">
+                    <div class="name fs-16px">Объявлено торгов:</div>
                     <div class="value fs-20px">123 (12 млн ₽)</div>
                 </div>
 
-                <div class="nameValuePair">
-                    <div class="name">Объявлено торгов:</div>
+                <div class="nameValuePair fs-14px fs-md-16px mb-2 mb-xxl-0">
+                    <div class="name fs-16px">Объявлено торгов:</div>
                     <div class="value fs-20px">97 (14 млн ₽)</div>
                 </div>
 
-                <div class="nameValuePair">
-                    <div class="name">Активные торги:</div>
+                <div class="nameValuePair fs-14px fs-md-16px">
+                    <div class="name fs-16px">Активные торги:</div>
                     <div class="value fs-20px color_8cceef">3 (12 млн ₽)</div>
                 </div>
             </div>
