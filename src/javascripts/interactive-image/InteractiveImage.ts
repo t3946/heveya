@@ -32,31 +32,39 @@ $(() => {
         resizeImage(e.target);
       });
 
-      //show active slide
-      const showSlide = (index) => {
-        $slides.css("visibility", "hidden");
-        $slides.eq(index).css("visibility", "visible").show();
-      }
-
-      showSlide(parseInt($elem[0].dataset["active"]));
-
       //pagination
       const $pagination = $elem.find(".pagination");
       const $leftBorder = $pagination.find(".leftBorder");
       const $item = $pagination.find(".item");
       const $rightBorder = $pagination.find(".rightBorder");
+      const trigger = "mouseover";
 
-      $leftBorder.on("click", () => {
+      $leftBorder.on(trigger, () => {
         showSlide(0);
       });
 
-      $rightBorder.on("click", () => {
-        showSlide($slides.length);
+      $rightBorder.on(trigger, () => {
+        showSlide($slides.length - 1);
       });
 
       $item.each((i, e) => {
-        $(e).on("click", () => showSlide(i));
+        $(e).on(trigger, () => showSlide(i));
       });
+
+      $pagination.on("mouseleave", (e) => {
+        showSlide(0);
+      });
+
+      const showSlide = (index) => {
+        $slides.css("visibility", "hidden");
+        $slides.eq(index).css("visibility", "visible").show();
+        $item
+          .removeClass("item_active")
+          .eq(index)
+          .addClass("item_active");
+      }
+
+      showSlide(parseInt($elem[0].dataset["active"]));
     });
   }
 
