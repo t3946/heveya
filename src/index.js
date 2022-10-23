@@ -10,7 +10,6 @@ import Map from './views/pages/map/Map.hbs'
 import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
 import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
 import Member from "./views/pages/member/Member.hbs";
-
 import Arbitrator from "./views/pages/arbitrator/Arbitrator.hbs";
 import BiddingInitiator from "./views/pages/bidding-initiator/BiddingInitiator.hbs";
 import DebtorCompany from "./views/pages/debtor-company/DebtorCompany.hbs";
@@ -20,6 +19,7 @@ import Etp from "./views/pages/etp/Etp.hbs";
 import RegistryDebtors from "./views/pages/registry-debtors/RegistryDebtors.hbs";
 import RegistryArbitrators from "./views/pages/registry-arbitrators/RegistryArbitrators.hbs";
 import RegistryInitiators from "./views/pages/registry-initiators/RegistryInitiators.hbs";
+import RegistryWebResources from "./views/pages/registry-web-resources/RegistryWebResources.hbs";
 import RegistrySro from "./views/pages/registry-sro/RegistrySro.hbs";
 import RegistryMembers from "./views/pages/registry-members/RegistryMembers.hbs";
 import BiddingNumbers from "./views/pages/bidding-numbers/BiddingNumbers.hbs";
