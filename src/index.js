@@ -27,7 +27,7 @@ import Competitors from "./views/pages/competitors/Competitors.hbs";
 import CompetitorsCheck from "./views/pages/competitors-check/CompetitorsCheck.hbs";
 import Registration from "./views/pages/registration/Registration.hbs";
 import FormsExample from "./views/pages/forms-example/FormsExample.hbs";
-
+import AccountMember from "./views/pages/account/member/Member.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -142,6 +142,10 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.innerHTML = FormsExample()
       break
 
+    case '/account-member':
+      console.log("/account/member");
+      document.body.innerHTML = AccountMember()
+      break
     default:
       document.location.pathname = '/'
       break

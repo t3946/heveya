@@ -1,0 +1,11 @@
+.accountSidebar {
+    @import "item";
+
+    width: pxToRem(340);
+
+    &__item {
+        &:not(:last-child) {
+            margin: 0 0 pxToRem(16);
+        }
+    }
+}

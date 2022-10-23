@@ -1,0 +1,15 @@
+<a href="{{link}}" class="d-block text-decoration-none">
+    <div class="itemButton {{#if isActive}}itemButton_active{{/if}}">
+        {{title}}
+        {{#if counter}}
+            <div class="itemButton__pill base">
+                {{> ../../../common/account/pill/Pill text=counter}}
+            </div>
+        {{/if}}
+        {{#if exclamation}}
+            <div class="itemButton__exclamation">
+                {{> ../../../common/icons/exclamation-mark/ExclamationMark class="iconExclamation"}}
+            </div>
+        {{/if}}
+    </div>
+</a>
