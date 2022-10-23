@@ -330,9 +330,29 @@ html {
 .auctionBlockChart1 {
   height: pxToRem(300);
 }
+
 .auctionBlockChart2 {
   height: pxToRem(300);
 }
+
 .debtorsChart {
   height: pxToRem(270);
+}
+
+.baseTooltip {
+  &.show {
+    opacity: 1;
+  }
+
+  .tooltip-arrow {
+    display: none;
+  }
+
+  .tooltip-inner {
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    font-size: pxToRem(16);
+    padding: pxToRem(12) pxToRem(20);
+    color: #434343;
+  }
 }
