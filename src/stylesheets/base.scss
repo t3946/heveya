@@ -243,7 +243,7 @@ html {
     display: grid;
     grid-gap: pxToRem(12);
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     padding: pxToRem(20);
     border: 1px solid #D4D4D4;
     border-radius: 10px;
@@ -308,13 +308,10 @@ html {
 
 .auctionBlockChart1 {
   height: pxToRem(300);
-  @include breakpoint(md) {
-
-  }
 }
 .auctionBlockChart2 {
   height: pxToRem(300);
-  @include breakpoint(md) {
-
-  }
+}
+.debtorsChart {
+  height: pxToRem(270);
 }
