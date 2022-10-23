@@ -1,10 +1,14 @@
-{{> ../../layout/Hat}}
+{{> ../../layout/Hat endpoint=true withBorder=true}}
 
 <div class="page">
     <div class="container">
         {{> ../../common/breadcrumbs/Breadcrumbs}}
 
         <h1 class="header1">Поиск возможных конкурентов на торгах</h1>
+
+        <div class="page__block containerFrame-xxl">
+            {{> FormSearchLot }}
+        </div>
 
         <div class="page__block containerFrame">
             {{> ../../common/personal-data-panel/member/Member }}
@@ -56,4 +60,4 @@
     </div>
 </div>
 
-{{> ../../layout/footer/Footer}}
+{{> ../../layout/footer/Footer withBorder=true}}

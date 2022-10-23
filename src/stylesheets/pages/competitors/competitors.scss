@@ -1,0 +1,14 @@
+.formSearchLot {
+  &__header {
+    margin: 0 0 pxToRem(16);
+
+    @include breakpoint(xxl) {
+      margin: 0 0 pxToRem(24);
+    }
+  }
+
+  @include breakpoint(xxl) {
+    max-width: pxToRem(1520);
+    margin: 0 auto;
+  }
+}
