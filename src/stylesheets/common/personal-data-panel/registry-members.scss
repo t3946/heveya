@@ -1,5 +1,9 @@
 .personalDataPanelRegistryMembers {
   display: grid;
-  grid-template-columns: 250px 300px 300px 300px;
-  justify-content: space-between;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(xxl) {
+    grid-template-columns: 250px 300px 300px 300px;
+    justify-content: space-between;
+  }
 }
