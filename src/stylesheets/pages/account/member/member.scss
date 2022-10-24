@@ -1,0 +1,18 @@
+.accountMemberPage {
+  .restrictedWrapper {
+    display: grid;
+    grid-gap: pxToRem(25);
+    grid-template-columns: pxToRem(340) 1fr;
+    align-items: center;
+
+    .restricted {
+      color: #f6002c;
+      font-size: pxToRem(14);
+      font-weight: 600;
+
+      @include breakpoint(xxl) {
+        font-size: pxToRem(16);
+      }
+    }
+  }
+}

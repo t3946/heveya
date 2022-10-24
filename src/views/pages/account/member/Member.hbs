@@ -1,8 +1,11 @@
 {{> ../../../layout/Hat withBorder=true}}
 
-<div class="page">
+<div class="page accountMemberPage">
     <div class="container">
-        {{> ../../../common/breadcrumbs/Breadcrumbs}}
+        <div class="restrictedWrapper">
+            <div class="overflow-hidden">{{> ../../../common/breadcrumbs/Breadcrumbs}}</div>
+            <div class="restricted">Подача заявок не возможна. Заполните «Мой профиль»</div>
+        </div>
 
         <div class="d-flex">
             {{> ../../../layout/account/sidebar/Sidebar }}
