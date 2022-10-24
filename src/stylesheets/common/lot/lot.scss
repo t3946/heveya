@@ -86,9 +86,8 @@
     }
   }
 
-  .documentsPreparing {
+  .infoPanel {
     padding: pxToRem(32) pxToRem(14) pxToRem(28);
-    background-color: #e4f6ff;
     border-radius: 5px;
 
     &__hat {
@@ -103,6 +102,34 @@
       font-size: pxToRem(15);
       color: #434343;
     }
+
+    .icon {
+      width: pxToRem(28);
+      height: pxToRem(28);
+    }
+
+    &_theme {
+      &_primary {
+        background-color: #e4f6ff;
+        .icon {
+          color: #8CCEEF;
+        }
+      }
+
+      &_error {
+        background-color: #ffe1e1;
+        .icon {
+          color: #FC2C2C;
+        }
+      }
+
+      &_success {
+        background-color: #e4fddb;
+        .icon {
+          color: #2FAD03;
+        }
+      }
+    }
   }
 
   .isMakeOffer {
@@ -114,6 +141,41 @@
 
       &:not(:last-child) {
         margin: 0 0 pxToRem(8);
+      }
+    }
+  }
+
+  .isBiddingEnds {
+    &__status {
+      margin: pxToRem(24) 0 0;
+    }
+
+    .links {
+      .buttonText:not(:last-child) {
+        margin: 0 0 pxToRem(12);
+      }
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: pxToRem(20);
+      font-weight: 600;
+
+      .icon {
+        width: pxToRem(32);
+        height: auto;
+      }
+
+      &_type {
+        &_win {
+          color: #2fad03;
+        }
+
+        &_loose {
+          color: #fc2c2c;
+        }
       }
     }
   }
