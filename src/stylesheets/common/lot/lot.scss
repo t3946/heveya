@@ -104,6 +104,19 @@
       color: #434343;
     }
   }
+
+  .isMakeOffer {
+    .item {
+      .icon {
+        width: pxToRem(15);
+        height: pxToRem(15);
+      }
+
+      &:not(:last-child) {
+        margin: 0 0 pxToRem(8);
+      }
+    }
+  }
 }
 
 .lotIcons {

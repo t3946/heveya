@@ -1,80 +1,100 @@
-<div class="lot lot_tile">
-    {{> ../Hat}}
+<div class="lot lot_tile h-100 d-flex flex-column justify-content-between">
+    <div>
+        {{> ../Hat}}
 
-    {{> ../../InteractiveImage }}
+        {{> ../../InteractiveImage }}
 
-    <div class="lotContainer">
-        <p class="textEllipsis textEllipsis_rows_2 m-0">
-            Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
-            собственности под жилым помещением Жилое помещение в общей долевой
-        </p>
+        <div class="lotContainer">
+            <p class="textEllipsis textEllipsis_rows_2 m-0">
+                Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
+                собственности под жилым помещением Жилое помещение в общей долевой
+            </p>
 
-        <div class="deadline mt-2">
-            <span>Завершение интервала: 1 д. 12 ч.</span>
-        </div>
-    </div>
-
-    <div class="lotContainer py-0">
-        <div class="baseHorizontalDivider m-0"></div>
-    </div>
-
-    <div class="lotContainer">
-        {{> ../../Prices
-            startPrice=startPrice
-            currentPrice=currentPrice
-            minimalPrice=minimalPrice
-            yourPrice=yourPrice
-        }}
-    </div>
-
-    {{> ../../PricesForecast
-        chancesToWin=chancesToWin
-        probablityPrice=probablityPrice
-        interestedUsers=interestedUsers
-    }}
-
-    <div class="lotContainer">
-        {{> ../../PricesService
-            offerCost=offerCost
-            reward=reward
-        }}
-    </div>
-
-    <div class="lotContainer py-0">
-        <div class="baseHorizontalDivider m-0"></div>
-    </div>
-
-    <div class="lotContainer pb-0">
-        {{> ../../PriceOffer price=priceOffer }}
-    </div>
-
-    {{#if isMakeOfferType }}
-        <div class="lotContainer pb-0">
-            <div
-                class="mb-2">{{> ../../../ui/account/InputCheckbox id="needHelp" label="Помощь специалиста" price="300"}}</div>
-            <div
-                class="mb-2">{{> ../../../ui/account/InputCheckbox id="arrangeTime" label="Подача звявки ко времени" price="1 700" checked=true}}</div>
-            <div
-                class="mb-3">{{> ../../../ui/account/InputCheckbox id="remoteConnection" label="Удаленное подключение" price="1 200" checked=true}}</div>
-            <div class="baseButton baseButton_size_medium baseButton_theme_blue mb-3">Участвовать с HEVEYA.RU</div>
-            <div class="fw-bold text-center color_8cceef fs-16px">Выбрать другого исполнителя (Агента)</div>
-        </div>
-    {{/if}}
-
-    {{#if isDocumentsPreparing}}
-        <div class="lotContainer lotContainer_p_12 pb-0">
-            <div class="documentsPreparing">
-                <div class="d-flex documentsPreparing__hat hat align-items-center">
-                    <div class="documentsPreparing__icon">
-                        {{> ../../../icons/exclamation-mark-2/ExclamationMark2 class="color_8cceef"}}
-                    </div>
-
-                    <div class="fw-semibold">Выполняется подготовка документов.</div>
-                </div>
-
-                <p class="m-0 fs-14px color_9b9b9b">Уведомление о готовности поступит в течение 10-40 минут. Обновите
-                    страницу, скачайте, подпишите и загрузите документы</p>
+            <div class="deadline mt-2">
+                <span>Завершение интервала: 1 д. 12 ч.</span>
             </div>
         </div>
-    {{/if}}
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer">
+            {{> ../../Prices
+                startPrice=startPrice
+                currentPrice=currentPrice
+                minimalPrice=minimalPrice
+                yourPrice=yourPrice
+            }}
+        </div>
+
+        {{> ../../PricesForecast
+            chancesToWin=chancesToWin
+            probablityPrice=probablityPrice
+            interestedUsers=interestedUsers
+        }}
+
+        <div class="lotContainer">
+            {{> ../../PricesService
+                offerCost=offerCost
+                reward=reward
+            }}
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+    </div>
+
+    <div>
+        {{#if isMakeOfferType }}
+            <div class="lotContainer pb-0">
+                {{> ../../PriceOffer price=priceOffer }}
+            </div>
+
+            <div class="lotContainer pb-0">
+                <div
+                    class="mb-2">{{> ../../../ui/account/InputCheckbox id="needHelp" label="Помощь специалиста" price="300"}}</div>
+                <div
+                    class="mb-2">{{> ../../../ui/account/InputCheckbox id="arrangeTime" label="Подача звявки ко времени" price="1 700" checked=true}}</div>
+                <div
+                    class="mb-3">{{> ../../../ui/account/InputCheckbox id="remoteConnection" label="Удаленное подключение" price="1 200" checked=true}}</div>
+                <div class="baseButton baseButton_size_medium baseButton_theme_blue mb-3">Участвовать с HEVEYA.RU</div>
+                <div class="fw-bold text-center color_8cceef fs-16px">Выбрать другого исполнителя (Агента)</div>
+            </div>
+        {{/if}}
+
+        {{#if isDocumentsPreparing}}
+            <div class="lotContainer pb-0">
+                {{> ../../PriceOffer price=priceOffer }}
+            </div>
+
+            <div class="lotContainer lotContainer_p_12 pb-0">
+                <div class="documentsPreparing">
+                    <div class="d-flex documentsPreparing__hat hat align-items-center">
+                        <div class="documentsPreparing__icon">
+                            {{> ../../../icons/exclamation-mark-2/ExclamationMark2 class="color_8cceef"}}
+                        </div>
+
+                        <div class="fw-semibold">Выполняется подготовка документов.</div>
+                    </div>
+
+                    <p class="m-0 fs-14px color_9b9b9b">Уведомление о готовности поступит в течение 10-40 минут.
+                        Обновите
+                        страницу, скачайте, подпишите и загрузите документы</p>
+                </div>
+            </div>
+        {{/if}}
+
+        {{#if isMakeOffer}}
+            <div class="lotContainer isMakeOffer pb-0">
+                {{> IsMakeOfferItem title="Заявка на участие"}}
+                {{> IsMakeOfferItem title="Агентский договор"}}
+                {{> IsMakeOfferItem title="Договор задатка"}}
+                {{> IsMakeOfferItem title="Платежное поручение"}}
+
+                <div class="baseButton baseButton_theme_blue baseButton_size_medium">Подать заявку</div>
+            </div>
+        {{/if}}
+    </div>
 </div>
