@@ -1,4 +1,4 @@
-<div class="lot lot_tile h-100 d-flex flex-column justify-content-between">
+<div class="lot lot_tile h-100 d-flex flex-column">
     <div>
         {{> ../Hat}}
 
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="flex-grow-1 d-flex flex-column justify-content-between">
         {{#if isMakeOfferType }}
             <div class="lotContainer pb-0">
                 {{> ../../PriceOffer price=priceOffer }}
@@ -94,6 +94,29 @@
                 {{> IsMakeOfferItem title="Платежное поручение"}}
 
                 <div class="baseButton baseButton_theme_blue baseButton_size_medium">Подать заявку</div>
+            </div>
+        {{/if}}
+
+        {{#if isOfferRegistered}}
+            <div class="lotContainer pb-0">
+                {{> ../../PriceOffer price=priceOffer }}
+            </div>
+
+            <div class="lotContainer lotContainer_p_12 pb-0">
+                <div class="documentsPreparing">
+                    <div class="d-flex documentsPreparing__hat hat align-items-center">
+                        <div class="documentsPreparing__icon">
+                            {{> ../../../icons/check-mark-3/CheckMark3 class="color_2fad03"}}
+                        </div>
+
+                        <div class="fw-semibold">Ваша заявка зарегистрирована</div>
+                    </div>
+
+                    <p class="m-0 fs-14px color_9b9b9b">
+                        Уведомление о готовности поступит в течение 10-40 минут. Обновите страницу, скачайте, подпишите
+                        и загрузите документы
+                    </p>
+                </div>
             </div>
         {{/if}}
     </div>
