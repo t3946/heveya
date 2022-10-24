@@ -9,6 +9,10 @@
 
   .lotContainer {
     padding: pxToRem(12) pxToRem(24);
+
+    &_p_12 {
+      padding: pxToRem(12);
+    }
   }
 
   .priceOffer {
@@ -79,6 +83,25 @@
       &_theme_discount {
         background: #f6002c;
       }
+    }
+  }
+
+  .documentsPreparing {
+    padding: pxToRem(32) pxToRem(14) pxToRem(28);
+    background-color: #e4f6ff;
+    border-radius: 5px;
+
+    &__hat {
+      margin: 0 0 pxToRem(20) 0;
+    }
+
+    &__icon {
+      margin: 0 pxToRem(14) 0 0;
+    }
+
+    .hat {
+      font-size: pxToRem(15);
+      color: #434343;
     }
   }
 }
