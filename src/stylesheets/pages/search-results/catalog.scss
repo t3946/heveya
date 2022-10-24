@@ -1,0 +1,24 @@
+.catalog {
+  &_mode_tile {
+    display: grid;
+    grid-gap: pxToRem(20);
+    grid-template-columns: 1fr;
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint(xxl) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  &_mode_line {
+    display: grid;
+    grid-gap: pxToRem(25);
+    grid-template-columns: 1fr;
+  }
+}
