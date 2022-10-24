@@ -4,15 +4,6 @@
   background: #ffffff;
   font-size: pxToRem(14);
 
-  .description {
-    line-clamp: 5;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-  }
-
   .lotHat {
     padding: pxToRem(12) pxToRem(24) pxToRem(8);
   }

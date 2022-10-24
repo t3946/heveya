@@ -8,7 +8,26 @@
         </div>
 
         <div class="d-flex">
-            {{> ../../../layout/account/sidebar/Sidebar }}
+            <div class="sidebarWrapper accountMemberPage__sidebar">
+                {{> ../../../layout/account/sidebar/Sidebar }}
+            </div>
+
+            <div class="lots">
+                <div class="containerFrame p-0 pb-3">
+                    {{> ../../../common/lot-card/tile/favorite/Favorite
+                        currentPrice="208 278 000"
+                        minimalPrice="208 278 000"
+                        yourPrice="139 579 840"
+                        chancesToWin="17%"
+                        probablityPrice="23 000"
+                        interestedUsers="12"
+                        offerCost="2 700"
+                        reward="12 000"
+                        priceOffer="270 000 000"
+                        isMakeOfferType=true
+                    }}
+                </div>
+            </div>
         </div>
     </div>
 </div>

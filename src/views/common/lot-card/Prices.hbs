@@ -1,0 +1,27 @@
+{{#if startPrice}}
+    <div class="nameValuePair justify-content-between fs-14px">
+        <div class="name fw-normal">Начальная цена:</div>
+        <div class="value rouble">{{startPrice}}</div>
+    </div>
+{{/if}}
+
+{{#if currentPrice}}
+    <div class="nameValuePair justify-content-between fs-14px">
+        <div class="name fw-normal">Текущая цена:</div>
+        <div class="value rouble">{{currentPrice}}</div>
+    </div>
+{{/if}}
+
+{{#if minimalPrice}}
+    <div class="nameValuePair justify-content-between fs-14px">
+        <div class="name fw-normal">Минимальная цена:</div>
+        <div class="value rouble">{{minimalPrice}}</div>
+    </div>
+{{/if}}
+
+{{#if yourPrice}}
+    <div class="nameValuePair justify-content-between fs-14px">
+        <div class="name fw-normal">Ваша цена:</div>
+        <div class="value rouble">{{yourPrice}}</div>
+    </div>
+{{/if}}

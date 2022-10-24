@@ -1,0 +1,22 @@
+<div class="pricesForecast lotContainer">
+    {{#if chancesToWin}}
+        <div class="nameValuePair justify-content-between fs-14px">
+            <div class="name fw-normal">Вероятность победы:</div>
+            <div class="value">{{chancesToWin}}</div>
+        </div>
+    {{/if}}
+
+    {{#if probablityPrice}}
+        <div class="nameValuePair justify-content-between fs-14px">
+            <div class="name fw-normal">Прогноз цены:</div>
+            <div class="value rouble">{{probablityPrice}}</div>
+        </div>
+    {{/if}}
+
+    {{#if interestedUsers}}
+        <div class="nameValuePair justify-content-between fs-14px align-items-end">
+            <div class="name fw-normal">Заинтересованных пользователей:</div>
+            <div class="value">{{interestedUsers}}</div>
+        </div>
+    {{/if}}
+</div>

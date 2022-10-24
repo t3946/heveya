@@ -4,7 +4,26 @@
 @import "interactive-image";
 
 .lot {
+  @import "prices-forecast";
   border-radius: 10px;
+
+  .lotContainer {
+    padding: pxToRem(12) pxToRem(24);
+  }
+
+  .priceOffer {
+    font-size: pxToRem(15);
+
+    .priceWrapper {
+      padding: pxToRem(4);
+      border: 1px solid #d4d4d4;
+      border-radius: 3px;
+
+      .rouble {
+        color: #ef7f1a;
+      }
+    }
+  }
 
   &_bordered {
     border: 1px solid #d4d4d4;
@@ -21,25 +40,8 @@
   }
 
   .stats {
-    font-size: pxToRem(14);
-
-    .item {
-      display: flex;
-      justify-content: space-between;
-
-      .name {
-        color: #9b9b9b;
-
-        &:after {
-          content: ":";
-        }
-      }
-
-      .value {
-        color: #000000;
-        font-weight: 600;
-      }
-    }
+    display: grid;
+    grid-gap: pxToRem(2);
   }
 
   .description {

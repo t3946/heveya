@@ -62,5 +62,27 @@
         color: #9b9b9b;
       }
     }
+
+    &_account {
+      .checkContainer {
+        width: pxToRem(20);
+        height: pxToRem(20);
+        border-color: #D9D9D9;
+
+        &_checked {
+          border-color: #8CCEEF;
+          background-color: #8CCEEF;
+        }
+      }
+
+      .icon {
+        width: pxToRem(10);
+        color: #ffffff;
+      }
+
+      .label {
+        color: #161616;
+      }
+    }
   }
 }

@@ -1,4 +1,12 @@
 .accountMemberPage {
+  &__sidebar {
+    margin: 0 pxToRem(25) 0 0;
+  }
+
+  .sidebarWrapper {
+    width: pxToRem(340);
+  }
+
   .restrictedWrapper {
     display: grid;
     grid-gap: pxToRem(25);
@@ -13,6 +21,17 @@
       @include breakpoint(xxl) {
         font-size: pxToRem(16);
       }
+    }
+  }
+
+  .lots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, auto);
+    grid-gap: pxToRem(20);
+
+    @include breakpoint(md) {
+      grid-gap: pxToRem(25);
     }
   }
 }
