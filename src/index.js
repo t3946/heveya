@@ -30,6 +30,7 @@ import CompetitorsCheck from "./views/pages/competitors-check/CompetitorsCheck.h
 import Registration from "./views/pages/registration/Registration.hbs";
 import FormsExample from "./views/pages/forms-example/FormsExample.hbs";
 import AccountMember from "./views/pages/account/member/Member.hbs";
+import SelectServices from "./views/pages/account/select-services/SelectServices.hbs";
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -145,8 +146,11 @@ document.addEventListener('DOMContentLoaded', function () {
       break
 
     case '/account-member':
-      console.log("/account/member");
       document.body.innerHTML = AccountMember()
+      break
+
+    case '/account-select-services':
+      document.body.innerHTML = SelectServices()
       break
     default:
       document.location.pathname = '/'

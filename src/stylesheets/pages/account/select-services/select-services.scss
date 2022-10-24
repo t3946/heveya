@@ -1,0 +1,23 @@
+.selectServicesPage {
+  &__header {
+    margin: 0 0 pxToRem(16);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(26);
+    }
+    @include breakpoint(xxl) {
+      margin: 0 0 pxToRem(68);
+    }
+  }
+
+  &__item {
+    margin: 0 0 pxToRem(18);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(28);
+    }
+    @include breakpoint(xxl) {
+      margin: 0 0 pxToRem(44);
+    }
+  }
+}

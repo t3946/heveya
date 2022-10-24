@@ -1,0 +1,61 @@
+.inputRadioAccount {
+  $color: #8cceef;
+
+  .input {
+    cursor: pointer;
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #ffffff;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: pxToRem(24);
+    height: pxToRem(24);
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+
+    @include breakpoint(md) {
+      width: pxToRem(28);
+      height: pxToRem(28);
+    }
+  }
+
+  .input::before {
+    content: "";
+    width: pxToRem(12);
+    height: pxToRem(12);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset pxToRem(25) pxToRem(25) $color;
+
+    @include breakpoint(md) {
+      width: pxToRem(14);
+      height: pxToRem(14);
+    }
+  }
+
+  .input:checked {
+    border-color: $color;
+  }
+
+  .input:checked::before {
+    transform: scale(1);
+  }
+
+  .label {
+    cursor: pointer;
+    font-size: pxToRem(14);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(18);
+    }
+  }
+}
