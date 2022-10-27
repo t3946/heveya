@@ -11,26 +11,27 @@ import Ratings from './views/pages/ratings/Ratings.hbs'
 import Map from './views/pages/map/Map.hbs'
 import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
 import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
-import Member from "./views/pages/member/Member.hbs";
-import Arbitrator from "./views/pages/arbitrator/Arbitrator.hbs";
-import BiddingInitiator from "./views/pages/bidding-initiator/BiddingInitiator.hbs";
-import DebtorCompany from "./views/pages/debtor-company/DebtorCompany.hbs";
-import DebtorPerson from "./views/pages/debtor-person/DebtorPerson.hbs";
-import Sro from "./views/pages/sro/Sro.hbs";
-import Etp from "./views/pages/etp/Etp.hbs";
-import RegistryDebtors from "./views/pages/registry-debtors/RegistryDebtors.hbs";
-import RegistryArbitrators from "./views/pages/registry-arbitrators/RegistryArbitrators.hbs";
-import RegistryInitiators from "./views/pages/registry-initiators/RegistryInitiators.hbs";
-import RegistryWebResources from "./views/pages/registry-web-resources/RegistryWebResources.hbs";
-import RegistrySro from "./views/pages/registry-sro/RegistrySro.hbs";
-import RegistryMembers from "./views/pages/registry-members/RegistryMembers.hbs";
-import BiddingNumbers from "./views/pages/bidding-numbers/BiddingNumbers.hbs";
-import Competitors from "./views/pages/competitors/Competitors.hbs";
-import CompetitorsCheck from "./views/pages/competitors-check/CompetitorsCheck.hbs";
-import Registration from "./views/pages/registration/Registration.hbs";
-import FormsExample from "./views/pages/forms-example/FormsExample.hbs";
-import AccountMember from "./views/pages/account/member/Member.hbs";
-import SelectServices from "./views/pages/account/select-services/SelectServices.hbs";
+import Member from './views/pages/member/Member.hbs'
+import Arbitrator from './views/pages/arbitrator/Arbitrator.hbs'
+import BiddingInitiator from './views/pages/bidding-initiator/BiddingInitiator.hbs'
+import DebtorCompany from './views/pages/debtor-company/DebtorCompany.hbs'
+import DebtorPerson from './views/pages/debtor-person/DebtorPerson.hbs'
+import Sro from './views/pages/sro/Sro.hbs'
+import Etp from './views/pages/etp/Etp.hbs'
+import RegistryDebtors from './views/pages/registry-debtors/RegistryDebtors.hbs'
+import RegistryArbitrators from './views/pages/registry-arbitrators/RegistryArbitrators.hbs'
+import RegistryInitiators from './views/pages/registry-initiators/RegistryInitiators.hbs'
+import RegistryWebResources from './views/pages/registry-web-resources/RegistryWebResources.hbs'
+import RegistrySro from './views/pages/registry-sro/RegistrySro.hbs'
+import RegistryMembers from './views/pages/registry-members/RegistryMembers.hbs'
+import BiddingNumbers from './views/pages/bidding-numbers/BiddingNumbers.hbs'
+import Competitors from './views/pages/competitors/Competitors.hbs'
+import CompetitorsCheck from './views/pages/competitors-check/CompetitorsCheck.hbs'
+import Registration from './views/pages/registration/Registration.hbs'
+import FormsExample from './views/pages/forms-example/FormsExample.hbs'
+import AccountMember from './views/pages/account/member/Member.hbs'
+import SelectServices from './views/pages/account/select-services/SelectServices.hbs'
+import MyServices from './views/pages/account/my-services/MyServices.hbs'
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -151,6 +152,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/account-select-services':
       document.body.innerHTML = SelectServices()
+      break
+
+    case '/account-my-services':
+      document.body.innerHTML = MyServices()
       break
     default:
       document.location.pathname = '/'

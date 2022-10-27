@@ -1,12 +1,4 @@
 .accountMemberPage {
-  &__sidebar {
-    margin: 0 pxToRem(25) 0 0;
-  }
-
-  .sidebarWrapper {
-    width: pxToRem(340);
-  }
-
   .restrictedWrapper {
     display: grid;
     grid-gap: pxToRem(25);

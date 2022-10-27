@@ -1,2 +1,8 @@
 @import "member/member";
 @import "select-services/select-services";
+
+.accountPageLayoutGrid {
+  display: grid;
+  grid-template-columns: pxToRem(340) 1fr;
+  grid-gap: pxToRem(25);
+}
