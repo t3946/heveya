@@ -101,7 +101,7 @@
             </div>
 
             <div class="lotContainer lotContainer_p_12 pb-0">
-                {{> InfoPanel isPrimaryTheme=true title="Выполняется подготовка документов." text="Уведомление о готовности поступит в течение 10-40 минут. Обновите страницу, скачайте, подпишите и загрузите документы"}}
+                {{> Alert isPrimaryTheme=true title="Выполняется подготовка документов." text="Уведомление о готовности поступит в течение 10-40 минут. Обновите страницу, скачайте, подпишите и загрузите документы"}}
             </div>
         {{/if}}
 
@@ -122,7 +122,7 @@
             </div>
 
             <div class="lotContainer lotContainer_p_12 pb-0">
-                {{> InfoPanel isSuccessTheme=true title="Ваша заявка зарегистрирована" text="Уведомление о готовности поступит в течение 10-40 минут. Обновите страницу, скачайте, подпишите и загрузите документы"}}
+                {{> Alert isSuccessTheme=true title="Ваша заявка зарегистрирована" text="Уведомление о готовности поступит в течение 10-40 минут. Обновите страницу, скачайте, подпишите и загрузите документы"}}
             </div>
         {{/if}}
 
@@ -161,13 +161,13 @@
             </div>
 
             <div class="lotContainer lotContainer_p_12 pb-0">
-                {{> InfoPanel isPrimaryTheme=true title="Аукционному брокеру Сидорову А.А. направлен Ваш запрос" text="Ожидайте подтверждения в течение 60 минут.  Уведомление поступит на электронную почту"}}
+                {{> Alert isPrimaryTheme=true title="Аукционному брокеру Сидорову А.А. направлен Ваш запрос" text="Ожидайте подтверждения в течение 60 минут.  Уведомление поступит на электронную почту"}}
             </div>
         {{/if}}
 
         {{#if isBrokerDismissedOrder}}
             <div class="lotContainer lotContainer_p_12 pb-0">
-                {{> InfoPanel isErrorTheme=true title="Аукционный брокер Сидоров А.А. отказался от выполнения задания"}}
+                {{> Alert isErrorTheme=true title="Аукционный брокер Сидоров А.А. отказался от выполнения задания"}}
             </div>
 
             <div class="lotContainer py-0">
@@ -183,7 +183,7 @@
 
         {{#if isBrokerAcceptedOrder}}
             <div class="lotContainer lotContainer_p_12 pb-0">
-                {{> InfoPanel isSuccessTheme=true title="Аукционный брокер Сидоров А.А. подтвердил задание"}}
+                {{> Alert isSuccessTheme=true title="Аукционный брокер Сидоров А.А. подтвердил задание"}}
             </div>
 
             <div class="lotContainer">
