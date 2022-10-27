@@ -1,0 +1,13 @@
+<div class="inputWithSwitch d-flex align-items-center">
+    <div class="costWrapper item__input isOff">
+        {{> ../../../common/ui/InputText placeholder="2000"}}
+    </div>
+
+    <div class="costWrapper item__input isOn" style="display: none">
+        {{> ../../../common/ui/InputText placeholder="Договорная" disabled=true}}
+    </div>
+
+    <div class="switch">
+        {{> ../../../common/ui/account/Switch offLabel="₽" onLabel="Договорная"}}
+    </div>
+</div>

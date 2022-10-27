@@ -1,1 +1,9 @@
-<input type="text" name="{{name}}" {{#if id}}id="{{id}}"{{/if}} class="form-control baseInputText" placeholder="{{placeholder}}" {{#if required}}required{{/if}} />
+<input
+    type="text"
+    name="{{name}}"
+    {{#if id}}id="{{id}}"{{/if}}
+    class="form-control baseInputText"
+    placeholder="{{placeholder}}"
+    {{#if required}}required{{/if}}
+    {{#if disabled}}disabled{{/if}}
+/>

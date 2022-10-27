@@ -20,75 +20,95 @@
     width: pxToRem(45);
   }
 
-  .itemParticipationCost {
-    &__header {
-      margin: 0 0 pxToRem(16);
+  .participationCost {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(35);
 
-      @include breakpoint(md) {
-        margin: 0 0 pxToRem(20);
-      }
+      .item {
+        &__header {
+          margin: 0 0 pxToRem(16);
 
-      @include breakpoint(xxl) {
-        margin: 0 0 pxToRem(24);
-      }
-    }
-
-    &__input {
-      margin: 0 pxToRem(12) 0 0;
-    }
-
-    input {
-      text-align: center;
-    }
-
-    .orderCostWrapper {
-      width: pxToRem(75);
-    }
-
-    .awardForWinWrapper {
-      width: pxToRem(130);
-    }
-
-    .options {
-      padding: 0 0 0 pxToRem(45);
-    }
-  }
-
-  .itemAdvancedServices {
-    &__header {
-      margin: 0 0 pxToRem(8);
-    }
-
-    .options {
-      padding: 0 0 0 pxToRem(45);
-    }
-  }
-
-  .participationCostGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: pxToRem(35);
-  }
-
-  .advancedServicesGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: pxToRem(35) pxToRem(25);
-  }
-
-  .remoteServicesGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: pxToRem(35);
-
-    .itemRemoteService {
-      .options {
-        padding: 0 0 0 pxToRem(45);
-
-        &__item {
           @include breakpoint(md) {
-            margin: 0 pxToRem(80) 0 0;
+            margin: 0 0 pxToRem(20);
           }
+
+          @include breakpoint(xxl) {
+            margin: 0 0 pxToRem(24);
+          }
+        }
+
+        &__input {
+          margin: 0 pxToRem(12) 0 0;
+        }
+
+        input {
+          text-align: center;
+        }
+
+        .orderCostWrapper {
+          width: pxToRem(75);
+        }
+
+        .awardForWinWrapper {
+          width: pxToRem(130);
+        }
+
+        .options {
+          padding: 0 0 0 pxToRem(45);
+        }
+      }
+    }
+  }
+
+  .AdvancedServices {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: pxToRem(35) pxToRem(25);
+
+      .item {
+        &__header {
+          margin: 0 0 pxToRem(8);
+        }
+
+        .options {
+          padding: 0 0 0 pxToRem(45);
+        }
+      }
+    }
+  }
+
+  .remoteServices {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(35);
+
+      .item {
+        .options {
+          padding: 0 0 0 pxToRem(45);
+
+          &__item {
+            @include breakpoint(md) {
+              margin: 0 pxToRem(80) 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .localServices {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(35);
+
+      .item {
+        .costWrapper {
+          width: pxToRem(133);
         }
       }
     }
