@@ -49,10 +49,6 @@
       width: pxToRem(130);
     }
 
-    .winTermWrapper {
-      width: pxToRem(50);
-    }
-
     .options {
       padding: 0 0 0 pxToRem(45);
     }
@@ -61,14 +57,6 @@
   .itemAdvancedServices {
     &__header {
       margin: 0 0 pxToRem(8);
-    }
-
-    .costWrapper {
-      width: pxToRem(75);
-
-      input {
-        text-align: center;
-      }
     }
 
     .options {
@@ -86,5 +74,39 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: pxToRem(35) pxToRem(25);
+  }
+
+  .remoteServicesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: pxToRem(35);
+
+    .itemRemoteService {
+      .options {
+        padding: 0 0 0 pxToRem(45);
+
+        &__item {
+          @include breakpoint(md) {
+            margin: 0 pxToRem(80) 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .winTermWrapper {
+    width: pxToRem(50);
+
+    input {
+      text-align: center;
+    }
+  }
+
+  .costWrapper {
+    width: pxToRem(75);
+
+    input {
+      text-align: center;
+    }
   }
 }
