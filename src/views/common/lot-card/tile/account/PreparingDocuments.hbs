@@ -1,0 +1,61 @@
+<div class="lot lot_tile h-100 d-flex flex-column">
+    <div>
+        {{> ../Hat}}
+
+        {{> ../../InteractiveImage }}
+
+        <div class="lotContainer">
+            <p class="textEllipsis textEllipsis_rows_2 m-0">
+                Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
+                собственности под жилым помещением Жилое помещение в общей долевой
+            </p>
+
+            {{> common/BiddingEndTime }}
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer">
+            {{> ../../Prices
+                startPrice=startPrice
+                currentPrice=currentPrice
+                minimalPrice=minimalPrice
+                yourPrice=yourPrice
+            }}
+        </div>
+
+        {{> ../../PricesForecast
+            chancesToWin=chancesToWin
+            probablityPrice=probablityPrice
+            interestedUsers=interestedUsers
+        }}
+
+        <div class="lotContainer">
+            <div class="fs-15px fw-semibold">
+                <span class="me-1">Исполнитель:</span>
+                <span>{{executor}}</span>
+            </div>
+            {{> ../../PricesService
+                offerCost=offerCost
+                reward=reward
+                advancedFeatures=advancedFeatures
+            }}
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+    </div>
+
+    <div class="flex-grow-1 d-flex flex-column justify-content-between">
+        <div class="lotContainer pb-0">
+            {{> ../../PriceOffer price=priceOffer }}
+        </div>
+
+        <div class="lotContainer lotContainer_p_12 pb-0">
+            {{> common/Alert isPrimaryTheme=true title="Выполняется подготовка документов." text="Уведомление о готовности поступит в течение 10-40 минут. Обновите страницу, скачайте, подпишите и загрузите документы"}}
+        </div>
+    </div>
+</div>

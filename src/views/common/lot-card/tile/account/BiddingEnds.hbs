@@ -1,0 +1,84 @@
+<div class="lot lot_tile h-100 d-flex flex-column">
+    <div>
+        {{> ../Hat}}
+
+        {{> ../../InteractiveImage }}
+
+        <div class="lotContainer">
+            <p class="textEllipsis textEllipsis_rows_2 m-0">
+                Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
+                собственности под жилым помещением Жилое помещение в общей долевой
+            </p>
+
+            <div class="lotContainer px-0">
+                <div class="baseHorizontalDivider m-0"></div>
+            </div>
+
+            <div class="fw-semibold fs-18px color_fc2c2c text-center">Торги завершены</div>
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer">
+            {{> ../../Prices
+                startPrice=startPrice
+                currentPrice=currentPrice
+                minimalPrice=minimalPrice
+                yourPrice=yourPrice
+            }}
+        </div>
+
+        {{> ../../PricesForecast
+            chancesToWin=chancesToWin
+            probablityPrice=probablityPrice
+            interestedUsers=interestedUsers
+        }}
+
+        <div class="lotContainer">
+            <div class="fs-15px fw-semibold">
+                <span class="me-1">Исполнитель:</span>
+                <span>{{executor}}</span>
+            </div>
+            {{> ../../PricesService
+                offerCost=offerCost
+                reward=reward
+                advancedFeatures=advancedFeatures
+            }}
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+    </div>
+
+    <div class="flex-grow-1 d-flex flex-column justify-content-between">
+        <div class="lotContainer pb-0">
+            <div class="isBiddingEnds">
+                <div class="links">
+                    <div class="buttonText fs-18px">Итоговый протокол торгов</div>
+                    <div class="buttonText fs-18px">Ссылка на торги</div>
+                    <div class="buttonText fs-18px">Приложенные документы</div>
+                    <div class="buttonText fs-18px">Счет на оплату</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lotContainer pb-0">
+            <div class="isBiddingEnds">
+                {{#if isWin}}
+                    <div class="isBiddingEnds__status status status_type_win">
+                        {{> ../../../icons/check-mark/CheckMark class="icon me-3"}}
+                        <span>Вы победили</span>
+                    </div>
+                {{else}}
+                    <div class="isBiddingEnds__status status status_type_loose">
+                        {{> ../../../icons/exclamation-mark/ExclamationMark class="icon me-3"}}
+                        <span>Вы не победили</span>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
