@@ -1,0 +1,100 @@
+<div class="lot lot_tile h-100 d-flex flex-column">
+    <div>
+        {{> ../../Hat}}
+
+        {{> ../../../InteractiveImage }}
+
+        <div class="lotContainer">
+            <p class="textEllipsis textEllipsis_rows_2 m-0">
+                Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
+                собственности под жилым помещением Жилое помещение в общей долевой
+            </p>
+
+            {{> ../common/BiddingEndTime }}
+        </div>
+
+        {{> common/TaskDescription }}
+
+        <div class="lotContainer pb-0">
+            {{> ../../../PriceOffer price="270 000 000"}}
+        </div>
+
+        <div class="lotContainer pb-0">
+            {{> ../../../PricesService
+                offerCost=offerCost
+                winAward=winAward
+                operatorComission=operatorComission
+            }}
+        </div>
+
+
+        <div class="lotContainer pb-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer pb-0">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+                <div class="fw-semibold fs-15px me-3">Паспорт и ИНН</div>
+
+                <a href="#" class="buttonText fs-15px d-flex align-items-center text-decoration-none">
+                    <span class="me-2">{{> ../../../../icons/download/Download }}</span>
+                    <span>Скачать</span>
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="fw-semibold fs-15px me-3">Заявка, Агентский договор, Квитанция</div>
+
+                <a href="#" class="buttonText fs-15px d-flex align-items-center text-decoration-none">
+                    <span class="me-2">{{> ../../../../icons/download/Download }}</span>
+                    <span>Скачать</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="lotContainer pb-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer pb-0">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="fw-semibold fs-15px me-3">Итоговый протокол</div>
+
+                <a href="#" class="buttonText fs-15px d-flex align-items-center text-decoration-none">
+                    + Загрузить
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-grow-1 d-flex flex-column justify-content-between">
+        <form action="">
+            <div class="lotContainer pb-0">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        {{> ../../../../ui/account/InputCheckbox id="EndCheckbox1" name="status" value="won" checked=true}}
+                        <label for="EndCheckbox1" class="ms-2">Вы победили</label>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        {{> ../../../../ui/account/InputCheckbox id="EndCheckbox2" name="status" value="lost"}}
+                        <label for="EndCheckbox2" class="ms-2"> Вы не победили</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lotContainer">
+                <button class="baseButton baseButton_size_medium baseButton_theme_blue">Завершить задание</button>
+            </div>
+        </form>
+
+        <div class="lotContainer">
+            <div class="mt-4">
+                <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                    <span>{{> ../../../../icons/arrow/Arrow class="color_8cceef"}}</span>
+                    <span class="color_9b9b9b fw-bold">Перейти на электронную площадку</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

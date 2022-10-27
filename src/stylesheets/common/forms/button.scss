@@ -14,6 +14,7 @@
   width: 100%;
   text-decoration: none;
   transition: background-color, color 0.3s ease;
+  user-select: none;
 
   .icon {
     width: pxToRem(20);
