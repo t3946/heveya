@@ -7,7 +7,7 @@
         <div class="accountPageLayoutGrid">
             {{> ../../../layout/account/sidebar/Sidebar }}
 
-            <div class="containerFrame participationCost">
+            <form class="containerFrame participationCost">
                 <div class="myServicesPage__settingsBlock">
                     <div class="fs-18px fs-md-20px fw-bold myServicesPage__listHeader">Стоимость участия:</div>
 
@@ -61,7 +61,11 @@
                         {{> ItemLocalServices title="Подача документов на регистрацию недвижимого имущества." key="localServicesGrid8" }}
                     </div>
                 </div>
-            </div>
+
+                <div>
+                    <button class="baseButton baseButton_theme_blue baseButton_size_medium w-auto">Сохранить</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
