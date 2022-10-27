@@ -1,0 +1,76 @@
+<div class="lot lot_tile h-100 d-flex flex-column">
+    <div>
+        {{> ../../Hat}}
+
+        {{> ../../../InteractiveImage }}
+
+        <div class="lotContainer">
+            <p class="textEllipsis textEllipsis_rows_2 m-0">
+                Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
+                собственности под жилым помещением Жилое помещение в общей долевой
+            </p>
+
+            {{> ../common/BiddingEndTime }}
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer">
+            {{> ../../../Prices
+                startPrice=startPrice
+                currentPrice=currentPrice
+                minimalPrice=minimalPrice
+                yourPrice=yourPrice
+            }}
+        </div>
+
+        {{> common/TaskDescription }}
+
+        <div class="lotContainer">
+            {{> ../../../PricesService
+                offerCost=offerCost
+                winAward=winAward
+                operatorComission=operatorComission
+            }}
+        </div>
+
+        <div class="lotContainer py-0">
+            <div class="baseHorizontalDivider m-0"></div>
+        </div>
+
+        <div class="lotContainer">
+            <div class="baseButton baseButton_theme_blue d-flex flex-column baseButton_size_medium mb-1">
+                <span>Подтвердить задания</span>
+                <span class="fs-12px">58 мин. 35 сек</span>
+            </div>
+
+            <div class="buttonText mt-3 fs-16px text-center">Отказаться от задания</div>
+
+            <div class="mt-4">
+                <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                    <span>{{> ../../../../icons/arrow/Arrow class="color_8cceef"}}</span>
+                    <span class="color_9b9b9b fw-bold">Перейти на электронную площадку</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-grow-1 d-flex flex-column justify-content-between">
+        <div class="lotContainer pb-0 d-none">
+            {{> ../../../PriceOffer price=priceOffer }}
+        </div>
+
+        <div class="lotContainer pb-0 d-none">
+            <div
+                class="mb-2">{{> ../../../../ui/account/InputCheckboxPrice id="needHelp" label="Помощь специалиста" price="300"}}</div>
+            <div
+                class="mb-2">{{> ../../../../ui/account/InputCheckboxPrice id="arrangeTime" label="Подача звявки ко времени" price="1 700" checked=true}}</div>
+            <div
+                class="mb-3">{{> ../../../../ui/account/InputCheckboxPrice id="remoteConnection" label="Удаленное подключение" price="1 200" checked=true}}</div>
+            <div class="baseButton baseButton_size_medium baseButton_theme_blue mb-3">Участвовать с HEVEYA.RU</div>
+            <div class="fw-bold text-center color_8cceef fs-16px">Выбрать другого исполнителя (Агента)</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{{> ../../../layout/Hat withBorder=true}}
+
+<div class="page accountMemberPage">
+    <div class="container">
+        <div class="restrictedWrapper">
+            <div class="overflow-hidden">{{> ../../../common/breadcrumbs/Breadcrumbs}}</div>
+            <div class="restricted">Подача заявок не возможна. Заполните «Мой профиль»</div>
+        </div>
+
+        <div class="accountPageLayoutGrid">
+            {{> ../../../layout/account/sidebar/Sidebar }}
+
+            <div class="accountLotsGrid">
+                <div class="containerFrame p-0 pb-3">
+                    {{> ../../../common/lot-card/tile/account/tasks/Confirm
+                        currentPrice="208 278 000"
+                        minimalPrice="208 278 000"
+                        yourPrice="139 579 840"
+                        offerCost="2 700"
+                        reward="12 000"
+                        operatorComission="10%"
+                        priceOffer="270 000 000"
+                    }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../../layout/footer/Footer withBorder=true}}

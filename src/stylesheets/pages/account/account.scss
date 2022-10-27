@@ -7,3 +7,20 @@
   grid-template-columns: pxToRem(340) 1fr;
   grid-gap: pxToRem(25);
 }
+
+.accountLotsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-gap: pxToRem(20);
+
+  @include breakpoint(md) {
+    grid-gap: pxToRem(25);
+  }
+}
+
+.taskDescription {
+  &__item:not(:last-child) {
+    margin: 0 0 pxToRem(12);
+  }
+}

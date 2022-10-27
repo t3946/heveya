@@ -15,15 +15,4 @@
       }
     }
   }
-
-  .lots {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fill, auto);
-    grid-gap: pxToRem(20);
-
-    @include breakpoint(md) {
-      grid-gap: pxToRem(25);
-    }
-  }
 }

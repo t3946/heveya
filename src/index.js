@@ -32,6 +32,7 @@ import FormsExample from './views/pages/forms-example/FormsExample.hbs'
 import AccountMember from './views/pages/account/member/Member.hbs'
 import SelectServices from './views/pages/account/select-services/SelectServices.hbs'
 import MyServices from './views/pages/account/my-services/MyServices.hbs'
+import MyTasks from './views/pages/account/my-tasks/MyTasks.hbs'
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -157,6 +158,11 @@ document.addEventListener('DOMContentLoaded', function () {
     case '/account-my-services':
       document.body.innerHTML = MyServices()
       break
+
+    case '/account-my-tasks':
+      document.body.innerHTML = MyTasks()
+      break
+
     default:
       document.location.pathname = '/'
       break
