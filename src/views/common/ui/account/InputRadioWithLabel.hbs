@@ -1,5 +1,5 @@
 <div class="d-flex inputRadioAccount">
-    <label>
+    <div class="flex-shrink-0">
         <input
             class="input"
             type="radio"
@@ -8,5 +8,9 @@
             value="{{value}}"
             {{#if checked}}checked{{/if}}
         />
+    </div>
+
+    <label class="label ps-3" for="{{id}}">
+        {{label}}
     </label>
 </div>
