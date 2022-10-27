@@ -27,8 +27,10 @@
         </div>
 
         {{> common/TaskDescription }}
+    </div>
 
-        <div class="lotContainer">
+    <div class="flex-grow-1 d-flex flex-column justify-content-between">
+        <div class="lotContainer pb-0">
             {{> ../../../PricesService
                 offerCost=offerCost
                 winAward=winAward
@@ -36,22 +38,12 @@
             }}
         </div>
 
-        <div class="lotContainer py-0">
-            <div class="baseHorizontalDivider m-0"></div>
-        </div>
-    </div>
-
-    <div class="flex-grow-1 d-flex flex-column justify-content-between">
         <div class="lotContainer">
-            <div class="baseButton baseButton_theme_blue d-flex flex-column baseButton_size_medium mb-1">
-                <span>Подтвердить задания</span>
-                <span class="fs-12px">58 мин. 35 сек</span>
-            </div>
+            {{> ../common/Alert isPrimaryTheme=true isMicro=true
+                title="Ваше согласие направлено заказчику"
+                text="После оплаты услуги, денежные средства будут заблокированыдо подтверждения выполнения задания"
+            }}
 
-            <div class="buttonText mt-3 fs-16px text-center">Отказаться от задания</div>
-        </div>
-
-        <div class="lotContainer">
             <div class="mt-4">
                 <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
                     <span>{{> ../../../../icons/arrow/Arrow class="color_8cceef"}}</span>

@@ -134,6 +134,13 @@
         }
       }
     }
+
+    &_micro {
+      padding: pxToRem(10);
+      .infoPanel__hat {
+        margin: 0;
+      }
+    }
   }
 
   .isMakeOffer {
