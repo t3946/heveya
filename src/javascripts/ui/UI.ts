@@ -4,3 +4,4 @@ import "./Select";
 import "./Date";
 import "./InputMask";
 import "./InputPassword";
+import "./Switch";

@@ -12,14 +12,3 @@ $(() => {
   initCharts();
   initMap();
 });
-
-$(document).on("change", ".switchGroup input[type=checkbox]", (e) => {
-  const $target = $(e.target);
-  const $switchOnLabel = $target.parents(".switchGroup").find(".switchOnLabel");
-
-  if (e.target.checked) {
-    $switchOnLabel.addClass("switchOnLabel_active")
-  } else {
-    $switchOnLabel.removeClass("switchOnLabel_active")
-  }
-});

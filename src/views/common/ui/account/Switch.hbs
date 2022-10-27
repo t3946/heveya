@@ -1,0 +1,14 @@
+<div class="switchGroup switchGroup_theme_account d-flex align-items-center {{class}}">
+    {{#if offLabel}}
+        <span class="switchOffLabel">{{offLabel}}</span>
+    {{/if}}
+
+    <label class="switch">
+        <input type="checkbox" name="{{name}}" {{#if checked}}checked{{/if}}>
+        <span class="slider round"></span>
+    </label>
+
+    {{#if onLabel}}
+        <span class="switchOnLabel">{{onLabel}}</span>
+    {{/if}}
+</div>
