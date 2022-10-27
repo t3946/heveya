@@ -52,4 +52,10 @@
       padding: 0 0 0 pxToRem(45);
     }
   }
+
+  .participationCostGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: pxToRem(35);
+  }
 }
