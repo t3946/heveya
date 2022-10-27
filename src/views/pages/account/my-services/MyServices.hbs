@@ -8,15 +8,28 @@
             {{> ../../../layout/account/sidebar/Sidebar }}
 
             <div class="containerFrame">
-                <div class="fs-18px fs-md-20px fw-bold myServicesPage__listHeader">Стоимость участия:</div>
+                <div class="myServicesPage__settingsBlock">
+                    <div class="fs-18px fs-md-20px fw-bold myServicesPage__listHeader">Стоимость участия:</div>
 
-                <div class="participationCostGrid">
-                    {{> ItemParticipationCost title="Подача заявки в торгах по Банкротству без аккредитации на ЭТП, по агентскому договору или доверенности." checked=true key="participationCostGrid1"}}
-                    {{> ItemParticipationCost title="Подача заявки в торгах по Банкротству с аккредитацией участника на ЭТП." key="participationCostGrid2"}}
-                    {{> ItemParticipationCost title="Подача заявки в торгах Арестованным имуществом без аккредитации на ЭТП, по доверенности." key="participationCostGrid3"}}
-                    {{> ItemParticipationCost title="Подача заявки в торгах Арестованным имуществом с аккредитацией участника на ЭТП." key="participationCostGrid4"}}
-                    {{> ItemParticipationCost title="Подача заявки в Муниципальных торгах без аккредитации на ЭТП, по доверенности." key="participationCostGrid5"}}
-                    {{> ItemParticipationCost title="Подача заявки в Муниципальных торгах с аккредитацией участника на ЭТП." key="participationCostGrid6"}}
+                    <div class="participationCostGrid">
+                        {{> ItemParticipationCost title="Подача заявки в торгах по Банкротству без аккредитации на ЭТП, по агентскому договору или доверенности." checked=true key="participationCostGrid1"}}
+                        {{> ItemParticipationCost title="Подача заявки в торгах по Банкротству с аккредитацией участника на ЭТП." key="participationCostGrid2"}}
+                        {{> ItemParticipationCost title="Подача заявки в торгах Арестованным имуществом без аккредитации на ЭТП, по доверенности." key="participationCostGrid3"}}
+                        {{> ItemParticipationCost title="Подача заявки в торгах Арестованным имуществом с аккредитацией участника на ЭТП." key="participationCostGrid4"}}
+                        {{> ItemParticipationCost title="Подача заявки в Муниципальных торгах без аккредитации на ЭТП, по доверенности." key="participationCostGrid5"}}
+                        {{> ItemParticipationCost title="Подача заявки в Муниципальных торгах с аккредитацией участника на ЭТП." key="participationCostGrid6"}}
+                    </div>
+                </div>
+
+                <div class="myServicesPage__settingsBlock">
+                    <div class="fs-18px fs-md-20px fw-bold myServicesPage__listHeader">Дополнительные сервисы:</div>
+
+                    <div class="advancedServicesGrid">
+                        {{> ItemAdvancedServices title="Подача заявки в указанное время." key="advancedServicesGrid1" checked=true }}
+                        {{> ItemAdvancedServices title="Удаленное подключение заявителя в ходе торгов (Аукцион)." key="advancedServicesGrid2" }}
+                        {{> ItemAdvancedServices title="Отзыв и повторная подача заявки с новой ценой (Публичное предложение)." key="advancedServicesGrid3" }}
+                        {{> ItemAdvancedServices title="Информирование о ходе торгов с возможностью увеличить цену (Аукцион)." key="advancedServicesGrid4" }}
+                    </div>
                 </div>
             </div>
         </div>

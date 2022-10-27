@@ -1,10 +1,6 @@
 <div class="itemParticipationCost">
-    <div class="d-flex align-items-xxl-center itemParticipationCost__header">
-        <div class="checkboxWrapper">
-            {{> ../../../common/ui/account/InputCheckbox id=key name="foo" value="foo" checked=checked}}
-        </div>
-
-        <label for={{key}} class="fw-semibold fs-16px fs-md-18px">{{title}}</label>
+    <div class="itemParticipationCost__header">
+        {{> OptionHat key=key title=title checked=checked}}
     </div>
 
     <div class="d-flex justify-content-between options">

@@ -11,6 +11,15 @@
     }
   }
 
+  &__settingsBlock:not(:last-child) {
+    margin: 0 0 pxToRem(40);
+  }
+
+
+  .checkboxWrapper {
+    width: pxToRem(45);
+  }
+
   .itemParticipationCost {
     &__header {
       margin: 0 0 pxToRem(16);
@@ -44,8 +53,22 @@
       width: pxToRem(50);
     }
 
-    .checkboxWrapper {
-      width: pxToRem(45);
+    .options {
+      padding: 0 0 0 pxToRem(45);
+    }
+  }
+
+  .itemAdvancedServices {
+    &__header {
+      margin: 0 0 pxToRem(8);
+    }
+
+    .costWrapper {
+      width: pxToRem(75);
+
+      input {
+        text-align: center;
+      }
     }
 
     .options {
@@ -57,5 +80,11 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: pxToRem(35);
+  }
+
+  .advancedServicesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: pxToRem(35) pxToRem(25);
   }
 }
