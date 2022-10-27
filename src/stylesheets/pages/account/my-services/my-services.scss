@@ -1,4 +1,16 @@
 .myServicesPage {
+  &__listHeader {
+    margin: 0 0 pxToRem(16);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(24);
+    }
+
+    @include breakpoint(lg) {
+      margin: 0 0 pxToRem(20);
+    }
+  }
+
   .itemParticipationCost {
     &__header {
       margin: 0 0 pxToRem(16);
@@ -30,6 +42,14 @@
 
     .winTermWrapper {
       width: pxToRem(50);
+    }
+
+    .checkboxWrapper {
+      width: pxToRem(45);
+    }
+
+    .options {
+      padding: 0 0 0 pxToRem(45);
     }
   }
 }
