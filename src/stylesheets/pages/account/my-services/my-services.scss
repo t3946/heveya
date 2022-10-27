@@ -15,6 +15,9 @@
     margin: 0 0 pxToRem(40);
   }
 
+  &__payOrder {
+    margin: pxToRem(32) 0 0;
+  }
 
   .checkboxWrapper {
     width: pxToRem(45);
@@ -127,6 +130,22 @@
 
     input {
       text-align: center;
+    }
+  }
+
+  .payOrder {
+    padding: pxToRem(30) pxToRem(12);
+
+    @include breakpoint(md) {
+      padding: pxToRem(30) pxToRem(24);
+    }
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(30);
+    }
+
+    &__item:not(:last-child) {
+      margin: 0 0 pxToRem(12);
     }
   }
 }
