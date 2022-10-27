@@ -1,0 +1,37 @@
+<div class="itemParticipationCost">
+    <div class="d-flex fs-16px fs-md-18px align-items-xxl-center itemParticipationCost__header">
+        <div>
+            {{> ../../../common/ui/account/InputCheckbox id="foo" name="foo" value="foo" checked=checked}}
+        </div>
+
+        <label for="foo" class="fw-semibold">{{title}}</label>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <div class="me-3">Стоимость подачи заявки:</div>
+
+            <div class="orderCostWrapper itemParticipationCost__input">
+                {{> ../../../common/ui/InputText placeholder="2000"}}
+            </div>
+
+            <span class="rouble fs-18px"></span>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <div class="me-3">Вознаграждение за победу:</div>
+
+            <div class="awardForWinWrapper itemParticipationCost__input">
+                {{> ../../../common/ui/InputText placeholder="2 000 000"}}
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <div class="me-3">Вознаграждение за победу:</div>
+            <div class="winTermWrapper itemParticipationCost__input">
+                {{> ../../../common/ui/InputText placeholder="12"}}
+            </div>
+        </div>
+    </div>
+
+</div>

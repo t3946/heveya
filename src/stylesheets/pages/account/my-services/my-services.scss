@@ -1,0 +1,35 @@
+.myServicesPage {
+  .itemParticipationCost {
+    &__header {
+      margin: 0 0 pxToRem(16);
+
+      @include breakpoint(md) {
+        margin: 0 0 pxToRem(20);
+      }
+
+      @include breakpoint(xxl) {
+        margin: 0 0 pxToRem(24);
+      }
+    }
+
+    &__input {
+      margin: 0 pxToRem(12) 0 0;
+    }
+
+    input {
+      text-align: center;
+    }
+
+    .orderCostWrapper {
+      width: pxToRem(75);
+    }
+
+    .awardForWinWrapper {
+      width: pxToRem(130);
+    }
+
+    .winTermWrapper {
+      width: pxToRem(50);
+    }
+  }
+}

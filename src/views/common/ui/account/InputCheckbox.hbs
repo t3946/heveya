@@ -1,12 +1,12 @@
-<div class="baseInputCheckbox baseInputCheckbox_theme_account {{class}}">
-    <label class="d-flex" for="{{id}}">
-        <span class="checkContainer">
-            <input type="checkbox" value="" id="{{id}}" {{#if checked}}checked{{/if}}>
-            {{> ../../../common/icons/check-mark-2/CheckMark2 class="icon"}}
-        </span>
-
-        <span class="label me-2">{{label}}</span>
-
-        <span class="rouble ms-1 fw-semibold">{{price}}</span>
+<div class="baseInputCheckbox baseInputCheckbox_theme_account">
+    <label class="checkContainer" {{#if id}}for="{{id}}" {{/if}}>
+        <input
+            type="checkbox"
+            {{#if value}}value="{{value}}" {{/if}}
+            {{#if id}}id="{{id}}" {{/if}}
+            {{#if name}}name="{{name}}" {{/if}}
+            {{#if checked}}checked{{/if}}
+        />
+        {{> ../../../common/icons/check-mark-2/CheckMark2 class="icon"}}
     </label>
 </div>
