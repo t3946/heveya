@@ -1,1 +1,12 @@
-<input type="text" class="form-control baseInputText inputDate" placeholder="{{placeholder}}" />
+<input
+    type="text"
+    class="form-control baseInputText inputDate adaptivePlaceholder"
+    placeholder="{{placeholder}}"
+    data-placeholder="{{placeholder}}"
+    {{#if placeholderXS}}
+        data-placeholder-xs="{{placeholderXS}}"
+    {{/if}}
+
+
+    data-placeholder-md="{{placeholder}}"
+/>

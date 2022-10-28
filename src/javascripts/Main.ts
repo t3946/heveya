@@ -8,6 +8,7 @@ import "./forms/Forms";
 import "./interactive-image/InteractiveImage";
 import "./tooltip/tooltip";
 import "./account/Account";
+import "./adaptive-placeholder/AdaptivePlaceholder";
 
 $(() => {
   initCharts();
