@@ -1,0 +1,19 @@
+{{> ../../../layout/Hat withBorder=true}}
+
+<div class="servicesPage">
+    <div class="container">
+        {{> ../../../common/breadcrumbs/Breadcrumbs}}
+
+        <div class="accountPageLayoutGrid">
+            {{> ../../../layout/account/sidebar/Sidebar }}
+
+            <div class="servicesList">
+                <div class="accountLotsGrid">
+                    {{> Item }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../../layout/footer/Footer withBorder=true}}

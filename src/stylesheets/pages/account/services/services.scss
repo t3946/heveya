@@ -1,0 +1,37 @@
+.servicesPage {
+  .servicesList {
+    .item {
+      border-radius: 10px;
+      border: 1px solid #d4d4d4;
+      min-height: pxToRem(525);
+      overflow: hidden;
+
+      .hat {
+        padding: pxToRem(20);
+        background-color: #f3f3f3;
+
+        &__task {
+          margin: 0 0 pxToRem(12);
+        }
+      }
+
+      .body {
+        &__divider {
+          margin: pxToRem(12) 0;
+        }
+
+        padding: pxToRem(12) pxToRem(24) pxToRem(36);
+
+        .cost {
+          .price {
+            border: 1px solid #d4d4d4;
+            border-radius: 3px;
+            color: #ef7f1a;
+            min-width: pxToRem(128);
+            padding: 0 pxToRem(20);
+          }
+        }
+      }
+    }
+  }
+}
