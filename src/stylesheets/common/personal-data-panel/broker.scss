@@ -24,3 +24,18 @@
     }
   }
 }
+
+.personalDataPanelBroker2 {
+  .namePanel {
+    @include breakpoint(xxl) {
+      width: pxToRem(460);
+    }
+  }
+
+  .offers {
+    .counter {
+      font-size: pxToRem(24);
+      line-height: 1;
+    }
+  }
+}

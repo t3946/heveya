@@ -1,0 +1,27 @@
+{{> ../../../layout/Hat withBorder=true}}
+
+<div class="myOffersPage page">
+    <div class="container">
+        {{> ../../../common/breadcrumbs/Breadcrumbs}}
+
+        <div class="accountPageLayoutGrid">
+            {{> ../../../layout/account/sidebar/Sidebar }}
+
+            <div>
+                <div class="containerFrame page__block">
+                    {{> ../../../common/personal-data-panel/broker/Broker2 }}
+                </div>
+
+                <div class="containerFrame">
+                    {{> ../../../common/account/offer-settings/OfferSettings }}
+                </div>
+
+                <div class="myServicesPage__payOffer">
+                    {{> ../../../common/account/pay-offer/PayOffer }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../../layout/footer/Footer withBorder=true}}
