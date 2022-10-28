@@ -64,3 +64,17 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
+
+.checksBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-gap: pxToRem(12);
+  grid-template-areas: "area1" "area3" "area5" "area2" "area4" "area6";
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "area1 area2" "area3 area4" "area5 area6";
+  }
+}
