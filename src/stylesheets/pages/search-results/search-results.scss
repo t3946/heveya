@@ -1,6 +1,10 @@
 .searchResults {
   margin-bottom: 65px;
 
+  &__settings {
+    margin: 0 0 pxToRem(24);
+  }
+
   @import "settings";
 
   @import "offers";

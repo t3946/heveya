@@ -1,21 +1,15 @@
-{{> ../../layout/Hat}}
+{{> ../../layout/Hat withBorder=true}}
 
 <div class="searchResults">
-    <div class="settings">
+    <div class="searchResults__settings settings d-none d-xxl-block">
         <div class="container">
             <div class="row d-none d-lg-block">
                 <div class="col d-flex">
                     <h1 class="header2">Результаты поиска</h1>
 
-                    <ul class="tags list-unstyled m-0">
-                        <li class="item">Регион: Москва</li>
-                        <li class="item">Направление: Банкротство</li>
-                        <li class="item">Категория: Жилая недвижимость</li>
-                        <li class="item">Форирование цены: Аукцион</li>
-                        <li class="item">Сортировать по: Популярности</li>
-                        <li class="item">Форирование цены: Аукцион</li>
-                        <li class="item">Сортировать по: Популярности</li>
-                    </ul>
+                    <div class="flex-grow-1">
+                        {{> tags/Tags}}
+                    </div>
 
                     <div>{{> ../../common/catalog-toggle-view/CatalogToggleView tiles=true}}</div>
                 </div>
@@ -24,6 +18,8 @@
             <h1 class="header2 d-lg-none">Результаты поиска</h1>
         </div>
     </div>
+
+    <h1 class="header1 d-xxl-none text-center">Результаты поиска</h1>
 
     <div class="offers">
         <div class="container">
@@ -36,4 +32,4 @@
     </div>
 </div>
 
-{{> ../../layout/footer/Footer}}
+{{> ../../layout/footer/Footer withBorder=true}}
