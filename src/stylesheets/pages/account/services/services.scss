@@ -3,8 +3,11 @@
     .item {
       border-radius: 10px;
       border: 1px solid #d4d4d4;
-      min-height: pxToRem(525);
       overflow: hidden;
+
+      &__footer {
+        margin: pxToRem(35) 0 0;
+      }
 
       .hat {
         padding: pxToRem(20);
@@ -31,6 +34,10 @@
             padding: 0 pxToRem(20);
           }
         }
+      }
+
+      @include breakpoint(xxl) {
+        min-height: pxToRem(525);
       }
     }
   }
