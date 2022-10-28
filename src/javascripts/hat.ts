@@ -3,6 +3,7 @@ import $ from "jquery";
 const searchMenu = {
   $bgSearchMenu: null,
   $searchMenu: null,
+  $form: null,
   $hat: null,
   $body: null,
 
@@ -26,6 +27,7 @@ const searchMenu = {
   init() {
     searchMenu.$bgSearchMenu = $(".searchMenuBackground");
     searchMenu.$searchMenu = $(".searchMenu");
+    searchMenu.$form = $(".hatSearchForm");
     searchMenu.$hat = $(".hat");
     searchMenu.$body = $(document.body);
 
@@ -33,6 +35,10 @@ const searchMenu = {
       e.stopPropagation();
       searchMenu.show();
       mobileSidebarMenu.hide();
+    });
+
+    searchMenu.$searchMenu.on("click", () => {
+      searchMenu.hide();
     });
 
     searchMenu.$bgSearchMenu.on("click", () => {
@@ -43,6 +49,10 @@ const searchMenu = {
     searchMenu.$hat.on("click", () => {
       searchMenu.hide();
       mobileSidebarMenu.hide();
+    });
+
+    searchMenu.$form.on("click", (e) => {
+      e.stopPropagation();
     });
 
     function resizeMenu() {
