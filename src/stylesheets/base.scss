@@ -28,6 +28,10 @@ html {
     font-size: pxToRem(36);
   }
 
+  @include breakpoint(xxl) {
+    margin: 0 0 pxToRem(20);
+  }
+
   &_small {
     @include breakpoint(lg) {
       font-size: pxToRem(30);
