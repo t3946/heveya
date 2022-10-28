@@ -25,6 +25,16 @@
       gap: pxToRem(25);
     }
 
+    .itemWrapper {
+      .title {
+        color: #161616;
+      }
+
+      .location {
+        color: #434343;
+      }
+    }
+
     .item {
       width: 100%;
       height: pxToRem(80);
