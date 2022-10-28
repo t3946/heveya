@@ -1,0 +1,65 @@
+<form class="offerSettings">
+    <div class="offerSettings__settingsBlock participationCost">
+        <div class="fs-18px fs-md-20px fw-bold offerSettings__listHeader">Стоимость участия:</div>
+
+        <div class="grid">
+            {{> ItemParticipationCost title="Подача заявки в торгах по Банкротству без аккредитации на ЭТП, по агентскому договору или доверенности." checked=true key="participationCostGrid1"}}
+            {{> ItemParticipationCost title="Подача заявки в торгах по Банкротству с аккредитацией участника на ЭТП." key="participationCostGrid2"}}
+            {{> ItemParticipationCost title="Подача заявки в торгах Арестованным имуществом без аккредитации на ЭТП, по доверенности." key="participationCostGrid3"}}
+            {{> ItemParticipationCost title="Подача заявки в торгах Арестованным имуществом с аккредитацией участника на ЭТП." key="participationCostGrid4"}}
+            {{> ItemParticipationCost title="Подача заявки в Муниципальных торгах без аккредитации на ЭТП, по доверенности." key="participationCostGrid5"}}
+            {{> ItemParticipationCost title="Подача заявки в Муниципальных торгах с аккредитацией участника на ЭТП." key="participationCostGrid6"}}
+        </div>
+    </div>
+
+    <div class="offerSettings__settingsBlock advancedServices">
+        <div class="fs-18px fs-md-20px fw-bold offerSettings__listHeader">Дополнительные сервисы:</div>
+
+        <div class="grid">
+            {{> ItemAdvancedServices title="Подача заявки в указанное время." key="advancedServicesGrid1" checked=true }}
+            {{> ItemAdvancedServices title="Удаленное подключение заявителя в ходе торгов (Аукцион)." key="advancedServicesGrid2" }}
+            {{> ItemAdvancedServices title="Отзыв и повторная подача заявки с новой ценой (Публичное предложение)." key="advancedServicesGrid3" }}
+            {{> ItemAdvancedServices title="Информирование о ходе торгов с возможностью увеличить цену (Аукцион)." key="advancedServicesGrid4" }}
+        </div>
+    </div>
+
+    <div class="offerSettings__settingsBlock remoteServices">
+        <div class="fs-18px fs-md-20px fw-bold offerSettings__listHeader">Готовы оказать услуги
+            удаленно:
+        </div>
+
+        <div class="grid">
+            {{> ItemRemoteServices title="Помощь в выборе электронной подписи." key="remoteServicesGrid1" checked=true }}
+            {{> ItemRemoteServices title="Удаленная настройка рабочего места." key="remoteServicesGrid2" }}
+            {{> ItemRemoteServices title="Проверка документов участника для получения аккредитации на ЭТП." key="remoteServicesGrid3" }}
+            {{> ItemRemoteServices title="Удаленная подача заявления на аккредитацию с ЭЦП участника." key="remoteServicesGrid4" }}
+            {{> ItemRemoteServices title="Подготовка комплекта аукционной документации. " key="remoteServicesGrid5" }}
+            {{> ItemRemoteServices title="Удаленная подача заявки/участие в торгах с ЭЦП участника." key="remoteServicesGrid6" }}
+            {{> ItemRemoteServices title="Анализ лота и возможных трудностей после торгов. " key="remoteServicesGrid7" }}
+            {{> ItemRemoteServices title="Устные консультации в отношении имущественных торгов." key="remoteServicesGrid8" }}
+        </div>
+    </div>
+
+    <div class="offerSettings__settingsBlock localServices">
+        <div class="fs-18px fs-md-20px fw-bold offerSettings__listHeader">Готовы оказать услуги в
+            домашнем регионе:
+        </div>
+
+        <div class="grid">
+            {{> ItemLocalServices title="Осмотр имущества, предоставление фото или видеоотчета." key="localServicesGrid1" }}
+            {{> ItemLocalServices title="Представительство в Арбитражном Суде." key="localServicesGrid2" }}
+            {{> ItemLocalServices title="Осмотр имущества, предоставление фото или видеоотчета." key="localServicesGrid3" }}
+            {{> ItemLocalServices title="Охрана/Ответственное хранение имущества." key="localServicesGrid4" }}
+            {{> ItemLocalServices title="Помощь в отправке имущества участнику." key="localServicesGrid5" }}
+            {{> ItemLocalServices title="Снятие ограничений наложенных Судебными приставами." key="localServicesGrid6" }}
+            {{> ItemLocalServices title="Снятие с учета транспорта и техники (ГАИ, Гостехнадзор)." key="localServicesGrid7" }}
+            {{> ItemLocalServices title="Подача документов на регистрацию недвижимого имущества." key="localServicesGrid8" }}
+        </div>
+    </div>
+
+    <div>
+        <button class="baseButton baseButton_theme_blue baseButton_size_medium w-auto">
+            Сохранить
+        </button>
+    </div>
+</form>

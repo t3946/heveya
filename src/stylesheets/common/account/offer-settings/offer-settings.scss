@@ -1,0 +1,127 @@
+.offerSettings {
+  &__settingsBlock:not(:last-child) {
+    margin: 0 0 pxToRem(40);
+  }
+
+  &__listHeader {
+    margin: 0 0 pxToRem(16);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(24);
+    }
+
+    @include breakpoint(lg) {
+      margin: 0 0 pxToRem(20);
+    }
+  }
+
+  .advancedServices {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: pxToRem(35) pxToRem(25);
+
+      .item {
+        &__header {
+          margin: 0 0 pxToRem(8);
+        }
+      }
+    }
+  }
+
+  .remoteServices {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(35);
+
+      .item {
+        .options {
+          &__item {
+            @include breakpoint(md) {
+              margin: 0 pxToRem(80) 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .localServices {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(35);
+
+      .item {
+        .costWrapper {
+          width: pxToRem(133);
+        }
+      }
+    }
+  }
+
+  .participationCost {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(35);
+
+      .item {
+        &__header {
+          margin: 0 0 pxToRem(16);
+
+          @include breakpoint(md) {
+            margin: 0 0 pxToRem(20);
+          }
+
+          @include breakpoint(xxl) {
+            margin: 0 0 pxToRem(24);
+          }
+        }
+
+        input {
+          text-align: center;
+        }
+
+        .orderCostWrapper {
+          width: pxToRem(75);
+        }
+
+        .awardForWinWrapper {
+          width: pxToRem(130);
+        }
+      }
+    }
+  }
+
+  .item {
+    &__input {
+      margin: 0 pxToRem(12) 0 0;
+    }
+  }
+
+  .options {
+    padding: 0 0 0 pxToRem(45);
+  }
+
+  .checkboxWrapper {
+    width: pxToRem(45);
+  }
+
+  .winTermWrapper {
+    width: pxToRem(50);
+
+    input {
+      text-align: center;
+    }
+  }
+
+  .costWrapper {
+    width: pxToRem(75);
+
+    input {
+      text-align: center;
+    }
+  }
+}
