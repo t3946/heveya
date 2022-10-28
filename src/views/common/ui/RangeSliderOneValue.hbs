@@ -5,7 +5,12 @@
             <input class="start baseInputText" type="hidden" value="{{start}}">
 
             <div class="display display_start">
-                <div class="label">{{labelStart}}</div>
+                {{#if labelStartMicro}}
+                    <div class="label d-md-none">{{labelStartMicro}}</div>
+                    <div class="label d-none d-md-block">{{labelStart}}</div>
+                {{else}}
+                    <div class="label">{{labelStart}}</div>
+                {{/if}}
 
                 <div class="displayValueGroup">
                     <span class="value"></span>
