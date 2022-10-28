@@ -1,4 +1,4 @@
-{{> ../../../layout/Hat withBorder=true}}
+{{> ../../../layout/Hat withBorder=true endpoint=true}}
 
 <div class="page accountMemberPage">
     <div class="container">
@@ -8,7 +8,9 @@
         </div>
 
         <div class="accountPageLayoutGrid">
-            {{> ../../../layout/account/sidebar/Sidebar }}
+            <div class="d-none d-xxl-block">
+                {{> ../../../layout/account/sidebar/Sidebar }}
+            </div>
 
             <div class="accountLotsGrid">
                 <div class="containerFrame p-0 pb-3">

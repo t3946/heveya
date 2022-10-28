@@ -1,11 +1,13 @@
-{{> ../../../layout/Hat withBorder=true}}
+{{> ../../../layout/Hat withBorder=true endpoint=true}}
 
 <div class="myServicesPage">
     <div class="container">
         {{> ../../../common/breadcrumbs/Breadcrumbs}}
 
         <div class="accountPageLayoutGrid">
-            {{> ../../../layout/account/sidebar/Sidebar }}
+            <div class="d-none d-xxl-block">
+                {{> ../../../layout/account/sidebar/Sidebar }}
+            </div>
 
             <div>
                 <div class="containerFrame">

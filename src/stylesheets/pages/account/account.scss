@@ -5,9 +5,14 @@
 @import "services/services";
 
 .accountPageLayoutGrid {
-  display: grid;
-  grid-template-columns: pxToRem(340) 1fr;
-  grid-gap: pxToRem(25);
+  padding: pxToRem(35) 0 0;
+
+  @include breakpoint(xxl) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: pxToRem(340) 1fr;
+    grid-gap: pxToRem(25);
+  }
 }
 
 .accountLotsGrid {
