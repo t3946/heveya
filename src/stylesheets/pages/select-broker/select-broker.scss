@@ -1,4 +1,12 @@
 .selectBrokerPage {
+  &__managersHeader {
+    margin: pxToRem(20) 0 pxToRem(12);
+
+    @include breakpoint(md) {
+      margin: pxToRem(40) 0 pxToRem(20);
+    }
+  }
+
   .profile {
     @include breakpoint(xxl) {
       width: pxToRem(430);
