@@ -25,18 +25,19 @@
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
     grid-gap: pxToRem(16);
 
     @include breakpoint(md) {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 1fr);
       grid-gap: pxToRem(25);
     }
 
     @include breakpoint(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint(xxl) {
       grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 1fr);
     }
   }
 }
