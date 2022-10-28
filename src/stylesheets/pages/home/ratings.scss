@@ -1,7 +1,14 @@
 .ratings {
   background-color: #f5f5f5;
   padding: 0 0 pxToRem(95);
-  overflow-x: scroll;
+
+  .listsWrapper {
+    overflow-x: scroll;
+
+    @include breakpoint(xxl) {
+      overflow: visible;
+    }
+  }
 
   .listContainer {
     background: #ffffff;
