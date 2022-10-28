@@ -1,12 +1,7 @@
 .slider {
   overflow: hidden;
-  height: pxToRem(128);
 
-  @include breakpoint(md) {
-    height: pxToRem(200);
-  }
-
-  @include breakpoint(lg) {
+  @include breakpoint(xxl) {
     height: pxToRem(400);
   }
 
