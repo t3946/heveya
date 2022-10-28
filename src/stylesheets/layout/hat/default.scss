@@ -69,6 +69,12 @@
     background-color: #ffffff;
 
     .searchButton {
+      &__badge {
+        position: absolute;
+        top: pxToRem(-7);
+        right: pxToRem(-6);
+      }
+
       .button {
         height: pxToRem(50);
         margin: 0 0 0 pxToRem(20);
