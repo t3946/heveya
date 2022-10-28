@@ -33,6 +33,7 @@
       justify-content: center;
       flex-direction: column;
       padding: 20px;
+      color: #161616;
 
       @include breakpoint(xxl) {
         height: 100%;
@@ -41,7 +42,8 @@
       .location {
         display: none;
         justify-content: center;
-        font-size: 13px;
+        font-size: pxToRem(13);
+        color: #434343;
 
         @include breakpoint(xxl) {
           display: flex;

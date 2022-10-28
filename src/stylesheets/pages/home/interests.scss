@@ -186,6 +186,7 @@
         font-size: pxToRem(28);
         background-position: 16px center;
         background-size: pxToRem(85);
+        color: #0f0f0f;
 
         @include breakpoint(md) {
           background-size: pxToRem(190);
