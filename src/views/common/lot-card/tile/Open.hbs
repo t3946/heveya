@@ -1,22 +1,24 @@
-<div class="lot lot_tile {{class}}">
+<div class="lot lot_tile d-flex flex-column {{class}}">
     {{> Hat}}
 
     {{> ../InteractiveImage }}
 
-    <div class="lotBody">
+    <div class="lotBody flex-grow-1 d-flex flex-column justify-content-between">
         <p class="textEllipsis textEllipsis_rows_5">
             Сведения по лоту №1: Жилое помещение в общей долевой собственности, земельный участок в общедолевой
             собственности
             под жилым помещением Жилое помещение в общей долевой
         </p>
 
-        <div class="deadline mb-3">
-            <span>Завершение интервала: 1 д. 12 ч.</span>
+        <div>
+            <div class="deadline mb-3">
+                <span>Завершение интервала: 1 д. 12 ч.</span>
+            </div>
+
+            <div class="divider mb-2"></div>
+
+            {{> ../Stats }}
         </div>
-
-        <div class="divider mb-2"></div>
-
-        {{> ../Stats }}
     </div>
 
     <div class="lotFooter">
