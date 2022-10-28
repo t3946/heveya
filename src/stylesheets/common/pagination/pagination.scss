@@ -7,11 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: pxToRem(40);
+    min-width: pxToRem(40);
     height: pxToRem(50);
     cursor: pointer;
     color: #2b2b2b;
-    font-size: 20px;
+    font-size: pxToRem(20);
+    padding: pxToRem(10);
 
     &_ellipsis {
       cursor: default;
@@ -19,6 +20,7 @@
 
     &_arrow {
       color: #888888;
+      padding: 0;
 
       .icon {
         width: pxToRem(26);
