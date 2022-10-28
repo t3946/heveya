@@ -1,5 +1,5 @@
-.payOffer  {
-  padding: pxToRem(30) pxToRem(12);
+.payOffer {
+  padding: pxToRem(30) pxToRem(12) pxToRem(12);
 
   @include breakpoint(md) {
     padding: pxToRem(30) pxToRem(24);
@@ -11,5 +11,13 @@
 
   &__item:not(:last-child) {
     margin: 0 0 pxToRem(12);
+  }
+
+  &__button {
+    margin: pxToRem(20) 0 0;
+
+    @include breakpoint(xxl) {
+      margin: pxToRem(35) 0 0;
+    }
   }
 }

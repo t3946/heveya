@@ -18,13 +18,11 @@
   .advancedServices {
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       grid-gap: pxToRem(35) pxToRem(25);
 
-      .item {
-        &__header {
-          margin: 0 0 pxToRem(8);
-        }
+      @include breakpoint(xxl) {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -34,16 +32,6 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: pxToRem(35);
-
-      .item {
-        .options {
-          &__item {
-            @include breakpoint(md) {
-              margin: 0 pxToRem(80) 0 0;
-            }
-          }
-        }
-      }
     }
   }
 
@@ -69,8 +57,6 @@
 
       .item {
         &__header {
-          margin: 0 0 pxToRem(16);
-
           @include breakpoint(md) {
             margin: 0 0 pxToRem(20);
           }
@@ -96,6 +82,14 @@
   }
 
   .item {
+    &__header {
+      margin: 0 0 pxToRem(16);
+
+      @include breakpoint(md) {
+        margin: 0 0 pxToRem(16);
+      }
+    }
+
     &__input {
       margin: 0 pxToRem(12) 0 0;
     }
@@ -103,6 +97,12 @@
 
   .options {
     padding: 0 0 0 pxToRem(45);
+
+    &__item:not(:last-child) {
+      @include breakpoint(md) {
+        margin: 0 pxToRem(80) 0 0;
+      }
+    }
   }
 
   .checkboxWrapper {

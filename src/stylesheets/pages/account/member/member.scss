@@ -1,9 +1,13 @@
 .accountMemberPage {
   .restrictedWrapper {
-    display: grid;
+    display: none;
     grid-gap: pxToRem(25);
     grid-template-columns: pxToRem(340) 1fr;
     align-items: center;
+
+    @include breakpoint(xxl) {
+      display: grid;
+    }
 
     .restricted {
       color: #f6002c;

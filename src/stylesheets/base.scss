@@ -2,9 +2,9 @@
 @import "./fonts/fonts";
 @import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap/dist/css/bootstrap-grid.css";
-@import "pages/pages";
 @import "@styles/common/common";
 @import "@styles/layout/layout";
+@import "pages/pages";
 @import "nouislider/dist/nouislider.min.css";
 @import "@selectize/selectize/dist/css/selectize.css";
 @import '~js-datepicker/dist/datepicker.min.css';
@@ -141,20 +141,6 @@ html {
       width: 130px;
       height: 130px;
     }
-  }
-}
-
-.grayPanel {
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  padding: pxToRem(20) pxToRem(12) pxToRem(42);
-
-  @include breakpoint(md) {
-    padding: pxToRem(28) pxToRem(20) pxToRem(56);
-  }
-
-  @include breakpoint(lg) {
-    padding: pxToRem(60) pxToRem(45) pxToRem(42);
   }
 }
 
@@ -351,5 +337,17 @@ html {
     font-size: pxToRem(16);
     padding: pxToRem(12) pxToRem(20);
     color: #434343;
+  }
+}
+
+.w-md-auto {
+  @include breakpoint(md) {
+    width: auto;
+  }
+}
+
+.w-xxl-auto {
+  @include breakpoint(md) {
+    width: auto;
   }
 }

@@ -17,12 +17,21 @@
 
 .accountLotsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(auto-fill, auto);
   grid-gap: pxToRem(20);
 
   @include breakpoint(md) {
     grid-gap: pxToRem(25);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
