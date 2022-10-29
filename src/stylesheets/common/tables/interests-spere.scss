@@ -14,7 +14,12 @@
   th, td {
     border-bottom: 1px solid #d4d4d4;
     font-weight: 600;
-    font-size: pxToRem(18);
     line-height: 1;
+    font-size: pxToRem(14);
+    white-space: nowrap;
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(18);
+    }
   }
 }

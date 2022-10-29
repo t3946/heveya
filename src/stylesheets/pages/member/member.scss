@@ -6,4 +6,12 @@
   .tableHeader {
     margin: 0 0 pxToRem(46);
   }
+
+  .interestsTableWrapper {
+    overflow-x: scroll;
+
+    @include breakpoint(md) {
+      overflow-x: visible;
+    }
+  }
 }

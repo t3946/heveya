@@ -346,12 +346,12 @@ html {
 
 .w-md-auto {
   @include breakpoint(md) {
-    width: auto;
+    width: auto !important;
   }
 }
 
 .w-xxl-auto {
   @include breakpoint(md) {
-    width: auto;
+    width: auto !important;
   }
 }
