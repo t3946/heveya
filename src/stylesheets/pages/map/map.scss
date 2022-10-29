@@ -15,27 +15,18 @@
     grid-template-rows: repeat(auto-fill, 1fr);
     grid-gap: pxToRem(12);
 
-    .item {
+    > .item {
       border-radius: 5px;
       border: 1px solid #d4d4d4;
       height: pxToRem(160);
+      overflow: hidden;
 
-      .image {
+      > .image {
         width: pxToRem(130);
         height: 100%;
         overflow: hidden;
         flex-shrink: 0;
         position: relative;
-
-        .imageLabel {
-          position: absolute;
-          top: pxToRem(16);
-          left: 0;
-        }
-
-        img {
-          height: 100%;
-        }
       }
 
       .info {
