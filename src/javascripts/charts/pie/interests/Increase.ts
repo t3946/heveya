@@ -25,7 +25,6 @@ function init(elem) {
     legendLabelText: "mmm"
   }));
 
-  console.log({series});
   series.ticks.template.setAll({
     stroke: color(0x000000),
     strokeWidth: 1,
