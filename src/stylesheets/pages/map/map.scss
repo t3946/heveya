@@ -1,17 +1,24 @@
-
-
 .mapPage {
+  overflow: hidden;
+
+  .layoutGrid {
+    display: grid;
+    grid-template-columns: pxToRem(600) pxToRem(2000);
+    grid-template-rows: pxToRem(800);
+  }
+
   .objects {
-    height: 600px;
     overflow-y: scroll;
+    height: 100%;
+    padding: pxToRem(16) pxToRem(20) pxToRem(16) 0;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: pxToRem(12);
+
     .item {
       border-radius: 5px;
       border: 1px solid #d4d4d4;
       height: pxToRem(160);
-
-      &:not(:last-child) {
-        margin: 0 0 pxToRem(12);
-      }
 
       .image {
         width: pxToRem(130);

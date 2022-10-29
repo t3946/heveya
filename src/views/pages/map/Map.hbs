@@ -1,9 +1,9 @@
-{{> ../../layout/Hat}}
+{{> ../../layout/Hat withBorder=true}}
 
-<div class="mapPage overflow-hidden">
+<div class="mapPage">
     <div class="container">
-        <div class="d-flex">
-            <div class="col-4 pt-3 pe-3">
+        <div class="layoutGrid">
+            <div>
                 <div id="main" class="d-none"></div>
                 <div id="car" class="d-none"></div>
                 <div id="oborud" class="d-none"></div>
@@ -16,14 +16,16 @@
                     {{> ObjectItem}}
                     {{> ObjectItem}}
                     {{> ObjectItem}}
+                    {{> ObjectItem}}
+                    {{> ObjectItem}}
+                    {{> ObjectItem}}
+                    {{> ObjectItem}}
                 </div>
             </div>
 
-            <div class="col-9">
-                <div id="ymapRoot" style="width: auto; height: 800px"></div>
-            </div>
+            <div id="ymapRoot" style="width: auto; height: 800px"></div>
         </div>
     </div>
 </div>
 
-{{> ../../layout/footer/Footer}}
+{{> ../../layout/footer/Footer withBorder=true}}
