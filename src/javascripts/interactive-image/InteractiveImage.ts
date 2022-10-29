@@ -14,7 +14,6 @@ $(() => {
 
       function resizeImage(imageElem) {
         const $imageElem = $(imageElem);
-        console.log($imageElem[0].width, $imageElem[0]);
         const imageWidth = $imageElem.width();
         const imageHeight = $imageElem.height();
         const dWidth = containerWidth - imageWidth;
