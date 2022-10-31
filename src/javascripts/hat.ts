@@ -37,8 +37,10 @@ const searchMenu = {
       mobileSidebarMenu.hide();
     });
 
-    searchMenu.$searchMenu.on("click", () => {
-      searchMenu.hide();
+    searchMenu.$searchMenu.on("click", (e) => {
+      if ($(e.target).hasClass("searchMenu")) {
+        searchMenu.hide();
+      }
     });
 
     searchMenu.$bgSearchMenu.on("click", () => {
@@ -49,10 +51,6 @@ const searchMenu = {
     searchMenu.$hat.on("click", () => {
       searchMenu.hide();
       mobileSidebarMenu.hide();
-    });
-
-    searchMenu.$form.on("click", (e) => {
-      e.stopPropagation();
     });
 
     function resizeMenu() {
