@@ -106,14 +106,10 @@ html {
 }
 
 .baseLocation {
-  display: flex;
-  align-items: center;
-  color: #f2994a;
-  font-weight: bold;
-
-  .icon {
-    width: pxToRem(12);
-    margin: 0 pxToRem(8) 0 0;
+  .text {
+    max-width: pxToRem(100);
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
