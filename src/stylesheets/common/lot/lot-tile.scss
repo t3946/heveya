@@ -4,6 +4,10 @@
   background: #ffffff;
   font-size: pxToRem(14);
 
+  .imageWrapper {
+    height: pxToRem(220);
+  }
+
   .lotHat {
     padding: pxToRem(12) pxToRem(24) pxToRem(8);
   }
