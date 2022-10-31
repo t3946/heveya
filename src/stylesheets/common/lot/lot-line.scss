@@ -1,12 +1,23 @@
-
-
 .lotLine {
   padding: 0 36px 0 0;
   overflow: hidden;
 
-  .footerInfo {
+  .gridLayout {
+    display: grid;
+    grid-gap: pxToRem(40);
+    grid-template-columns: pxToRem(360) 1fr;
+  }
 
-    .name{
+  .imageWrapper {
+    height: 100%;
+  }
+
+  .contentWrapper {
+    padding: pxToRem(8) 0;
+  }
+
+  .footerInfo {
+    .name {
       &:after {
         content: ":";
       }
@@ -19,16 +30,6 @@
 
   .button {
     height: pxToRem(50) !important;
-  }
-
-  .lotImage {
-    margin: 0 pxToRem(38) 0 0;
-    overflow: hidden;
-
-    .image {
-      min-height: 300px;
-      min-width: 100%;
-    }
   }
 
   .iconsWrapper {
