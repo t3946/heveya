@@ -55,11 +55,11 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: pxToRem(28);
     }
-    @include breakpoint(xl) {
+    @include breakpoint(lg) {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       grid-template-columns: 1fr;
       grid-gap: pxToRem(20);
     }

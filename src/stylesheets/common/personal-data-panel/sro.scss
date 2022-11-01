@@ -8,9 +8,13 @@
     grid-template-columns: 2fr;
   }
 
-  @include breakpoint(xxl) {
-    grid-template-columns: 400px 330px 400px 400px 100px;
+  @include breakpoint(xl) {
     grid-template-areas: "area1 area2 area3 area4 area5";
     justify-content: space-between;
+    grid-template-columns: 340px 230px 280px 270px 80px;
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: 400px 330px 400px 400px 100px;
   }
 }
