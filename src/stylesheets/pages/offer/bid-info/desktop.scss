@@ -4,4 +4,26 @@
   margin: 0 0 0 pxToRem(24);
   padding: 0 0 0 pxToRem(24);
   flex-shrink: 0;
+
+  @include breakpoint(xl) {
+    font-size: pxToRem(14);
+  }
+
+  @include breakpoint(xxl) {
+    font-size: pxToRem(16);
+  }
+
+  @include breakpoint(xl) {
+    .awardIcon {
+      width: pxToRem(16);
+      height: pxToRem(16);
+    }
+  }
+
+  @include breakpoint(xxl) {
+    .awardIcon {
+      width: pxToRem(16);
+      height: pxToRem(16);
+    }
+  }
 }

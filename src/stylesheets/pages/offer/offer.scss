@@ -9,6 +9,14 @@
     padding: pxToRem(10) 0;
     border-top: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4;
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(12);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
   }
 
   .infoLinks {
@@ -43,8 +51,8 @@
   }
 
   .imageWrapper {
-    width: pxToRem(400);
-    height: pxToRem(400);
+    width: pxToRem(300);
+    height: pxToRem(300);
     flex-shrink: 0;
 
     @include breakpoint(xxl) {
@@ -57,6 +65,11 @@
     border-radius: 5px;
     background-color: #f5f5f5;
     padding: pxToRem(12) pxToRem(110) pxToRem(12) pxToRem(12);
+    font-size: pxToRem(14);
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
   }
 
   .companyName {
@@ -136,6 +149,22 @@
           grid-area: item-4;
         }
       }
+
+      @include breakpoint(xl) {
+        padding: 0 0 pxToRem(16);
+      }
+
+      @include breakpoint(xxl) {
+        padding: 0 0 pxToRem(30);
+      }
+    }
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(14);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
     }
   }
 
@@ -164,7 +193,7 @@
     }
   }
 
-  .contactItem {
+  .contactItem:not(:last-child) {
     border-bottom: 1px solid #d4d4d4;
   }
 
