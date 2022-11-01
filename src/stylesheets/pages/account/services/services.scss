@@ -36,8 +36,8 @@
         }
       }
 
-      @include breakpoint(xxl) {
-        min-height: pxToRem(480);
+      @include breakpoint(xl) {
+        min-height: pxToRem(435);
       }
     }
   }
