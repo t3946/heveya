@@ -1,4 +1,4 @@
-<div class="d-flex">
+<div class="d-flex d-lg-none d-xxl-flex">
     <div class="imageWrapper">
         {{> Slider id="sliderBidInfoDesktop" }}
     </div>
@@ -30,6 +30,44 @@
             </div>
 
             <div class="pricesWrapper">
+                {{> ../PricesColumn }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-none d-lg-flex d-xxl-none">
+
+    <div class="flex-grow-1 infoColumn">
+        <div class="lotMainInfo d-flex justify-content-between">
+            <span class="number fw-bold">Лот: 18-24-5186972</span>
+            <span>Имущество должников (банкротство)</span>
+            <span>Опубликовано: 21.03.2022</span>
+            <span>Завершение до: 25.12.2023</span>
+            <span class="fw-bold">{{> ../../../common/location/Location }}</span>
+        </div>
+
+        <div class="d-flex mt-3">
+            <div class="flex-grow-1">
+                {{> Debtor }}
+
+                <div class="contacts d-none d-lg-block d-xxl-none">
+                    {{> ../contacts/item/Desktop }}
+                    {{> ../contacts/item/Desktop }}
+                    {{> ../contacts/item/Desktop }}
+                </div>
+
+                <div class="contacts d-none d-xxl-block">
+                    {{> ../contacts/item/XXL }}
+                    {{> ../contacts/item/XXL }}
+                    {{> ../contacts/item/XXL }}
+                </div>
+            </div>
+
+            <div class="pricesWrapper" style="width: 300px">
+                <div class="imageWrapper" style="width: 100%;height: auto;margin-bottom: 20px;">
+                    {{> Slider id="sliderBidInfoDesktop" }}
+                </div>
                 {{> ../PricesColumn }}
             </div>
         </div>
