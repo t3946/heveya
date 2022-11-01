@@ -9,8 +9,11 @@
     overflow-x: visible;
   }
 
-  @include breakpoint(xxl) {
+  @include breakpoint(xl) {
     border-bottom: none;
+  }
+
+  @include breakpoint(xxl) {
     height: pxToRem(82);
   }
 
