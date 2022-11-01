@@ -17,7 +17,7 @@
       gap: pxToRem(18);
     }
 
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       grid-template-areas: "item-1 item-2 item-2 item-5 item-6 item-7 item-10"
                          "item-1 item-3 item-4 item-5 item-8 item-9 item-10";
       grid-template-rows: repeat(2, 130px);
@@ -32,6 +32,8 @@
 
       .location {
         color: #434343;
+        display: flex;
+        align-items: center;
       }
     }
 
@@ -45,23 +47,30 @@
       padding: 20px;
       color: #161616;
 
-      @include breakpoint(xxl) {
+      @include breakpoint(xl) {
         height: 100%;
       }
 
       .location {
         display: none;
         justify-content: center;
-        font-size: pxToRem(13);
+        align-items: center;
+        white-space: nowrap;
         color: #434343;
+        font-size: pxToRem(12);
 
-        @include breakpoint(xxl) {
+        @include breakpoint(xl) {
           display: flex;
         }
       }
 
       .title {
         margin: 0 0 pxToRem(10) 0;
+        font-size: pxToRem(16);
+
+        @include breakpoint(xxl) {
+          font-size: pxToRem(18);
+        }
       }
 
       .icon {
@@ -74,7 +83,7 @@
     .item1 {
       grid-area: item-1;
 
-      @include breakpoint(xxl) {
+      @include breakpoint(xl) {
         .title {
           margin: pxToRem(40) 0 pxToRem(10) 0;
         }
@@ -83,6 +92,14 @@
           justify-content: start;
           padding-top: 50px;
 
+          > .icon {
+            width: pxToRem(75);
+          }
+        }
+      }
+
+      @include breakpoint(xxl) {
+        .item {
           > .icon {
             width: pxToRem(90);
           }
@@ -93,13 +110,21 @@
     .item2 {
       grid-area: item-2;
 
-      @include breakpoint(xxl) {
+      @include breakpoint(xl) {
         .item {
           flex-direction: row;
 
           > .icon {
             margin: 0 pxToRem(45) 0 0;
-            width: pxToRem(60);
+            width: pxToRem(50);
+          }
+        }
+
+        @include breakpoint(xxl) {
+          .item {
+            > .icon {
+              width: pxToRem(60);
+            }
           }
         }
 
@@ -120,17 +145,25 @@
     .item5 {
       grid-area: item-5;
 
-      @include breakpoint(xxl) {
+      @include breakpoint(xl) {
         .item {
           justify-content: start;
           padding-top: 30px;
 
           > .icon {
-            width: pxToRem(75);
+            width: pxToRem(65);
           }
 
           .title {
             margin: pxToRem(24) 0 pxToRem(10) 0;
+          }
+        }
+      }
+
+      @include breakpoint(xxl) {
+        .item {
+          > .icon {
+            width: pxToRem(75);
           }
         }
       }
@@ -155,17 +188,25 @@
     .item10 {
       grid-area: item-10;
 
-      @include breakpoint(xxl) {
+      @include breakpoint(xl) {
         .item {
           padding-top: 30px;
           justify-content: start;
 
           > .icon {
-            width: pxToRem(85);
+            width: pxToRem(70);
           }
 
           .title {
             margin: pxToRem(24) 0 pxToRem(10) 0;
+          }
+        }
+      }
+
+      @include breakpoint(xxl) {
+        .item {
+          > .icon {
+            width: pxToRem(85);
           }
         }
       }
@@ -187,7 +228,7 @@
   }
 
   @include breakpoint(lg) {
-    padding: 40px 0 68px;
+    padding: 40px 0 0;
   }
 }
 
@@ -230,13 +271,25 @@
   display: flex;
 
   .iconWrapper {
-    width: 24px;
-    height: 24px;
     border-radius: 20px;
     background-color: #e4f6ff;
+    width: pxToRem(16);
+    height: pxToRem(16);
 
     .icon {
       color: #8cceef;
+      width: pxToRem(10);
+      height: pxToRem(10);
+    }
+
+    @include breakpoint(xl) {
+      width: pxToRem(24);
+      height: pxToRem(24);
+
+      .icon {
+        width: pxToRem(12);
+        height: pxToRem(12);
+      }
     }
   }
 }
