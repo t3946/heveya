@@ -5,7 +5,7 @@
     grid-template-columns: pxToRem(340) 1fr;
     align-items: center;
 
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       display: grid;
     }
 
@@ -17,6 +17,10 @@
       @include breakpoint(xxl) {
         font-size: pxToRem(16);
       }
+    }
+
+    .breadcrumbs {
+      border: none
     }
   }
 }

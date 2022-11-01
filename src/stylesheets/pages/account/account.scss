@@ -7,11 +7,19 @@
 .accountPageLayoutGrid {
   padding: pxToRem(35) 0 0;
 
-  @include breakpoint(xxl) {
+  @include breakpoint(xl) {
     padding: 0;
     display: grid;
     grid-template-columns: pxToRem(340) 1fr;
     grid-gap: pxToRem(25);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: pxToRem(300) 1fr;
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: pxToRem(340) 1fr;
   }
 }
 
