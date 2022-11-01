@@ -63,10 +63,6 @@ const searchMenu = {
       if (window.innerWidth >= 992) {
         hatHeight = 134;
       }
-
-      const height = window.innerHeight - hatHeight;
-
-      searchMenu.$searchMenu.css("height", `${height}px`);
     }
 
     let throttleTimeout = null;

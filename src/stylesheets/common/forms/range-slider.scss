@@ -43,11 +43,13 @@
 
     .label{
       color: #9b9b9b;
+      white-space: nowrap;
     }
 
     .displayValueGroup {
       color: #ef7f1a;
       font-size: pxToRem(18);
+      white-space: nowrap;
     }
   }
 }

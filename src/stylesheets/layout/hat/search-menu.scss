@@ -21,8 +21,8 @@
     border-radius: 5px;
     background-color: #ffffff;
     padding: pxToRem(20);
-    max-height: 100%;
-    overflow: scroll;
+    //max-height: 100%;
+    //overflow: scroll;
 
     .buttonsGrid {
       display: grid;
@@ -40,6 +40,28 @@
         grid-template-rows: 1fr;
       }
     }
+
+    .rangeSlider .display, .baseSelect .selectize-input, .baseInputText {
+      @include breakpoint(xl) {
+        height: pxToRem(40);
+      }
+
+      @include breakpoint(xxl) {
+        height: pxToRem(50);
+      }
+    }
+
+    @include breakpoint(xl) {
+      overflow: visible;
+    }
+
+    &__slider {
+      margin-bottom: pxToRem(24);
+
+      @include breakpoint(xxl) {
+        margin-bottom: pxToRem(40);
+      }
+    }
   }
 }
 
@@ -55,8 +77,12 @@
     inset: pxToRem(131) 0 0 0;
   }
 
-  @include breakpoint(lg) {
-    inset: pxToRem(134) 0 0 0;
+  @include breakpoint(xl) {
+    inset: 126px 0 0 0;
+  }
+
+  @include breakpoint(xxl) {
+    inset: 134px 0 0 0;
   }
 
   &_active {
@@ -76,5 +102,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "area1 area2" "area3 area4" "area5 area6";
+  }
+
+  @include breakpoint(xl) {
+    font-size: pxToRem(14);
+    line-height: 1.1;
+  }
+
+  @include breakpoint(xxl) {
+    font-size: pxToRem(16);
   }
 }
