@@ -18,7 +18,11 @@
     padding: pxToRem(40) 0 pxToRem(32);
   }
 
-  @include breakpoint(lg) {
+  @include breakpoint(xl) {
+    padding: pxToRem(60) 0;
+  }
+
+  @include breakpoint(xxl) {
     padding: pxToRem(95) 0;
   }
 
