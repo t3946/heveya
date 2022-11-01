@@ -5,7 +5,17 @@
   .gridLayout {
     display: grid;
     grid-gap: pxToRem(40);
-    grid-template-columns: pxToRem(360) 1fr;
+    grid-template-columns: pxToRem(260) 1fr;
+
+    @include breakpoint(xl) {
+      grid-template-columns: pxToRem(260) 1fr;
+      grid-gap: pxToRem(16);
+    }
+
+    @include breakpoint(xxl) {
+      grid-template-columns: pxToRem(360) 1fr;
+      grid-gap: pxToRem(40);
+    }
   }
 
   .imageWrapper {
@@ -28,10 +38,6 @@
     }
   }
 
-  .button {
-    height: pxToRem(50) !important;
-  }
-
   .iconsWrapper {
     width: pxToRem(180);
   }
@@ -40,6 +46,26 @@
     display: grid;
     grid-gap: pxToRem(16);
     grid-template-columns: repeat(5, auto);
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(12);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
+  }
+
+  .footerStats {
+    grid-gap: pxToRem(16);
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(12);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
   }
 }
 
