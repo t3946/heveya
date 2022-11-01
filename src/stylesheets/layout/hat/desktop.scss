@@ -1,10 +1,19 @@
 .hatDesktop {
+  .logo {
+    .icon {
+      width: 100%;
+    }
+  }
   .navigation {
     .grid {
       display: grid;
       grid-template-columns: pxToRem(210) 1fr auto repeat(2, 145px);
       grid-column-gap: pxToRem(20);
       align-items: center;
+
+      @include breakpoint(xl) {
+        grid-template-columns: pxToRem(160) 1fr repeat(2, auto) repeat(2, 120px);
+      }
 
       @include breakpoint(xxl) {
         grid-template-columns: pxToRem(210) 1fr repeat(2, auto) repeat(2, 145px);

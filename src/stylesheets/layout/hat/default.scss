@@ -86,9 +86,14 @@
 
     .selects {
       color: #434343;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: pxToRem(16);
+      font-size: pxToRem(14);
 
-      .item:not(:last-child) {
-        margin: 0 pxToRem(24) 0 0;
+      @include breakpoint(xxl) {
+        grid-gap: pxToRem(24);
+        font-size: pxToRem(16);
       }
 
       .icon {
