@@ -35,4 +35,20 @@
   .iconsWrapper {
     width: pxToRem(180);
   }
+
+  .hatStats {
+    display: grid;
+    grid-gap: pxToRem(16);
+    grid-template-columns: repeat(5, auto);
+  }
+}
+
+.lotLine  {
+  .description {
+    font-size: pxToRem(14);
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
+  }
 }

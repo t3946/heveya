@@ -1,8 +1,3 @@
-@import "lot-line";
-@import "lot-tile";
-@import "lot-tile-completed";
-@import "interactive-image";
-
 .lot {
   @import "prices-forecast";
   border-radius: 10px;
@@ -263,3 +258,8 @@
     }
   }
 }
+
+@import "lot-line";
+@import "lot-tile";
+@import "lot-tile-completed";
+@import "interactive-image";
