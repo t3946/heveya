@@ -13,10 +13,6 @@
     }
 
     @include breakpoint(xl) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @include breakpoint(xxl) {
       grid-template-columns: repeat(5, 1fr);
     }
   }
