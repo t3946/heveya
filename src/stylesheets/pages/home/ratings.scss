@@ -17,6 +17,14 @@
     @include breakpoint(md) {
       padding: pxToRem(40) pxToRem(28) pxToRem(28);
     }
+
+    @include breakpoint(xl) {
+      padding: pxToRem(30) pxToRem(20) pxToRem(20);
+    }
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(40) pxToRem(28) pxToRem(28);
+    }
   }
 
   .listHeader {
@@ -26,9 +34,28 @@
     font-size: pxToRem(16);
     padding: pxToRem(24) pxToRem(20) pxToRem(14);
 
+    &__text {
+      margin: 0 0 0 pxToRem(16);
+    }
+
     @include breakpoint(md) {
       font-size: pxToRem(24);
       padding: 0;
+    }
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(18);
+      &__text {
+        margin: 0 0 0 pxToRem(12);
+      }
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(24);
+
+      &__text {
+        margin: 0 0 0 pxToRem(16);
+      }
     }
 
     .iconWrapper {
@@ -38,6 +65,16 @@
       border-radius: 100px;
       width: pxToRem(45);
       height: pxToRem(45);
+
+      @include breakpoint(xl) {
+        width: pxToRem(34);
+        height: pxToRem(34);
+      }
+
+      @include breakpoint(xxl) {
+        width: pxToRem(45);
+        height: pxToRem(45);
+      }
 
       &_theme_blue {
         background-color: #e4f6ff;
@@ -58,6 +95,21 @@
         background-color: #e7f9f1;
         color: #1cac4d;
       }
+
+      .icon {
+        width: pxToRem(24);
+        height: pxToRem(24);
+
+        @include breakpoint(xl) {
+          width: pxToRem(18);
+          height: pxToRem(18);
+        }
+
+        @include breakpoint(xxl) {
+          width: pxToRem(24);
+          height: pxToRem(24);
+        }
+      }
     }
   }
 
@@ -69,6 +121,16 @@
     grid-template-areas: "area1 area2 area3 area4";
 
     @include breakpoint(md) {
+      grid-gap: pxToRem(25);
+      grid-template-columns: repeat(4, pxToRem(430));
+    }
+
+    @include breakpoint(xl) {
+      grid-gap: pxToRem(16);
+      grid-template-columns: repeat(4, pxToRem(300));
+    }
+
+    @include breakpoint(xxl) {
       grid-gap: pxToRem(25);
       grid-template-columns: repeat(4, pxToRem(430));
     }
@@ -129,7 +191,18 @@
     }
 
     .name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       padding: 0 pxToRem(20);
+
+      @include breakpoint(xl) {
+        padding: 0 pxToRem(12);
+      }
+
+      @include breakpoint(xxl) {
+        padding: 0 pxToRem(20);
+      }
     }
   }
 }
