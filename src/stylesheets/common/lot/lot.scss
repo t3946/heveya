@@ -198,21 +198,61 @@
     &_heart {
       width: 24px;
       height: 24px;
+
+      @include breakpoint(xl) {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include breakpoint(xxl) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &_doubleHeart {
       width: 24px;
       height: 24px;
+
+      @include breakpoint(xl) {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include breakpoint(xxl) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &_handshake {
       width: 28px;
       height: 18px;
+
+      @include breakpoint(xl) {
+        width: 20px;
+        height: 18px;
+      }
+
+      @include breakpoint(xxl) {
+        width: 28px;
+        height: 18px;
+      }
     }
 
     &_community {
       width: 19px;
       height: 20px;
+
+      @include breakpoint(xl) {
+        width: 16px;
+        height: 20px;
+      }
+
+      @include breakpoint(xxl) {
+        width: 19px;
+        height: 20px;
+      }
     }
   }
 

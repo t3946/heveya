@@ -1,23 +1,66 @@
-
-
 .lot_tile {
   background: #ffffff;
   font-size: pxToRem(14);
 
+  @include breakpoint(xl) {
+    font-size: pxToRem(12);
+  }
+
+  @include breakpoint(xxl) {
+    font-size: pxToRem(14);
+  }
+
   .imageWrapper {
     height: pxToRem(220);
+
+    @include breakpoint(xl) {
+      height: pxToRem(180);
+    }
+
+    @include breakpoint(xxl) {
+      height: pxToRem(220);
+    }
   }
 
   .lotHat {
     padding: pxToRem(12) pxToRem(24) pxToRem(8);
+
+    @include breakpoint(xl) {
+      padding: pxToRem(8) pxToRem(12) pxToRem(8);
+    }
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(12) pxToRem(24) pxToRem(8);
+    }
   }
 
   .lotBody {
     padding: pxToRem(12) pxToRem(24) 0;
+
+    @include breakpoint(xl) {
+      padding: pxToRem(8) pxToRem(12) 0;
+    }
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(12) pxToRem(24) 0;
+    }
   }
 
   .lotFooter {
     padding: pxToRem(20) pxToRem(24);
+    display: grid;
+    grid-gap: pxToRem(18);
+    grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint(xl) {
+      padding: pxToRem(8) pxToRem(12);
+      grid-gap: pxToRem(10);
+    }
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(20) pxToRem(24);
+      grid-gap: pxToRem(18);
+    }
   }
 
   .lotImage {

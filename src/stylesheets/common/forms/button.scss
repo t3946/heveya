@@ -16,6 +16,14 @@
   transition: background-color, color 0.3s ease;
   user-select: none;
 
+  @include breakpoint(xl) {
+    font-size: pxToRem(14);
+  }
+
+  @include breakpoint(xxl) {
+    font-size: pxToRem(16);
+  }
+
   .icon {
     width: pxToRem(20);
     margin: 0 pxToRem(8) 0 0;
@@ -108,6 +116,14 @@
 
   &_size_medium {
     height: pxToRem(50);
+
+    @include breakpoint(xl) {
+      height: pxToRem(40);
+    }
+
+    @include breakpoint(xxl) {
+      height: pxToRem(50);
+    }
   }
 
   &:hover {

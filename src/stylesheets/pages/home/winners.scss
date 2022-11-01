@@ -21,11 +21,15 @@
       grid-template-rows: pxToRem(258) pxToRem(180);
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       grid-template-areas: "area1 area2 area3";
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: pxToRem(240);
+      grid-template-rows: pxToRem(190);
       grid-gap: pxToRem(25);
+    }
+
+    @include breakpoint(xxl) {
+      grid-template-rows: pxToRem(240);
     }
   }
 

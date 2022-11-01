@@ -18,4 +18,12 @@
     outline: none !important;
     box-shadow: none !important;
   }
+
+  @include breakpoint(xl) {
+    height: pxToRem(40);
+  }
+
+  @include breakpoint(xxl) {
+    height: pxToRem(50);
+  }
 }
