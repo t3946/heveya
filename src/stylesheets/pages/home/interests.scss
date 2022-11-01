@@ -24,13 +24,17 @@
       grid-template-rows: pxToRem(410) repeat(2, pxToRem(180))  repeat(2, pxToRem(260));
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       grid-template-areas: "item-1 item-2 item-3"
                        "item-1 item-4 item-5"
                        "item-6 item-7 item-7";
-      grid-template-rows: repeat(3, 236px);
+      grid-template-rows: repeat(3, 190px);
       grid-template-columns: repeat(3, 1fr);
       grid-gap: pxToRem(25);
+    }
+
+    @include breakpoint(xxl) {
+      grid-template-rows: repeat(3, 236px);
     }
 
     .item {
@@ -50,6 +54,10 @@
         }
 
         @include breakpoint(lg) {
+          font-size: pxToRem(24);
+        }
+
+        @include breakpoint(xxl) {
           font-size: pxToRem(32);
         }
       }
@@ -67,7 +75,13 @@
           background-position: center 100%;
         }
 
-        @include breakpoint(lg) {
+        @include breakpoint(xl) {
+          background-size: pxToRem(160);
+          background-position: center 85%;
+        }
+
+        @include breakpoint(xxl) {
+          background-size: pxToRem(200);
           background-position: center 80%;
         }
 
@@ -112,6 +126,11 @@
 
         @include breakpoint(lg) {
           background-image: url("./assets/images/pages/home/interests/3.png");
+          background-size: 140px;
+        }
+
+        @include breakpoint(xxl) {
+          background-size: 185px;
         }
       }
 
@@ -131,7 +150,21 @@
 
           @include breakpoint(md) {
             font-size: pxToRem(28);
+          }
+
+          @include breakpoint(lg) {
+            top: 40px;
+            line-height: 1;
+          }
+
+          @include breakpoint(xl) {
+            font-size: pxToRem(24);
+          }
+
+          @include breakpoint(xxl) {
+            font-size: pxToRem(28);
             top: 30px;
+            line-height: initial;
           }
         }
       }
@@ -144,6 +177,11 @@
 
         @include breakpoint(lg) {
           background-image: url("./assets/images/pages/home/interests/5.png");
+          background-size: 130px;
+        }
+
+        @include breakpoint(xxl) {
+          background-size: 180px;
         }
 
         .title {
@@ -170,7 +208,12 @@
           background-position: 30px top;
         }
 
-        @include breakpoint(lg) {
+        @include breakpoint(xl) {
+          background-position: 30px top;
+          background-size: pxToRem(140);
+        }
+
+        @include breakpoint(xxl) {
           background-position: 50px top;
           background-size: pxToRem(185);
         }
@@ -192,6 +235,11 @@
         }
 
         @include breakpoint(lg) {
+          background-position: 60px center;
+          background-size: pxToRem(200);
+        }
+
+        @include breakpoint(xxl) {
           background-position: 120px center;
           background-size: pxToRem(250);
         }
