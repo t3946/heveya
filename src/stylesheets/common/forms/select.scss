@@ -31,6 +31,14 @@
       color: #434343;
       font-size: pxToRem(16);
     }
+
+    @include breakpoint(xl) {
+      height: pxToRem(40);
+    }
+
+    @include breakpoint(xxl) {
+      height: pxToRem(50);
+    }
   }
 
   .selectize-dropdown {

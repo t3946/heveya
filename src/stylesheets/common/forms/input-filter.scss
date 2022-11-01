@@ -8,11 +8,12 @@
     width: pxToRem(16);
     height: pxToRem(10);
     position: absolute;
-    top: pxToRem(25);
+    top: 50%;
     left: 16px;
     transform: translateY(-50%);
     z-index: 11;
   }
+
   .selectize-input {
     padding-left: pxToRem(44);
     padding-right: pxToRem(40);
