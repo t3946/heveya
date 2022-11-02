@@ -1,0 +1,11 @@
+.chartLegendRow {
+  font-size: pxToRem(12);
+
+  @include breakpoint(xl) {
+    font-size: pxToRem(14);
+  }
+
+  @include breakpoint(xxl) {
+    font-size: pxToRem(16);
+  }
+}

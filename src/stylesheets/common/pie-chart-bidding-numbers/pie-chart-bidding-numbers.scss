@@ -6,8 +6,32 @@
     height: pxToRem(275);
   }
 
+  @include breakpoint(xl) {
+    height: pxToRem(250);
+    width: auto;
+  }
+
   @include breakpoint(xxl) {
     height: pxToRem(350);
     width: pxToRem(450);
+  }
+}
+
+.pieChartBiddingNumbersLegend {
+  @include breakpoint(xl) {
+    width: pxToRem(240);
+
+    .chartLegendRow {
+      font-size: pxToRem(12);
+      white-space: nowrap;
+    }
+  }
+
+  @include breakpoint(xxl) {
+    width: auto;
+
+    .chartLegendRow {
+      font-size: pxToRem(16);
+    }
   }
 }
