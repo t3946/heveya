@@ -357,3 +357,8 @@ html {
   bottom: 55px !important;
   box-shadow: none;
 }
+
+.pieCharCategories, .pieChartParticipation, .pieChartUp, .pieChartDown {
+  width: pxToRem(110);
+  height: pxToRem(110);
+}
