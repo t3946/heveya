@@ -44,12 +44,21 @@ function createChart(element: HTMLElement) {
     categoryField: "category",
   }));
 
-  series.labels.template.setAll({
-    fontSize: 20,
-    text: "[fontSize: 32px]{value.formatNumber('0.')}%[/]\n{category}",
-    oversizedBehavior: "wrap",
-    fill: color(0xffffff),
-  });
+  if (window.innerWidth > 1800 || window.innerWidth < 1320) {
+    series.labels.template.setAll({
+      fontSize: 20,
+      text: "[fontSize: 32px]{value.formatNumber('0.')}%[/]\n{category}",
+      oversizedBehavior: "wrap",
+      fill: color(0xffffff),
+    });
+  } else {
+    series.labels.template.setAll({
+      fontSize: 14,
+      text: "[fontSize: 24px]{value.formatNumber('0.')}%[/]\n{category}",
+      oversizedBehavior: "wrap",
+      fill: color(0xffffff),
+    });
+  }
 
   series.ticks.template.setAll({
     stroke: color(0xffffff),
