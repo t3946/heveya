@@ -9,7 +9,7 @@
     grid-gap: pxToRem(25);
   }
 
-  @include breakpoint(xxl) {
+  @include breakpoint(xl) {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
@@ -20,20 +20,19 @@
     width: 100%;
     padding: pxToRem(16);
 
-    @include breakpoint(md) {
-      height: pxToRem(140);
-    }
-
-    @include breakpoint(lg) {
-      padding: pxToRem(28);
-      height: pxToRem(194);
-    }
-
     .sum1 {
       .number {
         font-size: pxToRem(22);
 
         @include breakpoint(lg) {
+          font-size: pxToRem(24);
+        }
+
+        @include breakpoint(xl) {
+          font-size: pxToRem(18);
+        }
+
+        @include breakpoint(xxl) {
           font-size: pxToRem(24);
         }
       }
@@ -55,6 +54,25 @@
       .caption {
         margin: 0 0 0 pxToRem(12);
       }
+    }
+
+    @include breakpoint(md) {
+      height: pxToRem(140);
+    }
+
+    @include breakpoint(lg) {
+      padding: pxToRem(28);
+      height: pxToRem(194);
+    }
+
+    @include breakpoint(xl) {
+      padding: pxToRem(16);
+      height: pxToRem(160);
+    }
+
+    @include breakpoint(xxl) {
+      padding: pxToRem(28);
+      height: pxToRem(194);
     }
   }
 }
