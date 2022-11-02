@@ -1,10 +1,23 @@
 .mapPage {
   overflow: hidden;
 
+  .mainContainer {
+    padding: 0;
+
+    @include breakpoint(xl) {
+      padding: 0 pxToRem(12);
+    }
+  }
+
   .layoutGrid {
     display: grid;
-    grid-template-columns: pxToRem(600) pxToRem(2000);
+    grid-template-columns: 1fr;
     grid-template-rows: pxToRem(800);
+
+    @include breakpoint(xl) {
+      grid-template-columns: pxToRem(600) pxToRem(2000);
+      grid-template-rows: pxToRem(800);
+    }
   }
 
   .objects {
