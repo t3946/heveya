@@ -241,7 +241,7 @@ html {
     border: 1px solid #D4D4D4;
     border-radius: 10px;
 
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       padding: 0;
       border-radius: 0;
       border: none;
@@ -252,7 +252,7 @@ html {
     &:not(:last-child) {
       margin: 0 0 pxToRem(20);
 
-      @include breakpoint(xxl) {
+      @include breakpoint(xl) {
         margin: 0 0 pxToRem(40);
       }
     }
@@ -318,10 +318,6 @@ html {
   height: pxToRem(300);
 }
 
-.debtorsChart {
-  height: pxToRem(270);
-}
-
 .baseTooltip {
   &.show {
     opacity: 1;
@@ -358,7 +354,7 @@ html {
   box-shadow: none;
 }
 
-.pieCharCategories, .pieChartParticipation, .pieChartUp, .pieChartDown, .pieUserRate {
+.pieCharCategories, .pieChartParticipation, .pieChartUp, .pieChartDown, .pieUserRate, .pieCharEffectivity {
   width: pxToRem(110);
   height: pxToRem(110);
 

@@ -87,7 +87,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value",
     categoryXField: "year",
-    name: "Количество должников юридических лиц"
+    name: "Кол-во должников ЮЛ"
   }));
 
   series.columns.template.setAll({
@@ -107,7 +107,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value2",
     categoryXField: "year",
-    name: "Количество должников физических лиц"
+    name: "Кол-во должников ФЛ"
   }));
 
   series2.columns.template.setAll({
