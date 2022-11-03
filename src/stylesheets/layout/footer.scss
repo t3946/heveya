@@ -28,6 +28,11 @@
     text-align: center;
     margin: 0 0 pxToRem(20);
 
+    .link {
+      text-decoration: none;
+      color: #0f0f0f;
+    }
+
     @include breakpoint(md) {
       text-align: left;
       margin: 0;
@@ -37,9 +42,12 @@
       }
     }
 
-    .link {
-      text-decoration: none;
-      color: #0f0f0f;
+    @include breakpoint(xl) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(20);
     }
   }
 
