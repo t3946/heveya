@@ -1,11 +1,19 @@
 <a href="{{link}}" class="d-block text-decoration-none">
     <div class="itemButton {{#if isActive}}itemButton_active{{/if}}">
-        {{title}}
+        <div>
+            <div>{{title}}</div>
+
+            {{#if title2}}
+                <div>{{title2}}</div>
+            {{/if}}
+        </div>
+
         {{#if counter}}
             <div class="itemButton__pill base">
                 {{> ../../../common/account/pill/Pill text=counter}}
             </div>
         {{/if}}
+
         {{#if exclamation}}
             <div class="itemButton__exclamation" data-bs-toggle="tooltip" title="Профиль не заполнен">
                 {{> ../../../common/icons/exclamation-mark/ExclamationMark class="iconExclamation"}}
