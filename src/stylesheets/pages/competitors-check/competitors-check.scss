@@ -1,6 +1,6 @@
 .formFindMember {
   .inputSearch {
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       width: pxToRem(525);
     }
   }
