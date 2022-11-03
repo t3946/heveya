@@ -75,6 +75,15 @@ function init(elem) {
     name: "Количество электронных площадок"
   }));
 
+  yAxis.axisHeader.children.push(Text.new(root, {
+    text: "Электронные площадки",
+    fontWeight: "600",
+    fontSize: 18,
+    x: percent(50),
+    centerX: percent(50),
+    fill: color(0x9B9B9B),
+  }));
+
   series.columns.template.setAll({
     tooltipText: "{valueY} {name}",
     width: percent(18),

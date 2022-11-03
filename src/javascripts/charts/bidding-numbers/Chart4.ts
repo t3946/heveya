@@ -82,16 +82,25 @@ function init(elem) {
     renderer: am5xy.AxisRendererY.new(root, {}),
   }));
 
+  yAxis.axisHeader.children.push(Text.new(root, {
+    text: "Организаторы и управляющие",
+    fontWeight: "600",
+    fontSize: 18,
+    x: percent(50),
+    centerX: percent(50),
+    fill: color(0x9B9B9B),
+  }));
+
   const series = chart.series.push(am5xy.ColumnSeries.new(root, {
     xAxis: xAxis,
     yAxis: yAxis,
     valueYField: "value",
     categoryXField: "year",
-    name: "Количество Арбитражных управляющих"
+    name: "Управляющие"
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{valueY}  {name}",
+    tooltipText: "{valueY} {name}",
     width: percent(36),
     cornerRadiusTL: 100,
     cornerRadiusTR: 100,
@@ -107,7 +116,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value2",
     categoryXField: "year",
-    name: "Организаторы торгов"
+    name: "Организаторы"
   }));
 
   series2.columns.template.setAll({
