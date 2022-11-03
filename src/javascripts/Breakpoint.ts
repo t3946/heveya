@@ -11,36 +11,27 @@ export default (callbacks: Record<any, any>) => {
   let throttleTimeout = null;
 
   function responsive() {
-    if (callbacks.xs && window.innerWidth < breakpoints.sm) {
+    if (callbacks.xs) {
       callbacks.xs();
     }
 
-    if (callbacks.sm &&
-      window.innerWidth >= breakpoints.sm &&
-      window.innerWidth < breakpoints.md) {
+    if (callbacks.sm && window.innerWidth >= breakpoints.sm) {
       callbacks.sm();
     }
 
-    if (callbacks.md &&
-      window.innerWidth >= breakpoints.md &&
-      window.innerWidth < breakpoints.lg) {
+    if (callbacks.md && window.innerWidth >= breakpoints.md) {
       callbacks.md();
     }
 
-    if (callbacks.lg &&
-      window.innerWidth >= breakpoints.lg &&
-      window.innerWidth < breakpoints.xl) {
+    if (callbacks.lg && window.innerWidth >= breakpoints.lg) {
       callbacks.lg();
     }
 
-    if (callbacks.xl &&
-      window.innerWidth >= breakpoints.xl &&
-      window.innerWidth < breakpoints.xxl) {
+    if (callbacks.xl && window.innerWidth >= breakpoints.xl) {
       callbacks.xl();
     }
 
-    if (callbacks.xxl &&
-      window.innerWidth >= breakpoints.xxl) {
+    if (callbacks.xxl && window.innerWidth >= breakpoints.xxl) {
       callbacks.xxl();
     }
   }
