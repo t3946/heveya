@@ -6,6 +6,14 @@
 
     tr {
       height: pxToRem(50);
+
+      @include breakpoint(xl) {
+        height: pxToRem(40);
+      }
+
+      @include breakpoint(xxl) {
+        height: pxToRem(50);
+      }
     }
   }
 
@@ -15,12 +23,27 @@
 
   tr {
     height: pxToRem(55);
+
+    @include breakpoint(xl) {
+      height: pxToRem(45);
+    }
+
+    @include breakpoint(xxl) {
+      height: pxToRem(55);
+    }
   }
 
   th, td {
-
     border-bottom: 1px solid #d4d4d4;
     font-weight: 600;
     font-size: pxToRem(18);
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(18);
+    }
   }
 }

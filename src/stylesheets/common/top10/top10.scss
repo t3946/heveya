@@ -6,7 +6,7 @@
       margin: pxToRem(24) 0 0;
     }
 
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       margin: 0;
     }
   }

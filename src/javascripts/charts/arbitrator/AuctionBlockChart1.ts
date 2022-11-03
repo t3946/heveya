@@ -77,7 +77,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value",
     categoryXField: "year",
-    name: "Объявлено лотов (шт)"
+    name: "Объявлено (шт)"
   }));
 
   series.columns.template.setAll({
@@ -98,7 +98,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value2",
     categoryXField: "year",
-    name: "Завершено лотов (шт)"
+    name: "Завершено (шт)"
   }));
 
   series2.columns.template.setAll({
@@ -119,7 +119,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value3",
     categoryXField: "year",
-    name: "Не состоялось"
+    name: "Не состоялось",
   }));
 
   series3.columns.template.setAll({
@@ -139,6 +139,9 @@ function init(elem) {
     centerX: p50,
   }));
   legend.data.setAll(chart.series.values);
+  legend.labels.template.setAll({
+    fontSize: 12
+  });
 
   chart.appear(1000, 100);
 }
