@@ -1,19 +1,14 @@
 .pricesWrapper {
   width: pxToRem(310);
   border-left: 1px solid #d4d4d4;
-  margin: 0 0 0 pxToRem(24);
-  padding: 0 0 0 pxToRem(24);
+  margin: 0 0 0 pxToRem(16);
+  padding: 0 0 0 pxToRem(16);
   flex-shrink: 0;
 
   @include breakpoint(xl) {
     font-size: pxToRem(14);
-  }
+    width: pxToRem(280);
 
-  @include breakpoint(xxl) {
-    font-size: pxToRem(16);
-  }
-
-  @include breakpoint(xl) {
     .awardIcon {
       width: pxToRem(16);
       height: pxToRem(16);
@@ -21,6 +16,11 @@
   }
 
   @include breakpoint(xxl) {
+    font-size: pxToRem(16);
+    margin: 0 0 0 pxToRem(24);
+    padding: 0 0 0 pxToRem(24);
+    width: pxToRem(310);
+
     .awardIcon {
       width: pxToRem(16);
       height: pxToRem(16);

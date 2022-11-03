@@ -55,6 +55,11 @@
     height: pxToRem(300);
     flex-shrink: 0;
 
+    @include breakpoint(xl) {
+      width: pxToRem(360);
+      height: pxToRem(360);
+    }
+
     @include breakpoint(xxl) {
       width: pxToRem(580);
       height: pxToRem(580);
@@ -193,8 +198,72 @@
     }
   }
 
-  .contactItem:not(:last-child) {
-    border-bottom: 1px solid #d4d4d4;
+  .contactItem {
+    &:not(:last-child) {
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+    &_desktop {
+      .companyName {
+        font-size: pxToRem(16);
+
+        @include breakpoint(xxl) {
+          font-size: pxToRem(18);
+        }
+      }
+
+      .item3 {
+        font-size: pxToRem(12);
+
+        @include breakpoint(xxl) {
+          font-size: pxToRem(16);
+        }
+      }
+
+      .item4 {
+        font-size: pxToRem(12);
+
+        @include breakpoint(xxl) {
+          font-size: pxToRem(16);
+        }
+      }
+
+      .linkPhone {
+        .icon {
+          width: pxToRem(16);
+          height: pxToRem(16);
+
+          @include breakpoint(xxl) {
+            width: pxToRem(20);
+            height: pxToRem(20);
+          }
+        }
+      }
+
+      .linkEmail {
+        .icon {
+          width: pxToRem(14);
+          height: pxToRem(12);
+
+          @include breakpoint(xxl) {
+            width: pxToRem(18);
+            height: pxToRem(15);
+          }
+        }
+      }
+
+      .linkRequest {
+        .icon {
+          width: pxToRem(16);
+          height: pxToRem(16);
+
+          @include breakpoint(xxl) {
+            width: pxToRem(20);
+            height: pxToRem(21);
+          }
+        }
+      }
+    }
   }
 
   .orderPayment {
