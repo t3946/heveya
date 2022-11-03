@@ -2,8 +2,27 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  @include breakpoint(xl) {
+    grid-template-columns: 300px 250px 250px 350px;
+    justify-content: space-between;
+  }
+
   @include breakpoint(xxl) {
     grid-template-columns: 550px 250px 300px 300px;
-    justify-content: space-between;
+  }
+
+  .sroRegistryNamePanel {
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-gap: pxToRem(8);
+
+      @include breakpoint(xxl) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        grid-gap: pxToRem(24);
+      }
+    }
   }
 }
