@@ -1,6 +1,7 @@
 import {Root, percent, Label, p50, color, addLicense} from '@amcharts/amcharts5';
 import {PieChart, PieSeries} from "@amcharts/amcharts5/percent";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import Breakpoint from "../../Breakpoint";
 
 addLicense("AM5C1231231321");
 
@@ -44,21 +45,33 @@ function createChart(element: HTMLElement) {
     categoryField: "category",
   }));
 
-  if (window.innerWidth > 1800 || window.innerWidth < 1320) {
-    series.labels.template.setAll({
-      fontSize: 20,
-      text: "[fontSize: 32px]{value.formatNumber('0.')}%[/]\n{category}",
-      oversizedBehavior: "wrap",
-      fill: color(0xffffff),
-    });
-  } else {
-    series.labels.template.setAll({
-      fontSize: 14,
-      text: "[fontSize: 24px]{value.formatNumber('0.')}%[/]\n{category}",
-      oversizedBehavior: "wrap",
-      fill: color(0xffffff),
-    });
-  }
+  series.labels.template.setAll({
+    fontSize: 20,
+    text: "[fontSize: 32px]{value.formatNumber('0.')}%[/]\n{category}",
+    oversizedBehavior: "wrap",
+    fill: color(0xffffff),
+  });
+
+  Breakpoint({
+    xs() {
+      series.labels.template.setAll({
+        fontSize: 20,
+        text: "[fontSize: 32px]{value.formatNumber('0.')}%[/]\n{category}",
+      });
+    },
+    xl() {
+      series.labels.template.setAll({
+        fontSize: 14,
+        text: "[fontSize: 24px]{value.formatNumber('0.')}%[/]\n{category}",
+      });
+    },
+    xxl() {
+      series.labels.template.setAll({
+        fontSize: 20,
+        text: "[fontSize: 32px]{value.formatNumber('0.')}%[/]\n{category}",
+      });
+    },
+  });
 
   series.ticks.template.setAll({
     stroke: color(0xffffff),
