@@ -2,11 +2,15 @@ import {Root, percent, Label, p50, color, addLicense} from '@amcharts/amcharts5'
 import {PieChart, PieSeries} from "@amcharts/amcharts5/percent";
 import am5themes_Micro from "@amcharts/amcharts5/themes/Micro";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
+import $ from "jquery";
+import Breakpoint from "../../../Breakpoint";
 
 addLicense("AM5C1231231321");
 
 function createChart(element: HTMLElement) {
   const root = Root.new(element);
+  const responsive = am5themes_Responsive.new(root);
   const data = [
     {
       value: 62,
@@ -45,7 +49,7 @@ function createChart(element: HTMLElement) {
     strokeWidth: 2
   });
 
-  root.tooltipContainer.children.push(Label.new(root, {
+  const label1 = root.tooltipContainer.children.push(Label.new(root, {
     x: p50,
     y: p50,
     centerX: p50,
@@ -53,10 +57,10 @@ function createChart(element: HTMLElement) {
     fill: color(0xFB0E0E),
     fontSize: 20,
     fontWeight: "600",
-    text: `-${62}%`
+    text: `-${62}%`,
   }));
 
-  const labelCaption = root.tooltipContainer.children.push(Label.new(root, {
+  const label2 = root.tooltipContainer.children.push(Label.new(root, {
     x: p50,
     y: percent(65),
     centerX: p50,
@@ -66,6 +70,31 @@ function createChart(element: HTMLElement) {
     text: "Понижен",
     fontWeight: "600",
   }));
+
+  Breakpoint({
+    xs() {
+      label1.setAll({fontSize: 20});
+      label2.setAll({
+        fontSize: 13,
+        y: percent(65),
+      });
+    },
+    xl() {
+      label1.setAll({fontSize: 16});
+
+      label2.setAll({
+        y: percent(68),
+        fontSize: 10
+      });
+    },
+    xxl() {
+      label1.setAll({fontSize: 20});
+      label2.setAll({
+        fontSize: 13,
+        y: percent(65),
+      });
+    },
+  });
 
   series.data.setAll(data);
 
