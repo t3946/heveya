@@ -1,14 +1,32 @@
-.formSearchLot {
-  &__header {
-    margin: 0 0 pxToRem(16);
+.competitorsPage {
+  .formSearchLot {
+    &__header {
+      margin: 0 0 pxToRem(16);
+
+      @include breakpoint(xxl) {
+        margin: 0 0 pxToRem(24);
+      }
+    }
 
     @include breakpoint(xxl) {
-      margin: 0 0 pxToRem(24);
+      max-width: pxToRem(1520);
+      margin: 0 auto;
     }
   }
 
-  @include breakpoint(xxl) {
-    max-width: pxToRem(1520);
-    margin: 0 auto;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: pxToRem(20);
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: pxToRem(25);
+    }
+
+    @include breakpoint(xl) {
+      grid-template-columns: 1fr;
+      grid-gap: pxToRem(20);
+    }
   }
 }
