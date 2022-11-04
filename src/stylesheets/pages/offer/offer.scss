@@ -20,31 +20,46 @@
   }
 
   .infoLinks {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: pxToRem(8);
 
-    @include breakpoint(lg) {
-      display: block;
+    @include breakpoint(xl) {
+      grid-template-columns: repeat(4, auto);
+      grid-gap: pxToRem(20);
+    }
+
+    @include breakpoint(xxl) {
+      grid-gap: pxToRem(25);
     }
 
     .item {
       text-decoration: none;
-      &:not(:last-child) {
-        margin: 0 0 pxToRem(24);
-      }
+
       .icon {
         color: #8cceef;
+        width: pxToRem(26);
+
+        @include breakpoint(xl) {
+          width: pxToRem(20);
+        }
+
+        @include breakpoint(xxl) {
+          width: pxToRem(26);
+        }
       }
 
       .text {
         color: #9b9b9b;
         font-size: pxToRem(16);
         font-weight: bold;
-      }
 
-      @include breakpoint(lg) {
-        &:not(:last-child) {
-          margin: 0 pxToRem(40) 0 0;
+        @include breakpoint(xl) {
+          font-size: pxToRem(14);
+        }
+
+        @include breakpoint(xxl) {
+          font-size: pxToRem(16);
         }
       }
     }
