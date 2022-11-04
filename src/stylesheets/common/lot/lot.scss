@@ -255,6 +255,16 @@
     .badge {
       top: pxToRem(-8);
       right: pxToRem(-5);
+
+      @include breakpoint(xl) {
+        top: pxToRem(-3);
+        right: pxToRem(-5);
+      }
+
+      @include breakpoint(xxl) {
+        top: pxToRem(-8);
+        right: pxToRem(-5);
+      }
     }
   }
 }

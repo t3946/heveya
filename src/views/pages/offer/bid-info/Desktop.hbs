@@ -1,10 +1,10 @@
-<div class="d-flex">
+<div class="bidInfoDesktopGrid">
     <div class="imageWrapper">
         {{> Slider id="sliderBidInfoDesktop" }}
     </div>
 
-    <div class="flex-grow-1 ms-3 ms-xxl-4 infoColumn">
-        <div class="lotMainInfo d-flex justify-content-between">
+    <div class="flex-grow-1 ms-xl-2 ms-xxl-4 infoColumn">
+        <div class="lotMainInfo bidInfo__lotMainInfo d-flex justify-content-between">
             <span class="number fw-bold">Лот: 18-24-5186972</span>
             <span>Имущество должников (банкротство)</span>
             <span>Опубликовано: 21.03.2022</span>
@@ -12,9 +12,9 @@
             <span class="fw-bold">{{> ../../../common/location/Location }}</span>
         </div>
 
-        <div class="d-flex mt-3">
-            <div>
-                {{> Debtor }}
+        <div class="d-flex">
+            <div class="flex-grow-1">
+                <div class="bidInfo__debtor">{{> Debtor }}</div>
 
                 <div class="contacts d-none d-lg-block d-xl-none">
                     {{> ../contacts/item/Desktop }}

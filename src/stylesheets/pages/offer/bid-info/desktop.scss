@@ -8,6 +8,8 @@
   @include breakpoint(xl) {
     font-size: pxToRem(14);
     width: pxToRem(280);
+    margin: 0 0 0 pxToRem(8);
+    padding: 0 0 0 pxToRem(8);
 
     .awardIcon {
       width: pxToRem(16);

@@ -3,8 +3,6 @@
 @import "prices-column";
 
 .offerPage {
-  padding: 0 0 pxToRem(50);
-
   .lotMainInfo {
     padding: pxToRem(10) 0;
     border-top: 1px solid #d4d4d4;
@@ -16,6 +14,32 @@
 
     @include breakpoint(xxl) {
       font-size: pxToRem(16);
+    }
+  }
+
+  .bidInfo {
+    &__lotMainInfo {
+      margin: 0 0 pxToRem(16);
+
+      @include breakpoint(xl) {
+        margin: 0 0 pxToRem(8);
+      }
+
+      @include breakpoint(xxl) {
+        margin: 0 0 pxToRem(16);
+      }
+    }
+
+    &__debtor {
+      margin: 0 0 pxToRem(16);
+
+      @include breakpoint(xl) {
+        margin: 0 0 pxToRem(8);
+      }
+
+      @include breakpoint(xxl) {
+        margin: 0 0 pxToRem(16);
+      }
     }
   }
 
@@ -65,30 +89,19 @@
     }
   }
 
-  .imageWrapper {
-    width: pxToRem(300);
-    height: pxToRem(300);
-    flex-shrink: 0;
-
-    @include breakpoint(xl) {
-      width: pxToRem(360);
-      height: pxToRem(360);
-    }
-
-    @include breakpoint(xxl) {
-      width: pxToRem(580);
-      height: pxToRem(580);
-    }
-  }
-
   .debtor {
     border-radius: 5px;
     background-color: #f5f5f5;
-    padding: pxToRem(12) pxToRem(110) pxToRem(12) pxToRem(12);
     font-size: pxToRem(14);
+    padding: pxToRem(12);
+
+    @include breakpoint(xl) {
+      padding: pxToRem(8);
+    }
 
     @include breakpoint(xxl) {
       font-size: pxToRem(16);
+      padding: pxToRem(12) pxToRem(110) pxToRem(12) pxToRem(12);
     }
   }
 
@@ -117,6 +130,14 @@
       &:not(:last-child) {
         margin: 0 0 pxToRem(16);
         border-bottom: 1px solid #d4d4d4;
+
+        @include breakpoint(xl) {
+          margin: 0 0 pxToRem(8);
+        }
+
+        @include breakpoint(xxl) {
+          margin: 0 0 pxToRem(16);
+        }
       }
 
       .link {
@@ -171,7 +192,7 @@
       }
 
       @include breakpoint(xl) {
-        padding: 0 0 pxToRem(16);
+        padding: 0 0 pxToRem(8);
       }
 
       @include breakpoint(xxl) {
@@ -322,5 +343,51 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
+  }
+
+  .carousel-inner, .carousel-item {
+    height: 100%;
+  }
+
+  #sliderBidInfoMobile {
+    height: pxToRem(380);
+  }
+
+  .carousel-item {
+    overflow: hidden;
+
+    .resizeImageInWholeContainer {
+      position: relative;
+    }
+
+    .slideImageWrapper {
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      overflow: hidden;
+    }
+  }
+}
+
+.bidInfoDesktopGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  #sliderBidInfoDesktop {
+    @include breakpoint(md) {
+      height: pxToRem(580);
+    }
+
+    @include breakpoint(xl) {
+      height: 100%;
+    }
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: 400px 1fr;
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: 600px 1fr;
   }
 }
