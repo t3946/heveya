@@ -13,4 +13,18 @@
   .modal-footer {
     border-radius: 0;
   }
+
+  .closeButton {
+    position: absolute;
+    top: -16px;
+    right: -60px;
+    padding: pxToRem(18);
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  .modal-body {
+    padding-top: pxToRem(28);
+    padding-bottom: pxToRem(64);
+  }
 }
