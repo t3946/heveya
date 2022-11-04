@@ -125,18 +125,19 @@
 
   .contacts {
     .item {
-      padding: 0 0 pxToRem(30);
-
       &:not(:last-child) {
+        padding: 0 0 pxToRem(30);
         margin: 0 0 pxToRem(16);
         border-bottom: 1px solid #d4d4d4;
 
         @include breakpoint(xl) {
           margin: 0 0 pxToRem(8);
+          padding: 0 0 pxToRem(8);
         }
 
         @include breakpoint(xxl) {
           margin: 0 0 pxToRem(16);
+          padding: 0 0 pxToRem(30);
         }
       }
 
@@ -189,14 +190,6 @@
         .item4 {
           grid-area: item-4;
         }
-      }
-
-      @include breakpoint(xl) {
-        padding: 0 0 pxToRem(8);
-      }
-
-      @include breakpoint(xxl) {
-        padding: 0 0 pxToRem(30);
       }
     }
 
