@@ -59,7 +59,7 @@ function createChart(element: HTMLElement) {
     fill: color(0x161616),
     fontSize: 20,
     fontWeight: "600",
-    text: `${62}%`
+    text: `12`
   }));
 
   const label2 = root.tooltipContainer.children.push(Label.new(root, {

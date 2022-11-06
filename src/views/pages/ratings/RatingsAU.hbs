@@ -1,0 +1,48 @@
+{{> ../../layout/Hat endpoint=true withBorder=true}}
+
+<div class="ratingsPage">
+    <div class="container">
+        {{> ../../common/breadcrumbs/Breadcrumbs }}
+
+        <h1 class="header1 ratingsPage__header">Рейтинг арбитражных управляющих</h1>
+
+        <div class="row">
+            <div class="col-12">
+                {{> ../../common/forms/SearchForm}}
+            </div>
+        </div>
+
+        <div class="ratingsList">
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/arbitrator/Arbitrator }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/arbitrator/Arbitrator }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/arbitrator/Arbitrator }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/arbitrator/Arbitrator }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/arbitrator/Arbitrator }}
+            </div>
+
+            <div class="containerFrame">
+                {{> ../../common/personal-data-panel/arbitrator/Arbitrator }}
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center mt-4">
+            {{> ../../common/pagination/Pagination }}
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/footer/Footer}}

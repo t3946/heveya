@@ -9,7 +9,10 @@ import Offer from './views/pages/offer/Offer.hbs'
 import OfferAuction from './views/pages/offer/OfferAuction.hbs'
 import OfferArchive from './views/pages/offer/OfferArchive.hbs'
 import Rate from './views/pages/rate/Rate.hbs'
-import Ratings from './views/pages/ratings/Ratings.hbs'
+import RatingsMembers from './views/pages/ratings/RatingsMembers.hbs'
+import RatingsAU from './views/pages/ratings/RatingsAU.hbs'
+import RatingsBiddingInitiators from './views/pages/ratings/RatingsBiddingInitiators.hbs'
+import RatingsWebPlatforms from './views/pages/ratings/RatingsWebPlatforms.hbs'
 import Map from './views/pages/map/Map.hbs'
 import SelectBroker from './views/pages/select-broker/SelectBroker.hbs'
 import AnalyzeCompany from './views/pages/analyze-company/AnalyzeCompany.hbs'
@@ -71,8 +74,20 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.innerHTML = Rate()
       break
 
-    case '/ratings':
-      document.body.innerHTML = Ratings()
+    case '/rating-members':
+      document.body.innerHTML = RatingsMembers()
+      break
+
+    case '/rating-au':
+      document.body.innerHTML = RatingsAU()
+      break
+
+    case '/rating-bidding-initiators':
+      document.body.innerHTML = RatingsBiddingInitiators()
+      break
+
+    case '/rating-web-platforms':
+      document.body.innerHTML = RatingsWebPlatforms()
       break
 
     case '/map':
