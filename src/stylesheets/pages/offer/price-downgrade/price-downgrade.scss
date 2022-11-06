@@ -1,0 +1,83 @@
+.priceDowngrade {
+  .gridRow {
+    display: grid;
+    color: #333333;
+    grid-template-columns: repeat(3, 1fr) pxToRem(34);
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(4, 25%);
+    }
+
+    > * {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .hat {
+    .gridRow {
+      font-weight: 600;
+      font-size: pxToRem(12);
+
+      > * {
+        padding: pxToRem(10) pxToRem(8);
+
+        @include breakpoint(md) {
+          padding: pxToRem(10) pxToRem(12);
+        }
+      }
+
+      @include breakpoint(md) {
+        font-size: pxToRem(20);
+      }
+    }
+  }
+
+  .body {
+    .gridRow {
+      > * {
+        padding: pxToRem(6) pxToRem(8);
+
+        @include breakpoint(md) {
+          padding: pxToRem(6) pxToRem(12);
+        }
+      }
+
+      font-weight: 600;
+      font-size: pxToRem(12);
+
+      @include breakpoint(md) {
+        font-size: pxToRem(18);
+      }
+
+      &__indicator {
+        @include breakpoint(md) {
+          margin: 0 pxToRem(12) 0 0;
+        }
+      }
+
+      &:nth-child(odd) {
+        background-color: #E4F6FF;
+      }
+
+      .indicator {
+        &_theme {
+          width: pxToRem(10);
+          height: pxToRem(10);
+
+          &_green {
+            color: #37a365;
+          }
+
+          &_yellow {
+            color: #f2b61b;
+          }
+
+          &_red {
+            color: #f52727;
+          }
+        }
+      }
+    }
+  }
+}
