@@ -361,6 +361,20 @@
       overflow: hidden;
     }
   }
+
+  .description {
+    &__header {
+      margin: pxToRem(24) 0 pxToRem(12);
+
+      @include breakpoint(md) {
+        margin: pxToRem(24) 0 pxToRem(16);
+      }
+
+      @include breakpoint(xl) {
+        margin: pxToRem(60) 0 pxToRem(16);
+      }
+    }
+  }
 }
 
 .bidInfoDesktopGrid {
