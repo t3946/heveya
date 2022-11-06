@@ -1,8 +1,18 @@
-<div class="hat {{#if withBorder}}hat_withBorder{{/if}}">
+<div class="hat {{#if withBorder}}hat_withBorder{{/if}} {{#if endpoint}}hat_withGoBackButton{{/if}}">
     {{> HatMobile endpoint=endpoint }}
     {{> HatTablet }}
     {{> HatDesktop }}
 </div>
+
+{{#if endpoint}}
+    <div class="goBack">
+        <div class="container">
+            <a href="#" class="baseLink text-decoration-none backButton">{{> ../common/icons/chevron-left/ChevronLeft}}
+                <span class="ms-2">Назад</span>
+            </a>
+        </div>
+    </div>
+{{/if}}
 
 {{> SearchMenu }}
 {{> SidebarMenu }}

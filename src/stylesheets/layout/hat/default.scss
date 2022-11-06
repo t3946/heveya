@@ -1,8 +1,4 @@
 .hat {
-  &_withBorder {
-    border-bottom: 1px solid #d4d4d4;
-  }
-
   .contacts {
     height: pxToRem(51);
     background-color: #f3f3f3;
@@ -100,6 +96,18 @@
         color: #9b9b9b;
       }
     }
+  }
+}
+
+.hat_withBorder {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.hat_withBorder.hat_withGoBackButton {
+  border-bottom: none;
+
+  @include breakpoint(md) {
+    border-bottom: 1px solid #d4d4d4;
   }
 }
 

@@ -58,8 +58,22 @@
       transform: translateY(-50%);
     }
   }
+}
 
-  .goBack {
+.goBack {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d4d4d4;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+
+  .backButton {
+    display: flex;
+    align-items: center;
     height: pxToRem(57);
   }
 }
