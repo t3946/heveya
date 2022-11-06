@@ -5,63 +5,106 @@
             <span class="fw-bold rouble">10 278 000</span>
         </div>
 
-        <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
-            <span class="color_9b9b9b">Текущая цена:</span>
-            <span class="fw-bold rouble">208 278 000</span>
-        </div>
+        {{#if isArchive}}
+            <div class="d-flex justify-content-between">
+                <span class="color_9b9b9b">Итоговая цена:</span>
+                <span class="fw-bold rouble">208 278 000</span>
+            </div>
+        {{else}}
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Текущая цена:</span>
+                <span class="fw-bold rouble">208 278 000</span>
+            </div>
 
-        <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
-            <span class="color_9b9b9b">Минимальная цена:</span>
-            <span class="fw-bold rouble">179 840</span>
-        </div>
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Минимальная цена:</span>
+                <span class="fw-bold rouble">179 840</span>
+            </div>
 
-        <div class="d-flex justify-content-between">
-            <span class="color_9b9b9b">Шаг понижения:</span>
-            <span class="fw-bold"><span class="rouble">12 000</span> / 7 дн</span>
-        </div>
+            <div class="d-flex justify-content-between">
+                <span class="color_9b9b9b">Шаг понижения:</span>
+                <span class="fw-bold"><span class="rouble">12 000</span> / 7 дн</span>
+            </div>
+        {{/if}}
     </div>
 
-    <div class="panel">
-        <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
-            <span class="color_9b9b9b">Вероятность победы:</span>
-            <span class="fw-bold">52%</span>
+    {{#if isArchive}}
+        <div class="panel">
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Статус:</span>
+                <span class="fw-bold">Состоялись</span>
+            </div>
+
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Участников:</span>
+                <span class="fw-bold">7</span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <span class="color_9b9b9b">Победитель:</span>
+                <span class="fw-bold color_8cceef">Сидоров В.Н.</span>
+            </div>
+        </div>
+    {{else}}
+        <div class="panel">
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Вероятность победы:</span>
+                <span class="fw-bold">52%</span>
+            </div>
+
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Прогноз цены:</span>
+                <span class="fw-bold rouble">230</span>
+            </div>
+
+            <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between align-items-end">
+                <span class="color_9b9b9b d-xxl-none">Заинтересованных пользователей:</span>
+                <span class="color_9b9b9b d-none d-xxl-block">Заинтересованных <br> пользователей:</span>
+                <span class="fw-bold">2</span>
+            </div>
+        </div>
+    {{/if}}
+
+    {{#if isArchive}}
+        <div class="baseButton baseButton_theme_red baseButton_size_medium mt-2">
+            Торги завершены
         </div>
 
-        <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between">
-            <span class="color_9b9b9b">Прогноз цены:</span>
-            <span class="fw-bold rouble">230</span>
+        <div class="baseButton baseButton_theme_green baseButton_size_medium mt-2">
+            Проверить повтор
         </div>
 
-        <div class="mb-2 mb-xl-1 mb-xxl-2 d-flex justify-content-between align-items-end">
-            <span class="color_9b9b9b d-xxl-none">Заинтересованных пользователей:</span>
-            <span class="color_9b9b9b d-none d-xxl-block">Заинтересованных <br> пользователей:</span>
-            <span class="fw-bold">2</span>
+        <div class="d-flex justify-content-center justify-content-md-end mt-3">
+            <a href="#" class="community">
+                {{> ../../common/icons/community/Community class="icon"}}
+            </a>
         </div>
-    </div>
+    {{else}}
+        <div class="panel panel_grey">
+            <div class="mb-2 d-flex justify-content-between">
+                <span class="color_9b9b9b">Подать заявку:</span>
+                <span class="fw-bold rouble">2 799</span>
+            </div>
 
-    <div class="panel panel_grey">
-        <div class="mb-2 d-flex justify-content-between">
-            <span class="color_9b9b9b">Подать заявку:</span>
-            <span class="fw-bold rouble">2 799</span>
+            <div class="d-flex justify-content-between align-items-end">
+                <span class="color_9b9b9b">
+                    Вознаграждение <br> за победу в торгах:
+                    <span
+                        class="openAwardInfoModal c-pointer">{{> ../../common/icons/question/Question class="awardIcon"}}</span>
+                </span>
+                <span class="fw-bold rouble">10 799</span>
+            </div>
         </div>
 
-        <div class="d-flex justify-content-between align-items-end">
-            <span class="color_9b9b9b">
-                Вознаграждение <br> за победу в торгах:
-                <span class="openAwardInfoModal c-pointer">{{> ../../common/icons/question/Question class="awardIcon"}}</span>
-            </span>
-            <span class="fw-bold rouble">10 799</span>
+        <div class="baseButton baseButton_theme_blue baseButton_size_medium mt-2">
+            <span>Участвовать за</span>
+            <span class="ms-2 rouble">2 799</span>
         </div>
-    </div>
 
-    <div class="baseButton baseButton_theme_blue baseButton_size_medium mt-2">
-        <span>Участвовать за</span>
-        <span class="ms-2 rouble">2 799</span>
-    </div>
+        <div class="baseButton baseButton_theme_gray baseButton_size_medium mt-2">Выбрать брокера</div>
 
-    <div class="baseButton baseButton_theme_gray baseButton_size_medium mt-2">Выбрать брокера</div>
-
-    <div class="pricesColumn__icons">
-        {{> ../../common/lot-card/Icons }}
-    </div>
+        <div class="pricesColumn__icons">
+            {{> ../../common/lot-card/Icons }}
+        </div>
+    {{/if}}
 </div>
