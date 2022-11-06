@@ -24,12 +24,6 @@
 
         <div class="dividerDescription"></div>
 
-        <div class="d-none d-xl-block">
-            <h3>Порядок понижения цены</h3>
-
-            {{> price-downgrade/PriceDowngrade }}
-        </div>
-
         <div class="row">
             <div class="col-12 col-lg-6">
                 <h3 class="header3 mb-4">Порядок осмотра</h3>
@@ -59,6 +53,16 @@
                     возвращаются всем заявителям, за исключением победителя торгов, в течение пяти рабочих дней со дня
                     подписания протокола о результатах проведения торгов</p>
                 <a class="moreInfo baseLink fs-14px fs-md-16px d-lg-none text-decoration-none">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+            <div class="dividerDescription"></div>
+
+            <h3>Порядок понижения цены</h3>
+
+            <div class="offerPage__priceDowngrade">
+                {{> price-downgrade/PriceDowngrade }}
             </div>
         </div>
 

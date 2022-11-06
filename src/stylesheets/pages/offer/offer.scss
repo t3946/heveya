@@ -375,6 +375,18 @@
       }
     }
   }
+
+  &__priceDowngrade {
+    margin: 0 0 pxToRem(20);
+
+    @include breakpoint(md) {
+      margin: 0 0 pxToRem(32);
+    }
+
+    @include breakpoint(xl) {
+      margin: 0 0 pxToRem(24);
+    }
+  }
 }
 
 .bidInfoDesktopGrid {
