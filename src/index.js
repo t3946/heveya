@@ -6,6 +6,8 @@ import home from './views/pages/home/home.hbs'
 import SearchResults from './views/pages/search-results/SearchResults.hbs'
 import SearchResultsLines from './views/pages/search-results-lines/SearchResultsLines.hbs'
 import Offer from './views/pages/offer/Offer.hbs'
+import OfferAuction from './views/pages/offer/OfferAuction.hbs'
+import OfferArchive from './views/pages/offer/OfferArchive.hbs'
 import Rate from './views/pages/rate/Rate.hbs'
 import Ratings from './views/pages/ratings/Ratings.hbs'
 import Map from './views/pages/map/Map.hbs'
@@ -55,6 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/offer':
       document.body.innerHTML = Offer()
+      break
+
+    case '/offer-auction':
+      document.body.innerHTML = OfferAuction()
+      break
+
+    case '/offer-archive':
+      document.body.innerHTML = OfferArchive()
       break
 
     case '/rate':

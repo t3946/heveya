@@ -1,0 +1,115 @@
+{{> ../../layout/Hat endpoint=true withBorder=true}}
+
+<div class="offerPage">
+    <div class="container">
+        <div class="d-xl-none mb-2">
+            {{> ../../common/breadcrumbs/Breadcrumbs }}
+        </div>
+
+        <div class="crumbsWrapper d-none d-xl-flex justify-content-xl-between align-items-center">
+            {{> ../../common/breadcrumbs/Breadcrumbs }}
+
+            {{> SupportBlock }}
+        </div>
+    </div>
+
+    <div class="container">
+        {{> bid-info/BidInfo }}
+    </div>
+
+    <div class="container">
+        <div class="d-none d-lg-block">
+            {{> Description }}
+        </div>
+
+        <div class="dividerDescription"></div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h3 class="header3 mb-4">Порядок осмотра</h3>
+
+                <p class="paragraph fs-14px fs-md-18px">Ознакомиться с информацией о предмете торгов и порядке их
+                    проведения, можно на
+                    сайте
+                    https://www.fabrikant.ru/ и в МТУ Росимущества в Мурманской области и Республике Карелия по адресу:
+                    г.
+                    Петрозаводск, ул. Анохина, д. 29А, каб. 16 по рабочим дням с 09:30 до 12:30 и с 14:00 до 17:00,
+                    телефон:
+                    (8142) 59-36-26 (предварительная запись). С имуществом можно ознакомиться самостоятельно по месту
+                    его
+                    нахождения.судебный пристав-исполнитель Михайлова Раиса Геннадьевна (тел.:+7(8142)730464)</p>
+            </div>
+
+            <div class="col-12 col-lg-6 orderPayment">
+                <h3 class="header3 mb-4">Порядок внесения задатка</h3>
+
+                <p class="paragraph mb-1 fs-14px fs-md-18px">Задаток для участия в торгах перечисляется на специальный
+                    счет для задатков по
+                    следующим реквизитам:
+                    получатель ООО «ОША», ИНН/КПП 5507044011/550501001, счет №40702810202790001756 в Ф-Л СИБИРСКИЙ ПАО
+                    БАНК «ФК ОТКРЫТИЕ», к/с 30101810250040000867, БИК 045004867. Размер задатка 10 % от начальной цены
+                    продажи. Заявитель обязан обеспечить поступление суммы задатка на расчётный счёт до окончания срока
+                    приёма заявок, указанного в сообщении о проведении торгов. Суммы внесенных заявителями задатков
+                    возвращаются всем заявителям, за исключением победителя торгов, в течение пяти рабочих дней со дня
+                    подписания протокола о результатах проведения торгов</p>
+                <a class="moreInfo baseLink fs-14px fs-md-16px d-lg-none text-decoration-none">Подробнее</a>
+            </div>
+        </div>
+
+        {{#if withPriceDowngrade}}
+            <div class="d-none d-lg-block">
+                <div class="dividerDescription"></div>
+
+                <h3>Порядок понижения цены</h3>
+
+                <div class="offerPage__priceDowngrade">
+                    {{> price-downgrade/PriceDowngrade }}
+                </div>
+            </div>
+        {{/if}}
+
+        <div class="dividerDescription"></div>
+
+        <div>
+            <h3 class="header3 mb-3">Документы</h3>
+            <div class="documents">
+                <div class="grid">
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Инвентаризационная опись</div>
+                    </a>
+                    <a href="#" class="d-flex align-items-center link">
+                        {{> ../../common/icons/document/Document class="icon"}}
+                        <div class="ms-3">Отчет об определении рыночной стоимости</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../layout/footer/Footer withBorder=true}}

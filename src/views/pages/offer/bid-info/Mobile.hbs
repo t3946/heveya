@@ -15,15 +15,17 @@
 
     {{> ../PricesColumn }}
 
-    <div class="d-xl-none">
-        <div class="baseHorizontalDivider d-none d-md-block mt-5 mb-4"></div>
+    {{#if withPriceDowngrade}}
+        <div class="d-xl-none">
+            <div class="baseHorizontalDivider d-none d-md-block mt-5 mb-4"></div>
 
-        <h3 class="mt-4">Порядок понижения цены</h3>
+            <h3 class="mt-4">Порядок понижения цены</h3>
 
-        <div class="offerPage__priceDowngrade">
-            {{> ../price-downgrade/PriceDowngrade }}
+            <div class="offerPage__priceDowngrade">
+                {{> ../price-downgrade/PriceDowngrade }}
+            </div>
         </div>
-    </div>
+    {{/if}}
 
     <div class="bidInfoMobile__debtor mb-3">
         {{> Debtor }}
