@@ -1,10 +1,12 @@
-<div>
-    <div class="color_9b9b9b mb-2 mb-lg-3 fw-semibold">Сумма</div>
+<div class="baseGridCircleChart">
+    <div class="gridArea1 headerArea">Сумма</div>
 
-    <div class="d-flex flex-xl-column flex-xxl-row">
+    <div class="gridArea2 chartArea">
         <div class="pieCharEffectivity"></div>
+    </div>
 
-        <div class="d-flex flex-column ms-3 ms-xl-0 ms-xxl-3">
+    <div class="gridArea3 legendArea">
+        <div>
             {{> ../common/ChartLegendColumn icon="color_434343" name="Объявлено:" value="35 млн ₽"}}
             {{> ../common/ChartLegendColumn icon="color_8cceef" name="Реализовано:" value="12 млн ₽"}}
         </div>

@@ -1,5 +1,19 @@
-<div class="ws-nowrap">
-    <div class="color_9b9b9b mb-3 fw-semibold">Направление</div>
+<div class="baseGridCircleChart baseGridCircleChart_stickChart">
+    <div class="gridArea1 headerArea">Направление</div>
 
-    {{> ChartDirection}}
+    <div class="gridArea2">
+        <div class="stackedChartLine">
+            <div class="part" style="width: 35%; background-color: #8cceef"></div>
+            <div class="part" style="width: 15%; background-color: #ef7f1a"></div>
+            <div class="part" style="width: 50%; background-color: #434343"></div>
+        </div>
+    </div>
+
+    <div class="gridArea3 legendArea">
+        <div>
+            {{> ../common/ChartLegendColumn icon="color_434343" name="Банкротство" }}
+            {{> ../common/ChartLegendColumn icon="color_ef7f1a" name="Арест"}}
+            {{> ../common/ChartLegendColumn icon="color_8cceef" name="Муниципальные торги"}}
+        </div>
+    </div>
 </div>

@@ -357,14 +357,4 @@ html {
 .pieCharCategories, .pieChartParticipation, .pieChartUp, .pieChartDown, .pieUserRate, .pieCharEffectivity {
   width: pxToRem(110);
   height: pxToRem(110);
-
-  @include breakpoint(xl) {
-    width: pxToRem(70);
-    height: pxToRem(70);
-  }
-
-  @include breakpoint(xxl) {
-    width: pxToRem(110);
-    height: pxToRem(110);
-  }
 }

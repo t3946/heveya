@@ -68,31 +68,6 @@ function createChart(element: HTMLElement) {
     text: "Эффектив",
   }));
 
-  Breakpoint({
-    xs() {
-      label1.setAll({fontSize: 20});
-      label2.setAll({
-        fontSize: 13,
-        y: percent(65),
-      });
-    },
-    xl() {
-      label1.setAll({fontSize: 16});
-
-      label2.setAll({
-        y: percent(68),
-        fontSize: 10
-      });
-    },
-    xxl() {
-      label1.setAll({fontSize: 20});
-      label2.setAll({
-        fontSize: 13,
-        y: percent(65),
-      });
-    },
-  });
-
   series.data.setAll(data);
 
   series.appear(0, 0);

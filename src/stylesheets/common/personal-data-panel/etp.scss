@@ -1,0 +1,7 @@
+.personalDataPanelEtp {
+  .namePanel {
+    @include breakpoint(xl) {
+      width: pxToRem(220);
+    }
+  }
+}
