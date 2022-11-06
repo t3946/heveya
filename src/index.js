@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.innerHTML = RatingsBiddingInitiators()
       break
 
-    case '/rating-web-platforms':
+    case '/rating-etp':
       document.body.innerHTML = RatingsWebPlatforms()
       break
 
