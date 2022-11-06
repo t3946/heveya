@@ -1,8 +1,11 @@
-<div class="infoLinks">
+<div class="infoLinks {{#if isArchive}}infoLinks_isArchive{{/if}}">
+    {{#if isArchive}}
+    {{else}}
     <a href="#" class="item">
         {{> ../../common/icons/analytics/Analytics class="icon"}}
         <span class="ms-2 text">Анализировать лот</span>
     </a>
+    {{/if}}
 
     <a href="#" class="item">
         {{> ../../common/icons/link/Link class="icon"}}
