@@ -2,6 +2,7 @@
 @import "bid-info/desktop";
 @import "prices-column";
 @import "price-downgrade/price-downgrade";
+@import "contact-item";
 
 .offerPage {
   .lotMainInfo {
@@ -141,57 +142,6 @@
           padding: 0 0 pxToRem(30);
         }
       }
-
-      .link {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-
-        &_phone {
-          .icon {
-            color: #5fa85e;
-          }
-        }
-
-        &_email {
-          .icon {
-            color: #eac338;
-          }
-        }
-
-        &_request {
-          .icon {
-            color: #8cceef;
-          }
-        }
-      }
-
-      .grid {
-        display: grid;
-        grid-template-areas: "item-1 item-2"
-                       "item-3 item-4";
-        grid-template-rows: repeat(2, auto);
-        grid-template-columns: 1fr auto;
-        grid-gap: pxToRem(4) pxToRem(25);
-
-        .item1 {
-          grid-area: item-1;
-        }
-
-        .item2 {
-          grid-area: item-2;
-          display: flex;
-          justify-content: center;
-        }
-
-        .item3 {
-          grid-area: item-3;
-        }
-
-        .item4 {
-          grid-area: item-4;
-        }
-      }
     }
 
     @include breakpoint(xl) {
@@ -225,74 +175,6 @@
 
     .itemRow:not(:last-child) {
       margin-bottom: pxToRem(16);
-    }
-  }
-
-  .contactItem {
-    &:not(:last-child) {
-      border-bottom: 1px solid #d4d4d4;
-    }
-
-    &_desktop {
-      .companyName {
-        font-size: pxToRem(16);
-
-        @include breakpoint(xxl) {
-          font-size: pxToRem(18);
-        }
-      }
-
-      .item3 {
-        font-size: pxToRem(12);
-
-        @include breakpoint(xxl) {
-          font-size: pxToRem(16);
-        }
-      }
-
-      .item4 {
-        font-size: pxToRem(12);
-
-        @include breakpoint(xxl) {
-          font-size: pxToRem(16);
-        }
-      }
-
-      .linkPhone {
-        .icon {
-          width: pxToRem(16);
-          height: pxToRem(16);
-
-          @include breakpoint(xxl) {
-            width: pxToRem(20);
-            height: pxToRem(20);
-          }
-        }
-      }
-
-      .linkEmail {
-        .icon {
-          width: pxToRem(14);
-          height: pxToRem(12);
-
-          @include breakpoint(xxl) {
-            width: pxToRem(18);
-            height: pxToRem(15);
-          }
-        }
-      }
-
-      .linkRequest {
-        .icon {
-          width: pxToRem(16);
-          height: pxToRem(16);
-
-          @include breakpoint(xxl) {
-            width: pxToRem(20);
-            height: pxToRem(21);
-          }
-        }
-      }
     }
   }
 

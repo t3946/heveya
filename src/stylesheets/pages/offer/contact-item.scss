@@ -1,0 +1,158 @@
+.offerContactItem {
+  .contactItemGrid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "area1 area1" "area2 area4" "area3 area5";
+
+    @include breakpoint(xl) {
+      grid-template-columns: repeat(2, auto) pxToRem(70);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "area1 area1 area4" "area2 area3 area5";
+    }
+
+    .chartArea {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .contactsArea {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(auto-fill, auto);
+      font-size: pxToRem(14);
+      padding: 0 0 pxToRem(16);
+      grid-gap: pxToRem(12);
+
+      @include breakpoint(md) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        font-size: pxToRem(16);
+        grid-gap: 0;
+        padding: 0 0 pxToRem(0);
+      }
+
+      @include breakpoint(xl) {
+        font-size: pxToRem(12);
+        grid-gap: 4px;
+      }
+
+      @include breakpoint(xxl) {
+        font-size: pxToRem(16);
+      }
+
+      .nameValuePair {
+        font-size: pxToRem(14);
+
+        @include breakpoint(md) {
+          font-size: pxToRem(16);
+        }
+
+        @include breakpoint(xl) {
+          font-size: pxToRem(12);
+        }
+
+        @include breakpoint(xxl) {
+          font-size: pxToRem(16);
+        }
+      }
+
+      .linkPhone, .linkEmail {
+        .icon {
+          width: pxToRem(20);
+          height: pxToRem(20);
+
+          @include breakpoint(xl) {
+            width: pxToRem(16);
+            height: pxToRem(16);
+          }
+
+          @include breakpoint(xxl) {
+            width: pxToRem(20);
+            height: pxToRem(20);
+          }
+        }
+      }
+    }
+
+    .companyNameArea {
+      padding: 0 0 pxToRem(12);
+
+      @include breakpoint(md) {
+        padding: 0 0 pxToRem(8);
+      }
+
+      .name {
+        font-weight: 700;
+        font-size: pxToRem(14);
+
+        @include breakpoint(md) {
+          font-size: pxToRem(16);
+        }
+      }
+
+      .value {
+        font-size: pxToRem(16);
+        font-weight: 600;
+
+        @include breakpoint(md) {
+          font-size: pxToRem(18);
+        }
+      }
+    }
+
+    .rateLinkArea {
+      text-align: center;
+    }
+  }
+
+  .rateLink {
+    text-decoration: none;
+    color: #9B9B9B;
+    font-weight: 700;
+    font-size: pxToRem(14);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(12);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
+  }
+
+  .contactLink {
+    text-decoration: none;
+    color: #9B9B9B;
+    font-weight: 700;
+    font-size: pxToRem(14);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(12);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
+
+    &__text {
+      margin: 0 0 0 pxToRem(8);
+    }
+
+    .icon {
+      flex-shrink: 0;
+      color: #8cceef;
+      width: pxToRem(18);
+      height: pxToRem(20);
+    }
+  }
+}
