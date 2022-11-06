@@ -1,11 +1,19 @@
 <div class="top10">
     <div class="row">
         <div class="col-12 col-xl-6">
-            <img class="map" src="/images/dummyMapTop10.jpg" alt="map"/>
+            <div class="h-100 mapContainer">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Accab12c2407b789d2929a629571c3c453453fd90a50724e6926d3073637010ee&amp;source=constructor"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                ></iframe>
+            </div>
         </div>
 
         <div class="col-12 col-xl-6 d-flex flex-column justify-content-between">
-            <div class="text-center fw-semibold fs-20px mb-2 top10__tableHeader fs-16px fs-md-20px">Топ 10 регионов</div>
+            <div class="text-center fw-semibold fs-20px mb-2 top10__tableHeader fs-16px fs-md-20px">Топ 10 регионов
+            </div>
 
             <div class="tableWrapper">
                 {{> ../tables/top10/Top10 }}

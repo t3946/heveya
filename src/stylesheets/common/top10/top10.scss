@@ -11,6 +11,14 @@
     }
   }
 
+  .mapContainer {
+    min-height: pxToRem(210);
+
+    @include breakpoint(md) {
+      min-height: pxToRem(380);
+    }
+  }
+
   .map {
     width: 100%;
     height: pxToRem(210);
