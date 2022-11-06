@@ -2,8 +2,8 @@
     <div class="contactItemGrid">
         <div class="gridArea1 companyNameArea">
             <div class="nameValuePair d-block">
-                <div class="name">Арбитражный управляющий:</div>
-                <div class="value">Ибрагимов Ильнур Ильсурович</div>
+                <div class="name">{{subjectName}}</div>
+                <div class="value">{{subjectValue}}</div>
             </div>
         </div>
 
@@ -20,8 +20,13 @@
         <div class="gridArea3 contactLinkArea">
             <a href="#" class="contactLink">
                 <div class="d-flex align-items-center">
-                    {{> ../../../../common/icons/search-document/SearchDocument class="icon"}}
-                    <span class="contactLink__text">Отправить запрос</span>
+                    {{#if isPlatform}}
+                        {{> ../../../../common/icons/link-2/Link2 class="icon"}}
+                        <span class="contactLink__text">Перейти на лот</span>
+                    {{else}}
+                        {{> ../../../../common/icons/search-document/SearchDocument class="icon"}}
+                        <span class="contactLink__text">Отправить запрос</span>
+                    {{/if}}
                 </div>
             </a>
         </div>
