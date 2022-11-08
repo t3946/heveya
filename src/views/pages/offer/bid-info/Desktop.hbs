@@ -1,8 +1,16 @@
 <div class="bidInfoDesktopGrid">
     <div class="imageWrapper">
-        <div class="imageWrapper__label">
-            {{> ../../../common/image-label/Discount size="big" }}
-        </div>
+        {{#if isDiscountLabel}}
+            <div class="imageWrapper__label">
+                {{> ../../../common/image-label/Discount size="big" }}
+            </div>
+        {{/if}}
+
+        {{#if isAuctionLabel}}
+            <div class="imageWrapper__label">
+                {{> ../../../common/image-label/Auction size="big" }}
+            </div>
+        {{/if}}
 
         {{> Slider id="sliderBidInfoDesktop" }}
     </div>

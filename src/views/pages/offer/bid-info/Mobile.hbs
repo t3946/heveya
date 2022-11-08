@@ -7,7 +7,21 @@
         <span class="gridArea5">Завершение до: 25.12.2023</span>
     </div>
 
-    {{> Slider id="sliderBidInfoMobile" }}
+    <div class="imageWrapper">
+        {{#if isDiscountLabel}}
+            <div class="imageWrapper__label">
+                {{> ../../../common/image-label/Discount size="big" }}
+            </div>
+        {{/if}}
+
+        {{#if isAuctionLabel}}
+            <div class="imageWrapper__label">
+                {{> ../../../common/image-label/Auction size="big" }}
+            </div>
+        {{/if}}
+
+        {{> Slider id="sliderBidInfoMobile" }}
+    </div>
 
     <div class="bidInfoMobile__description">
         {{> ../Description }}

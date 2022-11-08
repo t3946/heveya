@@ -31,9 +31,14 @@
     }
 
     &_big {
-      height: pxToRem(40);
-      font-size: pxToRem(16);
-      min-width: pxToRem(70);
+      font-size: pxToRem(14);
+      height: pxToRem(30);
+
+      @include breakpoint(md) {
+        font-size: pxToRem(16);
+        height: pxToRem(40);
+        min-width: pxToRem(70);
+      }
     }
   }
 }
