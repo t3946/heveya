@@ -117,6 +117,19 @@
 
   .allLots {
     text-decoration: none;
+    font-size: pxToRem(14);
+
+    @include breakpoint(md) {
+      font-size: pxToRem(16);
+    }
+
+    @include breakpoint(xl) {
+      font-size: pxToRem(12);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: pxToRem(16);
+    }
 
     .icon {
       color: #8cceef;
