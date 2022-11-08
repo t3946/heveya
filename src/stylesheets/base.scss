@@ -342,8 +342,14 @@ html {
   }
 }
 
+.w-xl-auto {
+  @include breakpoint(xl) {
+    width: auto !important;
+  }
+}
+
 .w-xxl-auto {
-  @include breakpoint(md) {
+  @include breakpoint(xxl) {
     width: auto !important;
   }
 }

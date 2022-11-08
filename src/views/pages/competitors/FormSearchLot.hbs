@@ -2,7 +2,7 @@
     <h3 class="color_5c5c5c formSearchLot__header text-xxl-center fw-bold">Введите код лота или параметры лота</h3>
 
     <div class="row">
-        <div class="col-12 col-xxl-6">
+        <div class="col-12 col-xl-6">
             <div class="mb-3">{{> ../../common/ui/InputText placeholder="Введите код лота" id="formSearchLot_inputText_lotCod" name="lot_code"}}</div>
             <div class="mb-3">{{> ../../common/ui/Select default="Категория" id="formSearchLot_select_category" name="category"}}</div>
             <div class="mb-3">{{> ../../common/ui/Select default="Регион" id="formSearchLot_select_region" name="region"}}</div>
@@ -10,10 +10,14 @@
             <div class="mb-3">{{> ../../common/ui/Select default="Формирование цены" id="formSearchLot_select_priceType" name="price_type"}}</div>
         </div>
 
-        <div class="col-12 col-xxl-6">
+        <div class="col-12 col-xl-6">
             <div class="mb-4">{{> ../../common/ui/RangeSliderTwoValue displayPostfix=" ₽" start=100000 end=125000000 min=100000 max=250000000 labelStart="Цена начальная, от:" labelEnd="Цена начальная, до:" }}</div>
 
-            <div>{{> ../../common/ui/RangeSliderTwoValue displayPostfix=" ₽" start=100000 end=125000000 min=100000 max=250000000 labelStart="Цена текущая, от:" labelEnd="Цена текущая, до:" }}</div>
+            <div class="mb-4">{{> ../../common/ui/RangeSliderTwoValue displayPostfix=" ₽" start=100000 end=125000000 min=100000 max=250000000 labelStart="Цена текущая, от:" labelEnd="Цена текущая, до:" }}</div>
+
+            <div class="d-flex justify-content-end">
+                <div class="baseButton baseButton_size_medium baseButton_theme_blue w-xl-auto">Найти</div>
+            </div>
         </div>
     </div>
 </div>
