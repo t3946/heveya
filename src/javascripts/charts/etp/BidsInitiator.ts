@@ -105,6 +105,7 @@ function init(elem) {
   yAxis.axisHeader.setAll({
     paddingBottom: 10,
   });
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
 
   yAxis.axisHeader.children.push(Text.new(root, {
     text: "Организаторы торгов",

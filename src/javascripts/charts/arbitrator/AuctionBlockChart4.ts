@@ -61,6 +61,7 @@ function init(elem) {
   }));
 
   xAxis.data.setAll(data);
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
 
   const yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     renderer: am5xy.AxisRendererY.new(root, {}),

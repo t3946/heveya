@@ -134,6 +134,7 @@ function init(elem) {
     centerX: percent(50),
     fill: color(0x9B9B9B),
   }));
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
 
   let legend = chart.children.push(Legend.new(root, {
     x: p50,

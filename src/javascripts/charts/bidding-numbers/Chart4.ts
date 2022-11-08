@@ -90,6 +90,7 @@ function init(elem) {
     centerX: percent(50),
     fill: color(0x9B9B9B),
   }));
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
 
   const series = chart.series.push(am5xy.ColumnSeries.new(root, {
     xAxis: xAxis,

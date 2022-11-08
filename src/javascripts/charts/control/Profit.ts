@@ -132,6 +132,7 @@ function init (elem) {
     x: percent(50),
     centerX: percent(50),
   }));
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
 
   series.data.setAll(data);
 

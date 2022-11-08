@@ -99,6 +99,8 @@ function init(elem) {
     name: "Участники ФЛ"
   }));
 
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
+
   series2.columns.template.setAll({
     tooltipText: "{valueY} {name}",
     width: percent(36),

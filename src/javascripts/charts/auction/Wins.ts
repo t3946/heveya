@@ -102,6 +102,7 @@ function init(elem) {
   series.set("fill", color(0x8CCEEF));
   series.set("stroke", null);
 
+  xAxis.get("renderer").labels.template.set("minPosition", 0.05);
   yAxis.axisHeader.setAll({
     paddingBottom: 10,
   });
