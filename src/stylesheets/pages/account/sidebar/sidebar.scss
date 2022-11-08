@@ -1,0 +1,9 @@
+.sidebarPage {
+  &__sidebar {
+    margin: pxToRem(20) 0 0;
+
+    @include breakpoint(xl) {
+      margin: 0;
+    }
+  }
+}

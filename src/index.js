@@ -40,6 +40,7 @@ import MyServices from './views/pages/account/my-services/MyServices.hbs'
 import MyTasks from './views/pages/account/my-tasks/MyTasks.hbs'
 import MyOffers from './views/pages/account/my-offers/MyOffers.hbs'
 import Services from './views/pages/account/services/Services.hbs'
+import Sidebar from './views/pages/account/sidebar/Sidebar.hbs'
 
 document.addEventListener('DOMContentLoaded', function () {
   switch (document.location.pathname) {
@@ -196,6 +197,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     case '/account-services':
       document.body.innerHTML = Services()
+      break
+
+    case '/sidebar':
+      document.body.innerHTML = Sidebar()
       break
 
     default:
