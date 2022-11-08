@@ -76,7 +76,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value",
     categoryXField: "year",
-    name: "Участники юридические лица"
+    name: "Участники ЮЛ"
   }));
 
   series.columns.template.setAll({
@@ -96,7 +96,7 @@ function init(elem) {
     yAxis: yAxis,
     valueYField: "value2",
     categoryXField: "year",
-    name: "Участники физические лица"
+    name: "Участники ФЛ"
   }));
 
   series2.columns.template.setAll({
