@@ -4,7 +4,13 @@
         <span class="gridArea2 fw-bold">{{> ../../../common/location/Location }}</span>
         <span class="gridArea3">Имущество должников (банкротство)</span>
         <span class="gridArea4">Опубликовано: 21.03.2022</span>
-        <span class="gridArea5">Завершение до: 25.12.2023</span>
+        <span class="gridArea5">
+            {{#if isArchive}}
+                <span class="fw-semibold color_f6002c">Завершено: 25.06.2023</span>
+            {{else}}
+                <span>Завершение до: 25.12.2023</span>
+            {{/if}}
+        </span>
     </div>
 
     <div class="imageWrapper">
