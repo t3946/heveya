@@ -8,6 +8,7 @@
   height: pxToRem(30);
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+  justify-content: center;
 
   &_type {
     &_auction {
@@ -27,6 +28,12 @@
     &_small {
       height: pxToRem(24);
       font-size: pxToRem(12);
+    }
+
+    &_big {
+      height: pxToRem(40);
+      font-size: pxToRem(16);
+      min-width: pxToRem(70);
     }
   }
 }

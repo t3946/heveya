@@ -291,6 +291,24 @@
 .bidInfoDesktopGrid {
   display: grid;
   grid-template-columns: 1fr;
+  position: relative;
+
+  @include breakpoint(xl) {
+    grid-template-columns: 400px 1fr;
+  }
+
+  @include breakpoint(xxl) {
+    grid-template-columns: 600px 1fr;
+  }
+
+  .imageWrapper {
+    &__label {
+      position: absolute;
+      top: pxToRem(40);
+      left: 0;
+      z-index: 1;
+    }
+  }
 
   #sliderBidInfoDesktop {
     @include breakpoint(md) {
@@ -300,13 +318,5 @@
     @include breakpoint(xl) {
       height: 100%;
     }
-  }
-
-  @include breakpoint(xl) {
-    grid-template-columns: 400px 1fr;
-  }
-
-  @include breakpoint(xxl) {
-    grid-template-columns: 600px 1fr;
   }
 }
