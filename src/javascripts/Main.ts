@@ -10,8 +10,13 @@ import "./tooltip/tooltip";
 import "./account/Account";
 import "./adaptive-placeholder/AdaptivePlaceholder";
 import "./catalog/Catalog";
+import {Dropdown} from "bootstrap";
 
 $(() => {
   initCharts();
   initMap();
+
+  $(".base-dropdown").each((e) => {
+    new Dropdown(e)
+  });
 });

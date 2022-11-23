@@ -1,5 +1,4 @@
-import '@popperjs/core/dist/esm/popper'
-import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/js/bootstrap.bundle.min'
 import 'stylesheets/base.scss'
 import 'javascripts/Main'
 import home from './views/pages/home/home.hbs'
